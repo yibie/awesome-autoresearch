@@ -101,10 +101,12 @@ A ready-to-run updater script lives at `scripts/update-awesome-autoresearch.sh`.
 
 It will:
 - initialize the local repo if needed
-- ensure `origin` points to `git@github.com:yibie/awesome-autoresearch.git`
+- ensure `origin` exists, defaulting to `https://github.com/yibie/awesome-autoresearch.git`
 - pull `main` when the remote already has history
 - run pi non-interactively with `scripts/prompts/periodic-curation-prompt.md`
 - commit and push only when the repository actually changed
+
+If you prefer a different remote, set `REMOTE_URL` before running the script.
 
 Examples:
 

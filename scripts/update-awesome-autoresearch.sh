@@ -4,7 +4,7 @@ set -euo pipefail
 REPO_ROOT="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 BRANCH="${BRANCH:-main}"
 PI_BIN="${PI_BIN:-pi}"
-REMOTE_URL="${REMOTE_URL:-git@github.com:yibie/awesome-autoresearch.git}"
+REMOTE_URL="${REMOTE_URL:-https://github.com/yibie/awesome-autoresearch.git}"
 LOG_DIR="${LOG_DIR:-$REPO_ROOT/.logs}"
 PROMPT_FILE="${PROMPT_FILE:-$REPO_ROOT/scripts/prompts/periodic-curation-prompt.md}"
 ENV_FILE="${ENV_FILE:-$REPO_ROOT/scripts/update-awesome-autoresearch.env}"
