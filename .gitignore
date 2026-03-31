@@ -7,3 +7,4 @@ node_modules/
 __pycache__/
 *.pyc
 scripts/update-awesome-autoresearch.env
+AUTOMATION.local.md
