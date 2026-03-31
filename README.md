@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 4 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 5 entries
+- [Scientific Research](categories/scientific-research.md) — 5 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 6 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 3 entries
-- [Finance / Trading](categories/finance-trading.md) — 3 entries
+- [Finance / Trading](categories/finance-trading.md) — 4 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 8 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 33 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 11 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 31 entries
 
 ### Secondary overlap categories
 
@@ -88,6 +88,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Sibyl Research System](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Scientific research: builds a fully autonomous AI scientist on Claude Code with inner research-iteration loops and outer self-evolution across projects.
 - [autoresearch-rl](https://github.com/vivekvkashyap/autoresearch-rl) - RL research: applies the autoresearch pattern to RL post-training by iterating on one training config, running fixed-time experiments, and keeping only eval improvements.
 - [autoresearch-robotics](https://github.com/jellyheadandrew/autoresearch-robotics) - Robotics research: adapts Karpathy-style autoresearch to MuJoCo and Gymnasium robotics tasks by editing one training file, evaluating fixed-budget runs, and using simulator renderings plus vision feedback to keep only better policies.
+- [Autoresearch on an old research idea](https://ykumar.me/blog/eclip-autoresearch/) - Multimodal retrieval research: applies Claude Code autoresearch to an old eCLIP idea, running 42 fixed-budget experiments with commit/revert decisions and cutting mean rank from 344.68 to 157.43.
 
 ### Software / Systems Optimization
 
@@ -98,6 +99,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [autoresearch-webgpu](https://github.com/lucasgelfond/autoresearch-webgpu) - Browser ML optimization: ports Karpathy's autoresearch into the browser so agents can generate training code, run GPU-backed experiments, and feed losses back into the next iteration.
 - [autoresearch-local-llm](https://github.com/SohniSwatantra/autoresearch-local-llm) - Local ML optimization: replaces Claude Code with a local Qwen model to run the standard autoresearch keep/revert loop on a shared single GPU.
 - [Shopify Liquid performance work via autoresearch](https://simonwillison.net/2026/Mar/13/liquid/) - Software optimization: Tobi Lütke applied an autoresearch loop to Shopify's Liquid template engine, producing 93 automated commits that improved parse+render performance by 53% with 61% fewer allocations.
+- [Autoresearch for SAT Solvers](https://github.com/iliazintchenko/agent-sat) - SAT solver optimization: runs parallel MaxSAT experiments, updates reusable solver code plus expert memory, and improves public benchmark configurations against 2024 competition baselines.
 
 ### Evaluation / Red Teaming
 
@@ -114,6 +116,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [atlas-gic](https://github.com/chrisworsey55/atlas-gic) - Trading: applies Karpathy-style autoresearch to a swarm of market agents, rewriting the worst-performing prompts and keeping changes only when rolling Sharpe improves.
 - [autoresearch-trading](https://github.com/erix/autoresearch-trading) - Options trading: applies an autoresearch-style keep/revert loop to SPY strategy parameters, logging each experiment against backtest metrics.
 - [autoresearch-trading](https://github.com/dietmarwo/autoresearch-trading) - Trading research: combines Karpathy-style autoresearch with classical optimization so the agent iterates on strategy structure while an optimizer tunes parameters and walk-forward validation decides what survives.
+- [BTCautoresearch](https://github.com/CBaquero/BTCautoresearch) - Bitcoin forecasting: uses Karpathy-style autoresearch to mutate a single formula file, score walk-forward out-of-sample RMSE, and keep only forecasting rules that beat the baseline power law.
 
 ### Personal Knowledge / Humanities
 
@@ -133,6 +136,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-plugin](https://github.com/AILAB-H/autoresearch-plugin) - Claude Code plugin: packages the Karpathy-style experiment loop into init/test/run commands for projects with explicit evaluation scripts and git rollback.
 - [Artificial General Research](https://github.com/JoaquinMulet/Artificial-General-Research) - Optimization framework: turns measurable code optimization tasks into autoresearch loops with variance-aware acceptance, artifact detection, and exhausted-approach tracking.
 - [autoresearch-engram](https://github.com/tonitangpotato/autoresearch-engram) - Memory extension: adds persistent recall, pattern extraction, and reflection steps to Karpathy's autoresearch so the agent remembers what worked across long runs.
+- [pi-autoresearch](https://github.com/davebcn87/pi-autoresearch) - pi extension: generalizes Karpathy's autoresearch into experiment tools, a live dashboard, and slash-command skills for metric-driven optimization beyond ML.
+- [SkyPilot parallel autoresearch](https://blog.skypilot.co/scaling-autoresearch/) - GPU infrastructure: gives Karpathy's autoresearch access to 16 GPUs so the agent can run parallel experiment waves, validate winners on faster hardware, and reach about 910 runs in about 8 hours.
+- [serverless-autoresearch](https://github.com/roboco-io/serverless-autoresearch) - SageMaker infrastructure: parallelizes Karpathy's autoresearch on Spot training jobs so the agent evaluates `train.py` candidates with HUGI-style burst compute instead of paying for idle GPUs.
 
 ### Related Practices / Discussions
 
@@ -172,7 +178,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 
 - [Makoto Tanji on Karpathy's AutoResearch](https://x.com/tan_z_tan/status/2038794997701726668) - X: explains Karpathy's autoresearch as an evolutionary search loop and highlights emerging multi-agent and parallel extensions.
 - [Duy Nguyen on Karpathy, Tobi, and generalized autoresearch loops](https://x.com/goon_nguyen/status/2038764906284294428) - X: summarizes autoresearch as edit → evaluate → keep/discard → repeat and points to its use in both GPT training and Shopify Liquid optimization.
-- [Prime Intellect signal boosting autoresearch-primerl](https://x.com/PrimeIntellect/status/2038787582121943053) - X: points to autoresearch being applied to RL post-training workflows rather than only base-model training.
 - [Darian Parrish on smaller autoresearch loops for non-coding tasks](https://x.com/darian_parrish/status/2038739302826529028) - X: mentions adapting the autoresearch pattern beyond coding into other task types.
 - [Ilya on adapting autoresearch to energy-demand peak prediction](https://x.com/ilyaXindy/status/2038604642121093474) - X: describes packaging a custom scorer and composite metric so Claude Code could autoresearch seasonal calibrations and threshold interactions for energy demand prediction.
 - [Google hit: “Autoresearch on Qwen3.5-397B, 36 experiments...”](https://www.reddit.com/r/LocalLLaMA/comments/1s7g8ov/autoresearch_on_qwen35397b_36_experiments_to/) - Reddit: discussion thread documenting a concrete autoresearch run with experiment counts and measured throughput on Apple Silicon.
@@ -184,7 +189,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Versur on bringing autoresearch-style loops to Grasshopper solver workflows](https://x.com/VersurAi/status/2037877185210372372) - X: describes using candidate generation, fixed benchmarks, scoring, and keep-only-if-improved loops for computational design experiments.
 - [Google hit: “Autoresearch-style framework for improving heuristics”](https://www.reddit.com/r/optimization/comments/1s3aohf/autoresearchstyle_framework_for_improving/) - Reddit: discussion thread about applying autoresearch-style benchmarked improvement loops to optimization heuristics under strict solver budgets.
 - [Google hit: HN thread on applying autoresearch to LLM inference](https://news.ycombinator.com/item?id=47538380) - Hacker News: discussion pointing to autoresearch-style ideas being adapted from model training to LLM inference optimization.
-- [Google hit: HN thread on autoresearch for SAT solvers](https://news.ycombinator.com/item?id=47433265) - Hacker News: discussion evidence that the autoresearch pattern is being considered for SAT solver improvement and search-heavy domains.
 
 ### Knowledge Base / RAG Preparation
 
