@@ -46,8 +46,8 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 3 entries
 - [Finance / Trading](categories/finance-trading.md) — 4 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 11 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 31 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 17 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 30 entries
 
 ### Secondary overlap categories
 
@@ -137,6 +137,12 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Artificial General Research](https://github.com/JoaquinMulet/Artificial-General-Research) - Optimization framework: turns measurable code optimization tasks into autoresearch loops with variance-aware acceptance, artifact detection, and exhausted-approach tracking.
 - [autoresearch-engram](https://github.com/tonitangpotato/autoresearch-engram) - Memory extension: adds persistent recall, pattern extraction, and reflection steps to Karpathy's autoresearch so the agent remembers what worked across long runs.
 - [pi-autoresearch](https://github.com/davebcn87/pi-autoresearch) - pi extension: generalizes Karpathy's autoresearch into experiment tools, a live dashboard, and slash-command skills for metric-driven optimization beyond ML.
+- [openclaw-autoresearch](https://github.com/gianfrancopiana/openclaw-autoresearch) - OpenClaw plugin: ports pi-autoresearch to OpenClaw with pending-run enforcement, confidence scoring, checkpoint files, and git-backed keep/discard semantics.
+- [autoresearch-opencode](https://github.com/dabiggm0e/autoresearch-opencode) - OpenCode skill: ports pi-autoresearch into OpenCode as a pure skill that logs JSONL experiment runs and resumes autonomous keep/discard loops with built-in tools.
+- [pi-autoresearch-studio](https://github.com/jhochenbaum/pi-autoresearch-studio) - pi control plane: adds TUI and web dashboards, plan and ideas editing, and selective PR creation on top of pi-autoresearch sessions.
+- [autoresearch-gen](https://github.com/liviaellen/autoresearch-gen) - Scaffold generator: interviews the user, generates a verified autoresearch experiment scaffold, auto-runs the baseline, and repairs broken generated code before handoff to the agent.
+- [autoresearch-autoresearch](https://github.com/cavit99/autoresearch-autoresearch) - Meta-autoresearch repo: maintains a portable canonical loop distilled from karpathy/autoresearch and adjacent systems so new evidence can update a reusable agent-verifier architecture across domains.
+- [Bilevel Autoresearch](https://github.com/EdwardOptimization/Bilevel-Autoresearch) - Meta-autoresearch framework: adds outer loops that rewrite autoresearch search mechanisms themselves and reports multi-run gains on Karpathy's training benchmark.
 - [SkyPilot parallel autoresearch](https://blog.skypilot.co/scaling-autoresearch/) - GPU infrastructure: gives Karpathy's autoresearch access to 16 GPUs so the agent can run parallel experiment waves, validate winners on faster hardware, and reach about 910 runs in about 8 hours.
 - [serverless-autoresearch](https://github.com/roboco-io/serverless-autoresearch) - SageMaker infrastructure: parallelizes Karpathy's autoresearch on Spot training jobs so the agent evaluates `train.py` candidates with HUGI-style burst compute instead of paying for idle GPUs.
 
@@ -185,7 +191,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 
 ### Infra / benchmarking ideas
 
-- [Cavit Erginsoy on “Autoresearch Autoresearch”](https://x.com/caviterginsoy/status/2031542430227370317) - X: describes building a meta-repo that watches autoresearch derivatives and distills portable agent-verifier loop patterns across domains.
 - [Versur on bringing autoresearch-style loops to Grasshopper solver workflows](https://x.com/VersurAi/status/2037877185210372372) - X: describes using candidate generation, fixed benchmarks, scoring, and keep-only-if-improved loops for computational design experiments.
 - [Google hit: “Autoresearch-style framework for improving heuristics”](https://www.reddit.com/r/optimization/comments/1s3aohf/autoresearchstyle_framework_for_improving/) - Reddit: discussion thread about applying autoresearch-style benchmarked improvement loops to optimization heuristics under strict solver budgets.
 - [Google hit: HN thread on applying autoresearch to LLM inference](https://news.ycombinator.com/item?id=47538380) - Hacker News: discussion pointing to autoresearch-style ideas being adapted from model training to LLM inference optimization.

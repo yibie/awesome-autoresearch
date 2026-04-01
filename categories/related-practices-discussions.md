@@ -61,7 +61,6 @@ This page is for **discussion evidence**, not for generic AI commentary.
 
 ### Infra / benchmarking ideas
 
-- [Cavit Erginsoy on “Autoresearch Autoresearch”](https://x.com/caviterginsoy/status/2031542430227370317) - X: describes building a meta-repo that watches autoresearch derivatives and distills portable agent-verifier loop patterns across domains.
 - [Versur on bringing autoresearch-style loops to Grasshopper solver workflows](https://x.com/VersurAi/status/2037877185210372372) - X: describes using candidate generation, fixed benchmarks, scoring, and keep-only-if-improved loops for computational design experiments.
 - [Google hit: “Autoresearch-style framework for improving heuristics”](https://www.reddit.com/r/optimization/comments/1s3aohf/autoresearchstyle_framework_for_improving/) - Reddit: discussion thread about applying autoresearch-style benchmarked improvement loops to optimization heuristics under strict solver budgets.
 - [Google hit: HN thread on applying autoresearch to LLM inference](https://news.ycombinator.com/item?id=47538380) - Hacker News: discussion pointing to autoresearch-style ideas being adapted from model training to LLM inference optimization.
