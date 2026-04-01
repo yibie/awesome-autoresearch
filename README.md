@@ -47,7 +47,7 @@ We do **not** include:
 - [Finance / Trading](categories/finance-trading.md) — 4 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 17 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 30 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 32 entries
 
 ### Secondary overlap categories
 
@@ -182,6 +182,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 
 ### Scientific / research augmentation
 
+- [Show HN: Autoresearch@home](https://news.ycombinator.com/item?id=47343935) - Hacker News: presents a collaborative autoresearch effort where agents share GPU resources to improve a language model through a distributed overnight loop.
 - [Makoto Tanji on Karpathy's AutoResearch](https://x.com/tan_z_tan/status/2038794997701726668) - X: explains Karpathy's autoresearch as an evolutionary search loop and highlights emerging multi-agent and parallel extensions.
 - [Duy Nguyen on Karpathy, Tobi, and generalized autoresearch loops](https://x.com/goon_nguyen/status/2038764906284294428) - X: summarizes autoresearch as edit → evaluate → keep/discard → repeat and points to its use in both GPT training and Shopify Liquid optimization.
 - [Darian Parrish on smaller autoresearch loops for non-coding tasks](https://x.com/darian_parrish/status/2038739302826529028) - X: mentions adapting the autoresearch pattern beyond coding into other task types.
@@ -191,6 +192,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 
 ### Infra / benchmarking ideas
 
+- [Show HN: Multi-agent autoresearch for ANE inference beats Apple's CoreML by 6×](https://news.ycombinator.com/item?id=47592280) - Hacker News: points to a multi-agent autoresearch system for ANE inference optimization and preserves a public discussion trail around the benchmark claim.
 - [Versur on bringing autoresearch-style loops to Grasshopper solver workflows](https://x.com/VersurAi/status/2037877185210372372) - X: describes using candidate generation, fixed benchmarks, scoring, and keep-only-if-improved loops for computational design experiments.
 - [Google hit: “Autoresearch-style framework for improving heuristics”](https://www.reddit.com/r/optimization/comments/1s3aohf/autoresearchstyle_framework_for_improving/) - Reddit: discussion thread about applying autoresearch-style benchmarked improvement loops to optimization heuristics under strict solver budgets.
 - [Google hit: HN thread on applying autoresearch to LLM inference](https://news.ycombinator.com/item?id=47538380) - Hacker News: discussion pointing to autoresearch-style ideas being adapted from model training to LLM inference optimization.
