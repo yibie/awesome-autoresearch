@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 5 entries
+- [Scientific Research](categories/scientific-research.md) — 6 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 6 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 3 entries
 - [Finance / Trading](categories/finance-trading.md) — 4 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 17 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 32 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 18 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 34 entries
 
 ### Secondary overlap categories
 
@@ -88,6 +88,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Sibyl Research System](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Scientific research: builds a fully autonomous AI scientist on Claude Code with inner research-iteration loops and outer self-evolution across projects.
 - [autoresearch-rl](https://github.com/vivekvkashyap/autoresearch-rl) - RL research: applies the autoresearch pattern to RL post-training by iterating on one training config, running fixed-time experiments, and keeping only eval improvements.
 - [autoresearch-robotics](https://github.com/jellyheadandrew/autoresearch-robotics) - Robotics research: adapts Karpathy-style autoresearch to MuJoCo and Gymnasium robotics tasks by editing one training file, evaluating fixed-budget runs, and using simulator renderings plus vision feedback to keep only better policies.
+- [Tinker-Explorer](https://github.com/mohammed840/autoresearch-explorer) - Evidence-retrieval research: adapts the autoresearch pattern to GRPO document exploration, comparing reward designs and keeping only retrieval policies that answer multihop questions more accurately under a token budget.
 - [Autoresearch on an old research idea](https://ykumar.me/blog/eclip-autoresearch/) - Multimodal retrieval research: applies Claude Code autoresearch to an old eCLIP idea, running 42 fixed-budget experiments with commit/revert decisions and cutting mean rank from 344.68 to 157.43.
 
 ### Software / Systems Optimization
@@ -132,6 +133,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-evaluation-harness](https://github.com/sou350121/autoresearch-evaluation-harness) - Evaluation infrastructure: compares autoresearch-style proposal strategies under fixed task adapters, explicit scalar scoring, and hard keep/discard gates.
 - [autoresearch-mlx](https://github.com/trevin-creator/autoresearch-mlx) - Apple Silicon fork: ports Karpathy's autoresearch to MLX while keeping the fixed-time training budget, single mutable file, and git keep/revert loop.
 - [Claude Autoresearch](https://github.com/uditgoenka/autoresearch) - Claude Code skill: generalizes Karpathy's autoresearch into a reusable modify → verify → keep/discard loop for measurable goals beyond ML.
+- [claude-autoresearch](https://github.com/Maleick/claude-autoresearch) - Claude Code plugin: runs autoresearch on isolated branches with deterministic verification commands, scheduled overnight sessions, and structured keep/discard reports.
 - [codex-autoresearch](https://github.com/leo-lilinxiao/codex-autoresearch) - Codex skill: brings the autoresearch pattern to Codex for unattended metric-driven software iteration with automatic keep/discard decisions.
 - [autoresearch-plugin](https://github.com/AILAB-H/autoresearch-plugin) - Claude Code plugin: packages the Karpathy-style experiment loop into init/test/run commands for projects with explicit evaluation scripts and git rollback.
 - [Artificial General Research](https://github.com/JoaquinMulet/Artificial-General-Research) - Optimization framework: turns measurable code optimization tasks into autoresearch loops with variance-aware acceptance, artifact detection, and exhausted-approach tracking.
@@ -157,8 +159,13 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [alex on verifier-driven autoresearch loops for Amazon seller workflows](https://x.com/nospicyplease_/status/2035682307483259073) - X: argues that verifier-driven autoresearch loops fit PPC, catalog, and ASIN-level decisions better than peer-consensus swarms because proposals are kept only when the evaluator approves them.
 - [Brandon Pizzacalla on agentic paid ads systems based on Karpathy autoresearch](https://x.com/bpizzacalla/status/2038731009051824318) - X: claims to use Karpathy-style autoresearch as the planning and experiment pattern behind autonomous paid-ads workflows.
 
+### Business / GTM workflows
+
+- [Brandon Pizzacalla on applying Karpathy's autoresearch pattern to cold email](https://x.com/bpizzacalla/status/2039233818994102609) - X: describes a single-agent loop that tests cold-email variants on live reply-rate metrics, commits winners as the new baseline, and stops at convergence.
+
 ### Prompt / evaluation
 
+- [Aakash Gupta on eval design as the make-or-break constraint in autoresearch](https://x.com/aakashgupta/status/2039204610569544027) - X: argues that autoresearch only transfers cleanly when the evaluator is binary, locked, compact, and specific enough to resist gaming.
 - [Ali Amiri on matching Claude Code quality by optimizing prompts with AutoResearch](https://x.com/iampatten/status/2038755598981038193) - X: describes using AutoResearch to tune prompts and push a Qwen-based workflow from weak to strong performance on a large-repo task.
 - [Ren on benchmark-driven skill optimization with autoresearch](https://x.com/liliIiiI1I7/status/2038528225916424395) - X: Chinese discussion noting that autoresearch can be paired with skill creation so agents define a benchmark and then iteratively optimize the skill against it.
 - [Google hit: “I plugged a 2M-paper research index into autoresearch”](https://www.reddit.com/r/LocalLLM/comments/1s4i1y6/i_plugged_a_2mpaper_research_index_into/) - Reddit: discussion thread about augmenting autoresearch with a large paper index to improve method selection and benchmark-aware implementation choices.
