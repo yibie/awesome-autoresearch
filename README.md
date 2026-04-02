@@ -46,7 +46,7 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 3 entries
 - [Finance / Trading](categories/finance-trading.md) — 4 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 18 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 19 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 38 entries
 
 ### Secondary overlap categories
@@ -134,6 +134,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-mlx](https://github.com/trevin-creator/autoresearch-mlx) - Apple Silicon fork: ports Karpathy's autoresearch to MLX while keeping the fixed-time training budget, single mutable file, and git keep/revert loop.
 - [Claude Autoresearch](https://github.com/uditgoenka/autoresearch) - Claude Code skill: generalizes Karpathy's autoresearch into a reusable modify → verify → keep/discard loop for measurable goals beyond ML.
 - [claude-autoresearch](https://github.com/Maleick/claude-autoresearch) - Claude Code plugin: runs autoresearch on isolated branches with deterministic verification commands, scheduled overnight sessions, and structured keep/discard reports.
+- [lazy-developer](https://github.com/james-s-tayler/lazy-developer) - Claude Code plugin suite: runs repeated autoresearch phases across coverage, build speed, test speed, complexity, and performance goals while enforcing per-phase file locks and revert-on-regression behavior.
 - [codex-autoresearch](https://github.com/leo-lilinxiao/codex-autoresearch) - Codex skill: brings the autoresearch pattern to Codex for unattended metric-driven software iteration with automatic keep/discard decisions.
 - [autoresearch-plugin](https://github.com/AILAB-H/autoresearch-plugin) - Claude Code plugin: packages the Karpathy-style experiment loop into init/test/run commands for projects with explicit evaluation scripts and git rollback.
 - [Artificial General Research](https://github.com/JoaquinMulet/Artificial-General-Research) - Optimization framework: turns measurable code optimization tasks into autoresearch loops with variance-aware acceptance, artifact detection, and exhausted-approach tracking.
