@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 7 entries
+- [Scientific Research](categories/scientific-research.md) — 10 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 9 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 4 entries
-- [Finance / Trading](categories/finance-trading.md) — 5 entries
+- [Finance / Trading](categories/finance-trading.md) — 6 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 21 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 36 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 22 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 37 entries
 
 ### Secondary overlap categories
 
@@ -91,6 +91,9 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Tinker-Explorer](https://github.com/mohammed840/autoresearch-explorer) - Evidence-retrieval research: adapts the autoresearch pattern to GRPO document exploration, comparing reward designs and keeping only retrieval policies that answer multihop questions more accurately under a token budget.
 - [Autoresearch on an old research idea](https://ykumar.me/blog/eclip-autoresearch/) - Multimodal retrieval research: applies Claude Code autoresearch to an old eCLIP idea, running 42 fixed-budget experiments with commit/revert decisions and cutting mean rank from 344.68 to 157.43.
 - [autoresearch@home](https://ensue.dev/blog/autoresearch-at-home/) - Distributed ML research: coordinates agents that run 5-minute training experiments, publish results to shared memory, and collectively improve a language model across contributed GPUs.
+- [autoresearch-paper-benchmark](https://github.com/roth-andreas/autoresearch-paper-benchmark) - Graph ML research: runs paper-driven campaigns on a fixed Peptides-func benchmark by editing `train.py`, logging 300-second experiments, and testing only the best validation-AP model at campaign end.
+- [autoresearch-cifar10](https://github.com/GuillaumeErhard/autoresearch-cifar10) - Vision research: applies autoresearch to CIFAR-10 ResNet training on a 3090, iterating under fixed time budgets and keeping changes that lift accuracy beyond a 91.89% baseline.
+- [AutoResearch-GenPose](https://github.com/PeleWang/AutoResearch-GenPose) - Vision research: adapts autoresearch to CIFAR-10 UNet denoising by editing one training file, running fixed 5-minute experiments, and keeping only val_psnr improvements.
 
 ### Software / Systems Optimization
 
@@ -124,6 +127,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [autoresearch-trading](https://github.com/dietmarwo/autoresearch-trading) - Trading research: combines Karpathy-style autoresearch with classical optimization so the agent iterates on strategy structure while an optimizer tunes parameters and walk-forward validation decides what survives.
 - [BTCautoresearch](https://github.com/CBaquero/BTCautoresearch) - Bitcoin forecasting: uses Karpathy-style autoresearch to mutate a single formula file, score walk-forward out-of-sample RMSE, and keep only forecasting rules that beat the baseline power law.
 - [autoresearch-skfolio](https://github.com/CarloNicolini/autoresearch-skfolio) - Portfolio optimization: edits a single portfolio-research script, runs fixed out-of-sample validation across multiple datasets and reversed-return variants, and keeps only Deflated Sharpe Ratio gains.
+- [autoresearch-glm](https://github.com/statcafehk/autoresearch-glm) - Credit scoring: adapts autoresearch to Taiwan credit-default prediction by editing feature-policy code and keeping only validation AUC gains in a fixed logistic-GLM benchmark.
 
 ### Personal Knowledge / Humanities
 
@@ -156,6 +160,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [serverless-autoresearch](https://github.com/roboco-io/serverless-autoresearch) - SageMaker infrastructure: parallelizes Karpathy's autoresearch on Spot training jobs so the agent evaluates `train.py` candidates with HUGI-style burst compute instead of paying for idle GPUs.
 - [autoresearch-win-rtx](https://github.com/jsegov/autoresearch-win-rtx) - Windows GPU fork: ports Karpathy's single-file, 5-minute, val_bpb keep/discard loop to native Windows on consumer RTX GPUs.
 - [autoloop](https://github.com/armgabrielyan/autoloop) - Agent runtime: generalizes Karpathy's autoresearch into bounded repo-level loops with inferred eval commands, explicit guardrails, and keep/discard decisions across multiple coding agents.
+- [autoresearch-claude-code](https://github.com/drivelineresearch/autoresearch-claude-code) - Claude Code plugin: ports pi-autoresearch into a pure plugin skill with JSONL state, slash-command control, and autonomous keep/discard loops for arbitrary METRIC-based benchmarks.
 
 ### Related Practices / Discussions
 
@@ -214,6 +219,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Google hit: “Autoresearch-style framework for improving heuristics”](https://www.reddit.com/r/optimization/comments/1s3aohf/autoresearchstyle_framework_for_improving/) - Reddit: discussion thread about applying autoresearch-style benchmarked improvement loops to optimization heuristics under strict solver budgets.
 - [Google hit: HN thread on applying autoresearch to LLM inference](https://news.ycombinator.com/item?id=47538380) - Hacker News: discussion pointing to autoresearch-style ideas being adapted from model training to LLM inference optimization.
 - [AutoResearch vs Classical Hyperparameter Tuning](https://www.weco.ai/blog/autoresearch-vs-classical-hpo) - Blog: reports a NanoChat head-to-head where autoresearch beats Optuna on sample efficiency, cost-adjusted results, and longer-horizon generalization by escaping a fixed search space.
+- [Autoresearch Hub](https://news.ycombinator.com/item?id=47374572) - Hacker News: Karpathy describes an unreleased swarm design where trusted workers verify improvements from a larger untrusted pool to parallelize autoresearch with leaderboard-style proof of progress.
 
 ### Knowledge Base / RAG Preparation
 
