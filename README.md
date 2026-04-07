@@ -42,8 +42,8 @@ We do **not** include:
 ### Primary categories
 
 - [Scientific Research](categories/scientific-research.md) — 17 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 17 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 6 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 18 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 7 entries
 - [Finance / Trading](categories/finance-trading.md) — 9 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 26 entries
@@ -123,6 +123,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [How I used autoresearch to fix Gumroad's flaky tests in a week](https://gumroad.com/blog/p/how-i-used-autoresearch-to-fix-gumroad-s-flaky-tests-in-a-week) - Test reliability: uses OpenClaw autoresearch to run 206 commits and 94 CI cycles that fixed 13 flaky tests while surfacing a real file-ID remapping bug.
 - [WinMoE](https://github.com/idan82labs/WinMoE) - Windows inference optimization: uses an AI-driven autoresearch methodology with one-change measurements and keep-or-reject ledgers to lift Qwen3.5-397B throughput from 0.44 to 1.9 tok/s on consumer hardware.
 - [ZK Autoresearch — Plonky3 DFT Optimizer](https://github.com/Barnadrot/zk-autoresearch) - ZK prover optimization: applies Karpathy's autoresearch pattern to Plonky3's DFT code, running Rust tests plus Criterion benchmarks and keeping only commits that reduce `coset_lde_batch` time on BabyBear field workloads.
+- [autoresearch-go-ane](https://github.com/tmc/autoresearch-go-ane) - Apple Silicon training optimization: ports Karpathy's loop to a Go plus ANE LLM trainer, benchmarking fixed 5-minute TinyStories runs with `benchstat` and keeping only lower `val_loss` configurations.
 
 ### Evaluation / Red Teaming
 
@@ -134,6 +135,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [We Used Autoresearch on Our AI Skill, It Taught Us to Write Better Tests](https://langfuse.com/blog/2026-03-24-optimizing-ai-skill-with-autoresearch) - AI skill evaluation: runs a prompt-migration skill against six fixed codebase test cases, scores each change on correctness, completeness, and efficiency, and keeps only improvements while cherry-picking around harness overfit.
 - [AutoPrompter](https://github.com/gauravvij/AutoPrompter) - Prompt evaluation: combines promptfoo-style metrics with autoresearch-style closed-loop iteration, generating datasets, testing target models, and refining prompts through a persistent experiment ledger.
 - [AutonomousTester](https://github.com/executeautomation/autoresearch_playwright) - UI testing evaluation: adapts autoresearch to Playwright test generation by editing only `tests/test_suite.py`, measuring `coverage_score`, and auto-fixing or discarding test changes until coverage improves.
+- [Autoresearch for Agents from Scratch](https://github.com/rungalileo/autoresearch-for-agents) - Support-agent prompt evaluation: applies Karpathy's keep/revert loop to `system_prompt.md`, scoring frozen adversarial support cases by tool-call accuracy and lifting the prompt from 0.05 to 0.80 over 15 experiments.
 
 ### Finance / Trading
 
