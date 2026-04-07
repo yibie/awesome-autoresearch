@@ -11,3 +11,4 @@ Use this category for examples where autoresearch collects, structures, cleans, 
 ## Entries
 
 - [autoresearch-genealogy](https://github.com/mattprusak/autoresearch-genealogy) - Genealogy: uses Claude Code `/autoresearch` prompts to expand family trees, verify claims against multiple sources, and keep a structured evidence-backed research vault.
+- [AutoRAGsearch](https://github.com/Smasko7/AutoRAGsearch) - RAG retrieval optimization: applies an autoresearch-style loop to a fixed QA benchmark by editing only `rag_pipeline.py`, running local retrieval experiments, and improving retrieval_score from 0.9472 to 0.9867 over 20 autonomous experiments.

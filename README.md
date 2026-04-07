@@ -41,9 +41,9 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 15 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 15 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 4 entries
+- [Scientific Research](categories/scientific-research.md) — 16 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 16 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 5 entries
 - [Finance / Trading](categories/finance-trading.md) — 8 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 23 entries
@@ -51,7 +51,7 @@ We do **not** include:
 
 ### Secondary overlap categories
 
-- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 1 entry
+- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 1 entry
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 
@@ -99,6 +99,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Subtractive Search in a Mature Tabular Pipeline](https://github.com/jhamandeep/autoresearch-tabular-case-study) - Tabular ML research: applies Karpathy's autoresearch to a churn-prediction XGBoost pipeline, running 116 autonomous experiments and lifting subsample AUC from 0.902892 to 0.916721 largely by removing noisy target-encoded features.
 - [autoresearch-connect4](https://github.com/alessoh/autoresearch-connect4) - Game AI research: adapts Karpathy's three-file autoresearch loop to Connect Four by editing `train.py`, training 5-minute self-play runs, and keeping only changes that improve weighted win rate against fixed opponents.
 - [autoresearch-tabular](https://github.com/saikatkumardey/autoresearch-tabular) - Tabular ML research: adapts Karpathy's three-file loop to the Adult Income benchmark by editing only `train.py`, running fixed 2-minute experiments, and keeping only `val_auc` improvements.
+- [ocr-autoresearch](https://github.com/zhd36/ocr-autoresearch) - OCR research: adapts autoresearch to ICDAR2015 scene-text recognition by editing one `train.py`, running fixed 5-minute CRNN+CTC experiments, and keeping only lower validation character error rates.
 
 ### Software / Systems Optimization
 
@@ -119,6 +120,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [autoresearch-sudoku](https://github.com/Rkcr7/autoresearch-sudoku) - Solver optimization: uses an enhanced autoresearch loop to rewrite a Rust sudoku solver over 312 experiments and beat Tdoku plus rust_sudoku on 4 of 6 standard benchmark datasets.
 - [autospec](https://github.com/jeongph/autospec) - Backend service generation: applies an autoresearch-inspired keep-or-revert loop to natural-language business rules, iteratively building a Spring Boot service until Gradle and JUnit evaluation pass without regression.
 - [How I used autoresearch to fix Gumroad's flaky tests in a week](https://gumroad.com/blog/p/how-i-used-autoresearch-to-fix-gumroad-s-flaky-tests-in-a-week) - Test reliability: uses OpenClaw autoresearch to run 206 commits and 94 CI cycles that fixed 13 flaky tests while surfacing a real file-ID remapping bug.
+- [WinMoE](https://github.com/idan82labs/WinMoE) - Windows inference optimization: uses an AI-driven autoresearch methodology with one-change measurements and keep-or-reject ledgers to lift Qwen3.5-397B throughput from 0.44 to 1.9 tok/s on consumer hardware.
 
 ### Evaluation / Red Teaming
 
@@ -128,6 +130,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [autovoiceevals](https://github.com/ArchishmanSengupta/autovoiceevals) - Voice AI evaluation: attacks voice agents with adversarial callers, proposes prompt changes one at a time, and keeps or reverts them based on eval results.
 - [autoresearch-prompt-optimization](https://github.com/az9713/autoresearch-prompt-optimization) - Prompt evaluation: applies the autoresearch loop to a fixed extraction benchmark, iteratively editing one prompt and keeping only accuracy gains on the eval set.
 - [We Used Autoresearch on Our AI Skill, It Taught Us to Write Better Tests](https://langfuse.com/blog/2026-03-24-optimizing-ai-skill-with-autoresearch) - AI skill evaluation: runs a prompt-migration skill against six fixed codebase test cases, scores each change on correctness, completeness, and efficiency, and keeps only improvements while cherry-picking around harness overfit.
+- [AutoPrompter](https://github.com/gauravvij/AutoPrompter) - Prompt evaluation: combines promptfoo-style metrics with autoresearch-style closed-loop iteration, generating datasets, testing target models, and refining prompts through a persistent experiment ledger.
 
 ### Finance / Trading
 
@@ -240,6 +243,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 Source file: [`categories/knowledge-base-rag-preparation.md`](categories/knowledge-base-rag-preparation.md)
 
 - [autoresearch-genealogy](https://github.com/mattprusak/autoresearch-genealogy) - Genealogy: uses Claude Code `/autoresearch` prompts to expand family trees, verify claims against multiple sources, and keep a structured evidence-backed research vault.
+- [AutoRAGsearch](https://github.com/Smasko7/AutoRAGsearch) - RAG retrieval optimization: applies an autoresearch-style loop to a fixed QA benchmark by editing only `rag_pipeline.py`, running local retrieval experiments, and improving retrieval_score from 0.9472 to 0.9867 over 20 autonomous experiments.
 
 ### Market Research
 
