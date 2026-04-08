@@ -42,12 +42,12 @@ We do **not** include:
 ### Primary categories
 
 - [Scientific Research](categories/scientific-research.md) — 19 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 19 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 23 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 7 entries
-- [Finance / Trading](categories/finance-trading.md) — 9 entries
+- [Finance / Trading](categories/finance-trading.md) — 11 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 27 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 38 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 39 entries
 
 ### Secondary overlap categories
 
@@ -127,6 +127,10 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [ZK Autoresearch — Plonky3 DFT Optimizer](https://github.com/Barnadrot/zk-autoresearch) - ZK prover optimization: applies Karpathy's autoresearch pattern to Plonky3's DFT code, running Rust tests plus Criterion benchmarks and keeping only commits that reduce `coset_lde_batch` time on BabyBear field workloads.
 - [autoresearch-go-ane](https://github.com/tmc/autoresearch-go-ane) - Apple Silicon training optimization: ports Karpathy's loop to a Go plus ANE LLM trainer, benchmarking fixed 5-minute TinyStories runs with `benchstat` and keeping only lower `val_loss` configurations.
 - [openroad-autoresearch-ibex](https://github.com/maxjohannn/openroad-autoresearch-ibex) - Chip design optimization: applies a fixed-harness autoresearch loop to OpenROAD RTL-to-GDSII experiments on the IBEX CPU, using scout-promote screening and objective-aware history to keep only timing, area, or power improvements.
+- [OpenCLI](https://github.com/jackwener/opencli) - Browser automation reliability: adds a Karpathy-style autoresearch harness to OpenCLI, cycling review → modify → commit → verify → decide against fixed V2EX, Zhihu, browser, and save-as-CLI eval suites to keep only reliability improvements.
+- [autoresearch-cublas-sam3](https://github.com/rexlee2/autoresearch-cublas-sam3) - GPU kernel optimization: applies an autoresearch loop to SAM3 GEMM tuning by mutating one config at a time, benchmarking on real GPUs, and keeping only changes that improved throughput by 2.14% over 120 experiments on an RTX 3090.
+- [autoresearch-mamba](https://github.com/continualm/autoresearch-mamba) - Mamba training optimization: adapts Karpathy's fixed-evaluator, 5-minute keep/discard loop to MLX Mamba-2, Mamba-3, and hybrid Mamba-Transformer models on Apple Silicon by mutating one training surface to lower `val_bpb`.
+- [english-app](https://github.com/shitada/english-app) - Education app optimization: applies an autoresearch-inspired proposer → implement → test → evaluate → keep/discard loop to an English learning app, using pytest, TypeScript checks, and smoke tests to keep only changes scoring at least 6.0 across 10 autonomous iterations.
 
 ### Evaluation / Red Teaming
 
@@ -153,6 +157,8 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [autoresearch-markets](https://github.com/JohnJBoren/autoresearch-markets) - Prediction-market trading research: adapts Karpathy's single-file keep/revert loop to Kalshi data, editing `train.py` and optimizing `val_logloss` on held-out resolved markets.
 - [Simmer Autoresearch](https://docs.simmer.markets/plugins/autoresearch) - Prediction-market trading: lets agents mutate skill configs, measure P&L or edge over live trading cycles or historical replays, and auto-commit only the configurations that improve results.
 - [Autonomous Trading Strategy Research](https://github.com/Junghwan-Oh/autoresearch-trading) - Crypto trading research: adapts Karpathy's single-file autoresearch loop to Hyperliquid perpetual futures, backtesting each `strategy.py` change on fixed historical data and keeping only score improvements across 103 autonomous experiments.
+- [PolyEdge AutoResearch](https://github.com/muze-ai-consulting/polyedge-autoresearch) - Prediction-market arbitrage: applies a Karpathy-style keep/discard loop to Polymarket Up/Down paper trading, mutating one strategy parameter at a time and scoring each multi-window run on P&L, fill rate, and trading frequency.
+- [AutoResearch — Autonomous DEX Strategy Discovery](https://github.com/darks0l/autoresearch) - DEX trading research: applies Karpathy-style autoresearch to Base DEX strategies, backtesting one mutation at a time against real Uniswap V3 and Aerodrome data and lifting composite score from 0.421 to 8.176 over 230+ experiments.
 
 ### Personal Knowledge / Humanities
 
@@ -213,6 +219,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Ali Amiri on matching Claude Code quality by optimizing prompts with AutoResearch](https://x.com/iampatten/status/2038755598981038193) - X: describes using AutoResearch to tune prompts and push a Qwen-based workflow from weak to strong performance on a large-repo task.
 - [Ren on benchmark-driven skill optimization with autoresearch](https://x.com/liliIiiI1I7/status/2038528225916424395) - X: Chinese discussion noting that autoresearch can be paired with skill creation so agents define a benchmark and then iteratively optimize the skill against it.
 - [Aakash Gupta on porting autoresearch to prompt engineering](https://x.com/aakashgupta/status/2038132294817656978) - X: describes mapping autoresearch into a four-role prompt-optimization loop with a locked eval script, binary rubric, results log, and overnight iteration.
+- [SonnyClawAI on adversarial second-pass evals in autoresearch](https://x.com/SonnyClawAI/status/2041657267766894777) - X: reports that a 4-hour write → eval → revise → measure loop only surfaced real failures after adding a second adversarial evaluation pass, making evaluator disagreement itself the useful signal.
 
 ### Software / code workflows
 
@@ -231,7 +238,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Google hit: “I adapted Karpathy's autoresearch to build an auto-improvement loop for agentic coding skills”](https://www.reddit.com/r/ClaudeAI/comments/1s3feaa/i_adapted_karpathys_autoresearch_to_build_an/) - Reddit: discussion thread about applying the autoresearch loop to iterative improvement of coding-agent skills.
 - [vdaubry on generalizing autoresearch beyond codebases](https://x.com/vdaubry/status/2033530230011216065) - X: argues that the core autoresearch pattern can generalize from code optimization to load testing, landing page A/B tests, and infrastructure tuning when the benchmark is clear.
 - [Alex C. on turning autoresearch into a bounded debugging loop skill](https://x.com/alexcovo_eth/status/2030899247470567534) - X: describes deriving a bounded-experiment-loop skill from autoresearch and using it to improve agent debugging and code fixing.
-- [jakevin7 on an OpenCLI autoresearch framework](https://x.com/jakevin7/status/2040869645373387063) - X: describes a concrete OpenCLI loop that runs tests, makes one atomic Claude Code change, verifies or rolls back, and reports 56/59 operate tasks plus 26/26 save-as-CLI tasks across 194 deterministic evaluations.
+- [kavindpadi on using pi-autoresearch for SQL optimization](https://x.com/kavindpadi/status/2041727544530235899) - X: describes trying pi-autoresearch on intentionally inefficient BigQuery SQL and suggests the same metric-driven loop can target top-cost warehouse queries under platform-specific pricing constraints.
 
 ### Scientific / research augmentation
 
