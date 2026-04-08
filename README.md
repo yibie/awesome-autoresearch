@@ -41,19 +41,19 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 19 entries
+- [Scientific Research](categories/scientific-research.md) — 20 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 23 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 7 entries
 - [Finance / Trading](categories/finance-trading.md) — 11 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 27 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 39 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 40 entries
 
 ### Secondary overlap categories
 
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 1 entry
-- [Workflow Automation](categories/workflow-automation.md) — 4 entries
+- [Workflow Automation](categories/workflow-automation.md) — 5 entries
 
 ### Open categories still being tracked
 
@@ -103,6 +103,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Tennis XGBoost Autoresearch](https://github.com/buildoak/tennis-xgboost-autoresearch) - Sports analytics research: applies a Karpathy-style keep/revert loop to a 245K-match tennis XGBoost pipeline, then hardens the evaluator after the agent learned to game mutable ROC-AUC scoring.
 - [Bio-Autoresearch](https://github.com/monk1337/Bio-Autoresearch) - Drug discovery research: applies a Karpathy-style autoresearch loop to rare-disease drug repurposing on PrimeKG, running 15 GPU experiments with keep/revert decisions and lifting held-out per-disease AUPRC from 0.284 to 0.761.
 - [autoresearch-quantum](https://github.com/saymrwulf/autoresearch-quantum) - Quantum research: runs incumbent/challenger autoresearch ratchets for encoded magic-state experiments, screens candidates on cheap noisy simulations, and promotes only justified challengers to expensive backends while logging transferable lessons.
+- [kaggle-autoresearch](https://github.com/aplassard/kaggle-autoresearch) - Tabular ML research: adapts Karpathy-style autoresearch to Kaggle competitions such as Titanic, House Prices, and Store Sales by iterating on feature and model code, logging approved baselines, and accepting only cross-validation improvements over fixed thresholds.
 
 ### Software / Systems Optimization
 
@@ -220,6 +221,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Ren on benchmark-driven skill optimization with autoresearch](https://x.com/liliIiiI1I7/status/2038528225916424395) - X: Chinese discussion noting that autoresearch can be paired with skill creation so agents define a benchmark and then iteratively optimize the skill against it.
 - [Aakash Gupta on porting autoresearch to prompt engineering](https://x.com/aakashgupta/status/2038132294817656978) - X: describes mapping autoresearch into a four-role prompt-optimization loop with a locked eval script, binary rubric, results log, and overnight iteration.
 - [SonnyClawAI on adversarial second-pass evals in autoresearch](https://x.com/SonnyClawAI/status/2041657267766894777) - X: reports that a 4-hour write → eval → revise → measure loop only surfaced real failures after adding a second adversarial evaluation pass, making evaluator disagreement itself the useful signal.
+- [vincent_dalmaso on treating skills like products with autoresearch](https://x.com/vincent_dalmaso/status/2041786712834105484) - X: describes running an autoresearch-skill loop with a baseline, one change at a time, and score-based keep decisions to improve skill behavior instead of rewriting prompts blindly.
 
 ### Software / code workflows
 
@@ -280,6 +282,7 @@ Source file: [`categories/workflow-automation.md`](categories/workflow-automatio
 - [Claudini](https://github.com/romovpa/claudini) - AI safety research: uses an autoresearch-style loop to invent and benchmark new LLM attack algorithms, keeping only methods that outperform baselines.
 - [AutoKernel](https://github.com/RightNow-AI/autokernel) - GPU optimization: applies Karpathy-style autoresearch to kernel bottlenecks, iterating on code, benchmarking, and keeping only changes that improve speed without breaking correctness.
 - [autovoiceevals](https://github.com/ArchishmanSengupta/autovoiceevals) - Voice AI evaluation: attacks voice agents with adversarial callers, proposes prompt changes one at a time, and keeps or reverts them based on eval results.
+- [PM document optimizer](https://github.com/lifang-mban/pm-document-optimizer) - Product workflow automation: applies a Karpathy-style git ratchet to markdown artifacts like PRDs and strategy docs, scoring each draft with programmatic checks and committing only higher-scoring revisions.
 
 ## Submission format
 
