@@ -46,8 +46,8 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 11 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 33 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 41 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 35 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 44 entries
 
 ### Secondary overlap categories
 
@@ -191,6 +191,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-autoresearch](https://github.com/cavit99/autoresearch-autoresearch) - Meta-autoresearch repo: maintains a portable canonical loop distilled from karpathy/autoresearch and adjacent systems so new evidence can update a reusable agent-verifier architecture across domains.
 - [Bilevel Autoresearch](https://github.com/EdwardOptimization/Bilevel-Autoresearch) - Meta-autoresearch framework: adds outer loops that rewrite autoresearch search mechanisms themselves and reports multi-run gains on Karpathy's training benchmark.
 - [SkyPilot parallel autoresearch](https://blog.skypilot.co/scaling-autoresearch/) - GPU infrastructure: gives Karpathy's autoresearch access to 16 GPUs so the agent can run parallel experiment waves, validate winners on faster hardware, and reach about 910 runs in about 8 hours.
+- [Autoresearch on Red Hat OpenShift AI](https://developers.redhat.com/articles/2026/04/07/autoresearch-on-red-hat-openshift-ai-198-experiments-zero-intervention) - Kubernetes ML infrastructure: runs Karpathy's autoresearch as a 24-hour OpenShift AI workload, packaging nanochat into containers that logged 198 experiments and improved validation loss by 2.3% without human intervention.
 - [serverless-autoresearch](https://github.com/roboco-io/serverless-autoresearch) - SageMaker infrastructure: parallelizes Karpathy's autoresearch on Spot training jobs so the agent evaluates `train.py` candidates with HUGI-style burst compute instead of paying for idle GPUs.
 - [autoresearch-win-rtx](https://github.com/jsegov/autoresearch-win-rtx) - Windows GPU fork: ports Karpathy's single-file, 5-minute, val_bpb keep/discard loop to native Windows on consumer RTX GPUs.
 - [autoloop](https://github.com/armgabrielyan/autoloop) - Agent runtime: generalizes Karpathy's autoresearch into bounded repo-level loops with inferred eval commands, explicit guardrails, and keep/discard decisions across multiple coding agents.
@@ -206,6 +207,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Skill Forge v2](https://github.com/GodModeAI2025/skill-forge) - Skill and code optimization framework: adapts Karpathy's autoresearch to `SKILL.md` files and generic codebases, using dry-run validation, objective deltas, and keep/revert thresholds to steer autonomous or guided experiment loops.
 - [autoimprove-cc](https://github.com/VoidLight00/autoimprove-cc) - Claude Code skill optimizer: applies a Karpathy-style autoresearch loop to `SKILL.md`, scoring binary assertions from `eval.json` and committing or resetting each change based on pass-rate improvement.
 - [ehmo/autoresearch-skill](https://github.com/ehmo/autoresearch-skill) - Claude Code and Codex skill: generalizes autoresearch into clean-room red, green, and refactor teams that iteratively find issues, fix them under test, and simplify code on a feature branch while the coordinator keeps only verified progress.
+- [ResearcherSkill](https://github.com/krzysztofdudek/ResearcherSkill) - Claude Code and Codex skill: generalizes autoresearch into git-backed `.lab/` sessions with branching experiment trees, convergence detection, and commit/revert control, improving Yggdrasil agent rules from 1.82 to 7.04 in a published loop.
 
 ### Related Practices / Discussions
 
@@ -225,6 +227,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 ### Prompt / evaluation
 
 - [Aakash Gupta on eval design as the make-or-break constraint in autoresearch](https://x.com/aakashgupta/status/2039204610569544027) - X: argues that autoresearch only transfers cleanly when the evaluator is binary, locked, compact, and specific enough to resist gaming.
+- [How to stop your autoresearch loop from cheating](https://www.cerebras.ai/blog/how-to-stop-your-autoresearch-loop-from-cheating) - Blog: reports 71 autoresearch experiments across training optimization and model compression, showing loops drift within hours unless evaluation is strict, experiments are isolated, and metrics block shortcut gains.
 - [Ali Amiri on matching Claude Code quality by optimizing prompts with AutoResearch](https://x.com/iampatten/status/2038755598981038193) - X: describes using AutoResearch to tune prompts and push a Qwen-based workflow from weak to strong performance on a large-repo task.
 - [Ren on benchmark-driven skill optimization with autoresearch](https://x.com/liliIiiI1I7/status/2038528225916424395) - X: Chinese discussion noting that autoresearch can be paired with skill creation so agents define a benchmark and then iteratively optimize the skill against it.
 - [Aakash Gupta on porting autoresearch to prompt engineering](https://x.com/aakashgupta/status/2038132294817656978) - X: describes mapping autoresearch into a four-role prompt-optimization loop with a locked eval script, binary rubric, results log, and overnight iteration.
@@ -242,6 +245,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Shann Holmberg on setting up autoresearch with Claude Code](https://x.com/shannholmberg/status/2038282051225608613) - X: tutorial thread that frames autoresearch as one file, one metric, and autonomous keep/revert looping inside Claude Code.
 - [Bob on autoresearch wasting 11 days on a solved benchmark](https://x.com/TimeToBuildBob/status/2039204620774314504) - X: highlights that a loop can stay mechanically healthy yet keep burning compute after metric saturation if it lacks usefulness-aware stop criteria.
 - [Doğaç on GPU-kernel autoresearch needing human nudges and repeated validation](https://x.com/dogacel0/status/2037933914879058095) - X: argues that human steering and rerunning experiments help autoresearch escape local minima and debunk noisy wins in kernel optimization.
+- [Isaac Kargar on using autoresearch to improve another AI agent](https://x.com/kargarisaac/status/2042312695408722417) - X: reports giving Claude Code one agent's codebase, running 24 keep/discard experiments, improving memory quality by 41%, and later refactoring after the loop showed the original bottleneck hypothesis was wrong.
+- [hopechong on adding a literature-review phase to autoresearch for llama.cpp](https://news.ycombinator.com/item?id=47706142) - Hacker News: describes extending Karpathy's autoresearch with paper reading, competing-fork study, and parallel VM experiments before code edits, landing five kernel fusions and about 15% faster x86 flash-attention generation on llama.cpp.
 - [Google hit: “Karpathy's autoresearch applied to debugging”](https://www.reddit.com/r/ClaudeAI/comments/1rvbhk3/karpathys_autoresearch_applied_to_debugging_two/) - Reddit: discussion thread about adapting the autoresearch pattern to debugging and validation-driven repair loops.
 - [Google hit: “Autoresearch with Claude on a real codebase (not ML)”](https://www.reddit.com/r/ClaudeAI/comments/1s22f7d/autoresearch_with_claude_on_a_real_codebase_not/) - Reddit: discussion thread about applying the autoresearch pattern to a production codebase rather than an ML training script.
 - [Google hit: “I used Karpathy's autoresearch pattern on product workflows”](https://www.reddit.com/r/ClaudeCode/comments/1s2e8ny/i_used_karpathys_autoresearch_pattern_on_product/) - Reddit: discussion thread suggesting the autoresearch loop is being adapted into broader product and self-improving agent workflows.
