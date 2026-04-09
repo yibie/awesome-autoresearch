@@ -46,7 +46,7 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 11 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 28 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 30 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 41 entries
 
 ### Secondary overlap categories
@@ -201,6 +201,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-automl](https://github.com/ferreirafabio/autoresearch-automl) - Benchmarking research: compares nine classical, LLM-based, and hybrid optimizers on Karpathy's nanochat task under a shared 24-hour budget, showing code-editing autoresearch is competitive but fixed-space classical HPO still wins.
 - [autoresearch-anycloud](https://github.com/abcdedf/autoresearch-anycloud) - Cloud GPU infrastructure: wraps Karpathy's autoresearch in a unified Mac and cloud runner with platform setup, budget watchdogs, result collection, and automatic teardown across AWS, GCP, Azure, and OCI.
 - [skill-autoresearch for Hermes Agent](https://github.com/domvox/hermes-skills/tree/main/skill-autoresearch) - Hermes skill: optimizes prompts, scripts, and validators through baseline → diagnose → patch → re-evaluate → keep/revert loops with dependency checks and conservative holdout rules.
+- [autoresearch-anything](https://github.com/grandamenium/autoresearch-anything) - Claude Code skill: scaffolds Karpathy-style autoresearch pipelines for measurable business metrics by generating connectors, persistence setup, and deploy → measure → keep/discard loops around API-observable outcomes.
+- [AutoSkill](https://github.com/cgraves09/autoskill) - Skill prompt optimization framework: applies Karpathy's keep/revert loop to `SKILL.md`, mutating one prompt at a time against test cases and improving an auto-reminder skill from 45% to 90% reliability over 60+ autonomous iterations.
 
 ### Related Practices / Discussions
 
