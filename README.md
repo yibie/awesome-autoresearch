@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 21 entries
+- [Scientific Research](categories/scientific-research.md) — 22 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 25 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 11 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 35 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 44 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 36 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 45 entries
 
 ### Secondary overlap categories
 
@@ -94,6 +94,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-paper-benchmark](https://github.com/roth-andreas/autoresearch-paper-benchmark) - Graph ML research: runs paper-driven campaigns on a fixed Peptides-func benchmark by editing `train.py`, logging 300-second experiments, and testing only the best validation-AP model at campaign end.
 - [autoresearch-cifar10](https://github.com/GuillaumeErhard/autoresearch-cifar10) - Vision research: applies autoresearch to CIFAR-10 ResNet training on a 3090, iterating under fixed time budgets and keeping changes that lift accuracy beyond a 91.89% baseline.
 - [AutoResearch-GenPose](https://github.com/PeleWang/AutoResearch-GenPose) - Vision research: adapts autoresearch to CIFAR-10 UNet denoising by editing one training file, running fixed 5-minute experiments, and keeping only val_psnr improvements.
+- [MLP-AutoResearch](https://github.com/HuangShengZeBlueSky/MLP_AutoResearch) - MNIST training research: ports Karpathy's single-file loop to an MLP classifier, fixing 20-epoch runs and greedy keep/revert decisions that raised handwritten-digit accuracy from 0.9809 to 0.9836.
 - [autoresearch-medimage](https://github.com/mattlungrenmd/autoresearch-medimage) - Medical imaging research: adapts Karpathy's `prepare.py` + `train.py` + `results.tsv` loop to 2D imaging tasks, using short-budget candidate discovery and staged follow-up validation to surface stronger ChestXray14 models.
 - [fe-autoresearch](https://github.com/ezemriv/fe-autoresearch) - Tabular ML research: applies the autoresearch loop to LightGBM feature engineering on the UCI Bank Marketing dataset by editing one `engineer_features()` target, training against fixed AUC metrics, and keeping only improvements.
 - [Paper Lantern improves Autoresearch](https://www.paperlantern.ai/blog/auto-research-case-study) - ML research augmentation: connects a 2M-paper MCP server to autoresearch, letting the agent cite 100 papers across 100 experiments and reach a 3.2% lower 2-hour validation loss than the same run without paper access.
@@ -196,6 +197,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autoresearch on Red Hat OpenShift AI](https://developers.redhat.com/articles/2026/04/07/autoresearch-on-red-hat-openshift-ai-198-experiments-zero-intervention) - Kubernetes ML infrastructure: runs Karpathy's autoresearch as a 24-hour OpenShift AI workload, packaging nanochat into containers that logged 198 experiments and improved validation loss by 2.3% without human intervention.
 - [serverless-autoresearch](https://github.com/roboco-io/serverless-autoresearch) - SageMaker infrastructure: parallelizes Karpathy's autoresearch on Spot training jobs so the agent evaluates `train.py` candidates with HUGI-style burst compute instead of paying for idle GPUs.
 - [autoresearch-win-rtx](https://github.com/jsegov/autoresearch-win-rtx) - Windows GPU fork: ports Karpathy's single-file, 5-minute, val_bpb keep/discard loop to native Windows on consumer RTX GPUs.
+- [autoresearch-amd](https://github.com/johnmcmullan/autoresearch-amd) - AMD GPU fork: ports Karpathy's single-file, 5-minute val_bpb keep/discard loop to ROCm by replacing Flash Attention 3 with portable SDPA for RDNA 4 cards.
 - [autoloop](https://github.com/armgabrielyan/autoloop) - Agent runtime: generalizes Karpathy's autoresearch into bounded repo-level loops with inferred eval commands, explicit guardrails, and keep/discard decisions across multiple coding agents.
 - [autoresearch-claude-code](https://github.com/drivelineresearch/autoresearch-claude-code) - Claude Code plugin: ports pi-autoresearch into a pure plugin skill with JSONL state, slash-command control, and autonomous keep/discard loops for arbitrary METRIC-based benchmarks.
 - [autoresearch-benchmark](https://github.com/suzuke/autoresearch-benchmark) - Benchmarking infrastructure: compares four autoresearch-style tools on the same sorting-throughput task and records both performance gains and iteration behavior under a shared setup.
@@ -248,6 +250,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Shann Holmberg on setting up autoresearch with Claude Code](https://x.com/shannholmberg/status/2038282051225608613) - X: tutorial thread that frames autoresearch as one file, one metric, and autonomous keep/revert looping inside Claude Code.
 - [Bob on autoresearch wasting 11 days on a solved benchmark](https://x.com/TimeToBuildBob/status/2039204620774314504) - X: highlights that a loop can stay mechanically healthy yet keep burning compute after metric saturation if it lacks usefulness-aware stop criteria.
 - [Doğaç on GPU-kernel autoresearch needing human nudges and repeated validation](https://x.com/dogacel0/status/2037933914879058095) - X: argues that human steering and rerunning experiments help autoresearch escape local minima and debunk noisy wins in kernel optimization.
+- [Barna on model exhaustion signals in zk-autoresearch](https://x.com/realbarnakiss/status/2042244046651793832) - X: reports that once Sonnet kept circling previously eliminated NTT ideas in the iteration memory, he treated that repetition as an exhaustion signal and switched models.
 - [Isaac Kargar on using autoresearch to improve another AI agent](https://x.com/kargarisaac/status/2042312695408722417) - X: reports giving Claude Code one agent's codebase, running 24 keep/discard experiments, improving memory quality by 41%, and later refactoring after the loop showed the original bottleneck hypothesis was wrong.
 - [Google hit: “Karpathy's autoresearch applied to debugging”](https://www.reddit.com/r/ClaudeAI/comments/1rvbhk3/karpathys_autoresearch_applied_to_debugging_two/) - Reddit: discussion thread about adapting the autoresearch pattern to debugging and validation-driven repair loops.
 - [Google hit: “Autoresearch with Claude on a real codebase (not ML)”](https://www.reddit.com/r/ClaudeAI/comments/1s22f7d/autoresearch_with_claude_on_a_real_codebase_not/) - Reddit: discussion thread about applying the autoresearch pattern to a production codebase rather than an ML training script.
