@@ -46,7 +46,7 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 11 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 36 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 37 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 45 entries
 
 ### Secondary overlap categories
@@ -209,6 +209,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [skill-autoresearch for Hermes Agent](https://github.com/domvox/hermes-skills/tree/main/skill-autoresearch) - Hermes skill: optimizes prompts, scripts, and validators through baseline → diagnose → patch → re-evaluate → keep/revert loops with dependency checks and conservative holdout rules.
 - [autoresearch-anything](https://github.com/grandamenium/autoresearch-anything) - Claude Code skill: scaffolds Karpathy-style autoresearch pipelines for measurable business metrics by generating connectors, persistence setup, and deploy → measure → keep/discard loops around API-observable outcomes.
 - [AutoSkill](https://github.com/cgraves09/autoskill) - Skill prompt optimization framework: applies Karpathy's keep/revert loop to `SKILL.md`, mutating one prompt at a time against test cases and improving an auto-reminder skill from 45% to 90% reliability over 60+ autonomous iterations.
+- [EvoSkill](https://github.com/sentient-agi/EvoSkill) - Skill-evolution framework: analyzes failed coding-agent trajectories, proposes skill or prompt changes, evaluates them against benchmarks, and keeps only better agent variants in a Karpathy-style self-improvement loop.
 - [Skill Forge v2](https://github.com/GodModeAI2025/skill-forge) - Skill and code optimization framework: adapts Karpathy's autoresearch to `SKILL.md` files and generic codebases, using dry-run validation, objective deltas, and keep/revert thresholds to steer autonomous or guided experiment loops.
 - [autoimprove-cc](https://github.com/VoidLight00/autoimprove-cc) - Claude Code skill optimizer: applies a Karpathy-style autoresearch loop to `SKILL.md`, scoring binary assertions from `eval.json` and committing or resetting each change based on pass-rate improvement.
 - [ehmo/autoresearch-skill](https://github.com/ehmo/autoresearch-skill) - Claude Code and Codex skill: generalizes autoresearch into clean-room red, green, and refactor teams that iteratively find issues, fix them under test, and simplify code on a feature branch while the coordinator keeps only verified progress.
