@@ -46,7 +46,7 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 11 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 37 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 39 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 45 entries
 
 ### Secondary overlap categories
@@ -184,6 +184,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [claude-autoresearch](https://github.com/Maleick/claude-autoresearch) - Claude Code plugin: runs autoresearch on isolated branches with deterministic verification commands, scheduled overnight sessions, and structured keep/discard reports.
 - [lazy-developer](https://github.com/james-s-tayler/lazy-developer) - Claude Code plugin suite: runs repeated autoresearch phases across coverage, build speed, test speed, complexity, and performance goals while enforcing per-phase file locks and revert-on-regression behavior.
 - [codex-autoresearch](https://github.com/leo-lilinxiao/codex-autoresearch) - Codex skill: brings the autoresearch pattern to Codex for unattended metric-driven software iteration with automatic keep/discard decisions.
+- [gemini-autoresearch](https://github.com/supratikpm/gemini-autoresearch) - Gemini CLI and Antigravity skill: runs goal-driven overnight improvement loops with verify and guard gates, keeping metric wins and automatically reverting regressions.
 - [autoresearch-plugin](https://github.com/AILAB-H/autoresearch-plugin) - Claude Code plugin: packages the Karpathy-style experiment loop into init/test/run commands for projects with explicit evaluation scripts and git rollback.
 - [Artificial General Research](https://github.com/JoaquinMulet/Artificial-General-Research) - Optimization framework: turns measurable code optimization tasks into autoresearch loops with variance-aware acceptance, artifact detection, and exhausted-approach tracking.
 - [autoresearch-engram](https://github.com/tonitangpotato/autoresearch-engram) - Memory extension: adds persistent recall, pattern extraction, and reflection steps to Karpathy's autoresearch so the agent remembers what worked across long runs.
@@ -195,6 +196,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-autoresearch](https://github.com/cavit99/autoresearch-autoresearch) - Meta-autoresearch repo: maintains a portable canonical loop distilled from karpathy/autoresearch and adjacent systems so new evidence can update a reusable agent-verifier architecture across domains.
 - [Bilevel Autoresearch](https://github.com/EdwardOptimization/Bilevel-Autoresearch) - Meta-autoresearch framework: adds outer loops that rewrite autoresearch search mechanisms themselves and reports multi-run gains on Karpathy's training benchmark.
 - [SkyPilot parallel autoresearch](https://blog.skypilot.co/scaling-autoresearch/) - GPU infrastructure: gives Karpathy's autoresearch access to 16 GPUs so the agent can run parallel experiment waves, validate winners on faster hardware, and reach about 910 runs in about 8 hours.
+- [autoresearch_deeplake_swarm](https://github.com/activeloopai/autoresearch_deeplake_swarm) - Cloud swarm infrastructure: extends Karpathy's loop with Modal-powered parallel workers and a shared Deeplake experiment notebook so multiple agents can explore `train.py` concurrently and surface only the best surviving commits.
 - [Autoresearch on Red Hat OpenShift AI](https://developers.redhat.com/articles/2026/04/07/autoresearch-on-red-hat-openshift-ai-198-experiments-zero-intervention) - Kubernetes ML infrastructure: runs Karpathy's autoresearch as a 24-hour OpenShift AI workload, packaging nanochat into containers that logged 198 experiments and improved validation loss by 2.3% without human intervention.
 - [serverless-autoresearch](https://github.com/roboco-io/serverless-autoresearch) - SageMaker infrastructure: parallelizes Karpathy's autoresearch on Spot training jobs so the agent evaluates `train.py` candidates with HUGI-style burst compute instead of paying for idle GPUs.
 - [autoresearch-win-rtx](https://github.com/jsegov/autoresearch-win-rtx) - Windows GPU fork: ports Karpathy's single-file, 5-minute, val_bpb keep/discard loop to native Windows on consumer RTX GPUs.
