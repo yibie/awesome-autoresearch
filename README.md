@@ -42,12 +42,12 @@ We do **not** include:
 ### Primary categories
 
 - [Scientific Research](categories/scientific-research.md) — 24 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 29 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 30 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 12 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 40 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 48 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 50 entries
 
 ### Secondary overlap categories
 
@@ -142,6 +142,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Speed up code with pi-autoresearch](https://quanttype.net/p/speed-up-code-with-pi-autoresearch/) - Software performance optimization: applies pi-autoresearch to jsonista's JSON decoding benchmark, keeping only measured wins and lifting one selected benchmark's throughput by 56% while surfacing overfitting risks in accepted diffs.
 - [588x Faster SQLite Ingestion With an Autoresearch Loop](https://www.luiscolunga.com/posts/autoresearch-etl-optimization/) - ETL performance optimization: applies pi-autoresearch to a Python financial-data ingestion pipeline, benchmarking 50,000-row SQLite writes and keeping fixes that cut processing time from about 397s to 0.675s.
 - [nnmetal + labrat](https://github.com/duanebester/nnzap) - Apple Silicon inference optimization: uses an autonomous Zig and Metal autoresearch loop that snapshots engine files, makes one kernel change at a time, runs compile, test, and benchmark gates, and commits only throughput or latency wins above a fixed threshold.
+- [HashSmith, Part 3: I Automated My Way to a 27% Faster Hash Table](https://bluuewhale.github.io/posts/i-automated-my-way-to-a-27-percent-faster-hash-table/) - Data-structure performance optimization: uses a Claude Code auto-optimize loop to profile, benchmark, and keep only wins on a JVM SwissTable implementation, landing three accepted changes and 13%-32% gains across eight benchmark scenarios.
 
 ### Evaluation / Red Teaming
 
@@ -274,6 +275,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [vdaubry on generalizing autoresearch beyond codebases](https://x.com/vdaubry/status/2033530230011216065) - X: argues that the core autoresearch pattern can generalize from code optimization to load testing, landing page A/B tests, and infrastructure tuning when the benchmark is clear.
 - [Alex C. on turning autoresearch into a bounded debugging loop skill](https://x.com/alexcovo_eth/status/2030899247470567534) - X: describes deriving a bounded-experiment-loop skill from autoresearch and using it to improve agent debugging and code fixing.
 - [kavindpadi on using pi-autoresearch for SQL optimization](https://x.com/kavindpadi/status/2041727544530235899) - X: describes trying pi-autoresearch on intentionally inefficient BigQuery SQL and suggests the same metric-driven loop can target top-cost warehouse queries under platform-specific pricing constraints.
+- [Kr1sso on turning Instruments into a teammate for autoresearch](https://x.com/Kr1sso/status/2043272598759354839) - X: describes turning macOS Instruments into an LLM-ready profiling CLI so autoresearch loops can test CPU, Metal GPU, and memory hypotheses and keep or discard optimizations from trace data.
 
 ### Scientific / research augmentation
 
@@ -285,6 +287,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Dan Woods on using autoresearch plus Apple's "LLM in a Flash" to run Qwen3.5-397B locally](https://x.com/danveloper/status/2033940227736100873) - X: says Claude Code used Karpathy's autoresearch setup plus Apple's "LLM in a Flash" paper to get Qwen3.5-397B running on a 48 GB M3 Max MacBook.
 - [Joe Harris on building the same autoresearch idea for robotics teams](https://x.com/_joe_harris_/status/2030803838501073026) - X: claims his team built an analogous loop for robotics teams to automate experiment plumbing, debugging, and iteration around harder physical-world workflows.
 - [David Gasquez on using the autoresearch idea in ML competitions](https://x.com/davidgasquez/status/2030946939836022886) - X: says the benchmark-driven autoresearch pattern worked in a couple of ML competition settings and generalizes to scored tasks like retrieval, AUC, and performance tuning.
+- [seldon213dz on autoresearching an agent memory system with LongMemEval](https://x.com/seldon213dz/status/2043357593184186583) - X: says he applied Karpathy's autoresearch to have an agent improve its own memory harness against the LongMemEval benchmark with an independent evaluator, while noting likely overfitting and plans to publish code.
 
 ### Infra / benchmarking ideas
 
