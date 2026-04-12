@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 23 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 25 entries
+- [Scientific Research](categories/scientific-research.md) — 24 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 26 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 12 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 40 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 45 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 47 entries
 
 ### Secondary overlap categories
 
@@ -107,6 +107,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Bio-Autoresearch](https://github.com/monk1337/Bio-Autoresearch) - Drug discovery research: applies a Karpathy-style autoresearch loop to rare-disease drug repurposing on PrimeKG, running 15 GPU experiments with keep/revert decisions and lifting held-out per-disease AUPRC from 0.284 to 0.761.
 - [autoresearch-quantum](https://github.com/saymrwulf/autoresearch-quantum) - Quantum research: runs incumbent/challenger autoresearch ratchets for encoded magic-state experiments, screens candidates on cheap noisy simulations, and promotes only justified challengers to expensive backends while logging transferable lessons.
 - [kaggle-autoresearch](https://github.com/aplassard/kaggle-autoresearch) - Tabular ML research: adapts Karpathy-style autoresearch to Kaggle competitions such as Titanic, House Prices, and Store Sales by iterating on feature and model code, logging approved baselines, and accepting only cross-validation improvements over fixed thresholds.
+- [MiniMax M2.7: Early Echoes of Self-Evolution](https://www.minimax.io/news/minimax-m27-en) - AI-lab research: describes an internal research agent that automates 30%-50% of RL workflow and a 100+ round keep/revert scaffold-optimization loop that improved internal evaluation scores by 30%.
 
 ### Software / Systems Optimization
 
@@ -137,6 +138,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [autoresearch-mamba](https://github.com/continualm/autoresearch-mamba) - Mamba training optimization: adapts Karpathy's fixed-evaluator, 5-minute keep/discard loop to MLX Mamba-2, Mamba-3, and hybrid Mamba-Transformer models on Apple Silicon by mutating one training surface to lower `val_bpb`.
 - [liltrAIner](https://github.com/Snail3D/liltrAIner) - Local LLM fine-tuning optimization: applies a Karpathy-style autoresearch loop to MLX LoRA runs on Apple Silicon, letting an agent mutate training data or config, score eval prompts, and keep or revert each fine-tuning experiment.
 - [english-app](https://github.com/shitada/english-app) - Education app optimization: applies an autoresearch-inspired proposer → implement → test → evaluate → keep/discard loop to an English learning app, using pytest, TypeScript checks, and smoke tests to keep only changes scoring at least 6.0 across 10 autonomous iterations.
+- [How we built the best browser agent with Auto-Research](https://browser-use.com/posts/online-mind2web-benchmark) - Browser automation optimization: uses parallel Claude Code auto-research loops against Online-Mind2Web, running 20-cycle harness edits with train/validation splits and reaching 97% on the benchmark while rejecting task-specific overfits.
 
 ### Evaluation / Red Teaming
 
@@ -240,6 +242,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [How to stop your autoresearch loop from cheating](https://www.cerebras.ai/blog/how-to-stop-your-autoresearch-loop-from-cheating) - Blog: reports 71 autoresearch experiments across training optimization and model compression, showing loops drift within hours unless evaluation is strict, experiments are isolated, and metrics block shortcut gains.
 - [野口寛士 on nightly autoresearch-style improvement runs on a Mac mini](https://x.com/kan_guchi/status/2042052394130063742) - X: says his team lets a Mac mini run overnight improvement experiments, accepted 20 automatic wins in one night, and found success-metric definition matters more than experiment volume.
 - [Ali Amiri on matching Claude Code quality by optimizing prompts with AutoResearch](https://x.com/iampatten/status/2038755598981038193) - X: describes using AutoResearch to tune prompts and push a Qwen-based workflow from weak to strong performance on a large-repo task.
+- [Clement Hoang on Headway using autoresearch for mental-health-agent prompts](https://x.com/im_clemmy/status/2043126515605622960) - X: reports that Headway used Karpathy's autoresearch to run about 80 generate → evaluate → analyze → mutate iterations on mental-health-agent prompts and reach 99% accuracy against a 95% target.
 - [Ren on benchmark-driven skill optimization with autoresearch](https://x.com/liliIiiI1I7/status/2038528225916424395) - X: Chinese discussion noting that autoresearch can be paired with skill creation so agents define a benchmark and then iteratively optimize the skill against it.
 - [Aakash Gupta on porting autoresearch to prompt engineering](https://x.com/aakashgupta/status/2038132294817656978) - X: describes mapping autoresearch into a four-role prompt-optimization loop with a locked eval script, binary rubric, results log, and overnight iteration.
 - [SonnyClawAI on adversarial second-pass evals in autoresearch](https://x.com/SonnyClawAI/status/2041657267766894777) - X: reports that a 4-hour write → eval → revise → measure loop only surfaced real failures after adding a second adversarial evaluation pass, making evaluator disagreement itself the useful signal.
@@ -253,6 +256,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Franci Penov on running overnight queues of autoresearch experiments](https://x.com/francip/status/2038777280995246087) - X: describes operating multiple machines that run queued autoresearch experiments, logs, summaries, and findings overnight.
 - [xfu on AutoResearch bug-finding persistence](https://x.com/xfubot/status/2038808623774884250) - X: short Chinese observation that autoresearch is unusually strong at repeatedly hunting hidden bugs until it finds them.
 - [Kyle Boddy on using autoresearch-claude-code to tune inference hardware parameters](https://x.com/drivelinekyle/status/2038673905368650194) - X: describes using an autoresearch Claude Code setup to tune testing inference machine parameters on 3090-based hardware.
+- [chenhua_zhang on autoresearching Claude Code configuration](https://x.com/chenhua_zhang/status/2043010543112290815) - X: describes a 9-round benchmark-driven search over six seed configurations and three greedy mutations, using isolated worktrees to optimize Claude Code settings against code-quality regressions.
 - [Shann Holmberg on setting up autoresearch with Claude Code](https://x.com/shannholmberg/status/2038282051225608613) - X: tutorial thread that frames autoresearch as one file, one metric, and autonomous keep/revert looping inside Claude Code.
 - [Bob on autoresearch wasting 11 days on a solved benchmark](https://x.com/TimeToBuildBob/status/2039204620774314504) - X: highlights that a loop can stay mechanically healthy yet keep burning compute after metric saturation if it lacks usefulness-aware stop criteria.
 - [Doğaç on GPU-kernel autoresearch needing human nudges and repeated validation](https://x.com/dogacel0/status/2037933914879058095) - X: argues that human steering and rerunning experiments help autoresearch escape local minima and debunk noisy wins in kernel optimization.
