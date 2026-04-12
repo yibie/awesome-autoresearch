@@ -42,12 +42,12 @@ We do **not** include:
 ### Primary categories
 
 - [Scientific Research](categories/scientific-research.md) — 24 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 26 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 29 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 12 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 40 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 47 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 48 entries
 
 ### Secondary overlap categories
 
@@ -139,6 +139,9 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [liltrAIner](https://github.com/Snail3D/liltrAIner) - Local LLM fine-tuning optimization: applies a Karpathy-style autoresearch loop to MLX LoRA runs on Apple Silicon, letting an agent mutate training data or config, score eval prompts, and keep or revert each fine-tuning experiment.
 - [english-app](https://github.com/shitada/english-app) - Education app optimization: applies an autoresearch-inspired proposer → implement → test → evaluate → keep/discard loop to an English learning app, using pytest, TypeScript checks, and smoke tests to keep only changes scoring at least 6.0 across 10 autonomous iterations.
 - [How we built the best browser agent with Auto-Research](https://browser-use.com/posts/online-mind2web-benchmark) - Browser automation optimization: uses parallel Claude Code auto-research loops against Online-Mind2Web, running 20-cycle harness edits with train/validation splits and reaching 97% on the benchmark while rejecting task-specific overfits.
+- [Speed up code with pi-autoresearch](https://quanttype.net/p/speed-up-code-with-pi-autoresearch/) - Software performance optimization: applies pi-autoresearch to jsonista's JSON decoding benchmark, keeping only measured wins and lifting one selected benchmark's throughput by 56% while surfacing overfitting risks in accepted diffs.
+- [588x Faster SQLite Ingestion With an Autoresearch Loop](https://www.luiscolunga.com/posts/autoresearch-etl-optimization/) - ETL performance optimization: applies pi-autoresearch to a Python financial-data ingestion pipeline, benchmarking 50,000-row SQLite writes and keeping fixes that cut processing time from about 397s to 0.675s.
+- [nnmetal + labrat](https://github.com/duanebester/nnzap) - Apple Silicon inference optimization: uses an autonomous Zig and Metal autoresearch loop that snapshots engine files, makes one kernel change at a time, runs compile, test, and benchmark gates, and commits only throughput or latency wins above a fixed threshold.
 
 ### Evaluation / Red Teaming
 
@@ -246,6 +249,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Ren on benchmark-driven skill optimization with autoresearch](https://x.com/liliIiiI1I7/status/2038528225916424395) - X: Chinese discussion noting that autoresearch can be paired with skill creation so agents define a benchmark and then iteratively optimize the skill against it.
 - [Aakash Gupta on porting autoresearch to prompt engineering](https://x.com/aakashgupta/status/2038132294817656978) - X: describes mapping autoresearch into a four-role prompt-optimization loop with a locked eval script, binary rubric, results log, and overnight iteration.
 - [SonnyClawAI on adversarial second-pass evals in autoresearch](https://x.com/SonnyClawAI/status/2041657267766894777) - X: reports that a 4-hour write → eval → revise → measure loop only surfaced real failures after adding a second adversarial evaluation pass, making evaluator disagreement itself the useful signal.
+- [Barna on benchmark-coupled correctness gates for zk-autoresearch](https://x.com/realbarnakiss/status/2039725945003585754) - X: reports adding a benchmark-scale bitwise validator and nondeterminism detection because small upstream tests missed bugs that only appeared at the exact workload being optimized.
 - [vincent_dalmaso on treating skills like products with autoresearch](https://x.com/vincent_dalmaso/status/2041786712834105484) - X: describes running an autoresearch-skill loop with a baseline, one change at a time, and score-based keep decisions to improve skill behavior instead of rewriting prompts blindly.
 - [0xjialin on autoresearch finding no headroom in a security-review skill](https://x.com/0xjialin/status/2041360184740917276) - X: reports adapting autoresearch into an OpenClaw and Claude Code skill to test 10 key dimensions of the SlowMist security-review skill and finding no meaningful optimization space left.
 
