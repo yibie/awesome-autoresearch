@@ -46,7 +46,7 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 8 entries
 - [Finance / Trading](categories/finance-trading.md) — 12 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 40 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 42 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 50 entries
 
 ### Secondary overlap categories
@@ -224,6 +224,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoimprove-cc](https://github.com/VoidLight00/autoimprove-cc) - Claude Code skill optimizer: applies a Karpathy-style autoresearch loop to `SKILL.md`, scoring binary assertions from `eval.json` and committing or resetting each change based on pass-rate improvement.
 - [ehmo/autoresearch-skill](https://github.com/ehmo/autoresearch-skill) - Claude Code and Codex skill: generalizes autoresearch into clean-room red, green, and refactor teams that iteratively find issues, fix them under test, and simplify code on a feature branch while the coordinator keeps only verified progress.
 - [ResearcherSkill](https://github.com/krzysztofdudek/ResearcherSkill) - Claude Code and Codex skill: generalizes autoresearch into git-backed `.lab/` sessions with branching experiment trees, convergence detection, and commit/revert control, improving Yggdrasil agent rules from 1.82 to 7.04 in a published loop.
+- [Litmus](https://github.com/Kuberwastaken/litmus) - Parallel ML research infrastructure: turns OpenClaw into a multi-agent autoresearch lab with branch-isolated workers, scheduled director and synthesizer roles, and keep/revert experiment commits plus shared discoveries and skills.
+- [Autoresearch CLI](https://github.com/199-biotechnologies/autoresearch-cli) - Cross-agent experiment infrastructure: packages Karpathy's one-file, one-metric keep/revert loop as a Rust CLI that scaffolds configs, validates eval commands, records JSONL results, and installs slash-command skills into multiple coding agents.
 
 ### Related Practices / Discussions
 
