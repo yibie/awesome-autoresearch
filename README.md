@@ -42,16 +42,16 @@ We do **not** include:
 ### Primary categories
 
 - [Scientific Research](categories/scientific-research.md) — 24 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 31 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 32 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 10 entries
 - [Finance / Trading](categories/finance-trading.md) — 14 entries
-- [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 1 entry
+- [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 45 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 51 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 53 entries
 
 ### Secondary overlap categories
 
-- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
+- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 1 entry
 - [Workflow Automation](categories/workflow-automation.md) — 6 entries
 
@@ -144,6 +144,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [nnmetal + labrat](https://github.com/duanebester/nnzap) - Apple Silicon inference optimization: uses an autonomous Zig and Metal autoresearch loop that snapshots engine files, makes one kernel change at a time, runs compile, test, and benchmark gates, and commits only throughput or latency wins above a fixed threshold.
 - [HashSmith, Part 3: I Automated My Way to a 27% Faster Hash Table](https://bluuewhale.github.io/posts/i-automated-my-way-to-a-27-percent-faster-hash-table/) - Data-structure performance optimization: uses a Claude Code auto-optimize loop to profile, benchmark, and keep only wins on a JVM SwissTable implementation, landing three accepted changes and 13%-32% gains across eight benchmark scenarios.
 - [claude-code-bench](https://github.com/sawzhang/claude-code-bench) - AI coding workflow optimization: applies Karpathy-style autoresearch to Claude Code's 7-dimensional configuration space, running benchmark tasks and keeping only profiles that improve quality-adjusted scores for research depth, correctness, and convention adherence.
+- [autooptimization](https://github.com/damahua/autooptimization) - Systems optimization: applies a profile-first autoresearch protocol to codebases like ClickHouse, Chroma, DataFusion, and RocksDB, keeping only statistically benchmarked optimizations backed by stack-level profiling evidence.
 
 ### Evaluation / Red Teaming
 
@@ -184,6 +185,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 Source file: [`categories/personal-knowledge-humanities.md`](categories/personal-knowledge-humanities.md)
 
 - [autoresearch-genealogy](https://github.com/mattprusak/autoresearch-genealogy) - Genealogy: uses Claude Code `/autoresearch` prompts to expand family trees, verify claims against multiple sources, and keep a structured evidence-backed research vault.
+- [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) - Personal knowledge: uses a Karpathy-style `/autoresearch` skill to run multi-round web research with gap-filling and file source-backed concept, entity, and synthesis pages into a compounding Obsidian wiki vault.
 
 ### Infra / Skills / Forks
 
@@ -260,6 +262,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Ren on benchmark-driven skill optimization with autoresearch](https://x.com/liliIiiI1I7/status/2038528225916424395) - X: Chinese discussion noting that autoresearch can be paired with skill creation so agents define a benchmark and then iteratively optimize the skill against it.
 - [Aakash Gupta on porting autoresearch to prompt engineering](https://x.com/aakashgupta/status/2038132294817656978) - X: describes mapping autoresearch into a four-role prompt-optimization loop with a locked eval script, binary rubric, results log, and overnight iteration.
 - [SonnyClawAI on adversarial second-pass evals in autoresearch](https://x.com/SonnyClawAI/status/2041657267766894777) - X: reports that a 4-hour write → eval → revise → measure loop only surfaced real failures after adding a second adversarial evaluation pass, making evaluator disagreement itself the useful signal.
+- [SHL0MS on Autoreason extending autoresearch to subjective domains](https://x.com/SHL0MS/status/2043415274196435325) - X: introduces a blind-judge loop where the incumbent, an adversarial revision, and a synthesis compete until "do nothing" wins twice, extending autoresearch-style keep-or-stop control to writing and policy tasks.
+- [jcyhc_ai on citation hallucinations slipping through the Autoreason evaluator stack](https://x.com/jcyhc_ai/status/2043449643170988484) - X: shows that nine passes of critics and judges still missed fabricated references in the Autoreason paper, highlighting evaluator blind spots in autoresearch-style research-writing loops.
 - [Barna on benchmark-coupled correctness gates for zk-autoresearch](https://x.com/realbarnakiss/status/2039725945003585754) - X: reports adding a benchmark-scale bitwise validator and nondeterminism detection because small upstream tests missed bugs that only appeared at the exact workload being optimized.
 - [vincent_dalmaso on treating skills like products with autoresearch](https://x.com/vincent_dalmaso/status/2041786712834105484) - X: describes running an autoresearch-skill loop with a baseline, one change at a time, and score-based keep decisions to improve skill behavior instead of rewriting prompts blindly.
 - [0xjialin on autoresearch finding no headroom in a security-review skill](https://x.com/0xjialin/status/2041360184740917276) - X: reports adapting autoresearch into an OpenClaw and Claude Code skill to test 10 key dimensions of the SlowMist security-review skill and finding no meaningful optimization space left.
@@ -314,6 +318,7 @@ Source file: [`categories/knowledge-base-rag-preparation.md`](categories/knowled
 
 - [autoresearch-genealogy](https://github.com/mattprusak/autoresearch-genealogy) - Genealogy: uses Claude Code `/autoresearch` prompts to expand family trees, verify claims against multiple sources, and keep a structured evidence-backed research vault.
 - [AutoRAGsearch](https://github.com/Smasko7/AutoRAGsearch) - RAG retrieval optimization: applies an autoresearch-style loop to a fixed QA benchmark by editing only `rag_pipeline.py`, running local retrieval experiments, and improving retrieval_score from 0.9472 to 0.9867 over 20 autonomous experiments.
+- [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) - Knowledge-base preparation: uses a Karpathy-style `/autoresearch` skill to gather sources, fill research gaps across three search rounds, and write structured source, concept, entity, and synthesis pages into a retrieval-ready Obsidian vault.
 
 ### Market Research
 
