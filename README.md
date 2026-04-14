@@ -42,12 +42,12 @@ We do **not** include:
 ### Primary categories
 
 - [Scientific Research](categories/scientific-research.md) — 25 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 35 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 36 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
 - [Finance / Trading](categories/finance-trading.md) — 15 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 48 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 58 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 49 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 59 entries
 
 ### Secondary overlap categories
 
@@ -149,6 +149,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [helix-inference-opt](https://github.com/VectorInstitute/helix-inference-opt) - LLM inference optimization: applies a fixed 1-minute autoresearch benchmark to Qwen2.5-0.5B decoding on WikiText-2, rewriting only `infer.py` and keeping throughput gains only when bits-per-byte quality stays within a 1% guard.
 - [autoresearch-inference-optimization](https://github.com/lawjarp-simplismart/autoresearch-inference-optimization) - Inference serving optimization: lets an agent rewrite `serve.sh` plus `experiment.yaml`, benchmark OpenAI-compatible servers under throughput, latency, and memory constraints, and keep only higher-scoring serving configs in `experiments.jsonl`.
 - [PolyTrader](https://github.com/dougsls/polytrader) - Trading-system performance optimization: applies autoresearch to PolyTrader's signal-detection hot path, keeping only test-clean code changes that cut end-to-end tracker latency from 25.7 ms to 0.46 ms across a published 10-iteration benchmark run.
+- [autoresearch-lora-buzhou](https://github.com/bzjiang401/autoresearch-lora-buzhou) - Local LoRA fine-tuning optimization: adapts autoresearch to user-chosen LoRA training goals by establishing a confirmed baseline, changing one parameter at a time, rerunning >1% wins for confirmation, and promoting only verified `val_loss` improvements to the best checkpoint.
 
 ### Evaluation / Red Teaming
 
@@ -245,6 +246,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [AutoAgent](https://github.com/kevinrgu/autoagent) - Agent-engineering infrastructure: applies Karpathy's autoresearch to a single-file Harbor agent harness, rewriting `agent.py`, benchmarking scored tasks, and keeping only prompt, tool, or orchestration changes that raise total score.
 - [VibeHQ](https://github.com/0x0funky/vibehq-hub) - Multi-agent coordination infrastructure: applies autoresearch to team protocol design by benchmarking agent swarms, analyzing failure logs, rewriting hub code via `/optimize-protocol`, and iterating until coordination flags and token waste fall.
 - [helix](https://github.com/VectorInstitute/helix) - Agent-agnostic autoresearch infrastructure: generalizes Karpathy's loop into reproducible `helix.yaml` + `program.md` repos with backend-swappable agents, append-only `experiments.tsv` ledgers, and independently verifiable example helices.
+- [Autolab Companion Tools](https://github.com/dean0x/autolab) - Autoresearch companion infrastructure: adds statistical keep/discard verdicts, experiment-history steering, and multi-agent branch competitions to Karpathy's GPT-pretraining loop through the `autojudge`, `autosteer`, and `autoevolve` CLIs.
 
 ### Related Practices / Discussions
 
@@ -258,6 +260,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Brandon Pizzacalla on agentic paid ads systems based on Karpathy autoresearch](https://x.com/bpizzacalla/status/2038731009051824318) - X: claims to use Karpathy-style autoresearch as the planning and experiment pattern behind autonomous paid-ads workflows.
 - [nlethetech on a NEPSE quant terminal refined through 300+ autoresearch cycles](https://x.com/nlethetech/status/2043522907779862610) - X: says his NEPSE terminal trading workstation backtests strategies with a quant model refined through 300+ autoresearch cycles while combining market data and execution in one interface.
 - [tensorqt on Paradigm's autoresearch hackathon for market making](https://x.com/tensorqt/status/2042880400737931401) - X: describes a Paradigm challenge that treated prediction-market market making as an autoresearch problem and says top teams scaled the search with parallel Claude Code or Codex workers plus internal orchestration.
+- [xmal on using autoresearch in Naive–Power Law Blend market forecasting](https://x.com/xmal/status/2043998855771861470) - X: says a new Naive–Power Law Blend asset-forecast study applied Karpathy's autoresearch framework, found the loop effective, and exposed overfitting in the initial setup.
 
 ### Business / GTM workflows
 
