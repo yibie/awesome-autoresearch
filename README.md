@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 27 entries
+- [Scientific Research](categories/scientific-research.md) — 28 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 36 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
 - [Finance / Trading](categories/finance-trading.md) — 15 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 49 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 60 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 50 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 61 entries
 
 ### Secondary overlap categories
 
@@ -111,6 +111,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-macro](https://github.com/wegard/autoresearch-macro) - Macroeconomic forecasting research: runs LLM-guided outer-loop search over Chronos-2 covariates, transforms, and fine-tuning settings, keeping only validation-era forecast improvements across pseudo-real-time Norway, Canada, and Sweden benchmarks.
 - [autoresearch-dqn](https://github.com/raphaelschwinger/autoresearch-dqn) - RL algorithm research: applies the autoresearch loop to a CartPole training script, logging 39 iterations that replaced an unstable DQN baseline with a REINFORCE agent that reaches reward 500 in about 5 seconds instead of about 3 minutes.
 - [AutoMedal](https://github.com/Flameingmoy/automedal) - Kaggle competition research: adapts Karpathy's keep/revert loop into strategist, researcher, and experimenter phases, journaling 24 tabular-competition experiments and keeping only lower `val_loss` changes on a fixed leaderboard-oriented harness.
+- [autoresearch-qwen](https://github.com/wadeKeith/autoresearch-qwen) - Document VQA research: adapts Karpathy's keep/discard loop to Qwen3-VL on the official DocVQA benchmark by fixing `evaluate.py`, limiting edits to `train.py`, and accepting only higher full-validation ANLS scores.
 
 ### Software / Systems Optimization
 
@@ -249,6 +250,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [VibeHQ](https://github.com/0x0funky/vibehq-hub) - Multi-agent coordination infrastructure: applies autoresearch to team protocol design by benchmarking agent swarms, analyzing failure logs, rewriting hub code via `/optimize-protocol`, and iterating until coordination flags and token waste fall.
 - [helix](https://github.com/VectorInstitute/helix) - Agent-agnostic autoresearch infrastructure: generalizes Karpathy's loop into reproducible `helix.yaml` + `program.md` repos with backend-swappable agents, append-only `experiments.tsv` ledgers, and independently verifiable example helices.
 - [Autolab Companion Tools](https://github.com/dean0x/autolab) - Autoresearch companion infrastructure: adds statistical keep/discard verdicts, experiment-history steering, and multi-agent branch competitions to Karpathy's GPT-pretraining loop through the `autojudge`, `autosteer`, and `autoevolve` CLIs.
+- [autoresearch-cpu](https://github.com/efecanbasoz/autoresearch-cpu) - CPU ML fork: ports Karpathy's autoresearch to commodity CPUs by replacing Flash Attention with native SDPA, shrinking defaults for 30-minute local runs, and preserving the same one-file `val_bpb` keep/discard loop without CUDA.
 
 ### Related Practices / Discussions
 
@@ -263,6 +265,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [nlethetech on a NEPSE quant terminal refined through 300+ autoresearch cycles](https://x.com/nlethetech/status/2043522907779862610) - X: says his NEPSE terminal trading workstation backtests strategies with a quant model refined through 300+ autoresearch cycles while combining market data and execution in one interface.
 - [tensorqt on Paradigm's autoresearch hackathon for market making](https://x.com/tensorqt/status/2042880400737931401) - X: describes a Paradigm challenge that treated prediction-market market making as an autoresearch problem and says top teams scaled the search with parallel Claude Code or Codex workers plus internal orchestration.
 - [xmal on using autoresearch in Naive–Power Law Blend market forecasting](https://x.com/xmal/status/2043998855771861470) - X: says a new Naive–Power Law Blend asset-forecast study applied Karpathy's autoresearch framework, found the loop effective, and exposed overfitting in the initial setup.
+- [artemg314 on a walk-forward autoresearch loop for stock portfolios](https://x.com/artemg314/status/2044181930514551265) - X: describes an open-source stock-portfolio research loop that edits `agent.py`, walks each hypothesis through two blind walk-forward tests plus a final human holdout, and reports a 0.86 Sharpe versus a 0.67 benchmark on 2022-2025 data.
 
 ### Business / GTM workflows
 
