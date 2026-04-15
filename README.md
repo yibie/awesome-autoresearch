@@ -46,7 +46,7 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
 - [Finance / Trading](categories/finance-trading.md) — 15 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 50 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 51 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 61 entries
 
 ### Secondary overlap categories
@@ -251,6 +251,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [helix](https://github.com/VectorInstitute/helix) - Agent-agnostic autoresearch infrastructure: generalizes Karpathy's loop into reproducible `helix.yaml` + `program.md` repos with backend-swappable agents, append-only `experiments.tsv` ledgers, and independently verifiable example helices.
 - [Autolab Companion Tools](https://github.com/dean0x/autolab) - Autoresearch companion infrastructure: adds statistical keep/discard verdicts, experiment-history steering, and multi-agent branch competitions to Karpathy's GPT-pretraining loop through the `autojudge`, `autosteer`, and `autoevolve` CLIs.
 - [autoresearch-cpu](https://github.com/efecanbasoz/autoresearch-cpu) - CPU ML fork: ports Karpathy's autoresearch to commodity CPUs by replacing Flash Attention with native SDPA, shrinking defaults for 30-minute local runs, and preserving the same one-file `val_bpb` keep/discard loop without CUDA.
+- [hugoferreira/autoresearch](https://github.com/hugoferreira/autoresearch) - Codebase research framework: generalizes Karpathy's loop into falsifiable hypotheses, isolated experiment worktrees, instrument-backed observations, strict gate review, and reusable lessons for measurable engineering goals.
 
 ### Related Practices / Discussions
 
