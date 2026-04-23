@@ -44,9 +44,9 @@ We do **not** include:
 - [Scientific Research](categories/scientific-research.md) — 28 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 37 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
-- [Finance / Trading](categories/finance-trading.md) — 15 entries
+- [Finance / Trading](categories/finance-trading.md) — 16 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 55 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 56 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 61 entries
 
 ### Secondary overlap categories
@@ -180,6 +180,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [autoresearch-trading](https://github.com/dietmarwo/autoresearch-trading) - Trading research: combines Karpathy-style autoresearch with classical optimization so the agent iterates on strategy structure while an optimizer tunes parameters and walk-forward validation decides what survives.
 - [BTCautoresearch](https://github.com/CBaquero/BTCautoresearch) - Bitcoin forecasting: uses Karpathy-style autoresearch to mutate a single formula file, score walk-forward out-of-sample RMSE, and keep only forecasting rules that beat the baseline power law.
 - [autoresearch-skfolio](https://github.com/CarloNicolini/autoresearch-skfolio) - Portfolio optimization: edits a single portfolio-research script, runs fixed out-of-sample validation across multiple datasets and reversed-return variants, and keeps only Deflated Sharpe Ratio gains.
+- [AutoHypothesis](https://github.com/arteemg/AutoHypothesis) - Portfolio research: runs a Karpathy-style autoresearch loop on `agent.py`, iterating on DEV data and keeping only stock-selection hypotheses that clear one-shot holdback and walk-forward gates before final holdout evaluation.
 - [autoresearch-glm](https://github.com/statcafehk/autoresearch-glm) - Credit scoring: adapts autoresearch to Taiwan credit-default prediction by editing feature-policy code and keeping only validation AUC gains in a fixed logistic-GLM benchmark.
 - [autoresearch-markets](https://github.com/JohnJBoren/autoresearch-markets) - Prediction-market trading research: adapts Karpathy's single-file keep/revert loop to Kalshi data, editing `train.py` and optimizing `val_logloss` on held-out resolved markets.
 - [Simmer Autoresearch](https://docs.simmer.markets/plugins/autoresearch) - Prediction-market trading: lets agents mutate skill configs, measure P&L or edge over live trading cycles or historical replays, and auto-commit only the configurations that improve results.
@@ -253,6 +254,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autolab Companion Tools](https://github.com/dean0x/autolab) - Autoresearch companion infrastructure: adds statistical keep/discard verdicts, experiment-history steering, and multi-agent branch competitions to Karpathy's GPT-pretraining loop through the `autojudge`, `autosteer`, and `autoevolve` CLIs.
 - [autoresearch-cpu](https://github.com/efecanbasoz/autoresearch-cpu) - CPU ML fork: ports Karpathy's autoresearch to commodity CPUs by replacing Flash Attention with native SDPA, shrinking defaults for 30-minute local runs, and preserving the same one-file `val_bpb` keep/discard loop without CUDA.
 - [hugoferreira/autoresearch](https://github.com/hugoferreira/autoresearch) - Codebase research framework: generalizes Karpathy's loop into falsifiable hypotheses, isolated experiment worktrees, instrument-backed observations, strict gate review, and reusable lessons for measurable engineering goals.
+- [scalar-loop](https://github.com/mandar-karhade/scalar-loop) - Experiment infrastructure: generalizes Karpathy's autoresearch into a Python-core CLI that seals harness files, enforces repo scope, and keeps or reverts only edits that pass metric and guard commands.
 - [Autoresearch Lab](https://github.com/nikhaldi/autoresearch-lab) - Black-box experiment infrastructure: wraps any measurable code pipeline in Docker sandboxing, Python eval backends, host-side git commit/revert control, and keep/discard research loops.
 - [evo](https://github.com/evo-hq/evo) - Parallel optimization framework: extends Karpathy-style autoresearch with discovered benchmarks, git-worktree tree search, parallel subagents, and commit-only-if-gate-passing score improvements.
 - [autoresearch-builder](https://github.com/jung-wan-kim/autoresearch-builder) - Claude Code plugin: auto-detects project type, mutates one target file, runs the chosen build, test, or train command, and keeps or discards each experiment based on a parsed scalar metric.
@@ -271,7 +273,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [nlethetech on a NEPSE quant terminal refined through 300+ autoresearch cycles](https://x.com/nlethetech/status/2043522907779862610) - X: says his NEPSE terminal trading workstation backtests strategies with a quant model refined through 300+ autoresearch cycles while combining market data and execution in one interface.
 - [tensorqt on Paradigm's autoresearch hackathon for market making](https://x.com/tensorqt/status/2042880400737931401) - X: describes a Paradigm challenge that treated prediction-market market making as an autoresearch problem and says top teams scaled the search with parallel Claude Code or Codex workers plus internal orchestration.
 - [xmal on using autoresearch in Naive–Power Law Blend market forecasting](https://x.com/xmal/status/2043998855771861470) - X: says a new Naive–Power Law Blend asset-forecast study applied Karpathy's autoresearch framework, found the loop effective, and exposed overfitting in the initial setup.
-- [artemg314 on a walk-forward autoresearch loop for stock portfolios](https://x.com/artemg314/status/2044181930514551265) - X: describes an open-source stock-portfolio research loop that edits `agent.py`, walks each hypothesis through two blind walk-forward tests plus a final human holdout, and reports a 0.86 Sharpe versus a 0.67 benchmark on 2022-2025 data.
 
 ### Business / GTM workflows
 
@@ -341,6 +342,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Versur on bringing autoresearch-style loops to Grasshopper solver workflows](https://x.com/VersurAi/status/2037877185210372372) - X: describes using candidate generation, fixed benchmarks, scoring, and keep-only-if-improved loops for computational design experiments.
 - [Google hit: “Autoresearch-style framework for improving heuristics”](https://www.reddit.com/r/optimization/comments/1s3aohf/autoresearchstyle_framework_for_improving/) - Reddit: discussion thread about applying autoresearch-style benchmarked improvement loops to optimization heuristics under strict solver budgets.
 - [Google hit: HN thread on applying autoresearch to LLM inference](https://news.ycombinator.com/item?id=47538380) - Hacker News: discussion pointing to autoresearch-style ideas being adapted from model training to LLM inference optimization.
+- [From traces to self-improving agents](https://www.metronis.space/blog/from-traces-to-self-improving-agents) - Blog: describes Metronis Aegis as a closed-loop agent-improvement stack where traces become evals, weak slices become RL environments, useful trajectories write back to memory, and release depends on held-out proof.
 - [AutoResearch vs Classical Hyperparameter Tuning](https://www.weco.ai/blog/autoresearch-vs-classical-hpo) - Blog: reports a NanoChat head-to-head where autoresearch beats Optuna on sample efficiency, cost-adjusted results, and longer-horizon generalization by escaping a fixed search space.
 - [Autoresearch Hub](https://news.ycombinator.com/item?id=47374572) - Hacker News: Karpathy describes an unreleased swarm design where trusted workers verify improvements from a larger untrusted pool to parallelize autoresearch with leaderboard-style proof of progress.
 
