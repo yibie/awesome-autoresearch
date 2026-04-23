@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 28 entries
+- [Scientific Research](categories/scientific-research.md) — 29 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 37 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
-- [Finance / Trading](categories/finance-trading.md) — 17 entries
+- [Finance / Trading](categories/finance-trading.md) — 18 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 60 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 63 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 64 entries
 
 ### Secondary overlap categories
 
@@ -112,6 +112,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-dqn](https://github.com/raphaelschwinger/autoresearch-dqn) - RL algorithm research: applies the autoresearch loop to a CartPole training script, logging 39 iterations that replaced an unstable DQN baseline with a REINFORCE agent that reaches reward 500 in about 5 seconds instead of about 3 minutes.
 - [AutoMedal](https://github.com/Flameingmoy/automedal) - Kaggle competition research: adapts Karpathy's keep/revert loop into strategist, researcher, and experimenter phases, journaling 24 tabular-competition experiments and keeping only lower `val_loss` changes on a fixed leaderboard-oriented harness.
 - [autoresearch-qwen](https://github.com/wadeKeith/autoresearch-qwen) - Document VQA research: adapts Karpathy's keep/discard loop to Qwen3-VL on the official DocVQA benchmark by fixing `evaluate.py`, limiting edits to `train.py`, and accepting only higher full-validation ANLS scores.
+- [Wine Variety Prediction with LLMs](https://github.com/ivanfioravanti/wine_variety_classification) - ML fine-tuning research: uses a Karpathy-inspired agent loop to edit one LoRA YAML config, parse `HPSEARCH_RESULT` accuracy from short MLX runs, log each trial in JSONL, and revert worse hyperparameter changes on the wine-classification benchmark.
 
 ### Software / Systems Optimization
 
@@ -182,6 +183,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [autoresearch-skfolio](https://github.com/CarloNicolini/autoresearch-skfolio) - Portfolio optimization: edits a single portfolio-research script, runs fixed out-of-sample validation across multiple datasets and reversed-return variants, and keeps only Deflated Sharpe Ratio gains.
 - [AutoHypothesis](https://github.com/arteemg/AutoHypothesis) - Portfolio research: runs a Karpathy-style autoresearch loop on `agent.py`, iterating on DEV data and keeping only stock-selection hypotheses that clear one-shot holdback and walk-forward gates before final holdout evaluation.
 - [autoresearch-glm](https://github.com/statcafehk/autoresearch-glm) - Credit scoring: adapts autoresearch to Taiwan credit-default prediction by editing feature-policy code and keeping only validation AUC gains in a fixed logistic-GLM benchmark.
+- [Feature Research at Machine Speed](https://www.slopepay.com/blog/feature-auto-research) - Credit underwriting: adapts Karpathy's autoresearch to `compute_features.py`, scoring each iteration by Information Value and ending the round after 25 runs once no new strong features emerged, yielding 58 strong features and a +0.023 AUC lift at a matched 20-feature budget.
 - [autoresearch-markets](https://github.com/JohnJBoren/autoresearch-markets) - Prediction-market trading research: adapts Karpathy's single-file keep/revert loop to Kalshi data, editing `train.py` and optimizing `val_logloss` on held-out resolved markets.
 - [Simmer Autoresearch](https://docs.simmer.markets/plugins/autoresearch) - Prediction-market trading: lets agents mutate skill configs, measure P&L or edge over live trading cycles or historical replays, and auto-commit only the configurations that improve results.
 - [Autonomous Trading Strategy Research](https://github.com/Junghwan-Oh/autoresearch-trading) - Crypto trading research: adapts Karpathy's single-file autoresearch loop to Hyperliquid perpetual futures, backtesting each `strategy.py` change on fixed historical data and keeping only score improvements across 103 autonomous experiments.
@@ -294,6 +296,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [野口寛士 on nightly autoresearch-style improvement runs on a Mac mini](https://x.com/kan_guchi/status/2042052394130063742) - X: says his team lets a Mac mini run overnight improvement experiments, accepted 20 automatic wins in one night, and found success-metric definition matters more than experiment volume.
 - [Ali Amiri on matching Claude Code quality by optimizing prompts with AutoResearch](https://x.com/iampatten/status/2038755598981038193) - X: describes using AutoResearch to tune prompts and push a Qwen-based workflow from weak to strong performance on a large-repo task.
 - [Clement Hoang on Headway using autoresearch for mental-health-agent prompts](https://x.com/im_clemmy/status/2043126515605622960) - X: reports that Headway used Karpathy's autoresearch to run about 80 generate → evaluate → analyze → mutate iterations on mental-health-agent prompts and reach 99% accuracy against a 95% target.
+- [Phil Chen on using GPT-5.5 for autoresearch-style Sales Ops harness optimization](https://x.com/philhchen/status/2047397863488200974) - X: reports using an autoresearch-style loop on an internal Sales Ops dataset and seeing strong hold-out gains, suggesting newer models can sustain longer benchmark-driven optimization runs.
 - [Ren on benchmark-driven skill optimization with autoresearch](https://x.com/liliIiiI1I7/status/2038528225916424395) - X: Chinese discussion noting that autoresearch can be paired with skill creation so agents define a benchmark and then iteratively optimize the skill against it.
 - [Aakash Gupta on porting autoresearch to prompt engineering](https://x.com/aakashgupta/status/2038132294817656978) - X: describes mapping autoresearch into a four-role prompt-optimization loop with a locked eval script, binary rubric, results log, and overnight iteration.
 - [SonnyClawAI on adversarial second-pass evals in autoresearch](https://x.com/SonnyClawAI/status/2041657267766894777) - X: reports that a 4-hour write → eval → revise → measure loop only surfaced real failures after adding a second adversarial evaluation pass, making evaluator disagreement itself the useful signal.
