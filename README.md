@@ -44,16 +44,16 @@ We do **not** include:
 - [Scientific Research](categories/scientific-research.md) — 28 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 37 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
-- [Finance / Trading](categories/finance-trading.md) — 16 entries
+- [Finance / Trading](categories/finance-trading.md) — 17 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 56 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 61 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 58 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 62 entries
 
 ### Secondary overlap categories
 
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 1 entry
-- [Workflow Automation](categories/workflow-automation.md) — 7 entries
+- [Workflow Automation](categories/workflow-automation.md) — 8 entries
 
 ### Open categories still being tracked
 
@@ -191,6 +191,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [Autoresearch Trading Strategy Optimizer](https://github.com/VictorFouquet/AutoresearchTrading) - Crypto trading research: applies Karpathy's autoresearch to one editable `strategy.py`, hill-climbing on deterministic historical backtests and keeping only commits that improve `final_portfolio_value / max_drawdown`.
 - [Investing Autoresearch](https://github.com/Dvrki/investing-autoresearch) - Trading strategy research: uses an autonomous Claude loop to rewrite `strategy.py`, backtest on held-out market data, and keep only strategies that improve out-of-sample Sharpe under walk-forward, slippage, and fee validation.
 - [EMA Crossover Autoresearch](https://github.com/marketcalls/emacrossover-autoresearch) - Equity trading research: adapts Karpathy's three-file autoresearch loop to an SBIN EMA strategy, mutating only `strategy.py`, backtesting a fixed 10-year Indian equities dataset, and keeping only changes that improve a composite return, Sharpe, and drawdown score.
+- [NSE AutoResearch](https://github.com/sagar-n/autoresearch-nse) - Equity trading research: adapts Karpathy's single-file keep/revert loop to Indian stock backtesting by mutating only `strategy.py` and keeping only lower composite-score strategies over a fixed 10-year NSE harness.
 
 ### Personal Knowledge / Humanities
 
@@ -259,6 +260,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [evo](https://github.com/evo-hq/evo) - Parallel optimization framework: extends Karpathy-style autoresearch with discovered benchmarks, git-worktree tree search, parallel subagents, and commit-only-if-gate-passing score improvements.
 - [autoresearch-builder](https://github.com/jung-wan-kim/autoresearch-builder) - Claude Code plugin: auto-detects project type, mutates one target file, runs the chosen build, test, or train command, and keeps or discards each experiment based on a parsed scalar metric.
 - [AdaL vs Claude Code: Autoresearch Benchmark](https://github.com/SylphAI-Inc/autoresearch-adal) - Benchmarking research: publishes head-to-head Karpathy-autoresearch runs on A10 and H100 hardware, comparing best `val_bpb`, experiment counts, and kept improvements between AdaL and Claude Code.
+- [达尔文.skill](https://github.com/alchaincyf/darwin-skill) - Skill optimization framework: adapts Karpathy's autoresearch to one `SKILL.md` at a time, rescoring structure plus real test outputs and keeping only higher-scoring revisions.
+- [Community Computer](https://community.computer) - Collaborative experiment network: turns autoresearch runs into signed, peer-reproducible experiment records and auto-publishes keep/discard outcomes from Claude Code or pi over a Radicle peer-to-peer network.
 
 ### Related Practices / Discussions
 
@@ -311,6 +314,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Barna on model exhaustion signals in zk-autoresearch](https://x.com/realbarnakiss/status/2042244046651793832) - X: reports that once Sonnet kept circling previously eliminated NTT ideas in the iteration memory, he treated that repetition as an exhaustion signal and switched models.
 - [Isaac Kargar on using autoresearch to improve another AI agent](https://x.com/kargarisaac/status/2042312695408722417) - X: reports giving Claude Code one agent's codebase, running 24 keep/discard experiments, improving memory quality by 41%, and later refactoring after the loop showed the original bottleneck hypothesis was wrong.
 - [Google hit: “Karpathy's autoresearch applied to debugging”](https://www.reddit.com/r/ClaudeAI/comments/1rvbhk3/karpathys_autoresearch_applied_to_debugging_two/) - Reddit: discussion thread about adapting the autoresearch pattern to debugging and validation-driven repair loops.
+- [Show HN: Karpathy's autoresearch applied to debugging – two open-source skills](https://news.ycombinator.com/item?id=47399731) - Hacker News: describes applying the one-file, one-metric, keep/discard autoresearch pattern to root-cause analysis and bug-fixing skills for silent failures.
 - [Google hit: “Autoresearch with Claude on a real codebase (not ML)”](https://www.reddit.com/r/ClaudeAI/comments/1s22f7d/autoresearch_with_claude_on_a_real_codebase_not/) - Reddit: discussion thread about applying the autoresearch pattern to a production codebase rather than an ML training script.
 - [Google hit: “I used Karpathy's autoresearch pattern on product workflows”](https://www.reddit.com/r/ClaudeCode/comments/1s2e8ny/i_used_karpathys_autoresearch_pattern_on_product/) - Reddit: discussion thread suggesting the autoresearch loop is being adapted into broader product and self-improving agent workflows.
 - [Google hit: “Autoresearch with Claude on a real codebase (not ML training)”](https://www.reddit.com/r/BlackboxAI_/comments/1s2qs1i/autoresearch_with_claude_on_a_real_codebase_not/) - Reddit: discussion thread emphasizing high failure rates and many discarded experiments as normal when autoresearch is applied to real production codebases.
@@ -371,6 +375,7 @@ Source file: [`categories/workflow-automation.md`](categories/workflow-automatio
 - [PM document optimizer](https://github.com/lifang-mban/pm-document-optimizer) - Product workflow automation: applies a Karpathy-style git ratchet to markdown artifacts like PRDs and strategy docs, scoring each draft with programmatic checks and committing only higher-scoring revisions.
 - [Trip Optimizer Pro](https://github.com/michaelpersonal/trip-optimizer) - Travel planning workflow automation: applies the autoresearch pattern to itinerary generation by researching destinations, scoring multi-day plans, and keeping only itinerary mutations that improve a weighted travel-quality score.
 - [Autoresearch for Software Development](https://github.com/smallnest/autoresearch) - Software delivery automation: adapts autoresearch to GitHub Issues by rotating agents through implement → review → fix loops, then auto-merging only issues that clear a score gate plus build, lint, and test checks.
+- [autobrowse](https://skills.sh/browserbase/skills/autobrowse) - Browser workflow automation: applies an autoresearch loop to browser tasks by iterating on `strategy.md`, replaying tasks with Browserbase, and graduating only reliable workflows into reusable Claude Code skills.
 
 ## Submission format
 
