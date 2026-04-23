@@ -46,8 +46,8 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
 - [Finance / Trading](categories/finance-trading.md) — 17 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 58 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 62 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 60 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 63 entries
 
 ### Secondary overlap categories
 
@@ -217,6 +217,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-engram](https://github.com/tonitangpotato/autoresearch-engram) - Memory extension: adds persistent recall, pattern extraction, and reflection steps to Karpathy's autoresearch so the agent remembers what worked across long runs.
 - [pi-autoresearch](https://github.com/davebcn87/pi-autoresearch) - pi extension: generalizes Karpathy's autoresearch into experiment tools, a live dashboard, and slash-command skills for metric-driven optimization beyond ML.
 - [openclaw-autoresearch](https://github.com/gianfrancopiana/openclaw-autoresearch) - OpenClaw plugin: ports pi-autoresearch to OpenClaw with pending-run enforcement, confidence scoring, checkpoint files, and git-backed keep/discard semantics.
+- [AutoResearch OpenClaw](https://github.com/rmarji/autoresearch-openclaw) - OpenClaw package: runs Karpathy-style keep/revert loops on one text asset by measuring a scalar metric, committing winners, reverting losers, and logging each session to `results.tsv`.
 - [autoresearch-opencode](https://github.com/dabiggm0e/autoresearch-opencode) - OpenCode skill: ports pi-autoresearch into OpenCode as a pure skill that logs JSONL experiment runs and resumes autonomous keep/discard loops with built-in tools.
 - [pi-autoresearch-studio](https://github.com/jhochenbaum/pi-autoresearch-studio) - pi control plane: adds TUI and web dashboards, plan and ideas editing, and selective PR creation on top of pi-autoresearch sessions.
 - [autoresearch-gen](https://github.com/liviaellen/autoresearch-gen) - Scaffold generator: interviews the user, generates a verified autoresearch experiment scaffold, auto-runs the baseline, and repairs broken generated code before handoff to the agent.
@@ -247,6 +248,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Litmus](https://github.com/Kuberwastaken/litmus) - Parallel ML research infrastructure: turns OpenClaw into a multi-agent autoresearch lab with branch-isolated workers, scheduled director and synthesizer roles, and keep/revert experiment commits plus shared discoveries and skills.
 - [Autoresearch CLI](https://github.com/199-biotechnologies/autoresearch-cli) - Cross-agent experiment infrastructure: packages Karpathy's one-file, one-metric keep/revert loop as a Rust CLI that scaffolds configs, validates eval commands, records JSONL results, and installs slash-command skills into multiple coding agents.
 - [codex-autoresearcher](https://github.com/aelaguiz/codex-autoresearcher) - Codex experiment infrastructure: runs optimization campaigns through separate worker and judge Codex processes, a static `evaluate.sh`, and schema-validated keep or restore verdicts with durable attempt forensics.
+- [Codex Autoresearch Harness](https://github.com/SarahXC/codex-autoresearch-harness) - Codex experiment harness: wraps `codex exec` in a bash loop so Codex can run one Karpathy-style experiment at a time, keep or reset `train.py` changes, and compare model variants on the nanochat benchmark.
 - [ExAutoresearch](https://github.com/chgeuer/ex_autoresearch) - Elixir autoresearch framework: hot-loads one experiment module at a time, trains GPT variants under fixed budgets across distributed GPU nodes, and uses a referee plus dashboard to early-stop losers and persist the best surviving trials.
 - [slowresearch](https://github.com/artkulak/slowresearch) - Delayed-feedback experiment skill: adapts autoresearch to content, outreach, pricing, and other publish-and-wait workflows by logging human-reported metrics and proposing the next hypothesis across long feedback cycles.
 - [AutoAgent](https://github.com/kevinrgu/autoagent) - Agent-engineering infrastructure: applies Karpathy's autoresearch to a single-file Harbor agent harness, rewriting `agent.py`, benchmarking scored tasks, and keeping only prompt, tool, or orchestration changes that raise total score.
@@ -298,6 +300,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [jcyhc_ai on citation hallucinations slipping through the Autoreason evaluator stack](https://x.com/jcyhc_ai/status/2043449643170988484) - X: shows that nine passes of critics and judges still missed fabricated references in the Autoreason paper, highlighting evaluator blind spots in autoresearch-style research-writing loops.
 - [Barna on benchmark-coupled correctness gates for zk-autoresearch](https://x.com/realbarnakiss/status/2039725945003585754) - X: reports adding a benchmark-scale bitwise validator and nondeterminism detection because small upstream tests missed bugs that only appeared at the exact workload being optimized.
 - [vincent_dalmaso on treating skills like products with autoresearch](https://x.com/vincent_dalmaso/status/2041786712834105484) - X: describes running an autoresearch-skill loop with a baseline, one change at a time, and score-based keep decisions to improve skill behavior instead of rewriting prompts blindly.
+- [How I Built a Skill That Makes All My Other Skills Better (Using Karpathy's Autoresearch)](https://aimaker.substack.com/p/how-i-built-skill-improves-all-skills-karpathy-autoresearch-loop) - Blog: describes a meta-skill that builds rubrics, converts weak dimensions into binary evals, and runs keep/discard loops to improve other Claude skills autonomously.
 - [0xjialin on autoresearch finding no headroom in a security-review skill](https://x.com/0xjialin/status/2041360184740917276) - X: reports adapting autoresearch into an OpenClaw and Claude Code skill to test 10 key dimensions of the SlowMist security-review skill and finding no meaningful optimization space left.
 - [snapolino on agents cheating when `prepare.py` is visible](https://x.com/snapolino/status/2043915000528679255) - X: reports that a nanochat-style autoresearch loop gamed a combined `val_bpb + trainable tokens` metric by narrowing the softmax target set once the agent could read `prepare.py`, arguing for hidden or locked evaluators.
 
