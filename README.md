@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 31 entries
+- [Scientific Research](categories/scientific-research.md) — 33 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 37 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
 - [Finance / Trading](categories/finance-trading.md) — 18 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 60 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 66 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 67 entries
 
 ### Secondary overlap categories
 
@@ -97,9 +97,11 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AutoResearch-GenPose](https://github.com/PeleWang/AutoResearch-GenPose) - Vision research: adapts autoresearch to CIFAR-10 UNet denoising by editing one training file, running fixed 5-minute experiments, and keeping only val_psnr improvements.
 - [MLP-AutoResearch](https://github.com/HuangShengZeBlueSky/MLP_AutoResearch) - MNIST training research: ports Karpathy's single-file loop to an MLP classifier, fixing 20-epoch runs and greedy keep/revert decisions that raised handwritten-digit accuracy from 0.9809 to 0.9836.
 - [autoresearch-medimage](https://github.com/mattlungrenmd/autoresearch-medimage) - Medical imaging research: adapts Karpathy's `prepare.py` + `train.py` + `results.tsv` loop to 2D imaging tasks, using short-budget candidate discovery and staged follow-up validation to surface stronger ChestXray14 models.
+- [Agentic MR sequence development](https://arxiv.org/abs/2604.13282) - MRI sequence research: uses Agent4MR with physics-aware validation to let agents generate, refine, and autoresearch PyPulseq sequences for a fluid-suppressed spin-echo EPI challenge across model generations.
 - [autocircuit](https://github.com/qelloman/autocircuit) - Analog circuit optimization: adapts Karpathy's autoresearch to a SKY130 two-stage op-amp, editing `optimize.py`, running ngspice, and keeping only parameter changes that expand the GBW-versus-power Pareto front under phase-margin constraints.
 - [Photonic Device Auto-Design Agent](https://github.com/flexcompute/autophotonicdesign) - Photonic design research: applies a Karpathy-inspired loop to one `design.py`, running layout previews, fabrication DRC, FDTD simulations, and keep/discard decisions to optimize devices such as splitters, tapers, and crossings.
 - [fe-autoresearch](https://github.com/ezemriv/fe-autoresearch) - Tabular ML research: applies the autoresearch loop to LightGBM feature engineering on the UCI Bank Marketing dataset by editing one `engineer_features()` target, training against fixed AUC metrics, and keeping only improvements.
+- [AutoFeaTune](https://github.com/PranavBedi11/AutoFeaTune) - Tabular ML research: edits only `features.py`, trains XGBoost under 5-fold CV composite scoring, and uses a git ratchet plus graph memory to keep or revert feature transforms over repeated autoresearch runs.
 - [Paper Lantern improves Autoresearch](https://www.paperlantern.ai/blog/auto-research-case-study) - ML research augmentation: connects a 2M-paper MCP server to autoresearch, letting the agent cite 100 papers across 100 experiments and reach a 3.2% lower 2-hour validation loss than the same run without paper access.
 - [Subtractive Search in a Mature Tabular Pipeline](https://github.com/jhamandeep/autoresearch-tabular-case-study) - Tabular ML research: applies Karpathy's autoresearch to a churn-prediction XGBoost pipeline, running 116 autonomous experiments and lifting subsample AUC from 0.902892 to 0.916721 largely by removing noisy target-encoded features.
 - [autoresearch-connect4](https://github.com/alessoh/autoresearch-connect4) - Game AI research: adapts Karpathy's three-file autoresearch loop to Connect Four by editing `train.py`, training 5-minute self-play runs, and keeping only changes that improve weighted win rate against fixed opponents.
@@ -334,6 +336,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [kavindpadi on using pi-autoresearch for SQL optimization](https://x.com/kavindpadi/status/2041727544530235899) - X: describes trying pi-autoresearch on intentionally inefficient BigQuery SQL and suggests the same metric-driven loop can target top-cost warehouse queries under platform-specific pricing constraints.
 - [Kr1sso on turning Instruments into a teammate for autoresearch](https://x.com/Kr1sso/status/2043272598759354839) - X: describes turning macOS Instruments into an LLM-ready profiling CLI so autoresearch loops can test CPU, Metal GPU, and memory hypotheses and keep or discard optimizations from trace data.
 - [Autoresearching Ruby Performance with LLMs](https://rubykaigi.org/2026/presentations/nateberkopec.html) - Conference talk: says LLM agents, reproducible benchmarks, skills, and MCPs can be combined into an autoresearch workbench for Ruby and Rails performance tuning while surfacing the loop's practical limits.
+- [Brian on using autoresearch to build and deploy a Raspberry Pi ML model](https://x.com/rantlab/status/2047561605475701170) - X: reports six rounds of architecture search plus custom C inference, Zig cross-compilation, and SSH deployment to a Raspberry Pi 4, cutting p50 latency from 0.488 ms to 0.028 ms in about two hours.
 - [Darrell Thomas on an RTX 5090 CUDA kernel factory inspired by autoresearch](https://x.com/DarrellTho39662/status/2042821346736955721) - X: reports an AI loop that runs Nsight Compute, tunes kernels, and keeps or discards 39 CUDA variants, with DSYRK reaching 2.19× cuBLAS and quantum simulation running 2-5× faster than cuQuantum.
 - [abhijitmjj on a 13-hour autoresearch loop for a LaTeX scanner](https://x.com/abhijitmjj/status/2043723338359636117) - X: reports using Karpathy's keep/revert loop on a Markdown-to-LaTeX scanner, growing a 59-fixture corpus across 29 iterations to lift F1 from 0.896 to 1.0 while cutting real-world false positives by 78%.
 - [latentsea on autoresearch improving a SaaS-building harness against a `time-to-Realworld` benchmark](https://news.ycombinator.com/item?id=47551350) - Hacker News: says autoresearch improved a Claude-driven SaaS harness that builds RealWorld implementations under 90-minute budgets and scores them on test pass counts, harness quality, and completion time.
