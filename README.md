@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 29 entries
+- [Scientific Research](categories/scientific-research.md) — 31 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 37 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
 - [Finance / Trading](categories/finance-trading.md) — 18 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 60 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 64 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 66 entries
 
 ### Secondary overlap categories
 
@@ -93,10 +93,12 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-at-home](https://github.com/mutable-state-inc/autoresearch-at-home) - Distributed ML research: coordinates a SETI@home-style swarm of agents that claim experiments, share full `train.py` results through Ensue, and collectively drive down val_bpb across different GPUs.
 - [autoresearch-paper-benchmark](https://github.com/roth-andreas/autoresearch-paper-benchmark) - Graph ML research: runs paper-driven campaigns on a fixed Peptides-func benchmark by editing `train.py`, logging 300-second experiments, and testing only the best validation-AP model at campaign end.
 - [autoresearch-cifar10](https://github.com/GuillaumeErhard/autoresearch-cifar10) - Vision research: applies autoresearch to CIFAR-10 ResNet training on a 3090, iterating under fixed time budgets and keeping changes that lift accuracy beyond a 91.89% baseline.
+- [autoresearch-yolo](https://github.com/Tuesdayyy/autoresearch-yolo) - Vision research: adapts Karpathy's one-file keep/revert loop to YOLOv8 on COCO128, editing only `train.py`, running 10-minute experiments, and raising `mAP50-95` from 0.3820 to 0.8303 in the published results ledger.
 - [AutoResearch-GenPose](https://github.com/PeleWang/AutoResearch-GenPose) - Vision research: adapts autoresearch to CIFAR-10 UNet denoising by editing one training file, running fixed 5-minute experiments, and keeping only val_psnr improvements.
 - [MLP-AutoResearch](https://github.com/HuangShengZeBlueSky/MLP_AutoResearch) - MNIST training research: ports Karpathy's single-file loop to an MLP classifier, fixing 20-epoch runs and greedy keep/revert decisions that raised handwritten-digit accuracy from 0.9809 to 0.9836.
 - [autoresearch-medimage](https://github.com/mattlungrenmd/autoresearch-medimage) - Medical imaging research: adapts Karpathy's `prepare.py` + `train.py` + `results.tsv` loop to 2D imaging tasks, using short-budget candidate discovery and staged follow-up validation to surface stronger ChestXray14 models.
 - [autocircuit](https://github.com/qelloman/autocircuit) - Analog circuit optimization: adapts Karpathy's autoresearch to a SKY130 two-stage op-amp, editing `optimize.py`, running ngspice, and keeping only parameter changes that expand the GBW-versus-power Pareto front under phase-margin constraints.
+- [Photonic Device Auto-Design Agent](https://github.com/flexcompute/autophotonicdesign) - Photonic design research: applies a Karpathy-inspired loop to one `design.py`, running layout previews, fabrication DRC, FDTD simulations, and keep/discard decisions to optimize devices such as splitters, tapers, and crossings.
 - [fe-autoresearch](https://github.com/ezemriv/fe-autoresearch) - Tabular ML research: applies the autoresearch loop to LightGBM feature engineering on the UCI Bank Marketing dataset by editing one `engineer_features()` target, training against fixed AUC metrics, and keeping only improvements.
 - [Paper Lantern improves Autoresearch](https://www.paperlantern.ai/blog/auto-research-case-study) - ML research augmentation: connects a 2M-paper MCP server to autoresearch, letting the agent cite 100 papers across 100 experiments and reach a 3.2% lower 2-hour validation loss than the same run without paper access.
 - [Subtractive Search in a Mature Tabular Pipeline](https://github.com/jhamandeep/autoresearch-tabular-case-study) - Tabular ML research: applies Karpathy's autoresearch to a churn-prediction XGBoost pipeline, running 116 autonomous experiments and lifting subsample AUC from 0.902892 to 0.916721 largely by removing noisy target-encoded features.
@@ -285,6 +287,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 
 - [Brandon Pizzacalla on applying Karpathy's autoresearch pattern to cold email](https://x.com/bpizzacalla/status/2039233818994102609) - X: describes a single-agent loop that tests cold-email variants on live reply-rate metrics, commits winners as the new baseline, and stops at convergence.
 - [GoatGaucho on applying Karpathy's autoresearch to TrustLayer trust scoring](https://x.com/Goat_Gaucho/status/2036546607739707879) - X: reports using a mutable scoring config plus verifier on 120 labeled agents to push sybil-risk F1 from 0% to 95.9% in two keep-or-revert experiments before shipping the new thresholds to production.
+- [I used Karpathy's AutoResearch while building my app - got 80% better AI outputs. Here's exactly how I applied it outside ML](https://www.reddit.com/r/microsaas/comments/1snubrm/i_used_karpathys_autoresearch_while_building_my/) - Reddit: says a Farcast GTM tool used an autoresearch-style ICP and channel loop against real data, keeping only more specific outreach and community recommendations and reporting roughly 80% better outputs.
 
 ### Workflow automation / consumer ops
 
@@ -330,6 +333,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Alex C. on turning autoresearch into a bounded debugging loop skill](https://x.com/alexcovo_eth/status/2030899247470567534) - X: describes deriving a bounded-experiment-loop skill from autoresearch and using it to improve agent debugging and code fixing.
 - [kavindpadi on using pi-autoresearch for SQL optimization](https://x.com/kavindpadi/status/2041727544530235899) - X: describes trying pi-autoresearch on intentionally inefficient BigQuery SQL and suggests the same metric-driven loop can target top-cost warehouse queries under platform-specific pricing constraints.
 - [Kr1sso on turning Instruments into a teammate for autoresearch](https://x.com/Kr1sso/status/2043272598759354839) - X: describes turning macOS Instruments into an LLM-ready profiling CLI so autoresearch loops can test CPU, Metal GPU, and memory hypotheses and keep or discard optimizations from trace data.
+- [Autoresearching Ruby Performance with LLMs](https://rubykaigi.org/2026/presentations/nateberkopec.html) - Conference talk: says LLM agents, reproducible benchmarks, skills, and MCPs can be combined into an autoresearch workbench for Ruby and Rails performance tuning while surfacing the loop's practical limits.
 - [Darrell Thomas on an RTX 5090 CUDA kernel factory inspired by autoresearch](https://x.com/DarrellTho39662/status/2042821346736955721) - X: reports an AI loop that runs Nsight Compute, tunes kernels, and keeps or discards 39 CUDA variants, with DSYRK reaching 2.19× cuBLAS and quantum simulation running 2-5× faster than cuQuantum.
 - [abhijitmjj on a 13-hour autoresearch loop for a LaTeX scanner](https://x.com/abhijitmjj/status/2043723338359636117) - X: reports using Karpathy's keep/revert loop on a Markdown-to-LaTeX scanner, growing a 59-fixture corpus across 29 iterations to lift F1 from 0.896 to 1.0 while cutting real-world false positives by 78%.
 - [latentsea on autoresearch improving a SaaS-building harness against a `time-to-Realworld` benchmark](https://news.ycombinator.com/item?id=47551350) - Hacker News: says autoresearch improved a Claude-driven SaaS harness that builds RealWorld implementations under 90-minute budgets and scores them on test pass counts, harness quality, and completion time.
