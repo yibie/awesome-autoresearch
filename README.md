@@ -46,8 +46,8 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
 - [Finance / Trading](categories/finance-trading.md) — 19 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 61 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 76 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 62 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 78 entries
 
 ### Secondary overlap categories
 
@@ -267,6 +267,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autolab Companion Tools](https://github.com/dean0x/autolab) - Autoresearch companion infrastructure: adds statistical keep/discard verdicts, experiment-history steering, and multi-agent branch competitions to Karpathy's GPT-pretraining loop through the `autojudge`, `autosteer`, and `autoevolve` CLIs.
 - [autoresearch-cpu](https://github.com/efecanbasoz/autoresearch-cpu) - CPU ML fork: ports Karpathy's autoresearch to commodity CPUs by replacing Flash Attention with native SDPA, shrinking defaults for 30-minute local runs, and preserving the same one-file `val_bpb` keep/discard loop without CUDA.
 - [autoresearch-cn](https://github.com/sanbuphy/autoresearch-cn) - Chinese-language fork: translates Karpathy's autoresearch into Chinese while preserving the original MIT license, single-file training loop, fixed-time budget, and val_bpb keep/discard git workflow.
+- [autoresearcher2](https://github.com/ErikDeBruijn/autoresearcher2) - Bayesian research infra: extends Karpathy's autoresearch with structured Bayesian experiment selection, active-inference-inspired exploration, learntropy-style appraisal, and persistent memory, running v4.8 in production on dual RTX PRO 6000 Blackwell GPUs across NanoGPT training and Atari Breakout RL domains.
 - [hugoferreira/autoresearch](https://github.com/hugoferreira/autoresearch) - Codebase research framework: generalizes Karpathy's loop into falsifiable hypotheses, isolated experiment worktrees, instrument-backed observations, strict gate review, and reusable lessons for measurable engineering goals.
 - [scalar-loop](https://github.com/mandar-karhade/scalar-loop) - Experiment infrastructure: generalizes Karpathy's autoresearch into a Python-core CLI that seals harness files, enforces repo scope, and keeps or reverts only edits that pass metric and guard commands.
 - [Autoresearch Lab](https://github.com/nikhaldi/autoresearch-lab) - Black-box experiment infrastructure: wraps any measurable code pipeline in Docker sandboxing, Python eval backends, host-side git commit/revert control, and keep/discard research loops.
@@ -293,6 +294,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 ### Business / GTM workflows
 
 - [Brandon Pizzacalla on applying Karpathy's autoresearch pattern to cold email](https://x.com/bpizzacalla/status/2039233818994102609) - X: describes a single-agent loop that tests cold-email variants on live reply-rate metrics, commits winners as the new baseline, and stops at convergence.
+- [Karpathy's AutoResearch: How an ML Tool Became a Marketing Optimizer](https://monkfrom.earth/blogs/karpathy-autoresearch-explained-ml-to-marketing) - Blog: reports that Ole Lehmann adapted the autoresearch loop to landing-page copy optimization, lifting a Claude copywriting skill from 56% to 92% checklist pass rate overnight for ~$15, and also applied it to website speed (1100ms → 67ms) and cold outreach.
 - [GoatGaucho on applying Karpathy's autoresearch to TrustLayer trust scoring](https://x.com/Goat_Gaucho/status/2036546607739707879) - X: reports using a mutable scoring config plus verifier on 120 labeled agents to push sybil-risk F1 from 0% to 95.9% in two keep-or-revert experiments before shipping the new thresholds to production.
 - [I used Karpathy's AutoResearch while building my app - got 80% better AI outputs. Here's exactly how I applied it outside ML](https://www.reddit.com/r/microsaas/comments/1snubrm/i_used_karpathys_autoresearch_while_building_my/) - Reddit: says a Farcast GTM tool used an autoresearch-style ICP and channel loop against real data, keeping only more specific outreach and community recommendations and reporting roughly 80% better outputs.
 
@@ -354,6 +356,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 
 ### Scientific / research augmentation
 
+- [Karpathy's autoresearch could make scientists of us all](https://podscan.fm/podcasts/azeem-azhars-exponential-view/episodes/karpathys-autoresearch-could-make-scientists-of-us-all) - Podcast: Azeem Azhar explores applying Karpathy's loop architecture to refine worldviews, test arguments, and solve business problems beyond ML, arguing the pattern makes autonomous scientific experimentation cheap and accessible.
 - [Makoto Tanji on Karpathy's AutoResearch](https://x.com/tan_z_tan/status/2038794997701726668) - X: explains Karpathy's autoresearch as an evolutionary search loop and highlights emerging multi-agent and parallel extensions.
 - [Duy Nguyen on Karpathy, Tobi, and generalized autoresearch loops](https://x.com/goon_nguyen/status/2038764906284294428) - X: summarizes autoresearch as edit → evaluate → keep/discard → repeat and points to its use in both GPT training and Shopify Liquid optimization.
 - [Darian Parrish on smaller autoresearch loops for non-coding tasks](https://x.com/darian_parrish/status/2038739302826529028) - X: mentions adapting the autoresearch pattern beyond coding into other task types.

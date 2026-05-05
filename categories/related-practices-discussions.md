@@ -33,6 +33,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 ### Business / GTM workflows
 
 - [Brandon Pizzacalla on applying Karpathy's autoresearch pattern to cold email](https://x.com/bpizzacalla/status/2039233818994102609) - X: describes a single-agent loop that tests cold-email variants on live reply-rate metrics, commits winners as the new baseline, and stops at convergence.
+- [Karpathy's AutoResearch: How an ML Tool Became a Marketing Optimizer](https://monkfrom.earth/blogs/karpathy-autoresearch-explained-ml-to-marketing) - Blog: reports that Ole Lehmann adapted the autoresearch loop to landing-page copy optimization, lifting a Claude copywriting skill from 56% to 92% checklist pass rate overnight for ~$15, and also applied it to website speed (1100ms → 67ms) and cold outreach.
 - [GoatGaucho on applying Karpathy's autoresearch to TrustLayer trust scoring](https://x.com/Goat_Gaucho/status/2036546607739707879) - X: reports using a mutable scoring config plus verifier on 120 labeled agents to push sybil-risk F1 from 0% to 95.9% in two keep-or-revert experiments before shipping the new thresholds to production.
 - [I used Karpathy's AutoResearch while building my app - got 80% better AI outputs. Here's exactly how I applied it outside ML](https://www.reddit.com/r/microsaas/comments/1snubrm/i_used_karpathys_autoresearch_while_building_my/) - Reddit: says a Farcast GTM tool used an autoresearch-style ICP and channel loop against real data, keeping only more specific outreach and community recommendations and reporting roughly 80% better outputs.
 
@@ -94,6 +95,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 
 ### Scientific / research augmentation
 
+- [Karpathy's autoresearch could make scientists of us all](https://podscan.fm/podcasts/azeem-azhars-exponential-view/episodes/karpathys-autoresearch-could-make-scientists-of-us-all) - Podcast: Azeem Azhar explores applying Karpathy's loop architecture to refine worldviews, test arguments, and solve business problems beyond ML, arguing the pattern makes autonomous scientific experimentation cheap and accessible.
 - [Makoto Tanji on Karpathy's AutoResearch](https://x.com/tan_z_tan/status/2038794997701726668) - X: explains Karpathy's autoresearch as an evolutionary search loop and highlights emerging multi-agent and parallel extensions.
 - [Duy Nguyen on Karpathy, Tobi, and generalized autoresearch loops](https://x.com/goon_nguyen/status/2038764906284294428) - X: summarizes autoresearch as edit → evaluate → keep/discard → repeat and points to its use in both GPT training and Shopify Liquid optimization.
 - [Darian Parrish on smaller autoresearch loops for non-coding tasks](https://x.com/darian_parrish/status/2038739302826529028) - X: mentions adapting the autoresearch pattern beyond coding into other task types.
