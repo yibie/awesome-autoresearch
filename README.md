@@ -46,8 +46,8 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
 - [Finance / Trading](categories/finance-trading.md) — 19 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 62 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 78 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 63 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 81 entries
 
 ### Secondary overlap categories
 
@@ -268,6 +268,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-cpu](https://github.com/efecanbasoz/autoresearch-cpu) - CPU ML fork: ports Karpathy's autoresearch to commodity CPUs by replacing Flash Attention with native SDPA, shrinking defaults for 30-minute local runs, and preserving the same one-file `val_bpb` keep/discard loop without CUDA.
 - [autoresearch-cn](https://github.com/sanbuphy/autoresearch-cn) - Chinese-language fork: translates Karpathy's autoresearch into Chinese while preserving the original MIT license, single-file training loop, fixed-time budget, and val_bpb keep/discard git workflow.
 - [autoresearcher2](https://github.com/ErikDeBruijn/autoresearcher2) - Bayesian research infra: extends Karpathy's autoresearch with structured Bayesian experiment selection, active-inference-inspired exploration, learntropy-style appraisal, and persistent memory, running v4.8 in production on dual RTX PRO 6000 Blackwell GPUs across NanoGPT training and Atari Breakout RL domains.
+- [multiautoresearch](https://github.com/burtenshaw/multiautoresearch) - Multi-agent research lab: organizes Karpathy-style autoresearch into three sub-projects (pre-training, post-training, inference optimization) with planner, researcher, reviewer, and memory-keeper sub-agents across Claude Code, Codex, OpenCode, and pi harnesses.
 - [hugoferreira/autoresearch](https://github.com/hugoferreira/autoresearch) - Codebase research framework: generalizes Karpathy's loop into falsifiable hypotheses, isolated experiment worktrees, instrument-backed observations, strict gate review, and reusable lessons for measurable engineering goals.
 - [scalar-loop](https://github.com/mandar-karhade/scalar-loop) - Experiment infrastructure: generalizes Karpathy's autoresearch into a Python-core CLI that seals harness files, enforces repo scope, and keeps or reverts only edits that pass metric and guard commands.
 - [Autoresearch Lab](https://github.com/nikhaldi/autoresearch-lab) - Black-box experiment infrastructure: wraps any measurable code pipeline in Docker sandboxing, Python eval backends, host-side git commit/revert control, and keep/discard research loops.
@@ -353,6 +354,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Feature: Autoresearch Skill — Autonomous Git-Based Experiment Loop](https://github.com/NousResearch/hermes-agent/issues/4824) - GitHub issue: proposes adding a Karpathy-style autoresearch loop to the Hermes agent framework with git-backed keep/revert decisions and crash recovery.
 - [Autoresearch isn't just for training models](https://shopify.engineering/autoresearch) - Blog: Shopify engineer Dave recounts building pi-autoresearch with Tobi Lütke, open-sourcing it, and the internal #autoresearch-wins channel that has since logged unit tests 300× faster, builds 65% faster, and pnpm itself becoming faster through autonomous keep/discard loops.
 - [Autoresearch Beyond ML: Applying Karpathy's Optimization Pattern to RAG Retrieval](https://swenor.us/articles/autoresearch-beyond-ml.html) - Blog: adapts the autoresearch keep/discard loop to a production RAG knowledge base, mutating metadata and content one fix at a time and lifting retrieval pass rate from 22% to 89% while surfacing silent ontology-drift failures.
+- [feat(autoresearch): autonomous experiment engine in Juspay Neurolink](https://github.com/juspay/neurolink/pull/922) - GitHub PR: merges an 8,700-line autonomous experiment engine into the Juspay Neurolink product codebase, adding a Karpathy-style loop with sub-agents and git-backed keep/revert decisions for financial infrastructure research.
 
 ### Scientific / research augmentation
 
@@ -377,8 +379,10 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [From traces to self-improving agents](https://www.metronis.space/blog/from-traces-to-self-improving-agents) - Blog: describes Metronis Aegis as a closed-loop agent-improvement stack where traces become evals, weak slices become RL environments, useful trajectories write back to memory, and release depends on held-out proof.
 - [AutoResearch vs Classical Hyperparameter Tuning](https://www.weco.ai/blog/autoresearch-vs-classical-hpo) - Blog: reports a NanoChat head-to-head where autoresearch beats Optuna on sample efficiency, cost-adjusted results, and longer-horizon generalization by escaping a fixed search space.
 - [Autoresearch Hub](https://news.ycombinator.com/item?id=47374572) - Hacker News: Karpathy describes an unreleased swarm design where trusted workers verify improvements from a larger untrusted pool to parallelize autoresearch with leaderboard-style proof of progress.
+- [Greyforge audit of autoresearch architecture](https://github.com/karpathy/autoresearch/discussions/502) - GitHub Discussion: Greyforge Labs publishes a systems audit concluding autoresearch is a clean demo loop but not a serious research architecture, identifying gaps in supervision, routing, memory discipline, artifact durability, and operator control that they are building further up the stack.
 - [Andrej Karpathy on AutoResearch, AI Agents, and Why He Stopped Writing Code (No Priors Interview)](https://pjfp.com/andrej-karpathy-on-autoresearch-ai-agents-and-why-he-stopped-writing-code-full-breakdown-of-his-2026-no-priors-interview/) - Podcast: Karpathy describes the "loopy era" of autonomous systems running experiments, training models, and self-improving without human coding, including details on how he uses autoresearch for 16 hours a day.
 - [Autoresearch-Style Autonomous Prompt Optimization for PlanExe](https://docs.planexe.org/proposals/94-autoresearch-style-prompt-optimization/) - Proposal: adapts Karpathy's autoresearch pattern to autonomous prompt-template optimization, mutating one template at a time, regenerating affected outputs, and scoring results overnight.
+- [autoresearch on Loooom: Teaching a Skill to Improve Itself](https://www.mager.co/blog/2026-03-20-autoresearch-loooom-skills/) - Blog: dogfoods the autoresearch pattern on the learn-anything skill, lifting it from 0% to 87.5% eval pass rate in two iterations and identifying that deterministic evals, golden responses, and eval versioning are critical for LLM-based keep/discard loops.
 
 ### Knowledge Base / RAG Preparation
 
