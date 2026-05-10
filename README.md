@@ -42,12 +42,12 @@ We do **not** include:
 ### Primary categories
 
 - [Scientific Research](categories/scientific-research.md) — 35 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 38 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 11 entries
-- [Finance / Trading](categories/finance-trading.md) — 19 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 41 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 12 entries
+- [Finance / Trading](categories/finance-trading.md) — 20 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 64 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 82 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 66 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 84 entries
 
 ### Secondary overlap categories
 
@@ -162,6 +162,9 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [PolyTrader](https://github.com/dougsls/polytrader) - Trading-system performance optimization: applies autoresearch to PolyTrader's signal-detection hot path, keeping only test-clean code changes that cut end-to-end tracker latency from 25.7 ms to 0.46 ms across a published 10-iteration benchmark run.
 - [autoresearch-lora-buzhou](https://github.com/bzjiang401/autoresearch-lora-buzhou) - Local LoRA fine-tuning optimization: adapts autoresearch to user-chosen LoRA training goals by establishing a confirmed baseline, changing one parameter at a time, rerunning >1% wins for confirmation, and promoting only verified `val_loss` improvements to the best checkpoint.
 - [ZeroAPI](https://github.com/dorukardahan/ZeroAPI) - Model-routing optimization: applies an autoresearch loop to OpenClaw routing policy constants by rerunning evals on routing logs, changing one setting at a time, and keeping only traffic-verified improvements.
+- [One Hour, 37% Faster: Applying Autoresearch to Our Search Ranking Inference Endpoint](https://medium.com/idealo-tech-blog/one-hour-37-faster-applying-autoresearch-to-our-search-ranking-inference-endpoint-34cffc08e373) - Search ranking optimization: applies Karpathy's edit → measure → keep/revert loop to idealo's production LTR inference endpoint, reducing preprocessing latency 5.9× and end-to-end latency 37% in one hour for ~$7.
+- [smallnest/autoresearch](https://github.com/smallnest/autoresearch) - Software development automation: generalizes Karpathy's autoresearch into a multi-agent, multi-source (GitHub, local, Baidu iCafe, Codeup) issue-to-PR pipeline with rotator review, scoring gates, and automatic merge for any Git project.
+- [arete autoresearch-compiler](https://github.com/upvalue/arete/blob/main/autoresearch-compiler.md) - Compiler optimization: applies a Karpathy-style keep/revert loop to a self-hosting Scheme compiler, benchmarking fixed workloads and keeping only changes that improve runtime performance.
 
 ### Evaluation / Red Teaming
 
@@ -178,6 +181,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [AutoMemory](https://github.com/Shelter41/automemory) - Agent memory evaluation: lets an agent rewrite its own memory system against LongMemEval, using an immutable evaluator over random question samples and iterating on code plus strategy notes in response to scored failures.
 - [How to stop your autoresearch loop from cheating](https://www.cerebras.ai/blog/how-to-stop-your-autoresearch-loop-from-cheating) - Autoresearch evaluation hardening: reports 71 experiments across nanochat training and MoE compression, showing loops drift quickly unless experiments are isolated and evaluator gates block shortcut gains.
 - [Autoreason](https://github.com/NousResearch/autoreason) - Output evaluation: extends Karpathy-style autoresearch to subjective writing and coding tasks by running incumbent-versus-revision-versus-synthesis tournaments under blind multi-judge Borda scoring and stopping only when the unchanged version wins twice, outperforming standard self-refinement baselines on writing tasks and 150 CodeContests problems.
+- [AutoResearchBench](https://github.com/CherYou/AutoResearchBench) - Evaluation benchmark: a dedicated benchmark for autonomous scientific literature discovery with complementary deep and wide research tasks, showing that even the most powerful LLMs achieve only ~9% accuracy on literature-focused open-ended search.
 
 ### Finance / Trading
 
@@ -202,6 +206,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [EMA Crossover Autoresearch](https://github.com/marketcalls/emacrossover-autoresearch) - Equity trading research: adapts Karpathy's three-file autoresearch loop to an SBIN EMA strategy, mutating only `strategy.py`, backtesting a fixed 10-year Indian equities dataset, and keeping only changes that improve a composite return, Sharpe, and drawdown score.
 - [NSE AutoResearch](https://github.com/sagar-n/autoresearch-nse) - Equity trading research: adapts Karpathy's single-file keep/revert loop to Indian stock backtesting by mutating only `strategy.py` and keeping only lower composite-score strategies over a fixed 10-year NSE harness.
 - [delu-agent](https://github.com/deluagent/delu-agent) - Live crypto trading: runs a self-improving treasury agent on Base with 5 parallel autoresearch loops that evolve the scoring model through 9,000+ backtested experiments 24/7 and execute trades via Bankr without human intervention.
+- [investment-autoresearch](https://github.com/lucemia/investment-autoresearch) - Trading strategy research: a Claude Code plugin that runs parallel agents testing single-hypothesis strategy variants in isolated git worktrees, scoring each against baseline buy-and-hold, and resetting from verified insights when incremental search plateaus.
 
 ### Personal Knowledge / Humanities
 
@@ -278,6 +283,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [AdaL vs Claude Code: Autoresearch Benchmark](https://github.com/SylphAI-Inc/autoresearch-adal) - Benchmarking research: publishes head-to-head Karpathy-autoresearch runs on A10 and H100 hardware, comparing best `val_bpb`, experiment counts, and kept improvements between AdaL and Claude Code.
 - [达尔文.skill](https://github.com/alchaincyf/darwin-skill) - Skill optimization framework: adapts Karpathy's autoresearch to one `SKILL.md` at a time, rescoring structure plus real test outputs and keeping only higher-scoring revisions.
 - [Community Computer](https://community.computer) - Collaborative experiment network: turns autoresearch runs into signed, peer-reproducible experiment records and auto-publishes keep/discard outcomes from Claude Code or pi over a Radicle peer-to-peer network.
+- [autoresearch-macos](https://github.com/miolini/autoresearch-macos) - Apple Silicon fork: ports Karpathy's autoresearch to macOS with MPS/SDPA fallbacks, preserving the fixed-time training budget, single mutable file, and git keep/revert loop on Apple Silicon Macs.
+- [autoresearch-tenstorrent](https://github.com/bro4all/autoresearch-tenstorrent) - Tenstorrent hardware port: ports Karpathy's autoresearch to Tenstorrent Wormhole devices with a TT-XLA backend, preserving the 5-minute fixed budget and keep/revert loop while adapting to a non-CUDA AI accelerator.
 
 ### Related Practices / Discussions
 
@@ -385,6 +392,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Andrej Karpathy on AutoResearch, AI Agents, and Why He Stopped Writing Code (No Priors Interview)](https://pjfp.com/andrej-karpathy-on-autoresearch-ai-agents-and-why-he-stopped-writing-code-full-breakdown-of-his-2026-no-priors-interview/) - Podcast: Karpathy describes the "loopy era" of autonomous systems running experiments, training models, and self-improving without human coding, including details on how he uses autoresearch for 16 hours a day.
 - [Autoresearch-Style Autonomous Prompt Optimization for PlanExe](https://docs.planexe.org/proposals/94-autoresearch-style-prompt-optimization/) - Proposal: adapts Karpathy's autoresearch pattern to autonomous prompt-template optimization, mutating one template at a time, regenerating affected outputs, and scoring results overnight.
 - [autoresearch on Loooom: Teaching a Skill to Improve Itself](https://www.mager.co/blog/2026-03-20-autoresearch-loooom-skills/) - Blog: dogfoods the autoresearch pattern on the learn-anything skill, lifting it from 0% to 87.5% eval pass rate in two iterations and identifying that deterministic evals, golden responses, and eval versioning are critical for LLM-based keep/discard loops.
+- [Autoresearch: The Overnight Loop That Changed the Production Function](https://www.mmntm.net/articles/autoresearch-overnight-loop) - Blog: synthesizes the autoresearch cascade from Karpathy's original loop through financial markets, chess, and rendering, identifying the fixed clock, honest fitness function, and cost convergence as the structural conditions behind the pattern's rapid spread across domains.
+- [拆解 AutoResearch：630 行代码，一晚上百次实验](https://juejin.cn/post/7634432180045086726) - Blog (Chinese): a technical deep-dive into Karpathy's 630-line autoresearch codebase, explaining the fixed-time loop, three-file architecture, and why minimalist design enables overnight autonomous experimentation.
 
 ### Knowledge Base / RAG Preparation
 
