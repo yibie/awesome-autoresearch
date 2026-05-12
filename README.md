@@ -46,8 +46,8 @@ We do **not** include:
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 13 entries
 - [Finance / Trading](categories/finance-trading.md) — 23 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 3 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 71 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 88 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 73 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 94 entries
 
 ### Secondary overlap categories
 
