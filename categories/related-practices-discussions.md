@@ -29,6 +29,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 - [nlethetech on a NEPSE quant terminal refined through 300+ autoresearch cycles](https://x.com/nlethetech/status/2043522907779862610) - X: says his NEPSE terminal trading workstation backtests strategies with a quant model refined through 300+ autoresearch cycles while combining market data and execution in one interface.
 - [tensorqt on Paradigm's autoresearch hackathon for market making](https://x.com/tensorqt/status/2042880400737931401) - X: describes a Paradigm challenge that treated prediction-market market making as an autoresearch problem and says top teams scaled the search with parallel Claude Code or Codex workers plus internal orchestration.
 - [xmal on using autoresearch in Naive-Power Law Blend market forecasting](https://x.com/xmal/status/2043998855771861470) - X: says a new Naive-Power Law Blend asset-forecast study applied Karpathy's autoresearch framework, found the loop effective, and exposed overfitting in the initial setup.
+- [Karpathy autoresearch loop driving a HMM + GEM ensemble](https://www.reddit.com/r/algotradingcrypto/comments/1t79omn/karpathy_autoresearch_loop_driving_a_hmm_gem/) - Reddit: describes applying Karpathy's autoresearch loop to a Hidden Markov Model and Graph Ensemble Mixture trading strategy with autonomous strategy iteration.
 
 ### Business / GTM workflows
 
