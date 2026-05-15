@@ -30,6 +30,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 - [tensorqt on Paradigm's autoresearch hackathon for market making](https://x.com/tensorqt/status/2042880400737931401) - X: describes a Paradigm challenge that treated prediction-market market making as an autoresearch problem and says top teams scaled the search with parallel Claude Code or Codex workers plus internal orchestration.
 - [xmal on using autoresearch in Naive-Power Law Blend market forecasting](https://x.com/xmal/status/2043998855771861470) - X: says a new Naive-Power Law Blend asset-forecast study applied Karpathy's autoresearch framework, found the loop effective, and exposed overfitting in the initial setup.
 - [Karpathy autoresearch loop driving a HMM + GEM ensemble](https://www.reddit.com/r/algotradingcrypto/comments/1t79omn/karpathy_autoresearch_loop_driving_a_hmm_gem/) - Reddit: describes applying Karpathy's autoresearch loop to a Hidden Markov Model and Graph Ensemble Mixture trading strategy with autonomous strategy iteration.
+- [I made Claude Code build trading strategies — and built an adversarial harness to stop it from cheating](https://www.reddit.com/r/algotradingcrypto/comments/1t96gca/i_made_claude_code_build_trading_strategies_and/) - Reddit: describes applying Karpathy's autoresearch to crypto strategy design, then building an adversarial verifier when the agent learned to game backtest scoring.
 
 ### Business / GTM workflows
 
@@ -97,6 +98,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 - [Autoresearch Beyond ML: Applying Karpathy's Optimization Pattern to RAG Retrieval](https://swenor.us/articles/autoresearch-beyond-ml.html) - Blog: adapts the autoresearch keep/discard loop to a production RAG knowledge base, mutating metadata and content one fix at a time and lifting retrieval pass rate from 22% to 89% while surfacing silent ontology-drift failures.
 - [The Dark Factory Harness: From Autonomous Hill-Climbing to Autonomous Research](https://sotaverified.org/blog/improving-autoresearch-dark-factory-harness) - Blog: adds research context, research memory, and research strategy layers around the autoresearch loop to prevent random-walk behavior and help agents learn from experiment trajectories after 20+ iterations.
 - [Two-phase Autoresearch Chain](https://www.reddit.com/r/NavigatingComplexity/comments/1t6zv0t/twophase_autoresearch_chain/) - Reddit: describes a structured two-phase approach to autoresearch with explicit planning and execution phases for more principled experiment design.
+- [My first post scored 1. Karpathy's autoresearch idea helped me repost](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch to optimize an HN post itself, treating upvote ratio as the metric and iterating on content through a keep/discard loop.
 
 ### Scientific / research augmentation
 

@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 35 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 41 entries
+- [Scientific Research](categories/scientific-research.md) — 36 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 42 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 14 entries
-- [Finance / Trading](categories/finance-trading.md) — 22 entries
+- [Finance / Trading](categories/finance-trading.md) — 24 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 77 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 100 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 81 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 102 entries
 
 ### Secondary overlap categories
 
@@ -119,6 +119,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-qwen](https://github.com/wadeKeith/autoresearch-qwen) - Document VQA research: adapts Karpathy's keep/discard loop to Qwen3-VL on the official DocVQA benchmark by fixing `evaluate.py`, limiting edits to `train.py`, and accepting only higher full-validation ANLS scores.
 - [Wine Variety Prediction with LLMs](https://github.com/ivanfioravanti/wine_variety_classification) - ML fine-tuning research: uses a Karpathy-inspired agent loop to edit one LoRA YAML config, parse `HPSEARCH_RESULT` accuracy from short MLX runs, log each trial in JSONL, and revert worse hyperparameter changes on the wine-classification benchmark.
 - [Autoresearch for Research](https://github.com/michK/Autoresearch-for-Research) - Physics research: uses an LLM to hypothesize, implement, run, and interpret PDE experiments across five domains (Navier-Stokes, Kuramoto-Sivashinsky, Gray-Scott, NLS, CGLE), achieving 7-24× score improvements with no problem-specific training.
+- [ScaleAutoResearch-Ramsey](https://github.com/ypwang61/ScaleAutoResearch-Ramsey) - Mathematics research: scales autoresearch to Ramsey number computation, discovering new lower bounds R(3,17)≥93 and R(4,15)≥160 that improved 32-year-old records after even DeepMind's AlphaEvolve could not.
 
 ### Software / Systems Optimization
 
@@ -165,6 +166,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [One Hour, 37% Faster: Applying Autoresearch to Our Search Ranking Inference Endpoint](https://medium.com/idealo-tech-blog/one-hour-37-faster-applying-autoresearch-to-our-search-ranking-inference-endpoint-34cffc08e373) - Search ranking optimization: applies Karpathy's edit → measure → keep/revert loop to idealo's production LTR inference endpoint, reducing preprocessing latency 5.9× and end-to-end latency 37% in one hour for ~$7.
 - [smallnest/autoresearch](https://github.com/smallnest/autoresearch) - Software development automation: generalizes Karpathy's autoresearch into a multi-agent, multi-source (GitHub, local, Baidu iCafe, Codeup) issue-to-PR pipeline with rotator review, scoring gates, and automatic merge for any Git project.
 - [arete autoresearch-compiler](https://github.com/upvalue/arete/blob/main/autoresearch-compiler.md) - Compiler optimization: applies a Karpathy-style keep/revert loop to a self-hosting Scheme compiler, benchmarking fixed workloads and keeping only changes that improve runtime performance.
+- [auto-arch-tournament](https://github.com/FeSens/auto-arch-tournament) - CPU architecture optimization: extends Karpathy's autoresearch loop to SystemVerilog RTL, proposing, implementing, and measuring microarchitectural hypotheses through riscv-formal, Verilator cosim, and FPGA place-and-route to achieve +91.9% CoreMark on a RISC-V core.
 
 ### Evaluation / Red Teaming
 
@@ -211,6 +213,8 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [investment-autoresearch](https://github.com/lucemia/investment-autoresearch) - Trading strategy research: a Claude Code plugin that runs parallel agents testing single-hypothesis strategy variants in isolated git worktrees, scoring each against baseline buy-and-hold, and resetting from verified insights when incremental search plateaus.
 - [autoresearch-crypto](https://github.com/chencore/autoresearch-crypto) - Crypto trading research: applies Karpathy's single-file, backtest-driven keep/revert loop to crypto strategy development with fixed historical data and metric-based acceptance gates.
 - [feat(autoresearch): autonomous experiment engine in Juspay Neurolink](https://github.com/juspay/neurolink/pull/922) - Financial infrastructure research: merges an 8,700-line autonomous experiment engine with Karpathy-style sub-agents and git-backed keep/revert decisions into the Juspay Neurolink product codebase.
+- [ml-vs-leadlag-jp-stock](https://github.com/kiwiiosaru-jp/ml-vs-leadlag-jp-stock) - Japanese equity trading: applies Karpathy's autoresearch framework to Japanese stock prediction, comparing ML-driven Sharpe maximization against a classical lead-lag PCA strategy on reproducible benchmarks with published write-up.
+- [autoresearch-backtesting](https://github.com/topoftheblock/autoresearch-backtesting) - Equity trading: uses an autonomous LLM agent to iteratively rewrite its PyTorch network for SPY directional prediction, backtesting each mutation and keeping only Sharpe improvements in a train → backtest → keep/discard loop.
 
 ### Personal Knowledge / Humanities
 
@@ -300,6 +304,10 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [GEPAResearch](https://github.com/CyrusNuevoDia/gepa-research) - Plugin for agentic frameworks: optimizes code using the Genetic-Pareto LLM-driven search algorithm with isolated git worktrees, gated evaluation, and Pareto frontier candidate tracking for keep/discard decisions.
 - [Codex Autoresearch](https://github.com/TheGreenCedar/codex-autoresearch) - Codex plugin: wraps optimization goals into measured experiment packets with benchmark contracts, durable session files, evidence trails, and live dashboards for keep/discard review.
 - [Cursor Autoresearch](https://github.com/ergenekonyigit/cursor-autoresearch) - Cursor and VS Code extension: ports pi-autoresearch's MCP-driven optimization loop into a code editor with JSONL tracking, browser dashboard, and agent skills for metric-driven keep/discard workflows.
+- [interpretable-autoresearch](https://github.com/BarishNamazov/interpretable-autoresearch) - Governance infrastructure: makes autoresearch agent behavior transparent and auditable through behavioral specifications, winning 2nd place at the MIT Spring 2026 Hackathon.
+- [skills-autoresearch-flue](https://github.com/schalkneethling/skills-autoresearch-flue) - Evaluation infrastructure: provides a Flue agent harness that evaluates a seed skill against project fixtures, asks a researcher model to improve the skill, then reruns evals against the candidate.
+- [autoresearch-plugin](https://github.com/XiaontOVO/autoresearch-plugin) - Research pipeline plugin: packages a full autonomous research pipeline as a Claude Code plugin with 65 skills across 9 families, guiding a direction from vague idea to submission-ready paper.
+- [research-program-skill](https://github.com/XWHQSJ/research-program-skill) - Research workflow skill: combines ml-intern's discovery discipline with autoresearch's baseline-first, metric-first loop into a portable skill for Claude Code, Codex CLI, and Cursor Agent.
 
 ### Related Practices / Discussions
 
@@ -315,6 +323,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [tensorqt on Paradigm's autoresearch hackathon for market making](https://x.com/tensorqt/status/2042880400737931401) - X: describes a Paradigm challenge that treated prediction-market market making as an autoresearch problem and says top teams scaled the search with parallel Claude Code or Codex workers plus internal orchestration.
 - [xmal on using autoresearch in Naive-Power Law Blend market forecasting](https://x.com/xmal/status/2043998855771861470) - X: says a new Naive-Power Law Blend asset-forecast study applied Karpathy's autoresearch framework, found the loop effective, and exposed overfitting in the initial setup.
 - [Karpathy autoresearch loop driving a HMM + GEM ensemble](https://www.reddit.com/r/algotradingcrypto/comments/1t79omn/karpathy_autoresearch_loop_driving_a_hmm_gem/) - Reddit: describes applying Karpathy's autoresearch loop to a Hidden Markov Model and Graph Ensemble Mixture trading strategy with autonomous strategy iteration.
+- [I made Claude Code build trading strategies — and built an adversarial harness to stop it from cheating](https://www.reddit.com/r/algotradingcrypto/comments/1t96gca/i_made_claude_code_build_trading_strategies_and/) - Reddit: describes applying Karpathy's autoresearch to crypto strategy design, then building an adversarial verifier when the agent learned to game backtest scoring.
 
 ### Business / GTM workflows
 
@@ -382,6 +391,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Autoresearch Beyond ML: Applying Karpathy's Optimization Pattern to RAG Retrieval](https://swenor.us/articles/autoresearch-beyond-ml.html) - Blog: adapts the autoresearch keep/discard loop to a production RAG knowledge base, mutating metadata and content one fix at a time and lifting retrieval pass rate from 22% to 89% while surfacing silent ontology-drift failures.
 - [The Dark Factory Harness: From Autonomous Hill-Climbing to Autonomous Research](https://sotaverified.org/blog/improving-autoresearch-dark-factory-harness) - Blog: adds research context, research memory, and research strategy layers around the autoresearch loop to prevent random-walk behavior and help agents learn from experiment trajectories after 20+ iterations.
 - [Two-phase Autoresearch Chain](https://www.reddit.com/r/NavigatingComplexity/comments/1t6zv0t/twophase_autoresearch_chain/) - Reddit: describes a structured two-phase approach to autoresearch with explicit planning and execution phases for more principled experiment design.
+- [My first post scored 1. Karpathy's autoresearch idea helped me repost](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch to optimize an HN post itself, treating upvote ratio as the metric and iterating on content through a keep/discard loop.
 
 ### Scientific / research augmentation
 
