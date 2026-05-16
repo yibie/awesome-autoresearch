@@ -142,3 +142,11 @@ This page is for **discussion evidence**, not for generic AI commentary.
 - [Autoresearch System Architecture for ML Claim Validation](https://wiki.charleschen.ai/Review/Research/autoresearch-system-architecture-for-ml-claim-validation) - Wiki: proposes a system architecture that uses autoresearch to validate ML research claims by having agents attempt to reproduce and stress-test reported results in controlled loops.
 - [Autoresearch on Steroids with Sandboxes](https://www.tensorlake.ai/blog/autoresearch-on-steroids-with-sandboxes) - Blog: demonstrates using sandboxed environments as the execution layer for autoresearch loops with isolation, parallelism, and pre-warmed filesystems to run candidates faster and more reliably.
 - [AI4Scientist/awesome-autoresearch](https://github.com/AI4Scientist/awesome-autoresearch) - GitHub curated list: another community-maintained list of autonomous researcher frameworks with 105+ stars, signaling the ecosystem has grown large enough to sustain multiple curated indexes.
+
+### Software / code workflows (continued)
+
+- [Autoresearch Is Reward Function Design](https://cameronwestland.com/autoresearch-is-reward-function-design/) - Blog: applies pi-autoresearch to optimize a Python finance scoring pipeline across 49 experiments with keep/discard, cutting p95 latency from 339ms to 34ms and arguing that autoresearch success hinges on reward-function design quality rather than the loop mechanics.
+
+### Infra / benchmarking ideas (continued)
+
+- [Auto-research: The Lab That Runs While You Sleep](https://adlrocha.substack.com/p/adlrocha-auto-research-the-lab-that) - Blog: discusses how automated autoresearch feedback loops shift the bottleneck from running experiments to deciding what to optimize for, arguing that metric definition is the binding constraint on loop effectiveness.

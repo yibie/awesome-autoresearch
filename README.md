@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 36 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 42 entries
+- [Scientific Research](categories/scientific-research.md) — 37 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 43 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 14 entries
 - [Finance / Trading](categories/finance-trading.md) — 24 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 81 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 102 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 84 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 104 entries
 
 ### Secondary overlap categories
 
@@ -120,6 +120,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Wine Variety Prediction with LLMs](https://github.com/ivanfioravanti/wine_variety_classification) - ML fine-tuning research: uses a Karpathy-inspired agent loop to edit one LoRA YAML config, parse `HPSEARCH_RESULT` accuracy from short MLX runs, log each trial in JSONL, and revert worse hyperparameter changes on the wine-classification benchmark.
 - [Autoresearch for Research](https://github.com/michK/Autoresearch-for-Research) - Physics research: uses an LLM to hypothesize, implement, run, and interpret PDE experiments across five domains (Navier-Stokes, Kuramoto-Sivashinsky, Gray-Scott, NLS, CGLE), achieving 7-24× score improvements with no problem-specific training.
 - [ScaleAutoResearch-Ramsey](https://github.com/ypwang61/ScaleAutoResearch-Ramsey) - Mathematics research: scales autoresearch to Ramsey number computation, discovering new lower bounds R(3,17)≥93 and R(4,15)≥160 that improved 32-year-old records after even DeepMind's AlphaEvolve could not.
+- [bountyhunter: Vesuvius Autoresearch](https://github.com/jonmarrs/vesuvius-autoresearch) - Scientific research: deploys the first autonomous research swarm for the Vesuvius Challenge, running a full CV research loop with hypothesis generation, hyperparameter optimization, model training, and keep/discard decisions to uncover optimal configurations for reading ancient carbonized scrolls.
 
 ### Software / Systems Optimization
 
@@ -167,6 +168,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [smallnest/autoresearch](https://github.com/smallnest/autoresearch) - Software development automation: generalizes Karpathy's autoresearch into a multi-agent, multi-source (GitHub, local, Baidu iCafe, Codeup) issue-to-PR pipeline with rotator review, scoring gates, and automatic merge for any Git project.
 - [arete autoresearch-compiler](https://github.com/upvalue/arete/blob/main/autoresearch-compiler.md) - Compiler optimization: applies a Karpathy-style keep/revert loop to a self-hosting Scheme compiler, benchmarking fixed workloads and keeping only changes that improve runtime performance.
 - [auto-arch-tournament](https://github.com/FeSens/auto-arch-tournament) - CPU architecture optimization: extends Karpathy's autoresearch loop to SystemVerilog RTL, proposing, implementing, and measuring microarchitectural hypotheses through riscv-formal, Verilator cosim, and FPGA place-and-route to achieve +91.9% CoreMark on a RISC-V core.
+- [autoresearch-function](https://github.com/vneyman/autoresearch-function) - Function optimization: adapts Karpathy's autoresearch to a CPU-only scaffold that benchmarks arbitrary functions against correctness, execution time, memory, and throughput metrics, keeping only edits that improve a composite score.
 
 ### Evaluation / Red Teaming
 
@@ -308,6 +310,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [skills-autoresearch-flue](https://github.com/schalkneethling/skills-autoresearch-flue) - Evaluation infrastructure: provides a Flue agent harness that evaluates a seed skill against project fixtures, asks a researcher model to improve the skill, then reruns evals against the candidate.
 - [autoresearch-plugin](https://github.com/XiaontOVO/autoresearch-plugin) - Research pipeline plugin: packages a full autonomous research pipeline as a Claude Code plugin with 65 skills across 9 families, guiding a direction from vague idea to submission-ready paper.
 - [research-program-skill](https://github.com/XWHQSJ/research-program-skill) - Research workflow skill: combines ml-intern's discovery discipline with autoresearch's baseline-first, metric-first loop into a portable skill for Claude Code, Codex CLI, and Cursor Agent.
+- [autoimprove](https://github.com/tokyo-megacorp/autoimprove) - Codebase improvement infra: generalizes Karpathy's autoresearch for Claude Code and Codex with git worktree isolation, configurable improvement strategies, and keep/discard experiment logs.
+- [harvester](https://github.com/HacksterT/harvester) - Code maintenance infra: applies the Karpathy autoresearch pattern to watch repos, surface improvement opportunities as GitHub issues, execute approved changes overnight via Claude Code, and produce draft PRs for morning review.
+- [Autoresearch](https://github.com/mirceastrugaru/autoresearch) - Parallel experimentation framework: spawns supportive and adversarial Claude Code workers to collect evidence for or against research directions, with a judge scoring write-ups and curating the roadmap through iterative convergence detection.
 
 ### Related Practices / Discussions
 
@@ -435,6 +440,14 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Autoresearch System Architecture for ML Claim Validation](https://wiki.charleschen.ai/Review/Research/autoresearch-system-architecture-for-ml-claim-validation) - Wiki: proposes a system architecture that uses autoresearch to validate ML research claims by having agents attempt to reproduce and stress-test reported results in controlled loops.
 - [Autoresearch on Steroids with Sandboxes](https://www.tensorlake.ai/blog/autoresearch-on-steroids-with-sandboxes) - Blog: demonstrates using sandboxed environments as the execution layer for autoresearch loops with isolation, parallelism, and pre-warmed filesystems to run candidates faster and more reliably.
 - [AI4Scientist/awesome-autoresearch](https://github.com/AI4Scientist/awesome-autoresearch) - GitHub curated list: another community-maintained list of autonomous researcher frameworks with 105+ stars, signaling the ecosystem has grown large enough to sustain multiple curated indexes.
+
+### Software / code workflows (continued)
+
+- [Autoresearch Is Reward Function Design](https://cameronwestland.com/autoresearch-is-reward-function-design/) - Blog: applies pi-autoresearch to optimize a Python finance scoring pipeline across 49 experiments with keep/discard, cutting p95 latency from 339ms to 34ms and arguing that autoresearch success hinges on reward-function design quality rather than the loop mechanics.
+
+### Infra / benchmarking ideas (continued)
+
+- [Auto-research: The Lab That Runs While You Sleep](https://adlrocha.substack.com/p/adlrocha-auto-research-the-lab-that) - Blog: discusses how automated autoresearch feedback loops shift the bottleneck from running experiments to deciding what to optimize for, arguing that metric definition is the binding constraint on loop effectiveness.
 
 ### Knowledge Base / RAG Preparation
 
