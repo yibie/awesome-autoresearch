@@ -41,27 +41,27 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 37 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 43 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 14 entries
-- [Finance / Trading](categories/finance-trading.md) — 24 entries
-- [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 84 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 104 entries
+- [Scientific Research](categories/scientific-research.md) — 38 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 44 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 15 entries
+- [Finance / Trading](categories/finance-trading.md) — 25 entries
+- [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 3 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 85 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 108 entries
 
 ### Secondary overlap categories
 
-- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
-- [Market Research](categories/market-research.md) — 1 entry
-- [Workflow Automation](categories/workflow-automation.md) — 8 entries
+- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 4 entries
+- [Market Research](categories/market-research.md) — 2 entries
+- [Workflow Automation](categories/workflow-automation.md) — 9 entries
 
 ### Open categories still being tracked
 
-- [Competitive Intelligence](categories/competitive-intelligence.md) — 0 entries
-- [Content Research](categories/content-research.md) — 0 entries
-- [Customer Discovery](categories/customer-discovery.md) — 0 entries
-- [Lead Generation](categories/lead-generation.md) — 0 entries
-- [Trend Monitoring](categories/trend-monitoring.md) — 0 entries
+- [Competitive Intelligence](categories/competitive-intelligence.md) — 1 entries
+- [Content Research](categories/content-research.md) — 1 entries
+- [Customer Discovery](categories/customer-discovery.md) — 1 entries
+- [Lead Generation](categories/lead-generation.md) — 1 entries
+- [Trend Monitoring](categories/trend-monitoring.md) — 1 entries
 
 Some entries intentionally appear in more than one overlap category when the same project is both a domain case and a reusable workflow pattern.
 
