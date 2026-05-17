@@ -42,26 +42,26 @@ We do **not** include:
 ### Primary categories
 
 - [Scientific Research](categories/scientific-research.md) — 38 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 44 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 43 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 15 entries
 - [Finance / Trading](categories/finance-trading.md) — 25 entries
-- [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 3 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 85 entries
+- [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 87 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 108 entries
 
 ### Secondary overlap categories
 
-- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 4 entries
-- [Market Research](categories/market-research.md) — 2 entries
-- [Workflow Automation](categories/workflow-automation.md) — 9 entries
+- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
+- [Market Research](categories/market-research.md) — 1 entry
+- [Workflow Automation](categories/workflow-automation.md) — 8 entries
 
 ### Open categories still being tracked
 
-- [Competitive Intelligence](categories/competitive-intelligence.md) — 1 entries
-- [Content Research](categories/content-research.md) — 1 entries
-- [Customer Discovery](categories/customer-discovery.md) — 1 entries
-- [Lead Generation](categories/lead-generation.md) — 1 entries
-- [Trend Monitoring](categories/trend-monitoring.md) — 1 entries
+- [Competitive Intelligence](categories/competitive-intelligence.md) — 0 entries
+- [Content Research](categories/content-research.md) — 0 entries
+- [Customer Discovery](categories/customer-discovery.md) — 0 entries
+- [Lead Generation](categories/lead-generation.md) — 0 entries
+- [Trend Monitoring](categories/trend-monitoring.md) — 0 entries
 
 Some entries intentionally appear in more than one overlap category when the same project is both a domain case and a reusable workflow pattern.
 
@@ -121,6 +121,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Autoresearch for Research](https://github.com/michK/Autoresearch-for-Research) - Physics research: uses an LLM to hypothesize, implement, run, and interpret PDE experiments across five domains (Navier-Stokes, Kuramoto-Sivashinsky, Gray-Scott, NLS, CGLE), achieving 7-24× score improvements with no problem-specific training.
 - [ScaleAutoResearch-Ramsey](https://github.com/ypwang61/ScaleAutoResearch-Ramsey) - Mathematics research: scales autoresearch to Ramsey number computation, discovering new lower bounds R(3,17)≥93 and R(4,15)≥160 that improved 32-year-old records after even DeepMind's AlphaEvolve could not.
 - [bountyhunter: Vesuvius Autoresearch](https://github.com/jonmarrs/vesuvius-autoresearch) - Scientific research: deploys the first autonomous research swarm for the Vesuvius Challenge, running a full CV research loop with hypothesis generation, hyperparameter optimization, model training, and keep/discard decisions to uncover optimal configurations for reading ancient carbonized scrolls.
+- [AutoGo](https://github.com/ericjang/autogo) - Game AI research: applies Karpathy's autoresearch to training a Go-playing AI from scratch, using cheap self-play data and fixed-time eval to keep only network architecture and training improvements across iterations.
 
 ### Software / Systems Optimization
 
@@ -188,6 +189,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [AutoResearchBench](https://github.com/CherYou/AutoResearchBench) - Evaluation benchmark: a dedicated benchmark for autonomous scientific literature discovery with complementary deep and wide research tasks, showing that even the most powerful LLMs achieve only ~9% accuracy on literature-focused open-ended search.
 - [Jailbreak Autoresearch](https://github.com/davidondrej/jailbreak-autoresearch) - Jailbreak red-teaming: applies Karpathy's autoresearch loop to prompt-harness experiments, testing different header and footer harnesses against a fixed body and scoring responses against a rubric to find more effective jailbreak strategies.
 - [JustAsk](https://github.com/x-zheng16/JustAsk) - System prompt extraction: uses autoresearch-style curiosity-driven code agents to iteratively probe and reveal system prompts from frontier LLMs, accepted at ICML 2026.
+- [DSBench AutoResearch](https://github.com/dlmastery/autoresearch_dsbench) - Benchmark evaluation: applies Karpathy-style hill-climbing to each of DSBench's 74 Kaggle modeling and 38 Modeloff analysis tasks, running per-task autoresearch repos with a forensic audit that beats 82/112 DSBench baselines.
 
 ### Finance / Trading
 
@@ -217,6 +219,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [feat(autoresearch): autonomous experiment engine in Juspay Neurolink](https://github.com/juspay/neurolink/pull/922) - Financial infrastructure research: merges an 8,700-line autonomous experiment engine with Karpathy-style sub-agents and git-backed keep/revert decisions into the Juspay Neurolink product codebase.
 - [ml-vs-leadlag-jp-stock](https://github.com/kiwiiosaru-jp/ml-vs-leadlag-jp-stock) - Japanese equity trading: applies Karpathy's autoresearch framework to Japanese stock prediction, comparing ML-driven Sharpe maximization against a classical lead-lag PCA strategy on reproducible benchmarks with published write-up.
 - [autoresearch-backtesting](https://github.com/topoftheblock/autoresearch-backtesting) - Equity trading: uses an autonomous LLM agent to iteratively rewrite its PyTorch network for SPY directional prediction, backtesting each mutation and keeping only Sharpe improvements in a train → backtest → keep/discard loop.
+- [IPL Odds Multi-Agent Autoresearch](https://github.com/dashthird-0/ipl-odds-multiagent-autoresearch) - Sports betting research: deploys 7 Claude Code subagents to forecast IPL match outcomes, grades each forecast by Brier score, and autonomously mutates reasoning rules across a full season without human intervention.
 
 ### Personal Knowledge / Humanities
 
@@ -313,6 +316,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoimprove](https://github.com/tokyo-megacorp/autoimprove) - Codebase improvement infra: generalizes Karpathy's autoresearch for Claude Code and Codex with git worktree isolation, configurable improvement strategies, and keep/discard experiment logs.
 - [harvester](https://github.com/HacksterT/harvester) - Code maintenance infra: applies the Karpathy autoresearch pattern to watch repos, surface improvement opportunities as GitHub issues, execute approved changes overnight via Claude Code, and produce draft PRs for morning review.
 - [Autoresearch](https://github.com/mirceastrugaru/autoresearch) - Parallel experimentation framework: spawns supportive and adversarial Claude Code workers to collect evidence for or against research directions, with a judge scoring write-ups and curating the roadmap through iterative convergence detection.
+- [pi-autoresearch-harness](https://github.com/monotykamary/pi-autoresearch-harness) - pi extension: forks pi-autoresearch with worktree-isolated experiment harness, adding init/run/log experiment tools and a slash-command dashboard for metric-driven keep/discard loops.
+- [Spark Researcher](https://github.com/vibeforge1111/spark-researcher) - Lightweight autoresearch framework: blends Karpathy's compact loop with domain chips, collective intelligence network, and bounded self-editing for disciplined local experiment management.
+- [EvE: Evolutionary Ensemble of Agents](https://github.com/scaling-group/eve) - Multi-agent evolution framework: wraps coding agents into a decentralized evolutionary ensemble that co-evolves solver code and agent guidance through autoresearch-style competition, published as arXiv:2605.09018.
 
 ### Related Practices / Discussions
 
@@ -431,6 +437,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [How to stop your autoresearch loop from cheating](https://www.cerebras.ai/blog/how-to-stop-your-autoresearch-loop-from-cheating) - Blog: Cerebras reports an overnight loop that abandoned the intended experiment and started its own, surfacing evaluator gaming as a first-order failure mode when the agent can read the evaluation setup.
 - [Autoresearch and Context Rot — How a Stateless Agent Loop Avoids Memory Problems](https://www.akshayparkhi.net/2026/Mar/13/autoresearch-and-context-rot-how-a-stateless-agent-loop-avoids-m/) - Blog: analyzes how autoresearch's stateless git keep/revert design sidesteps context-window rot and identifies where it still breaks when experiments require long-horizon reasoning.
 - [The Karpathy Loop: 700 experiments, 2 days, and a glimpse of where AI is heading](https://fortune.com/2026/03/17/andrej-karpathy-loop-autonomous-ai-agents-future/) - Fortune: mainstream coverage of Karpathy running 700 autonomous experiments over two days, framing the keep/discard pattern as a shift in how AI research gets done.
+- [koylanai on building an autonomous autoresearch loop for Agent Skills and Context Engineering](https://x.com/koylanai/status/2055132022180331594) - X: describes building a Karpathy-inspired autonomous research loop that discovers sources, scores them with rubrics, and drafts skill updates for context engineering, directly referencing authorsearch and identifying where repos need stronger validation.
 - [AutoResearch 发布满月：社区如何将其从“最小闭环”进化为“通用科研框架”](https://www.80aj.com/2026/04/23/auto-research-evolution-framework/) - Blog (Chinese): reviews how the community evolved Karpathy's minimal loop into a multi-agent, cloud-deployable general research framework within one month of release.
 - [The Autoresearch Ecosystem: How One Repo Spawned 9 Different Types of AI Projects](https://www.stephanmiller.com/the-autoresearch-ecosystem-how-one-repo-spawned-9-different-types-of-ai-projects/) - Blog: maps the autoresearch ecosystem into nine distinct project categories and traces how one 630-line script generated an entire optimization toolchain.
 - [The Loop Is Only as Good as the Metric](https://www.distributedthoughts.org/2026-03-16-the-loop-is-only-as-good-as-the-metric/) - Blog: argues that autoresearch success hinges on metric design and shows how weak metrics produce spurious wins, useless outputs, or infinite loops.
@@ -448,6 +455,9 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 ### Infra / benchmarking ideas (continued)
 
 - [Auto-research: The Lab That Runs While You Sleep](https://adlrocha.substack.com/p/adlrocha-auto-research-the-lab-that) - Blog: discusses how automated autoresearch feedback loops shift the bottleneck from running experiments to deciding what to optimize for, arguing that metric definition is the binding constraint on loop effectiveness.
+- [Where Autoresearch Breaks (and Why That's the Point)](https://sameernanda.com/autoresearch-verification-search/) - Blog: argues that cheap verification (single-number comparison) is the core mechanism making autoresearch viable, and identifies which domains break when verification requires expensive human judgment.
+- [Research Worlds: governing long-running autoresearch agents](https://github.com/karpathy/autoresearch/discussions/275) - GitHub Discussion: proposes a "world file" pattern that defines the research environment (datasets, metrics, constraints, budgets) so agents stay governed even when context drifts across hours or days.
+- [Autoresearch & Self-Improving Agent Loops: Community Research Report](https://github.com/sergiocoding96/hermes-multi-agent/blob/main/autoresearch_community_report.md) - Research report: compiles community findings from YouTube, Reddit, and GitHub Discussions on Karpathy's autoresearch and self-improving agent loops as of April 2026.
 
 ### Knowledge Base / RAG Preparation
 
