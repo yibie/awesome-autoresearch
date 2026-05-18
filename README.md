@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 38 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 43 entries
+- [Scientific Research](categories/scientific-research.md) — 39 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 44 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 15 entries
 - [Finance / Trading](categories/finance-trading.md) — 25 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 87 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 108 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 90 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 110 entries
 
 ### Secondary overlap categories
 
@@ -122,6 +122,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [ScaleAutoResearch-Ramsey](https://github.com/ypwang61/ScaleAutoResearch-Ramsey) - Mathematics research: scales autoresearch to Ramsey number computation, discovering new lower bounds R(3,17)≥93 and R(4,15)≥160 that improved 32-year-old records after even DeepMind's AlphaEvolve could not.
 - [bountyhunter: Vesuvius Autoresearch](https://github.com/jonmarrs/vesuvius-autoresearch) - Scientific research: deploys the first autonomous research swarm for the Vesuvius Challenge, running a full CV research loop with hypothesis generation, hyperparameter optimization, model training, and keep/discard decisions to uncover optimal configurations for reading ancient carbonized scrolls.
 - [AutoGo](https://github.com/ericjang/autogo) - Game AI research: applies Karpathy's autoresearch to training a Go-playing AI from scratch, using cheap self-play data and fixed-time eval to keep only network architecture and training improvements across iterations.
+- [autoresearch-speedrun](https://github.com/PashaDolgirev/autoresearch-speedrun) - NanoGPT speedrun research: applies Karpathy-style autoresearch with a two-stage paired-seed acceptance funnel and a curated literature-backed idea pool, cutting val_loss from 3.9249 to 3.8093 across 30 experiments with 6 accepted changes out of ~24 honest discards.
 
 ### Software / Systems Optimization
 
@@ -170,6 +171,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [arete autoresearch-compiler](https://github.com/upvalue/arete/blob/main/autoresearch-compiler.md) - Compiler optimization: applies a Karpathy-style keep/revert loop to a self-hosting Scheme compiler, benchmarking fixed workloads and keeping only changes that improve runtime performance.
 - [auto-arch-tournament](https://github.com/FeSens/auto-arch-tournament) - CPU architecture optimization: extends Karpathy's autoresearch loop to SystemVerilog RTL, proposing, implementing, and measuring microarchitectural hypotheses through riscv-formal, Verilator cosim, and FPGA place-and-route to achieve +91.9% CoreMark on a RISC-V core.
 - [autoresearch-function](https://github.com/vneyman/autoresearch-function) - Function optimization: adapts Karpathy's autoresearch to a CPU-only scaffold that benchmarks arbitrary functions against correctness, execution time, memory, and throughput metrics, keeping only edits that improve a composite score.
+- [vllm-autoresearch](https://github.com/pitcany/vllm-autoresearch) - Inference serving optimization: applies Karpathy's autoresearch to find optimal vLLM serving configurations for Llama 3.3 70B on 2× RTX 5090, editing one config at a time and benchmarking against throughput, latency, and noise-floor metrics with keep/discard decisions.
 
 ### Evaluation / Red Teaming
 
@@ -319,6 +321,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [pi-autoresearch-harness](https://github.com/monotykamary/pi-autoresearch-harness) - pi extension: forks pi-autoresearch with worktree-isolated experiment harness, adding init/run/log experiment tools and a slash-command dashboard for metric-driven keep/discard loops.
 - [Spark Researcher](https://github.com/vibeforge1111/spark-researcher) - Lightweight autoresearch framework: blends Karpathy's compact loop with domain chips, collective intelligence network, and bounded self-editing for disciplined local experiment management.
 - [EvE: Evolutionary Ensemble of Agents](https://github.com/scaling-group/eve) - Multi-agent evolution framework: wraps coding agents into a decentralized evolutionary ensemble that co-evolves solver code and agent guidance through autoresearch-style competition, published as arXiv:2605.09018.
+- [deep-evolve](https://github.com/Sungmin-Cho/claude-deep-evolve) - Claude Code plugin: generalizes autoresearch from ML training to any software project with automatic evaluation harness generation, journal-based crash recovery, and self-evolutionary outer-loop strategy improvement.
+- [AutoResearch-AI](https://github.com/vukrosic/autoresearch-ai) - Autoresearch infra: provides an npm CLI that installs a durable research harness into ML repos so agents can inspect code, propose experiments, run baselines, and continue loops without losing context across sessions.
+- [autoresearch](https://github.com/charleneleong-ai/autoresearch) - Autoresearch infra: provides a self-driving experiment sweep loop with daemon-detached `autoresearch.py`, live PR-updating progress charts, and GPU monitoring for ML training projects.
 
 ### Related Practices / Discussions
 
@@ -458,6 +463,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Where Autoresearch Breaks (and Why That's the Point)](https://sameernanda.com/autoresearch-verification-search/) - Blog: argues that cheap verification (single-number comparison) is the core mechanism making autoresearch viable, and identifies which domains break when verification requires expensive human judgment.
 - [Research Worlds: governing long-running autoresearch agents](https://github.com/karpathy/autoresearch/discussions/275) - GitHub Discussion: proposes a "world file" pattern that defines the research environment (datasets, metrics, constraints, budgets) so agents stay governed even when context drifts across hours or days.
 - [Autoresearch & Self-Improving Agent Loops: Community Research Report](https://github.com/sergiocoding96/hermes-multi-agent/blob/main/autoresearch_community_report.md) - Research report: compiles community findings from YouTube, Reddit, and GitHub Discussions on Karpathy's autoresearch and self-improving agent loops as of April 2026.
+- [MinLiBuilds on Anthropic's Outcomes feature as autorsearch engineering](https://x.com/MinLiBuilds/status/2052188818137330043) - X: notes that Anthropic's new Outcomes (Codex /goal) feature is essentially autoresearch engineered into the product, signaling mainstream coding-agent platforms adopting the keep/discard loop pattern natively.
+- [Is autoresearch really better than classic hyperparameter tuning?](https://www.reddit.com/r/MachineLearning/comments/1satj6r/r_is_autoresearch_really_better_than_classic/) - Reddit: discussion comparing Karpathy-style autoresearch loops with classical hyperparameter tuning methods on the nanochat benchmark, examining whether code-editing agents genuinely outperform structured HPO.
 
 ### Knowledge Base / RAG Preparation
 
