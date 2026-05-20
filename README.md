@@ -43,17 +43,17 @@ We do **not** include:
 
 - [Scientific Research](categories/scientific-research.md) — 41 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 44 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 15 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 16 entries
 - [Finance / Trading](categories/finance-trading.md) — 25 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 92 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 113 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 94 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 114 entries
 
 ### Secondary overlap categories
 
-- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
+- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 4 entries
 - [Market Research](categories/market-research.md) — 1 entry
-- [Workflow Automation](categories/workflow-automation.md) — 8 entries
+- [Workflow Automation](categories/workflow-automation.md) — 9 entries
 
 ### Open categories still being tracked
 
@@ -194,6 +194,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [Jailbreak Autoresearch](https://github.com/davidondrej/jailbreak-autoresearch) - Jailbreak red-teaming: applies Karpathy's autoresearch loop to prompt-harness experiments, testing different header and footer harnesses against a fixed body and scoring responses against a rubric to find more effective jailbreak strategies.
 - [JustAsk](https://github.com/x-zheng16/JustAsk) - System prompt extraction: uses autoresearch-style curiosity-driven code agents to iteratively probe and reveal system prompts from frontier LLMs, accepted at ICML 2026.
 - [DSBench AutoResearch](https://github.com/dlmastery/autoresearch_dsbench) - Benchmark evaluation: applies Karpathy-style hill-climbing to each of DSBench's 74 Kaggle modeling and 38 Modeloff analysis tasks, running per-task autoresearch repos with a forensic audit that beats 82/112 DSBench baselines.
+- [Trace2Evolve](https://github.com/mohammed840/trace2evolve-autoresearch) - Customer-support agent evaluation: applies Karpathy-style autoresearch to improve a tool-using support agent by generating hard cases, scoring traces, classifying failures, and keeping candidate improvements only when benchmark metrics and reliability gates pass across retail and airline task splits.
 
 ### Finance / Trading
 
@@ -328,6 +329,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch](https://github.com/charleneleong-ai/autoresearch) - Autoresearch infra: provides a self-driving experiment sweep loop with daemon-detached `autoresearch.py`, live PR-updating progress charts, and GPU monitoring for ML training projects.
 - [pi-lifeline](https://github.com/robzolkos/pi-lifeline) - Autoresearch infra: pi extension that lets smaller autoresearch models request strategic guidance from a stronger advisor model when stuck on plateaus, implementing rate-limited escalation with configurable consecutive-failure and plateau-run thresholds.
 - [autoresearch-skill-Andrej-Karpathy](https://github.com/Muminur/autoresearch-skill-Andrej-Karpathy) - Claude Code skill: turns natural-language optimization goals into autonomous goal-parsing, baseline-capture, and keep/discard loops with real-data validation, regression protection, and a reported 76% P99 latency reduction on a live signal-trading pipeline.
+- [bob-autoresearch](https://github.com/barvhaim/bob-autoresearch) - IBM Bob Shell adaptation: ports Karpathy's autoresearch pattern to IBM Bob Shell as a Snake AI evolution demo that autonomously improves from random play to Hamilton-path play over 10-15 keep/discard iterations.
+- [claude-code-nightly](https://github.com/sb-arnav/claude-code-nightly) - Claude Code substrate improvement: runs a Karpathy-style autoresearch loop that mines session history into personal evaluation suites and autonomously improves CLAUDE.md, hooks, skills, and memory overnight with git-backed keep/revert decisions.
 
 ### Related Practices / Discussions
 
@@ -455,6 +458,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Auto-RAG-Optimizer: Applying AutoResearch to Autonomous RAG Tuning](https://yeyu.substack.com/p/auto-rag-optimizer-applying-autoresearch) - Blog: applies autoresearch to RAG pipeline tuning by editing retrieval parameters and keeping only configurations that lift answer accuracy against a fixed eval set.
 - [Multi-Agent Autoresearch: Automating ML Optimization with Open Source AI](https://evoailabs.medium.com/multi-agent-autoresearch-automating-ml-optimization-with-open-source-ai-c76d1dabfc0f) - Blog: describes a multi-agent autoresearch setup where specialized agents handle proposal, evaluation, memory, and orchestration roles across ML optimization tasks.
 - [Autoresearch System Architecture for ML Claim Validation](https://wiki.charleschen.ai/Review/Research/autoresearch-system-architecture-for-ml-claim-validation) - Wiki: proposes a system architecture that uses autoresearch to validate ML research claims by having agents attempt to reproduce and stress-test reported results in controlled loops.
+- [Adapted autoresearch for adversarial protocol hardening](https://github.com/karpathy/autoresearch/discussions/88) - GitHub Discussion: applies the autoresearch pattern to finding invariant violations in a cryptographic delegation protocol, treating the agent as an adversarial tester that proposes protocol changes and keeps only those that break security guarantees.
 - [Autoresearch on Steroids with Sandboxes](https://www.tensorlake.ai/blog/autoresearch-on-steroids-with-sandboxes) - Blog: demonstrates using sandboxed environments as the execution layer for autoresearch loops with isolation, parallelism, and pre-warmed filesystems to run candidates faster and more reliably.
 - [AI4Scientist/awesome-autoresearch](https://github.com/AI4Scientist/awesome-autoresearch) - GitHub curated list: another community-maintained list of autonomous researcher frameworks with 105+ stars, signaling the ecosystem has grown large enough to sustain multiple curated indexes.
 
@@ -480,6 +484,7 @@ Source file: [`categories/knowledge-base-rag-preparation.md`](categories/knowled
 - [autoresearch-genealogy](https://github.com/mattprusak/autoresearch-genealogy) - Genealogy: uses Claude Code `/autoresearch` prompts to expand family trees, verify claims against multiple sources, and keep a structured evidence-backed research vault.
 - [AutoRAGsearch](https://github.com/Smasko7/AutoRAGsearch) - RAG retrieval optimization: applies an autoresearch-style loop to a fixed QA benchmark by editing only `rag_pipeline.py`, running local retrieval experiments, and improving retrieval_score from 0.9472 to 0.9867 over 20 autonomous experiments.
 - [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) - Knowledge-base preparation: uses a Karpathy-style `/autoresearch` skill to gather sources, fill research gaps across three search rounds, and write structured source, concept, entity, and synthesis pages into a retrieval-ready Obsidian vault.
+- [AutoRAG Research Lab](https://github.com/fran-gen/autoresearch-rag) - RAG pipeline optimization: runs autonomous agents that plan, implement, benchmark, and keep/discard retrieval pipeline changes using Karpathy-mode over EnterpriseRAG-Bench with Docker-sandboxed evaluation and semantic no-op detection.
 
 ### Market Research
 
@@ -499,6 +504,7 @@ Source file: [`categories/workflow-automation.md`](categories/workflow-automatio
 - [Trip Optimizer Pro](https://github.com/michaelpersonal/trip-optimizer) - Travel planning workflow automation: applies the autoresearch pattern to itinerary generation by researching destinations, scoring multi-day plans, and keeping only itinerary mutations that improve a weighted travel-quality score.
 - [Autoresearch for Software Development](https://github.com/smallnest/autoresearch) - Software delivery automation: adapts autoresearch to GitHub Issues by rotating agents through implement → review → fix loops, then auto-merging only issues that clear a score gate plus build, lint, and test checks.
 - [autobrowse](https://skills.sh/browserbase/skills/autobrowse) - Browser workflow automation: applies an autoresearch loop to browser tasks by iterating on `strategy.md`, replaying tasks with Browserbase, and graduating only reliable workflows into reusable Claude Code skills.
+- [Google Play Description Autoresearcher](https://github.com/kevserimirogullari-hash/google-play-description-autoresearcher) - ASO optimization: applies a Karpathy-style autoresearch loop to Google Play Store long descriptions, running ~25 keyword-density experiments per session and committing only description variants that improve keyword match scores.
 
 ## Submission format
 
