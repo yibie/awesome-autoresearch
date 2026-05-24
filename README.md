@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 43 entries
+- [Scientific Research](categories/scientific-research.md) — 44 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 45 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 18 entries
 - [Finance / Trading](categories/finance-trading.md) — 26 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 99 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 115 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 100 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 116 entries
 
 ### Secondary overlap categories
 
@@ -126,6 +126,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-gym](https://github.com/gabec-slop/autoresearch-gym) - Robotics RL research: provides a Gymnasium workbench for agent-driven RL research loops under fixed benchmark contracts with live dashboard and deterministic evaluation, following the Karpathy autoresearch pattern with candidate training and metric inspection.
 - [automat](https://github.com/m-cobelli/automat) - Materials science research: applies Karpathy's autoresearch to design composition-only descriptors for materials regression tasks, requiring the agent to justify scientific reasoning behind each proposed descriptor before evaluating against held-out splits.
 - [wattcast-autoresearch](https://github.com/kristenmartino/wattcast-autoresearch) - Energy demand forecasting: applies Karpathy's autoresearch to weather-aware energy demand forecasting across 8 U.S. grid regions, iterating on feature engineering and hyperparameters from a 3.13% MAPE baseline.
+- [dreamworld](https://github.com/ehsaaniqbal/dreamworld) - World models research: builds an agent-friendly autonomous research loop for pixel-based world model training on CarRacing-v3, inspired by AutoGo and autoresearch, with remote GPU orchestration via Modal and keep/discard decisions across tokenizer, dynamics, and planning experiment iterations.
 - [lawforge](https://github.com/PAMF2/lawforge) - Mathematics theorem proving research: applies a Karpathy Loop outer driver with Agent57 bandit meta-controller and arXiv-scanning autoresearch to Lean 4 equational-theory proving, keeping only edits that improve val_solved_rate across automatically proposed hypothesis arms.
 
 ### Software / Systems Optimization
@@ -342,6 +343,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [research-autopilot](https://github.com/crabin/research-autopilot) - Codex research skill: turns a research codebase into an autonomous experimentation workflow by generating the three-file autoresearch scaffold and supporting autonomous keep/discard decisions.
 - [agent-goal-stack](https://github.com/DefaultPerson/agent-goal-stack) - Claude Code plugin: implements a deterministic keep-or-revert metric loop (`/ags:autoresearch`) with cross-LLM rescue hooks on stuck iterations and pre-merge review, warming up the native /goal and autoresearch patterns.
 - [open-autoresearch](https://github.com/rbudnar/open-autoresearch) - Autoresearch protocol: provides a 1700-line protocol specification (AutoResearch++ v0.4) plus copyable scaffolding for disciplined autonomous ML research loops with honest separation between in-band-advisory and out-of-band-enforced controls.
+- [Odyssey Engine](https://github.com/Zhifeng-Niu/odyssey-engine) - Autoresearch infra: fuses autoresearch metric-driven experiments with gaggle-iterate checkpoint/verify/rollback and ralph-loop continuous execution into a universal Claude Code iteration engine with three orientations (engineer/creative/production) and git-backed keep/discard waypoints.
 
 ### Related Practices / Discussions
 
@@ -476,6 +478,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 ### Software / code workflows (continued)
 
 - [Autoresearch Is Reward Function Design](https://cameronwestland.com/autoresearch-is-reward-function-design/) - Blog: applies pi-autoresearch to optimize a Python finance scoring pipeline across 49 experiments with keep/discard, cutting p95 latency from 339ms to 34ms and arguing that autoresearch success hinges on reward-function design quality rather than the loop mechanics.
+- [Kirill Krainov on adapting autoresearch for agentic coding skill improvement](https://zerocopy.blog/2026/03/25/karpathys-autoresearch-improving-agentic-coding-skills/) - Blog: adapts Karpathy's autoresearch loop with multi-metric evaluation (correctness, clarity, performance, completeness) to build a self-improving agentic coding harness that iterates on skill prompts through deterministic experiments and stateless keep/discard cycles.
 
 ### Infra / benchmarking ideas (continued)
 

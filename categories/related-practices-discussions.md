@@ -149,6 +149,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 ### Software / code workflows (continued)
 
 - [Autoresearch Is Reward Function Design](https://cameronwestland.com/autoresearch-is-reward-function-design/) - Blog: applies pi-autoresearch to optimize a Python finance scoring pipeline across 49 experiments with keep/discard, cutting p95 latency from 339ms to 34ms and arguing that autoresearch success hinges on reward-function design quality rather than the loop mechanics.
+- [Kirill Krainov on adapting autoresearch for agentic coding skill improvement](https://zerocopy.blog/2026/03/25/karpathys-autoresearch-improving-agentic-coding-skills/) - Blog: adapts Karpathy's autoresearch loop with multi-metric evaluation (correctness, clarity, performance, completeness) to build a self-improving agentic coding harness that iterates on skill prompts through deterministic experiments and stateless keep/discard cycles.
 
 ### Infra / benchmarking ideas (continued)
 
