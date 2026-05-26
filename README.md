@@ -41,12 +41,12 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 44 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 45 entries
+- [Scientific Research](categories/scientific-research.md) — 47 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 47 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 18 entries
-- [Finance / Trading](categories/finance-trading.md) — 26 entries
+- [Finance / Trading](categories/finance-trading.md) — 27 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 101 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 104 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 124 entries
 
 ### Secondary overlap categories
@@ -128,6 +128,9 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [wattcast-autoresearch](https://github.com/kristenmartino/wattcast-autoresearch) - Energy demand forecasting: applies Karpathy's autoresearch to weather-aware energy demand forecasting across 8 U.S. grid regions, iterating on feature engineering and hyperparameters from a 3.13% MAPE baseline.
 - [dreamworld](https://github.com/ehsaaniqbal/dreamworld) - World models research: builds an agent-friendly autonomous research loop for pixel-based world model training on CarRacing-v3, inspired by AutoGo and autoresearch, with remote GPU orchestration via Modal and keep/discard decisions across tokenizer, dynamics, and planning experiment iterations.
 - [lawforge](https://github.com/PAMF2/lawforge) - Mathematics theorem proving research: applies a Karpathy Loop outer driver with Agent57 bandit meta-controller and arXiv-scanning autoresearch to Lean 4 equational-theory proving, keeping only edits that improve val_solved_rate across automatically proposed hypothesis arms.
+- [AutoResearch-RL](https://github.com/epappas/autoresearch-rl) - RL research: provides a continuous autoresearch framework with frozen prepare.py and mutable train.py separation, supporting grid, random, LLM, and hybrid experiment policies across local and cloud GPU targets.
+- [Agentic ML for HAR](https://github.com/DaryLee/agentic-ml) - HAR research: applies Karpathy's autoresearch to Human Activity Recognition on PAMAP2 with a single mutable file, 300-second fixed budgets, file-based versioning, and macro F1 hill-climbing.
+- [Coffee Value Autoresearch](https://github.com/jintaili/coffee-value-autoresearch) - ML model research: applies autoresearch to specialty coffee rating and price prediction with an append-only experiment ledger and explicit keep/discard decisions across fixed validation splits.
 
 ### Software / Systems Optimization
 
@@ -178,6 +181,8 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [autoresearch-function](https://github.com/vneyman/autoresearch-function) - Function optimization: adapts Karpathy's autoresearch to a CPU-only scaffold that benchmarks arbitrary functions against correctness, execution time, memory, and throughput metrics, keeping only edits that improve a composite score.
 - [vllm-autoresearch](https://github.com/pitcany/vllm-autoresearch) - Inference serving optimization: applies Karpathy's autoresearch to find optimal vLLM serving configurations for Llama 3.3 70B on 2× RTX 5090, editing one config at a time and benchmarking against throughput, latency, and noise-floor metrics with keep/discard decisions.
 - [WAFPlanet Autoresearch](https://github.com/wafplanet/autoresearch) - WAF security optimization: applies Karpathy's autoresearch to OWASP ModSecurity CRS configuration, running 30 autonomous experiments and lifting balanced accuracy from 80.8% to 98.4% while cutting false positives by 94.5%.
+- [lance-autoresearch](https://github.com/ModernRelay/lance-autoresearch) - Database kernel optimization: adapts Karpathy's one-file keep/revert loop to Lance hot-path Rust kernels with bit-equivalent correctness oracle and a landed −43% geomean PQ L2 distance speedup on Apple Silicon.
+- [Türkçe Hoca — AI Turkish Tutor](https://github.com/Techris93/turkish-tutor) - Education app optimization: applies an autoresearch swarm loop to a Turkish language tutor, continuously improving CEFR-adaptive teaching strategies through autonomous evaluation and iteration.
 
 ### Evaluation / Red Teaming
 
@@ -232,6 +237,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [ml-vs-leadlag-jp-stock](https://github.com/kiwiiosaru-jp/ml-vs-leadlag-jp-stock) - Japanese equity trading: applies Karpathy's autoresearch framework to Japanese stock prediction, comparing ML-driven Sharpe maximization against a classical lead-lag PCA strategy on reproducible benchmarks with published write-up.
 - [autoresearch-backtesting](https://github.com/topoftheblock/autoresearch-backtesting) - Equity trading: uses an autonomous LLM agent to iteratively rewrite its PyTorch network for SPY directional prediction, backtesting each mutation and keeping only Sharpe improvements in a train → backtest → keep/discard loop.
 - [IPL Odds Multi-Agent Autoresearch](https://github.com/dashthird-0/ipl-odds-multiagent-autoresearch) - Sports betting research: deploys 7 Claude Code subagents to forecast IPL match outcomes, grades each forecast by Brier score, and autonomously mutates reasoning rules across a full season without human intervention.
+- [Clio](https://github.com/zhongdaweiai/clio) - Prediction-market forecasting: implements autoresearch as a multi-agent, Pareto-scored, time-evolving backtest harness for prediction markets with adversarial validation and bankroll-as-ground-truth.
 
 ### Personal Knowledge / Humanities
 
@@ -345,6 +351,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [open-autoresearch](https://github.com/rbudnar/open-autoresearch) - Autoresearch protocol: provides a 1700-line protocol specification (AutoResearch++ v0.4) plus copyable scaffolding for disciplined autonomous ML research loops with honest separation between in-band-advisory and out-of-band-enforced controls.
 - [Odyssey Engine](https://github.com/Zhifeng-Niu/odyssey-engine) - Autoresearch infra: fuses autoresearch metric-driven experiments with gaggle-iterate checkpoint/verify/rollback and ralph-loop continuous execution into a universal Claude Code iteration engine with three orientations (engineer/creative/production) and git-backed keep/discard waypoints.
 - [polyresearch](https://github.com/superagent-ai/polyresearch) - Distributed autoresearch infra: extends Karpathy's loop to multiple machines in a shared queue with independent verification, complete experiment history, and open contributor participation through structured GitHub coordination.
+- [ARAIL](https://github.com/cdarnell/arail) - Autoresearch infra: provides a local-first AI research lab blueprint with RAG chat, agent-driven knowledge base, and an autoresearch experiment loop that runs while you sleep.
+- [Helixon Autoresearch](https://github.com/nfsarch33/helixon-autoresearch) - Autoresearch infra: a Go-based autonomous ML experiment runner with six-phase experiment lifecycle, Engram memory persistence, and cross-run metric comparison with tolerance-based winner detection.
+- [Meta-Search Lab](https://github.com/pyj20061212/metasearch_lab) - Research harness: provides an AlphaZero-style game research harness inspired by autoresearch's fixed-harness design, with arena-driven iteration and champion-gate candidate selection across Othello and other OpenSpiel games.
 
 ### Related Practices / Discussions
 
