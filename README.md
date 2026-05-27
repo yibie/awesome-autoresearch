@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 47 entries
+- [Scientific Research](categories/scientific-research.md) — 48 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 47 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 18 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 19 entries
 - [Finance / Trading](categories/finance-trading.md) — 27 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 104 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 124 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 105 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 125 entries
 
 ### Secondary overlap categories
 
@@ -131,6 +131,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AutoResearch-RL](https://github.com/epappas/autoresearch-rl) - RL research: provides a continuous autoresearch framework with frozen prepare.py and mutable train.py separation, supporting grid, random, LLM, and hybrid experiment policies across local and cloud GPU targets.
 - [Agentic ML for HAR](https://github.com/DaryLee/agentic-ml) - HAR research: applies Karpathy's autoresearch to Human Activity Recognition on PAMAP2 with a single mutable file, 300-second fixed budgets, file-based versioning, and macro F1 hill-climbing.
 - [Coffee Value Autoresearch](https://github.com/jintaili/coffee-value-autoresearch) - ML model research: applies autoresearch to specialty coffee rating and price prediction with an append-only experiment ledger and explicit keep/discard decisions across fixed validation splits.
+- [autoresearch-folktales](https://github.com/thu-vu92/autoresearch_folktales) - NLP research: adapts Karpathy's autoresearch to train a small GPT on folktales dataset entirely on Apple Silicon, with a published YouTube walkthrough demonstrating the complete keep/discard loop across the three-file architecture.
 
 ### Software / Systems Optimization
 
@@ -206,6 +207,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [Trace2Evolve](https://github.com/mohammed840/trace2evolve-autoresearch) - Customer-support agent evaluation: applies Karpathy-style autoresearch to improve a tool-using support agent by generating hard cases, scoring traces, classifying failures, and keeping candidate improvements only when benchmark metrics and reliability gates pass across retail and airline task splits.
 - [SciTriage](https://github.com/shelter951/SciTriage) - Autoresearch evaluation: evidence gates and claim discipline for AutoResearch agents, providing a diagnostic layer that determines whether experiment results are meaningful before deciding to continue or stop a run.
 - [claude-haiku-harness](https://github.com/jafanlim/claude-haiku-harness) - Prompt evaluation harness: uses an AutoResearch-style eval-driven loop to iteratively benchmark and improve prompts against production-quality targets, aiming to match Claude Haiku 4.5 quality with Sonnet/Opus benchmarks.
+- [AutoMedBench](https://github.com/AutoMedBench/AutoMedBench) - Medical evaluation benchmark: provides a medical-domain benchmark (MedAutoBench) for evaluating autoresearch agents on MedQA, MedMCQA, and PubMedQA clinical tasks with sandboxed execution and automated scoring.
 
 ### Finance / Trading
 
@@ -354,6 +356,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [ARAIL](https://github.com/cdarnell/arail) - Autoresearch infra: provides a local-first AI research lab blueprint with RAG chat, agent-driven knowledge base, and an autoresearch experiment loop that runs while you sleep.
 - [Helixon Autoresearch](https://github.com/nfsarch33/helixon-autoresearch) - Autoresearch infra: a Go-based autonomous ML experiment runner with six-phase experiment lifecycle, Engram memory persistence, and cross-run metric comparison with tolerance-based winner detection.
 - [Meta-Search Lab](https://github.com/pyj20061212/metasearch_lab) - Research harness: provides an AlphaZero-style game research harness inspired by autoresearch's fixed-harness design, with arena-driven iteration and champion-gate candidate selection across Othello and other OpenSpiel games.
+- [learn-auto-research](https://github.com/AI4Scientist/learn-auto-research) - Autoresearch tutorial: provides a project-based course from the AI4Scientist organization that guides beginners through building autonomous autoresearch loops step by step, from baseline capture to keep/discard decisions.
 
 ### Related Practices / Discussions
 
@@ -509,6 +512,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [TokenTelemetry — Track token cost and reasoning traces across autoresearch runs](https://github.com/karpathy/autoresearch/discussions/544) - GitHub Discussion: introduces a 100% local, open-source tool for tracking token costs and reasoning traces across autoresearch runs, surfacing expenditure patterns to inform cost-aware experiment design.
 - [Is autoresearch really better than classic hyperparameter tuning?](https://www.reddit.com/r/MachineLearning/comments/1satj6r/r_is_autoresearch_really_better_than_classic/) - Reddit: discussion comparing Karpathy-style autoresearch loops with classical hyperparameter tuning methods on the nanochat benchmark, examining whether code-editing agents genuinely outperform structured HPO.
 - [When does autoresearch need a human? — ProlificAI HITL study](https://huggingface.co/blog/ProlificAI/autoresearch-hitl-experiment) - Blog: reports a controlled study applying Karpathy's autoresearch to a DPO task with 50 experiments and 300 human judges, finding the metric directionally correct (ρ=+0.80) but a 5-minute conversational check-in unlocked recipes the autonomous loop never reached across 8 hours.
+- [TPU Performance Auto-optimization Wiki](https://github.com/vlasenkoalexey/tpu_performance_autoresearch_wiki) - GitHub: documents a wiki of TPU model performance optimization knowledge built using Karpathy-style autoresearch, connecting profiling analysis, hypothesis generation, and benchmarking into an autonomous optimization engine for TPU training workloads.
 
 ### Knowledge Base / RAG Preparation
 
