@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 48 entries
+- [Scientific Research](categories/scientific-research.md) — 51 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 47 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 19 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 21 entries
 - [Finance / Trading](categories/finance-trading.md) — 27 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 105 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 125 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 108 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 127 entries
 
 ### Secondary overlap categories
 
@@ -132,6 +132,9 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Agentic ML for HAR](https://github.com/DaryLee/agentic-ml) - HAR research: applies Karpathy's autoresearch to Human Activity Recognition on PAMAP2 with a single mutable file, 300-second fixed budgets, file-based versioning, and macro F1 hill-climbing.
 - [Coffee Value Autoresearch](https://github.com/jintaili/coffee-value-autoresearch) - ML model research: applies autoresearch to specialty coffee rating and price prediction with an append-only experiment ledger and explicit keep/discard decisions across fixed validation splits.
 - [autoresearch-folktales](https://github.com/thu-vu92/autoresearch_folktales) - NLP research: adapts Karpathy's autoresearch to train a small GPT on folktales dataset entirely on Apple Silicon, with a published YouTube walkthrough demonstrating the complete keep/discard loop across the three-file architecture.
+- [autoresearch-mol](https://github.com/ewijaya/autoresearch-mol) - Molecular transformer research: applies autoresearch to discover optimal transformer architectures for molecules (SMILES) and proteins by editing model code and keeping only lower validation-loss designs across 3,106 experiments.
+- [DrugSAGE](https://arxiv.org/abs/2605.15461) - Drug discovery research: builds a self-evolving agent experience framework that accumulates and reuses knowledge across drug discovery tasks sharing structural similarities through autoresearch-style keep/discard loops.
+- [Agentic Design of Compositional Descriptors via Autoresearch](https://arxiv.org/abs/2605.14671) - Materials science research: uses AI agents to autonomously design composition-only descriptors for materials-property prediction, requiring scientific reasoning justification before accepting each proposed descriptor against held-out evaluation splits.
 
 ### Software / Systems Optimization
 
@@ -208,6 +211,8 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [SciTriage](https://github.com/shelter951/SciTriage) - Autoresearch evaluation: evidence gates and claim discipline for AutoResearch agents, providing a diagnostic layer that determines whether experiment results are meaningful before deciding to continue or stop a run.
 - [claude-haiku-harness](https://github.com/jafanlim/claude-haiku-harness) - Prompt evaluation harness: uses an AutoResearch-style eval-driven loop to iteratively benchmark and improve prompts against production-quality targets, aiming to match Claude Haiku 4.5 quality with Sonnet/Opus benchmarks.
 - [AutoMedBench](https://github.com/AutoMedBench/AutoMedBench) - Medical evaluation benchmark: provides a medical-domain benchmark (MedAutoBench) for evaluating autoresearch agents on MedQA, MedMCQA, and PubMedQA clinical tasks with sandboxed execution and automated scoring.
+- [NanoGPT-Bench](https://github.com/IntologyAI/NanoGPT-Bench) - ML research benchmark: evaluates AI systems on open-ended GPT-2 speedrun research tasks, finding current coding agents recover under 10% of human-achievable speedup and primarily tune hyperparameters rather than perform algorithmic innovation.
+- [ResearchArena](https://arxiv.org/abs/2605.19156) - Research loop evaluation: provides a scaffold for off-the-shelf agents to carry out full research loops from ideation through experimentation to paper writing, finding that feasibility does not yet equal quality in autonomous research.
 
 ### Finance / Trading
 
@@ -357,6 +362,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Helixon Autoresearch](https://github.com/nfsarch33/helixon-autoresearch) - Autoresearch infra: a Go-based autonomous ML experiment runner with six-phase experiment lifecycle, Engram memory persistence, and cross-run metric comparison with tolerance-based winner detection.
 - [Meta-Search Lab](https://github.com/pyj20061212/metasearch_lab) - Research harness: provides an AlphaZero-style game research harness inspired by autoresearch's fixed-harness design, with arena-driven iteration and champion-gate candidate selection across Othello and other OpenSpiel games.
 - [learn-auto-research](https://github.com/AI4Scientist/learn-auto-research) - Autoresearch tutorial: provides a project-based course from the AI4Scientist organization that guides beginners through building autonomous autoresearch loops step by step, from baseline capture to keep/discard decisions.
+- [EvolveMem](https://github.com/aiming-lab/SimpleMem) - Agent memory research: applies autoresearch to co-evolve both stored knowledge and retrieval mechanisms (scoring, fusion, answer generation) through a diagnosis module that adapts memory architecture over time, built on SimpleMem with 43.24% F1 using 98% fewer tokens.
+- [GEAR: Genetic AutoResearch](https://arxiv.org/abs/2605.13874) - Autoresearch infra: replaces single-incumbent hill-climbing with a genetic search graph that maintains a bounded frontier of promising code variants, arguing that the standard keep/discard loop prematurely discards valuable complementary local optima.
+- [autoresearch-lite](https://github.com/akhil/autoresearch-lite) - Consumer GPU adaptation: ports Karpathy's autoresearch to free Google Colab and Kaggle T4 GPUs with zero local setup by swapping Flash Attention 3 for PyTorch SDPA and adjusting hyperparameters for constrained hardware.
 
 ### Related Practices / Discussions
 
@@ -513,6 +521,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Is autoresearch really better than classic hyperparameter tuning?](https://www.reddit.com/r/MachineLearning/comments/1satj6r/r_is_autoresearch_really_better_than_classic/) - Reddit: discussion comparing Karpathy-style autoresearch loops with classical hyperparameter tuning methods on the nanochat benchmark, examining whether code-editing agents genuinely outperform structured HPO.
 - [When does autoresearch need a human? — ProlificAI HITL study](https://huggingface.co/blog/ProlificAI/autoresearch-hitl-experiment) - Blog: reports a controlled study applying Karpathy's autoresearch to a DPO task with 50 experiments and 300 human judges, finding the metric directionally correct (ρ=+0.80) but a 5-minute conversational check-in unlocked recipes the autonomous loop never reached across 8 hours.
 - [TPU Performance Auto-optimization Wiki](https://github.com/vlasenkoalexey/tpu_performance_autoresearch_wiki) - GitHub: documents a wiki of TPU model performance optimization knowledge built using Karpathy-style autoresearch, connecting profiling analysis, hypothesis generation, and benchmarking into an autonomous optimization engine for TPU training workloads.
+- [Karpathy joins Anthropic's pre-training team](https://news.ycombinator.com/item?id=48194352) - News: Andrej Karpathy joins Anthropic in May 2026 to work on frontier LLM pre-training, planning to extend autoresearch ideas into larger recursive training improvement efforts with Claude.
+- [Running Karpathy's Autoresearch Loop on a T4 GPU inside Dataflow](https://dev.to/dataflow-zone/running-karpathys-autoresearch-loop-on-a-t4-gpu-inside-dataflow-1cdi) - Blog: adapts the autoresearch loop to free T4 GPUs on Google Colab and Kaggle by swapping Flash Attention for PyTorch SDPA and tuning hyperparameters, demonstrating the pattern works on consumer hardware.
 
 ### Knowledge Base / RAG Preparation
 
