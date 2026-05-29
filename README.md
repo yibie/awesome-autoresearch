@@ -41,13 +41,13 @@ We do **not** include:
 
 ### Primary categories
 
-- [Scientific Research](categories/scientific-research.md) — 52 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 48 entries
+- [Scientific Research](categories/scientific-research.md) — 53 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 49 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 22 entries
 - [Finance / Trading](categories/finance-trading.md) — 28 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 109 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 128 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 110 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 129 entries
 
 ### Secondary overlap categories
 
@@ -135,6 +135,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-mol](https://github.com/ewijaya/autoresearch-mol) - Molecular transformer research: applies autoresearch to discover optimal transformer architectures for molecules (SMILES) and proteins by editing model code and keeping only lower validation-loss designs across 3,106 experiments.
 - [DrugSAGE](https://arxiv.org/abs/2605.15461) - Drug discovery research: builds a self-evolving agent experience framework that accumulates and reuses knowledge across drug discovery tasks sharing structural similarities through autoresearch-style keep/discard loops.
 - [Agentic Design of Compositional Descriptors via Autoresearch](https://arxiv.org/abs/2605.14671) - Materials science research: uses AI agents to autonomously design composition-only descriptors for materials-property prediction, requiring scientific reasoning justification before accepting each proposed descriptor against held-out evaluation splits.
+- [SciMLx](https://github.com/moatasim-KT/SciMLx) - Neural operator research: provides an agent-driven autonomous research platform optimized for Apple Silicon (MLX) that discovers neural operators such as Fourier Neural Operators and DeepONet for solving PDEs through autoresearch-style experiment loops.
 - [Vision Autoresearch](https://github.com/rycerzes/vision-autoresearch) - Vision research: runs a multi-agent autonomous experiment loop for vision model finetuning on classify, detect, and segment tasks, proposing config changes and auto-promoting wins against the current master on consumer GPUs.
 
 ### Software / Systems Optimization
@@ -188,6 +189,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [WAFPlanet Autoresearch](https://github.com/wafplanet/autoresearch) - WAF security optimization: applies Karpathy's autoresearch to OWASP ModSecurity CRS configuration, running 30 autonomous experiments and lifting balanced accuracy from 80.8% to 98.4% while cutting false positives by 94.5%.
 - [lance-autoresearch](https://github.com/ModernRelay/lance-autoresearch) - Database kernel optimization: adapts Karpathy's one-file keep/revert loop to Lance hot-path Rust kernels with bit-equivalent correctness oracle and a landed −43% geomean PQ L2 distance speedup on Apple Silicon.
 - [Türkçe Hoca — AI Turkish Tutor](https://github.com/Techris93/turkish-tutor) - Education app optimization: applies an autoresearch swarm loop to a Turkish language tutor, continuously improving CEFR-adaptive teaching strategies through autonomous evaluation and iteration.
+- [Autoresearching BM25 on MSMarco](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25.html) - Search ranking optimization: applies Karpathy-style autoresearch to iteratively improve a BM25 search ranker on the MSMarco passage retrieval dataset by editing ranking code and keeping only NDCG improvements.
 - [Google Play Description Autoresearcher](https://github.com/kevserimirogullari-hash/google-play-description-autoresearcher) - ASO optimization: applies Karpathy-style autoresearch to Google Play long-description optimization by scoring keyword density, coverage, and structure across targeted experiments with keep/discard decisions.
 
 ### Evaluation / Red Teaming
@@ -366,6 +368,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Helixon Autoresearch](https://github.com/nfsarch33/helixon-autoresearch) - Autoresearch infra: a Go-based autonomous ML experiment runner with six-phase experiment lifecycle, Engram memory persistence, and cross-run metric comparison with tolerance-based winner detection.
 - [Meta-Search Lab](https://github.com/pyj20061212/metasearch_lab) - Research harness: provides an AlphaZero-style game research harness inspired by autoresearch's fixed-harness design, with arena-driven iteration and champion-gate candidate selection across Othello and other OpenSpiel games.
 - [learn-auto-research](https://github.com/AI4Scientist/learn-auto-research) - Autoresearch tutorial: provides a project-based course from the AI4Scientist organization that guides beginners through building autonomous autoresearch loops step by step, from baseline capture to keep/discard decisions.
+- [PostHog autoresearch](https://github.com/PostHog/posthog/pull/60081) - Product analytics integration: adds an autoresearch product skeleton with training loops, MCP tools, and a local coordinator to PostHog for autonomous ClickHouse query performance optimization via keep/discard experiments.
 - [EvolveMem](https://github.com/aiming-lab/SimpleMem) - Agent memory research: applies autoresearch to co-evolve both stored knowledge and retrieval mechanisms (scoring, fusion, answer generation) through a diagnosis module that adapts memory architecture over time, built on SimpleMem with 43.24% F1 using 98% fewer tokens.
 - [GEAR: Genetic AutoResearch](https://arxiv.org/abs/2605.13874) - Autoresearch infra: replaces single-incumbent hill-climbing with a genetic search graph that maintains a bounded frontier of promising code variants, arguing that the standard keep/discard loop prematurely discards valuable complementary local optima.
 - [autoresearch-lite](https://github.com/akhil/autoresearch-lite) - Consumer GPU adaptation: ports Karpathy's autoresearch to free Google Colab and Kaggle T4 GPUs with zero local setup by swapping Flash Attention 3 for PyTorch SDPA and adjusting hyperparameters for constrained hardware.
@@ -529,6 +532,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [TPU Performance Auto-optimization Wiki](https://github.com/vlasenkoalexey/tpu_performance_autoresearch_wiki) - GitHub: documents a wiki of TPU model performance optimization knowledge built using Karpathy-style autoresearch, connecting profiling analysis, hypothesis generation, and benchmarking into an autonomous optimization engine for TPU training workloads.
 - [Karpathy joins Anthropic's pre-training team](https://news.ycombinator.com/item?id=48194352) - News: Andrej Karpathy joins Anthropic in May 2026 to work on frontier LLM pre-training, planning to extend autoresearch ideas into larger recursive training improvement efforts with Claude.
 - [Running Karpathy's Autoresearch Loop on a T4 GPU inside Dataflow](https://dev.to/dataflow-zone/running-karpathys-autoresearch-loop-on-a-t4-gpu-inside-dataflow-1cdi) - Blog: adapts the autoresearch loop to free T4 GPUs on Google Colab and Kaggle by swapping Flash Attention for PyTorch SDPA and tuning hyperparameters, demonstrating the pattern works on consumer hardware.
+- [DeepSeek's "From Copilots to Colleagues" — 45-page survey 99% AI-written](https://victorchen96.github.io/auto_research_survey.pdf) - Paper: Deli Chen (DeepSeek) co-authors a 45-page survey on autonomous research agents where 99% of content is written by DeepSeek-V4-Pro across 108 agent rounds in 6 days, demonstrating AI-driven research paper generation at scale.
 
 ### Knowledge Base / RAG Preparation
 
