@@ -42,19 +42,25 @@ Please do not submit:
 
 ## Core rules
 
-### 1. Keep every entry to one sentence
+### 1. One entry, one category — no cross-posting
+
+Every entry lives in exactly one category file. When a project straddles multiple categories, choose the one closest to its direct application domain and commit only there. Never add the same entry to two category files.
+
+If you're torn between two categories, ask: "What is the end user actually doing?" — that's the category.
+
+### 2. Keep every entry to one sentence
 
 Every entry must stay on a single bullet line.
 
-### 2. Use autoresearch-domain classification
+### 3. Use autoresearch-domain classification
 
 Choose the category based on the direct autoresearch application domain, not on generic labels like "agent", "research", or "monitoring".
 
-### 3. Prefer clarity over cleverness
+### 4. Prefer clarity over cleverness
 
 If a reader cannot understand the use case in one quick pass, rewrite it.
 
-### 4. Prefer fewer, stronger entries
+### 5. Prefer fewer, stronger entries
 
 High-signal curation is more important than volume.
 
@@ -90,27 +96,37 @@ Why weak:
 
 ## Where to place entries
 
-Add entries to one of these files:
+Add entries to exactly one of these category files:
 
-- `categories/scientific-research.md`
-- `categories/software-systems-optimization.md`
-- `categories/evaluation-red-teaming.md`
-- `categories/finance-trading.md`
-- `categories/personal-knowledge-humanities.md`
-- `categories/infra-skills-forks.md`
-- `categories/related-practices-discussions.md`
+- `categories/scientific-research.md` — science, medicine, lab work
+- `categories/software-systems-optimization.md` — performance, kernel, compiler, app optimization
+- `categories/evaluation-red-teaming.md` — testing, benchmarking, jailbreaking, hardening
+- `categories/finance-trading.md` — trading strategies, market analysis, fintech
+- `categories/personal-knowledge-humanities.md` — genealogy, personal wikis, humanities
+- `categories/knowledge-base-rag-preparation.md` — RAG prep, knowledge curation for retrieval systems
+- `categories/market-research.md` — market structure, pricing, competitive landscape
+- `categories/workflow-automation.md` — embedded operational loops handing results to downstream actions
+- `categories/infra-skills-forks.md` — engines, harnesses, ports, skills, dashboards, orchestration
+- `categories/related-practices-discussions.md` — threads, interviews, articles (no standalone repo)
 
-If an example could fit multiple categories, choose the one that best represents the direct autoresearch use case.
+If an example could fit multiple categories, choose the one that represents the direct autoresearch application domain. When in doubt, follow this decision flow:
 
-`README.md` is the homepage aggregate, so contributors should edit category files first and then refresh the aggregate instead of treating the README as the primary source of truth.
+```
+Is there a standalone repo?
+  ├─ No  → related-practices-discussions.md
+  └─ Yes → What does the user actually accomplish?
+            ├─ Science/medicine/lab          → scientific-research.md
+            ├─ Performance/kernel/app tuning  → software-systems-optimization.md
+            ├─ Testing/benchmarking/attacking → evaluation-red-teaming.md
+            ├─ Trading/market finance         → finance-trading.md
+            ├─ Personal wiki/genealogy        → personal-knowledge-humanities.md
+            ├─ RAG/retrieval pipeline prep     → knowledge-base-rag-preparation.md
+            ├─ Market landscape research       → market-research.md
+            ├─ Operational loop for automation → workflow-automation.md
+            └─ Engine/harness/port/skill       → infra-skills-forks.md
+```
 
-### Quick classification rule
-
-- **Domain case**: the repo shows autoresearch being applied to a concrete field like science, trading, evaluation, genealogy, or systems optimization.
-- **Infra / Skills / Forks**: the repo mainly provides the engine, harness, port, skill, plugin, dashboard, memory layer, or orchestration layer for running autoresearch.
-- **Related Practices / Discussions**: the source is a public thread, interview, forum post, or article describing a concrete autoresearch practice, but there is no strong open-source repo or standalone case page yet.
-
-When unsure, prefer **not** to submit rather than stretching the definition.
+`README.md` is auto-generated from category files — never edit it directly.
 
 ## Style guidance
 

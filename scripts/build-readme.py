@@ -7,20 +7,20 @@ from pathlib import Path
 REPO_ROOT = Path(__file__).resolve().parent.parent
 README_PATH = REPO_ROOT / "README.md"
 
-PRIMARY = [
+PRIMARY = []
+SECONDARY = []
+
+CATEGORIES = [
     "scientific-research.md",
     "software-systems-optimization.md",
     "evaluation-red-teaming.md",
     "finance-trading.md",
     "personal-knowledge-humanities.md",
-    "infra-skills-forks.md",
-    "related-practices-discussions.md",
-]
-
-SECONDARY = [
     "knowledge-base-rag-preparation.md",
     "market-research.md",
     "workflow-automation.md",
+    "infra-skills-forks.md",
+    "related-practices-discussions.md",
 ]
 
 OPEN_TRACKING = [
@@ -31,7 +31,7 @@ OPEN_TRACKING = [
     "trend-monitoring.md",
 ]
 
-ALL_FILES = PRIMARY + SECONDARY + OPEN_TRACKING
+ALL_FILES = CATEGORIES + OPEN_TRACKING
 
 
 class Category:
@@ -114,6 +114,18 @@ def full_section(category: Category) -> list[str]:
     return lines
 
 
+def check_duplicates(categories: dict[str, Category]) -> list[tuple[str, list[str]]]:
+    """Find entries that appear in more than one category. Returns [(repo_name, [category_files])]."""
+    repo_map: dict[str, list[str]] = {}
+    for category in categories.values():
+        for line in category.lines:
+            m = re.search(r"\(https://github\.com/([^/]+/[^/)\s]+)\)", line)
+            if m:
+                repo = m.group(1).lower()
+                repo_map.setdefault(repo, []).append(category.filename)
+    return [(repo, files) for repo, files in repo_map.items() if len(files) > 1]
+
+
 def build_readme() -> str:
     categories = {filename: parse_category(filename) for filename in ALL_FILES}
 
@@ -121,7 +133,16 @@ def build_readme() -> str:
     secondary_categories = [categories[name] for name in SECONDARY]
     open_categories = [categories[name] for name in OPEN_TRACKING]
 
-    non_empty = [category for category in primary_categories + secondary_categories if category.count > 0]
+    # ---------- duplicate detection ----------
+    duplicates = check_duplicates(categories)
+    if duplicates:
+        print("⚠️  WARNING: cross-category duplicates detected:")
+        for repo, files in duplicates:
+            print(f"    {repo} appears in {', '.join(files)}")
+        print()
+
+    # ---------- build ----------
+    non_empty = [category for category in categories.values() if category.count > 0 and category.filename not in OPEN_TRACKING]
 
     out: list[str] = [
         "# awesome-autoresearch",
@@ -132,10 +153,7 @@ def build_readme() -> str:
         "",
         "This README is the homepage aggregate of the current category files, so the latest accepted entries are visible here without drilling into subpages.",
         "",
-        "The repository distinguishes between:",
-        "- **primary categories** for stronger case evidence such as repos, project pages, and concrete write-ups",
-        "- **secondary overlap categories** for cross-cutting patterns that reuse the same evidence from another angle",
-        "- **Related Practices / Discussions** for credible public practice signals — especially X threads, Reddit discussions, and interviews — that describe real autoresearch usage even when no strong standalone case page exists yet.",
+        "The repository treats all categories equally — each entry lives in exactly one category, chosen by its direct autoresearch application domain. A dedicated **Related Practices / Discussions** category captures credible public practice signals — X threads, Reddit discussions, and interviews — that describe real autoresearch usage even when no strong standalone case page exists yet.",
         "",
         "## Why this list",
         "",
@@ -165,26 +183,18 @@ def build_readme() -> str:
         "",
         "## Current coverage",
         "",
-        "### Primary categories",
-        "",
     ]
 
-    out.extend(bullet_line(category) for category in primary_categories)
+    out.extend(bullet_line(category) for category in categories.values() if category.filename not in OPEN_TRACKING)
     out.extend([
         "",
-        "### Secondary overlap categories",
-        "",
-    ])
-    out.extend(bullet_line(category) for category in secondary_categories)
-    out.extend([
-        "",
-        "### Open categories still being tracked",
+        "### Open categories still being seeded",
         "",
     ])
     out.extend(bullet_line(category) for category in open_categories)
     out.extend([
         "",
-        "Some entries intentionally appear in more than one overlap category when the same project is both a domain case and a reusable workflow pattern.",
+        "Each entry lives in exactly one category. When a project could fit multiple categories, we choose the one closest to its direct application domain.",
         "",
         "## Browse by category",
         "",

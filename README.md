@@ -6,10 +6,7 @@ A curated awesome list of public autoresearch use cases across industries.
 
 This README is the homepage aggregate of the current category files, so the latest accepted entries are visible here without drilling into subpages.
 
-The repository distinguishes between:
-- **primary categories** for stronger case evidence such as repos, project pages, and concrete write-ups
-- **secondary overlap categories** for cross-cutting patterns that reuse the same evidence from another angle
-- **Related Practices / Discussions** for credible public practice signals — especially X threads, Reddit discussions, and interviews — that describe real autoresearch usage even when no strong standalone case page exists yet.
+The repository treats all categories equally — each entry lives in exactly one category, chosen by its direct autoresearch application domain. A dedicated **Related Practices / Discussions** category captures credible public practice signals — X threads, Reddit discussions, and interviews — that describe real autoresearch usage even when no strong standalone case page exists yet.
 
 ## Why this list
 
@@ -39,23 +36,18 @@ We do **not** include:
 
 ## Current coverage
 
-### Primary categories
-
 - [Scientific Research](categories/scientific-research.md) — 53 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 49 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 22 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 48 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 21 entries
 - [Finance / Trading](categories/finance-trading.md) — 28 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
+- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
+- [Market Research](categories/market-research.md) — 0 entries
+- [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 110 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 129 entries
 
-### Secondary overlap categories
-
-- [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 4 entries
-- [Market Research](categories/market-research.md) — 1 entry
-- [Workflow Automation](categories/workflow-automation.md) — 9 entries
-
-### Open categories still being tracked
+### Open categories still being seeded
 
 - [Competitive Intelligence](categories/competitive-intelligence.md) — 0 entries
 - [Content Research](categories/content-research.md) — 0 entries
@@ -63,7 +55,7 @@ We do **not** include:
 - [Lead Generation](categories/lead-generation.md) — 0 entries
 - [Trend Monitoring](categories/trend-monitoring.md) — 0 entries
 
-Some entries intentionally appear in more than one overlap category when the same project is both a domain case and a reusable workflow pattern.
+Each entry lives in exactly one category. When a project could fit multiple categories, we choose the one closest to its direct application domain.
 
 ## Browse by category
 
@@ -72,11 +64,10 @@ Some entries intentionally appear in more than one overlap category when the sam
 - [Evaluation / Red Teaming](#evaluation-red-teaming) ([source](categories/evaluation-red-teaming.md))
 - [Finance / Trading](#finance-trading) ([source](categories/finance-trading.md))
 - [Personal Knowledge / Humanities](#personal-knowledge-humanities) ([source](categories/personal-knowledge-humanities.md))
+- [Knowledge Base / RAG Preparation](#knowledge-base-rag-preparation) ([source](categories/knowledge-base-rag-preparation.md))
+- [Workflow Automation](#workflow-automation) ([source](categories/workflow-automation.md))
 - [Infra / Skills / Forks](#infra-skills-forks) ([source](categories/infra-skills-forks.md))
 - [Related Practices / Discussions](#related-practices-discussions) ([source](categories/related-practices-discussions.md))
-- [Knowledge Base / RAG Preparation](#knowledge-base-rag-preparation) ([source](categories/knowledge-base-rag-preparation.md))
-- [Market Research](#market-research) ([source](categories/market-research.md))
-- [Workflow Automation](#workflow-automation) ([source](categories/workflow-automation.md))
 
 ## Full list
 
@@ -181,7 +172,6 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [autoresearch-lora-buzhou](https://github.com/bzjiang401/autoresearch-lora-buzhou) - Local LoRA fine-tuning optimization: adapts autoresearch to user-chosen LoRA training goals by establishing a confirmed baseline, changing one parameter at a time, rerunning >1% wins for confirmation, and promoting only verified `val_loss` improvements to the best checkpoint.
 - [ZeroAPI](https://github.com/dorukardahan/ZeroAPI) - Model-routing optimization: applies an autoresearch loop to OpenClaw routing policy constants by rerunning evals on routing logs, changing one setting at a time, and keeping only traffic-verified improvements.
 - [One Hour, 37% Faster: Applying Autoresearch to Our Search Ranking Inference Endpoint](https://medium.com/idealo-tech-blog/one-hour-37-faster-applying-autoresearch-to-our-search-ranking-inference-endpoint-34cffc08e373) - Search ranking optimization: applies Karpathy's edit → measure → keep/revert loop to idealo's production LTR inference endpoint, reducing preprocessing latency 5.9× and end-to-end latency 37% in one hour for ~$7.
-- [smallnest/autoresearch](https://github.com/smallnest/autoresearch) - Software development automation: generalizes Karpathy's autoresearch into a multi-agent, multi-source (GitHub, local, Baidu iCafe, Codeup) issue-to-PR pipeline with rotator review, scoring gates, and automatic merge for any Git project.
 - [arete autoresearch-compiler](https://github.com/upvalue/arete/blob/main/autoresearch-compiler.md) - Compiler optimization: applies a Karpathy-style keep/revert loop to a self-hosting Scheme compiler, benchmarking fixed workloads and keeping only changes that improve runtime performance.
 - [auto-arch-tournament](https://github.com/FeSens/auto-arch-tournament) - CPU architecture optimization: extends Karpathy's autoresearch loop to SystemVerilog RTL, proposing, implementing, and measuring microarchitectural hypotheses through riscv-formal, Verilator cosim, and FPGA place-and-route to achieve +91.9% CoreMark on a RISC-V core.
 - [autoresearch-function](https://github.com/vneyman/autoresearch-function) - Function optimization: adapts Karpathy's autoresearch to a CPU-only scaffold that benchmarks arbitrary functions against correctness, execution time, memory, and throughput metrics, keeping only edits that improve a composite score.
@@ -198,7 +188,6 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 
 - [Claudini](https://github.com/romovpa/claudini) - AI safety research: uses an autoresearch-style loop to invent and benchmark new LLM attack algorithms, keeping only methods that outperform baselines.
 - [autovoiceevals](https://github.com/ArchishmanSengupta/autovoiceevals) - Voice AI evaluation: attacks voice agents with adversarial callers, proposes prompt changes one at a time, and keeps or reverts them based on eval results.
-- [autoresearch-prompt-optimization](https://github.com/az9713/autoresearch-prompt-optimization) - Prompt evaluation: applies the autoresearch loop to a fixed extraction benchmark, iteratively editing one prompt and keeping only accuracy gains on the eval set.
 - [We Used Autoresearch on Our AI Skill, It Taught Us to Write Better Tests](https://langfuse.com/blog/2026-03-24-optimizing-ai-skill-with-autoresearch) - AI skill evaluation: runs a prompt-migration skill against six fixed codebase test cases, scores each change on correctness, completeness, and efficiency, and keeps only improvements while cherry-picking around harness overfit.
 - [AutoPrompter](https://github.com/gauravvij/AutoPrompter) - Prompt evaluation: combines promptfoo-style metrics with autoresearch-style closed-loop iteration, generating datasets, testing target models, and refining prompts through a persistent experiment ledger.
 - [AutonomousTester](https://github.com/executeautomation/autoresearch_playwright) - UI testing evaluation: adapts autoresearch to Playwright test generation by editing only `tests/test_suite.py`, measuring `coverage_score`, and auto-fixing or discarding test changes until coverage improves.
@@ -258,6 +247,22 @@ Source file: [`categories/personal-knowledge-humanities.md`](categories/personal
 
 - [autoresearch-genealogy](https://github.com/mattprusak/autoresearch-genealogy) - Genealogy: uses Claude Code `/autoresearch` prompts to expand family trees, verify claims against multiple sources, and keep a structured evidence-backed research vault.
 - [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) - Personal knowledge: uses a Karpathy-style `/autoresearch` skill to run multi-round web research with gap-filling and file source-backed concept, entity, and synthesis pages into a compounding Obsidian wiki vault.
+
+### Knowledge Base / RAG Preparation
+
+Source file: [`categories/knowledge-base-rag-preparation.md`](categories/knowledge-base-rag-preparation.md)
+
+- [AutoRAGsearch](https://github.com/Smasko7/AutoRAGsearch) - RAG retrieval optimization: applies an autoresearch-style loop to a fixed QA benchmark by editing only `rag_pipeline.py`, running local retrieval experiments, and improving retrieval_score from 0.9472 to 0.9867 over 20 autonomous experiments.
+- [AutoRAG Research Lab](https://github.com/fran-gen/autoresearch-rag) - RAG pipeline optimization: runs autonomous agents that plan, implement, benchmark, and keep/discard retrieval pipeline changes using Karpathy-mode over EnterpriseRAG-Bench with Docker-sandboxed evaluation and semantic no-op detection.
+
+### Workflow Automation
+
+Source file: [`categories/workflow-automation.md`](categories/workflow-automation.md)
+
+- [PM document optimizer](https://github.com/lifang-mban/pm-document-optimizer) - Product workflow automation: applies a Karpathy-style git ratchet to markdown artifacts like PRDs and strategy docs, scoring each draft with programmatic checks and committing only higher-scoring revisions.
+- [Trip Optimizer Pro](https://github.com/michaelpersonal/trip-optimizer) - Travel planning workflow automation: applies the autoresearch pattern to itinerary generation by researching destinations, scoring multi-day plans, and keeping only itinerary mutations that improve a weighted travel-quality score.
+- [Autoresearch for Software Development](https://github.com/smallnest/autoresearch) - Software delivery automation: adapts autoresearch to GitHub Issues by rotating agents through implement → review → fix loops, then auto-merging only issues that clear a score gate plus build, lint, and test checks.
+- [autobrowse](https://skills.sh/browserbase/skills/autobrowse) - Browser workflow automation: applies an autoresearch loop to browser tasks by iterating on `strategy.md`, replaying tasks with Browserbase, and graduating only reliable workflows into reusable Claude Code skills.
 
 ### Infra / Skills / Forks
 
@@ -533,35 +538,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Karpathy joins Anthropic's pre-training team](https://news.ycombinator.com/item?id=48194352) - News: Andrej Karpathy joins Anthropic in May 2026 to work on frontier LLM pre-training, planning to extend autoresearch ideas into larger recursive training improvement efforts with Claude.
 - [Running Karpathy's Autoresearch Loop on a T4 GPU inside Dataflow](https://dev.to/dataflow-zone/running-karpathys-autoresearch-loop-on-a-t4-gpu-inside-dataflow-1cdi) - Blog: adapts the autoresearch loop to free T4 GPUs on Google Colab and Kaggle by swapping Flash Attention for PyTorch SDPA and tuning hyperparameters, demonstrating the pattern works on consumer hardware.
 - [DeepSeek's "From Copilots to Colleagues" — 45-page survey 99% AI-written](https://victorchen96.github.io/auto_research_survey.pdf) - Paper: Deli Chen (DeepSeek) co-authors a 45-page survey on autonomous research agents where 99% of content is written by DeepSeek-V4-Pro across 108 agent rounds in 6 days, demonstrating AI-driven research paper generation at scale.
-
-### Knowledge Base / RAG Preparation
-
-Source file: [`categories/knowledge-base-rag-preparation.md`](categories/knowledge-base-rag-preparation.md)
-
-- [autoresearch-genealogy](https://github.com/mattprusak/autoresearch-genealogy) - Genealogy: uses Claude Code `/autoresearch` prompts to expand family trees, verify claims against multiple sources, and keep a structured evidence-backed research vault.
-- [AutoRAGsearch](https://github.com/Smasko7/AutoRAGsearch) - RAG retrieval optimization: applies an autoresearch-style loop to a fixed QA benchmark by editing only `rag_pipeline.py`, running local retrieval experiments, and improving retrieval_score from 0.9472 to 0.9867 over 20 autonomous experiments.
-- [claude-obsidian](https://github.com/AgriciDaniel/claude-obsidian) - Knowledge-base preparation: uses a Karpathy-style `/autoresearch` skill to gather sources, fill research gaps across three search rounds, and write structured source, concept, entity, and synthesis pages into a retrieval-ready Obsidian vault.
-- [AutoRAG Research Lab](https://github.com/fran-gen/autoresearch-rag) - RAG pipeline optimization: runs autonomous agents that plan, implement, benchmark, and keep/discard retrieval pipeline changes using Karpathy-mode over EnterpriseRAG-Bench with Docker-sandboxed evaluation and semantic no-op detection.
-
-### Market Research
-
-Source file: [`categories/market-research.md`](categories/market-research.md)
-
-- [atlas-gic](https://github.com/chrisworsey55/atlas-gic) - Trading: applies Karpathy-style autoresearch to a swarm of market agents, rewriting the worst-performing prompts and keeping changes only when rolling Sharpe improves.
-
-### Workflow Automation
-
-Source file: [`categories/workflow-automation.md`](categories/workflow-automation.md)
-
-- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - Scientific research: turns a research idea into a paper through a fully autonomous multi-stage pipeline with self-healing experiments and pivot/refine loops.
-- [Claudini](https://github.com/romovpa/claudini) - AI safety research: uses an autoresearch-style loop to invent and benchmark new LLM attack algorithms, keeping only methods that outperform baselines.
-- [AutoKernel](https://github.com/RightNow-AI/autokernel) - GPU optimization: applies Karpathy-style autoresearch to kernel bottlenecks, iterating on code, benchmarking, and keeping only changes that improve speed without breaking correctness.
-- [autovoiceevals](https://github.com/ArchishmanSengupta/autovoiceevals) - Voice AI evaluation: attacks voice agents with adversarial callers, proposes prompt changes one at a time, and keeps or reverts them based on eval results.
-- [PM document optimizer](https://github.com/lifang-mban/pm-document-optimizer) - Product workflow automation: applies a Karpathy-style git ratchet to markdown artifacts like PRDs and strategy docs, scoring each draft with programmatic checks and committing only higher-scoring revisions.
-- [Trip Optimizer Pro](https://github.com/michaelpersonal/trip-optimizer) - Travel planning workflow automation: applies the autoresearch pattern to itinerary generation by researching destinations, scoring multi-day plans, and keeping only itinerary mutations that improve a weighted travel-quality score.
-- [Autoresearch for Software Development](https://github.com/smallnest/autoresearch) - Software delivery automation: adapts autoresearch to GitHub Issues by rotating agents through implement → review → fix loops, then auto-merging only issues that clear a score gate plus build, lint, and test checks.
-- [autobrowse](https://skills.sh/browserbase/skills/autobrowse) - Browser workflow automation: applies an autoresearch loop to browser tasks by iterating on `strategy.md`, replaying tasks with Browserbase, and graduating only reliable workflows into reusable Claude Code skills.
-- [Google Play Description Autoresearcher](https://github.com/kevserimirogullari-hash/google-play-description-autoresearcher) - ASO optimization: applies a Karpathy-style autoresearch loop to Google Play Store long descriptions, running ~25 keyword-density experiments per session and committing only description variants that improve keyword match scores.
 
 ## Submission format
 

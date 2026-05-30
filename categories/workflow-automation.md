@@ -10,12 +10,7 @@ Use this category for examples where autoresearch is embedded in an operational 
 
 ## Entries
 
-- [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - Scientific research: turns a research idea into a paper through a fully autonomous multi-stage pipeline with self-healing experiments and pivot/refine loops.
-- [Claudini](https://github.com/romovpa/claudini) - AI safety research: uses an autoresearch-style loop to invent and benchmark new LLM attack algorithms, keeping only methods that outperform baselines.
-- [AutoKernel](https://github.com/RightNow-AI/autokernel) - GPU optimization: applies Karpathy-style autoresearch to kernel bottlenecks, iterating on code, benchmarking, and keeping only changes that improve speed without breaking correctness.
-- [autovoiceevals](https://github.com/ArchishmanSengupta/autovoiceevals) - Voice AI evaluation: attacks voice agents with adversarial callers, proposes prompt changes one at a time, and keeps or reverts them based on eval results.
 - [PM document optimizer](https://github.com/lifang-mban/pm-document-optimizer) - Product workflow automation: applies a Karpathy-style git ratchet to markdown artifacts like PRDs and strategy docs, scoring each draft with programmatic checks and committing only higher-scoring revisions.
 - [Trip Optimizer Pro](https://github.com/michaelpersonal/trip-optimizer) - Travel planning workflow automation: applies the autoresearch pattern to itinerary generation by researching destinations, scoring multi-day plans, and keeping only itinerary mutations that improve a weighted travel-quality score.
 - [Autoresearch for Software Development](https://github.com/smallnest/autoresearch) - Software delivery automation: adapts autoresearch to GitHub Issues by rotating agents through implement → review → fix loops, then auto-merging only issues that clear a score gate plus build, lint, and test checks.
 - [autobrowse](https://skills.sh/browserbase/skills/autobrowse) - Browser workflow automation: applies an autoresearch loop to browser tasks by iterating on `strategy.md`, replaying tasks with Browserbase, and graduating only reliable workflows into reusable Claude Code skills.
-- [Google Play Description Autoresearcher](https://github.com/kevserimirogullari-hash/google-play-description-autoresearcher) - ASO optimization: applies a Karpathy-style autoresearch loop to Google Play Store long descriptions, running ~25 keyword-density experiments per session and committing only description variants that improve keyword match scores.
