@@ -36,16 +36,16 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 54 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 48 entries
+- [Scientific Research](categories/scientific-research.md) — 55 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 49 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 21 entries
-- [Finance / Trading](categories/finance-trading.md) — 28 entries
+- [Finance / Trading](categories/finance-trading.md) — 29 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 110 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 131 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 117 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 132 entries
 
 ### Open categories still being seeded
 
@@ -129,6 +129,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Agentic Design of Compositional Descriptors via Autoresearch](https://arxiv.org/abs/2605.14671) - Materials science research: uses AI agents to autonomously design composition-only descriptors for materials-property prediction, requiring scientific reasoning justification before accepting each proposed descriptor against held-out evaluation splits.
 - [SciMLx](https://github.com/moatasim-KT/SciMLx) - Neural operator research: provides an agent-driven autonomous research platform optimized for Apple Silicon (MLX) that discovers neural operators such as Fourier Neural Operators and DeepONet for solving PDEs through autoresearch-style experiment loops.
 - [Vision Autoresearch](https://github.com/rycerzes/vision-autoresearch) - Vision research: runs a multi-agent autonomous experiment loop for vision model finetuning on classify, detect, and segment tasks, proposing config changes and auto-promoting wins against the current master on consumer GPUs.
+- [Vesuvius AutoResearch](https://github.com/mojomast/vesuvius-autoresearch) - Vesuvius Challenge research: provides an evidence-gated autonomous ML research loop with MetricContract enforcement, promotion gates, provenance tracking, and leave-one-out validation for ink-detection experiments across 1,600+ recorded runs.
 
 ### Software / Systems Optimization
 
@@ -182,6 +183,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Türkçe Hoca — AI Turkish Tutor](https://github.com/Techris93/turkish-tutor) - Education app optimization: applies an autoresearch swarm loop to a Turkish language tutor, continuously improving CEFR-adaptive teaching strategies through autonomous evaluation and iteration.
 - [Autoresearching BM25 on MSMarco](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25.html) - Search ranking optimization: applies Karpathy-style autoresearch to iteratively improve a BM25 search ranker on the MSMarco passage retrieval dataset by editing ranking code and keeping only NDCG improvements.
 - [Google Play Description Autoresearcher](https://github.com/kevserimirogullari-hash/google-play-description-autoresearcher) - ASO optimization: applies Karpathy-style autoresearch to Google Play long-description optimization by scoring keyword density, coverage, and structure across targeted experiments with keep/discard decisions.
+- [VRPTW Auto-Research](https://github.com/dguimarans/vrptw_autoresearch) - Logistics optimization: applies Karpathy-style keep/revert loop to Vehicle Routing Problem with Time Windows using DeepSeek-R1 and Qwen2.5-Coder agents that propose, implement, and benchmark single algorithmic changes to a Rust solver against fixed 400-customer instances.
 
 ### Evaluation / Red Teaming
 
@@ -241,6 +243,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [IPL Odds Multi-Agent Autoresearch](https://github.com/dashthird-0/ipl-odds-multiagent-autoresearch) - Sports betting research: deploys 7 Claude Code subagents to forecast IPL match outcomes, grades each forecast by Brier score, and autonomously mutates reasoning rules across a full season without human intervention.
 - [Clio](https://github.com/zhongdaweiai/clio) - Prediction-market forecasting: implements autoresearch as a multi-agent, Pareto-scored, time-evolving backtest harness for prediction markets with adversarial validation and bankroll-as-ground-truth.
 - [trading-autoresearch](https://github.com/vzeman/trading-autoresearch) - Intraday trading research: applies Karpathy-style autoresearch to a PatchTST transformer and Kelly-sized policy, iterating overnight and gating changes by Sharpe lower-CI and drawdown floor with detailed per-iteration reports.
+- [quanti-autoresearch](https://github.com/GHCharlesLau/quanti-autoresearch) - Economic research: applies Karpathy-style autoresearch to econometric specification search for GDP per capita growth prediction, iterating on feature selection, estimators, and functional forms against held-out RMSE with structured 4-phase exploration.
 
 ### Personal Knowledge / Humanities
 
@@ -379,6 +382,13 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [GEAR: Genetic AutoResearch](https://arxiv.org/abs/2605.13874) - Autoresearch infra: replaces single-incumbent hill-climbing with a genetic search graph that maintains a bounded frontier of promising code variants, arguing that the standard keep/discard loop prematurely discards valuable complementary local optima.
 - [autoresearch-lite](https://github.com/akhil/autoresearch-lite) - Consumer GPU adaptation: ports Karpathy's autoresearch to free Google Colab and Kaggle T4 GPUs with zero local setup by swapping Flash Attention 3 for PyTorch SDPA and adjusting hyperparameters for constrained hardware.
 - [autoresearcherUI](https://github.com/Fchaubard/autoresearcherUI) - Self-hosted research cockpit: packages autoresearch with wandb, datadog, and overleaf into a single-binary UI with live dashboard, terminal streaming, and auto-drafted LaTeX paper generation for autonomous ML research.
+- [autoresearch](https://github.com/Evarodenas/autoresearch) - Claude Code skill + Python CLI: provides a standalone implementation of Karpathy's autoresearch pattern with program.md, frozen metric evaluation, and git-backed keep/revert decisions for any artifact.
+- [Auto-Research Skill](https://github.com/Haoqin860/auto-research-skill) - Claude Code skill: provides an autonomous goal-directed iteration skill with 9 specialized modes (loop, plan, debug, fix, security, ship, scenario, predict, learn) following Karpathy's modify → verify → keep/discard loop.
+- [autoresearch-playbook-samples](https://github.com/justmattg/autoresearch-playbook-samples) - Template collection: provides free program.md starter templates organized by application domain for setting up Karpathy-style autoresearch loops with config.yaml, benchmark stubs, and ready-to-use examples.
+- [skills-autoresearch-security](https://github.com/schalkneethling/skills-autoresearch-security) - Security skill improvement: enhances security auditor skills through an autoresearch-style auto-improvement loop with fixture seeds, evaluation suites, and ratcheting improvement.
+- [autoresearch-orchestrator-pattern](https://github.com/justmy2satoshis/autoresearch-orchestrator-pattern) - Clean-room implementation: provides a ~300-line stdlib-only clean-room implementation of Karpathy's 3-register iterative experiment loop with bring-your-own-LLM and explicit program.md, baseline, metric, and keep/revert guards.
+- [autoresearch-template](https://github.com/ikorotkov-ss/autoresearch-template) - Universal template: provides a copyable template with config.yaml, program.md, and benchmark stubs for setting up LLM-driven autoresearch loops across website speed, ML, SEO, prompts, and API latency domains.
+- [opencode-auto-research](https://github.com/mittalsuraj18/opencode-auto-research) - OpenCode plugin: ports Karpathy's autoresearch as a plugin for OpenCode with autonomous keep/discard loops and experiment logging.
 
 ### Related Practices / Discussions
 
@@ -541,6 +551,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [DeepSeek's "From Copilots to Colleagues" — 45-page survey 99% AI-written](https://victorchen96.github.io/auto_research_survey.pdf) - Paper: Deli Chen (DeepSeek) co-authors a 45-page survey on autonomous research agents where 99% of content is written by DeepSeek-V4-Pro across 108 agent rounds in 6 days, demonstrating AI-driven research paper generation at scale.
 - [Karpathy's Autoresearch: 700 Experiments, 20 Improvements, and the Gomoku Hack That Tells the Real Story](https://www.birjob.com/blog/karpathy-autoresearch-2026) - Blog: dissects Karpathy's original 700-experiment run, showing the 11% headline speedup masks Goodhart-overfit (Shopify Liquid), metric-gaming (Gomoku alpha-beta), and that only ~3% of proposed changes survive the keep/discard gate.
 - [The Agents That Research While You Sleep](https://www.muttdata.ai/insights/the-agents-that-research-while-you-sleep) - Blog: explores the practical implications of autoresearch loops as overnight autonomous experiment runners, framing the shift from human-in-the-loop to human-in-the-morning review.
+- [AutoResearch 2026 @ NeurIPS workshop](https://autoresearch2026.github.io/) - Workshop: organizes a NeurIPS 2026 workshop on end-to-end autonomous scientific research with AI and Robot Scientists, featuring a dual-track call for papers including AI-authored research and an AI peer-review pilot, signaling the field reaching critical mass.
 
 ## Submission format
 
