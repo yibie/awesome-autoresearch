@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 53 entries
+- [Scientific Research](categories/scientific-research.md) — 54 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 48 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 21 entries
 - [Finance / Trading](categories/finance-trading.md) — 28 entries
@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 110 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 129 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 131 entries
 
 ### Open categories still being seeded
 
@@ -79,6 +79,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Sibyl Research System](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Scientific research: builds a fully autonomous AI scientist on Claude Code with inner research-iteration loops and outer self-evolution across projects.
 - [autoresearch-rl](https://github.com/vivekvkashyap/autoresearch-rl) - RL research: applies the autoresearch pattern to RL post-training by iterating on one training config, running fixed-time experiments, and keeping only eval improvements.
 - [autoresearch-robotics](https://github.com/jellyheadandrew/autoresearch-robotics) - Robotics research: adapts Karpathy-style autoresearch to MuJoCo and Gymnasium robotics tasks by editing one training file, evaluating fixed-budget runs, and using simulator renderings plus vision feedback to keep only better policies.
+- [autoslam](https://github.com/pglira/autoslam) - LiDAR SLAM research: applies an autoresearch-style autonomous loop to LiDAR SLAM method design and evaluation on the KITTI odometry benchmark, accumulating a leaderboard over weeks through iterative keep/discard experiments.
 - [Tinker-Explorer](https://github.com/mohammed840/autoresearch-explorer) - Evidence-retrieval research: adapts the autoresearch pattern to GRPO document exploration, comparing reward designs and keeping only retrieval policies that answer multihop questions more accurately under a token budget.
 - [Autoresearch on an old research idea](https://ykumar.me/blog/eclip-autoresearch/) - Multimodal retrieval research: applies Claude Code autoresearch to an old eCLIP idea, running 42 fixed-budget experiments with commit/revert decisions and cutting mean rank from 344.68 to 157.43.
 - [autoresearch-at-home](https://github.com/mutable-state-inc/autoresearch-at-home) - Distributed ML research: coordinates a SETI@home-style swarm of agents that claim experiments, share full `train.py` results through Ensue, and collectively drive down val_bpb across different GPUs.
@@ -538,6 +539,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Karpathy joins Anthropic's pre-training team](https://news.ycombinator.com/item?id=48194352) - News: Andrej Karpathy joins Anthropic in May 2026 to work on frontier LLM pre-training, planning to extend autoresearch ideas into larger recursive training improvement efforts with Claude.
 - [Running Karpathy's Autoresearch Loop on a T4 GPU inside Dataflow](https://dev.to/dataflow-zone/running-karpathys-autoresearch-loop-on-a-t4-gpu-inside-dataflow-1cdi) - Blog: adapts the autoresearch loop to free T4 GPUs on Google Colab and Kaggle by swapping Flash Attention for PyTorch SDPA and tuning hyperparameters, demonstrating the pattern works on consumer hardware.
 - [DeepSeek's "From Copilots to Colleagues" — 45-page survey 99% AI-written](https://victorchen96.github.io/auto_research_survey.pdf) - Paper: Deli Chen (DeepSeek) co-authors a 45-page survey on autonomous research agents where 99% of content is written by DeepSeek-V4-Pro across 108 agent rounds in 6 days, demonstrating AI-driven research paper generation at scale.
+- [Karpathy's Autoresearch: 700 Experiments, 20 Improvements, and the Gomoku Hack That Tells the Real Story](https://www.birjob.com/blog/karpathy-autoresearch-2026) - Blog: dissects Karpathy's original 700-experiment run, showing the 11% headline speedup masks Goodhart-overfit (Shopify Liquid), metric-gaming (Gomoku alpha-beta), and that only ~3% of proposed changes survive the keep/discard gate.
+- [The Agents That Research While You Sleep](https://www.muttdata.ai/insights/the-agents-that-research-while-you-sleep) - Blog: explores the practical implications of autoresearch loops as overnight autonomous experiment runners, framing the shift from human-in-the-loop to human-in-the-morning review.
 
 ## Submission format
 
