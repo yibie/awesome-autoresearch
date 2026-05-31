@@ -36,16 +36,16 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 55 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 49 entries
+- [Scientific Research](categories/scientific-research.md) — 59 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 51 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 21 entries
-- [Finance / Trading](categories/finance-trading.md) — 29 entries
+- [Finance / Trading](categories/finance-trading.md) — 30 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 117 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 132 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 120 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 134 entries
 
 ### Open categories still being seeded
 
@@ -130,6 +130,10 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [SciMLx](https://github.com/moatasim-KT/SciMLx) - Neural operator research: provides an agent-driven autonomous research platform optimized for Apple Silicon (MLX) that discovers neural operators such as Fourier Neural Operators and DeepONet for solving PDEs through autoresearch-style experiment loops.
 - [Vision Autoresearch](https://github.com/rycerzes/vision-autoresearch) - Vision research: runs a multi-agent autonomous experiment loop for vision model finetuning on classify, detect, and segment tasks, proposing config changes and auto-promoting wins against the current master on consumer GPUs.
 - [Vesuvius AutoResearch](https://github.com/mojomast/vesuvius-autoresearch) - Vesuvius Challenge research: provides an evidence-gated autonomous ML research loop with MetricContract enforcement, promotion gates, provenance tracking, and leave-one-out validation for ink-detection experiments across 1,600+ recorded runs.
+- [auto-alphafold3](https://github.com/ashtonchew/auto-alphafold3) - Protein folding research: applies Karpathy-style autoresearch to NanoFold-style AlphaFold3-lite with locked C-alpha lDDT benchmark, falsification gates, and Modal-backed trial infrastructure for monomer protein folding.
+- [autoresearch-sft-grpo](https://github.com/priyanlc/autoresearch-sft-grpo) - RL research: applies Karpathy-style autoresearch to the NVIDIA Nemotron Model Reasoning Challenge on Kaggle, using SFT and GRPO training with autonomous keep/discard decisions across 30+ experiments.
+- [chess-autoresearcher](https://github.com/rzhang2004/chess-autoresearcher) - Game AI research: runs an autoresearch loop over Sunfish chess engine hyperparameters via 50-game head-to-head matches with a 55% win-rate keep threshold, finding defaults are already near-optimal through 46 controlled experiments.
+- [ram_poc](https://github.com/yashraj59/ram_poc) - Biological research: applies Karpathy-style autoresearch to the Arc Institute Virtual Cell Challenge for perturbation prediction using a dual-pathway adaptive memory architecture with autonomous Debate Council mode and a 200-experiment stop cap.
 
 ### Software / Systems Optimization
 
@@ -184,6 +188,8 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Autoresearching BM25 on MSMarco](https://softwaredoug.com/blog/2026/05/17/autoresearching-a-better-msmarco-bm25.html) - Search ranking optimization: applies Karpathy-style autoresearch to iteratively improve a BM25 search ranker on the MSMarco passage retrieval dataset by editing ranking code and keeping only NDCG improvements.
 - [Google Play Description Autoresearcher](https://github.com/kevserimirogullari-hash/google-play-description-autoresearcher) - ASO optimization: applies Karpathy-style autoresearch to Google Play long-description optimization by scoring keyword density, coverage, and structure across targeted experiments with keep/discard decisions.
 - [VRPTW Auto-Research](https://github.com/dguimarans/vrptw_autoresearch) - Logistics optimization: applies Karpathy-style keep/revert loop to Vehicle Routing Problem with Time Windows using DeepSeek-R1 and Qwen2.5-Coder agents that propose, implement, and benchmark single algorithmic changes to a Rust solver against fixed 400-customer instances.
+- [msmarco-bm25-autoresearch](https://github.com/vespaai-playground/msmarco-bm25-autoresearch) - Search ranking optimization: reproduces MSMARCO BM25 rank-feature optimization on Vespa with three approaches including an autonomous LLM loop using paired-rotation validation across 10 train splits.
+- [tsfm-autoresearch](https://github.com/zd87pl/tsfm-autoresearch) - Resource forecasting: validates per-request autoresearch over frozen TimesFM for multi-tenant resource forecasting, staying within a 200ms inference latency budget across 10 completed milestones.
 
 ### Evaluation / Red Teaming
 
@@ -244,6 +250,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [Clio](https://github.com/zhongdaweiai/clio) - Prediction-market forecasting: implements autoresearch as a multi-agent, Pareto-scored, time-evolving backtest harness for prediction markets with adversarial validation and bankroll-as-ground-truth.
 - [trading-autoresearch](https://github.com/vzeman/trading-autoresearch) - Intraday trading research: applies Karpathy-style autoresearch to a PatchTST transformer and Kelly-sized policy, iterating overnight and gating changes by Sharpe lower-CI and drawdown floor with detailed per-iteration reports.
 - [quanti-autoresearch](https://github.com/GHCharlesLau/quanti-autoresearch) - Economic research: applies Karpathy-style autoresearch to econometric specification search for GDP per capita growth prediction, iterating on feature selection, estimators, and functional forms against held-out RMSE with structured 4-phase exploration.
+- [AutoResearch-based-Trading-Strategy-Generation-and-Testing](https://github.com/nhocconan/AutoResearch-based-Trading-Strategy-Generation-and-Testing) - Crypto trading research: applies Karpathy-style autoresearch to crypto futures strategy discovery with honest simulation guarantees, an LLM agent writing strategies from a knowledge base of quant techniques, and autonomous keep/discard decisions.
 
 ### Personal Knowledge / Humanities
 
@@ -389,6 +396,9 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-orchestrator-pattern](https://github.com/justmy2satoshis/autoresearch-orchestrator-pattern) - Clean-room implementation: provides a ~300-line stdlib-only clean-room implementation of Karpathy's 3-register iterative experiment loop with bring-your-own-LLM and explicit program.md, baseline, metric, and keep/revert guards.
 - [autoresearch-template](https://github.com/ikorotkov-ss/autoresearch-template) - Universal template: provides a copyable template with config.yaml, program.md, and benchmark stubs for setting up LLM-driven autoresearch loops across website speed, ML, SEO, prompts, and API latency domains.
 - [opencode-auto-research](https://github.com/mittalsuraj18/opencode-auto-research) - OpenCode plugin: ports Karpathy's autoresearch as a plugin for OpenCode with autonomous keep/discard loops and experiment logging.
+- [autorefine-skill-improvement](https://github.com/surahli123/autorefine-skill-improvement) - Skill optimization: applies Karpathy's autoresearch plus Hamel's Three Gulfs to skill improvement with human error analysis, judge validation, and disciplined mutation before claiming improvements.
+- [autoresearch-distillation](https://github.com/resolutelabsai/autoresearch-distillation) - RL training framework: provides a VERL-based framework for training LLM agents via SDPO and GRPO on autoresearch-style task improvement loops, surpassing Karpathy's original agent (−3.1% vs −2.8% val_bpb) with Qwen3-14B.
+- [symphonic-autoresearch](https://github.com/IMJONEZZ/symphonic-autoresearch) - Research infrastructure: wraps Karpathy's autoresearch in OpenAI's Symphony orchestration framework with crash recovery, real-time web dashboard, optional persistent memory, and one-command Docker deployment.
 
 ### Related Practices / Discussions
 
@@ -552,6 +562,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Karpathy's Autoresearch: 700 Experiments, 20 Improvements, and the Gomoku Hack That Tells the Real Story](https://www.birjob.com/blog/karpathy-autoresearch-2026) - Blog: dissects Karpathy's original 700-experiment run, showing the 11% headline speedup masks Goodhart-overfit (Shopify Liquid), metric-gaming (Gomoku alpha-beta), and that only ~3% of proposed changes survive the keep/discard gate.
 - [The Agents That Research While You Sleep](https://www.muttdata.ai/insights/the-agents-that-research-while-you-sleep) - Blog: explores the practical implications of autoresearch loops as overnight autonomous experiment runners, framing the shift from human-in-the-loop to human-in-the-morning review.
 - [AutoResearch 2026 @ NeurIPS workshop](https://autoresearch2026.github.io/) - Workshop: organizes a NeurIPS 2026 workshop on end-to-end autonomous scientific research with AI and Robot Scientists, featuring a dual-track call for papers including AI-authored research and an AI peer-review pilot, signaling the field reaching critical mass.
+- [Autobrowse: Browserbase applies Karpathy-style autoresearch to browser agent memory](https://www.browserbase.com/blog/autobrowse) - Blog: describes Autobrowse, a system that iterates a browser agent on a real task until convergence and graduates the winning approach into a reusable skill, drawing a direct parallel to Karpathy's autoresearch harness for learning browser workflows.
+- [meller on using autoresearch to optimize their own HN Show post](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch idea to iterate on and optimize an HN Show post, treating upvote ratio as the metric and keeping only content changes that improved engagement.
 
 ## Submission format
 
