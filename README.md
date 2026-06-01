@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 59 entries
+- [Scientific Research](categories/scientific-research.md) — 60 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 51 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 21 entries
 - [Finance / Trading](categories/finance-trading.md) — 30 entries
@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 120 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 134 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 135 entries
 
 ### Open categories still being seeded
 
@@ -134,6 +134,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearch-sft-grpo](https://github.com/priyanlc/autoresearch-sft-grpo) - RL research: applies Karpathy-style autoresearch to the NVIDIA Nemotron Model Reasoning Challenge on Kaggle, using SFT and GRPO training with autonomous keep/discard decisions across 30+ experiments.
 - [chess-autoresearcher](https://github.com/rzhang2004/chess-autoresearcher) - Game AI research: runs an autoresearch loop over Sunfish chess engine hyperparameters via 50-game head-to-head matches with a 55% win-rate keep threshold, finding defaults are already near-optimal through 46 controlled experiments.
 - [ram_poc](https://github.com/yashraj59/ram_poc) - Biological research: applies Karpathy-style autoresearch to the Arc Institute Virtual Cell Challenge for perturbation prediction using a dual-pathway adaptive memory architecture with autonomous Debate Council mode and a 200-experiment stop cap.
+- [repurpose-agent](https://github.com/RitataLU/repurpose-agent) - Drug repurposing research: applies a Karpathy-style autoresearch loop to rank 169 GWAS-orphan genes by drug repurposing potential, iterating on Spearman-rank correlation scores across 10 scoring experiments with keep/discard decisions.
 
 ### Software / Systems Optimization
 
@@ -484,6 +485,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [The Dark Factory Harness: From Autonomous Hill-Climbing to Autonomous Research](https://sotaverified.org/blog/improving-autoresearch-dark-factory-harness) - Blog: adds research context, research memory, and research strategy layers around the autoresearch loop to prevent random-walk behavior and help agents learn from experiment trajectories after 20+ iterations.
 - [Two-phase Autoresearch Chain](https://www.reddit.com/r/NavigatingComplexity/comments/1t6zv0t/twophase_autoresearch_chain/) - Reddit: describes a structured two-phase approach to autoresearch with explicit planning and execution phases for more principled experiment design.
 - [My first post scored 1. Karpathy's autoresearch idea helped me repost](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch to optimize an HN post itself, treating upvote ratio as the metric and iterating on content through a keep/discard loop.
+- [PostHog on autoresearch finding a 3-year-old bug in their ClickHouse query engine](https://posthog.com/blog/autoresearch-query-bug) - Blog: describes using pi-autoresearch with lane-structured hypothesis exploration at a team offsite, finding a timestamp-wrapping bug that had hidden for 3 years by cutting ClickHouse granule scans by 62%.
 
 ### Scientific / research augmentation
 

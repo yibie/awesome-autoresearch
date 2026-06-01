@@ -100,6 +100,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 - [The Dark Factory Harness: From Autonomous Hill-Climbing to Autonomous Research](https://sotaverified.org/blog/improving-autoresearch-dark-factory-harness) - Blog: adds research context, research memory, and research strategy layers around the autoresearch loop to prevent random-walk behavior and help agents learn from experiment trajectories after 20+ iterations.
 - [Two-phase Autoresearch Chain](https://www.reddit.com/r/NavigatingComplexity/comments/1t6zv0t/twophase_autoresearch_chain/) - Reddit: describes a structured two-phase approach to autoresearch with explicit planning and execution phases for more principled experiment design.
 - [My first post scored 1. Karpathy's autoresearch idea helped me repost](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch to optimize an HN post itself, treating upvote ratio as the metric and iterating on content through a keep/discard loop.
+- [PostHog on autoresearch finding a 3-year-old bug in their ClickHouse query engine](https://posthog.com/blog/autoresearch-query-bug) - Blog: describes using pi-autoresearch with lane-structured hypothesis exploration at a team offsite, finding a timestamp-wrapping bug that had hidden for 3 years by cutting ClickHouse granule scans by 62%.
 
 ### Scientific / research augmentation
 
