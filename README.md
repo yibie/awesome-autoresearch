@@ -39,12 +39,12 @@ We do **not** include:
 - [Scientific Research](categories/scientific-research.md) — 60 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 51 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 21 entries
-- [Finance / Trading](categories/finance-trading.md) — 30 entries
+- [Finance / Trading](categories/finance-trading.md) — 31 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 120 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 122 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 135 entries
 
 ### Open categories still being seeded
@@ -252,6 +252,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [trading-autoresearch](https://github.com/vzeman/trading-autoresearch) - Intraday trading research: applies Karpathy-style autoresearch to a PatchTST transformer and Kelly-sized policy, iterating overnight and gating changes by Sharpe lower-CI and drawdown floor with detailed per-iteration reports.
 - [quanti-autoresearch](https://github.com/GHCharlesLau/quanti-autoresearch) - Economic research: applies Karpathy-style autoresearch to econometric specification search for GDP per capita growth prediction, iterating on feature selection, estimators, and functional forms against held-out RMSE with structured 4-phase exploration.
 - [AutoResearch-based-Trading-Strategy-Generation-and-Testing](https://github.com/nhocconan/AutoResearch-based-Trading-Strategy-Generation-and-Testing) - Crypto trading research: applies Karpathy-style autoresearch to crypto futures strategy discovery with honest simulation guarantees, an LLM agent writing strategies from a knowledge base of quant techniques, and autonomous keep/discard decisions.
+- [Auto-Quant](https://github.com/TraderAlice/Auto-Quant) - Crypto trading research: applies Karpathy's autoresearch pattern to FreqTrade strategies on a 5-pair crypto universe, running backtest-driven keep/discard loops that evolved multi-strategy lineups across five versioned runs.
 
 ### Personal Knowledge / Humanities
 
@@ -400,6 +401,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autorefine-skill-improvement](https://github.com/surahli123/autorefine-skill-improvement) - Skill optimization: applies Karpathy's autoresearch plus Hamel's Three Gulfs to skill improvement with human error analysis, judge validation, and disciplined mutation before claiming improvements.
 - [autoresearch-distillation](https://github.com/resolutelabsai/autoresearch-distillation) - RL training framework: provides a VERL-based framework for training LLM agents via SDPO and GRPO on autoresearch-style task improvement loops, surpassing Karpathy's original agent (−3.1% vs −2.8% val_bpb) with Qwen3-14B.
 - [symphonic-autoresearch](https://github.com/IMJONEZZ/symphonic-autoresearch) - Research infrastructure: wraps Karpathy's autoresearch in OpenAI's Symphony orchestration framework with crash recovery, real-time web dashboard, optional persistent memory, and one-command Docker deployment.
+- [Andrej Karpathy's Autoresearch as a Universal Skill](https://github.com/balukosuri/Andrej-Karpathy-s-Autoresearch-As-a-Universal-Skill) - Claude Code and Cursor skill: adapts Karpathy's autoresearch into a universal prompt optimization loop that scans codebases, defines eval criteria, and keeps only higher-scoring prompt mutations.
+- [Autoresearch Claude Code Plugin](https://github.com/pjhoberman/autoresearch) - Claude Code plugin: generalizes Karpathy's autoresearch beyond ML training with a discover skill that finds optimization candidates and an autoresearch skill that runs autonomous keep/discard loops against measurable metrics.
 
 ### Related Practices / Discussions
 
