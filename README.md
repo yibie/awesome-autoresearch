@@ -37,14 +37,14 @@ We do **not** include:
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 60 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 51 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 21 entries
-- [Finance / Trading](categories/finance-trading.md) — 31 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 22 entries
+- [Finance / Trading](categories/finance-trading.md) — 32 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 122 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 123 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 135 entries
 
 ### Open categories still being seeded
@@ -191,6 +191,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [VRPTW Auto-Research](https://github.com/dguimarans/vrptw_autoresearch) - Logistics optimization: applies Karpathy-style keep/revert loop to Vehicle Routing Problem with Time Windows using DeepSeek-R1 and Qwen2.5-Coder agents that propose, implement, and benchmark single algorithmic changes to a Rust solver against fixed 400-customer instances.
 - [msmarco-bm25-autoresearch](https://github.com/vespaai-playground/msmarco-bm25-autoresearch) - Search ranking optimization: reproduces MSMARCO BM25 rank-feature optimization on Vespa with three approaches including an autonomous LLM loop using paired-rotation validation across 10 train splits.
 - [tsfm-autoresearch](https://github.com/zd87pl/tsfm-autoresearch) - Resource forecasting: validates per-request autoresearch over frozen TimesFM for multi-tenant resource forecasting, staying within a 200ms inference latency budget across 10 completed milestones.
+- [How autoresearch found a 3-year-old bug in ClickHouse](https://posthog.com/blog/autoresearch-query-bug) - Database query optimization: used pi-autoresearch with lane-structured hypothesis exploration at a team offsite to discover a timestamp-wrapping bug that had hidden for 3 years, cutting ClickHouse granule scans by 62%.
 
 ### Evaluation / Red Teaming
 
@@ -217,6 +218,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [NanoGPT-Bench](https://github.com/IntologyAI/NanoGPT-Bench) - ML research benchmark: evaluates AI systems on open-ended GPT-2 speedrun research tasks, finding current coding agents recover under 10% of human-achievable speedup and primarily tune hyperparameters rather than perform algorithmic innovation.
 - [ResearchArena](https://arxiv.org/abs/2605.19156) - Research loop evaluation: provides a scaffold for off-the-shelf agents to carry out full research loops from ideation through experimentation to paper writing, finding that feasibility does not yet equal quality in autonomous research.
 - [Autoresearch Novelty Bench](https://github.com/evo-hq/autoresearch-novelty-bench) - Novelty benchmark: evaluates autonomous research agents on whether their proposed hypotheses are novel, anticipate future breakthroughs, or merely rediscover known techniques, built on Prime Intellect's speedrunning archive.
+- [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) - Scientific research evaluation: benchmarks 40 real-science tasks across 10 disciplines, scoring AI agents on whether they can re-discover or surpass published research findings through autonomous pipelines.
 
 ### Finance / Trading
 
@@ -253,6 +255,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [quanti-autoresearch](https://github.com/GHCharlesLau/quanti-autoresearch) - Economic research: applies Karpathy-style autoresearch to econometric specification search for GDP per capita growth prediction, iterating on feature selection, estimators, and functional forms against held-out RMSE with structured 4-phase exploration.
 - [AutoResearch-based-Trading-Strategy-Generation-and-Testing](https://github.com/nhocconan/AutoResearch-based-Trading-Strategy-Generation-and-Testing) - Crypto trading research: applies Karpathy-style autoresearch to crypto futures strategy discovery with honest simulation guarantees, an LLM agent writing strategies from a knowledge base of quant techniques, and autonomous keep/discard decisions.
 - [Auto-Quant](https://github.com/TraderAlice/Auto-Quant) - Crypto trading research: applies Karpathy's autoresearch pattern to FreqTrade strategies on a 5-pair crypto universe, running backtest-driven keep/discard loops that evolved multi-strategy lineups across five versioned runs.
+- [noahroboros](https://github.com/upupnoah/noahroboros) - Crypto trading research: applies Karpathy-style autoresearch in Rust to BTC/ETH/SOL strategy optimization over 88 backtest experiments, discovering a simplified RSI(32) momentum strategy with a 2.569 composite score.
 
 ### Personal Knowledge / Humanities
 
@@ -403,6 +406,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [symphonic-autoresearch](https://github.com/IMJONEZZ/symphonic-autoresearch) - Research infrastructure: wraps Karpathy's autoresearch in OpenAI's Symphony orchestration framework with crash recovery, real-time web dashboard, optional persistent memory, and one-command Docker deployment.
 - [Andrej Karpathy's Autoresearch as a Universal Skill](https://github.com/balukosuri/Andrej-Karpathy-s-Autoresearch-As-a-Universal-Skill) - Claude Code and Cursor skill: adapts Karpathy's autoresearch into a universal prompt optimization loop that scans codebases, defines eval criteria, and keeps only higher-scoring prompt mutations.
 - [Autoresearch Claude Code Plugin](https://github.com/pjhoberman/autoresearch) - Claude Code plugin: generalizes Karpathy's autoresearch beyond ML training with a discover skill that finds optimization candidates and an autoresearch skill that runs autonomous keep/discard loops against measurable metrics.
+- [easy-autoresearch](https://github.com/dschaub95/easy-autoresearch) - Autoresearch infra: scaffolds an autonomous repository-optimization loop for Codex with SQLite state, agent phases, and a live observability dashboard.
 
 ### Related Practices / Discussions
 
@@ -488,8 +492,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [The Dark Factory Harness: From Autonomous Hill-Climbing to Autonomous Research](https://sotaverified.org/blog/improving-autoresearch-dark-factory-harness) - Blog: adds research context, research memory, and research strategy layers around the autoresearch loop to prevent random-walk behavior and help agents learn from experiment trajectories after 20+ iterations.
 - [Two-phase Autoresearch Chain](https://www.reddit.com/r/NavigatingComplexity/comments/1t6zv0t/twophase_autoresearch_chain/) - Reddit: describes a structured two-phase approach to autoresearch with explicit planning and execution phases for more principled experiment design.
 - [My first post scored 1. Karpathy's autoresearch idea helped me repost](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch to optimize an HN post itself, treating upvote ratio as the metric and iterating on content through a keep/discard loop.
-- [PostHog on autoresearch finding a 3-year-old bug in their ClickHouse query engine](https://posthog.com/blog/autoresearch-query-bug) - Blog: describes using pi-autoresearch with lane-structured hypothesis exploration at a team offsite, finding a timestamp-wrapping bug that had hidden for 3 years by cutting ClickHouse granule scans by 62%.
-
 ### Scientific / research augmentation
 
 - [Karpathy's autoresearch could make scientists of us all](https://podscan.fm/podcasts/azeem-azhars-exponential-view/episodes/karpathys-autoresearch-could-make-scientists-of-us-all) - Podcast: Azeem Azhar explores applying Karpathy's loop architecture to refine worldviews, test arguments, and solve business problems beyond ML, arguing the pattern makes autonomous scientific experimentation cheap and accessible.
@@ -569,6 +571,10 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [AutoResearch 2026 @ NeurIPS workshop](https://autoresearch2026.github.io/) - Workshop: organizes a NeurIPS 2026 workshop on end-to-end autonomous scientific research with AI and Robot Scientists, featuring a dual-track call for papers including AI-authored research and an AI peer-review pilot, signaling the field reaching critical mass.
 - [Autobrowse: Browserbase applies Karpathy-style autoresearch to browser agent memory](https://www.browserbase.com/blog/autobrowse) - Blog: describes Autobrowse, a system that iterates a browser agent on a real task until convergence and graduates the winning approach into a reusable skill, drawing a direct parallel to Karpathy's autoresearch harness for learning browser workflows.
 - [meller on using autoresearch to optimize their own HN Show post](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch idea to iterate on and optimize an HN Show post, treating upvote ratio as the metric and keeping only content changes that improved engagement.
+
+### Software / code workflows (continued)
+
+- [Perplexity on using autoresearch for continual SDK improvement](https://research.perplexity.ai/articles/rethinking-search-as-code-generation) - Blog: describes running an autoresearch loop for weeks to continuously propose and validate Perplexity's Search as Code SDK improvements against latency, codegen quality, and task-performance metrics.
 
 ## Submission format
 

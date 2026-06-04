@@ -100,8 +100,6 @@ This page is for **discussion evidence**, not for generic AI commentary.
 - [The Dark Factory Harness: From Autonomous Hill-Climbing to Autonomous Research](https://sotaverified.org/blog/improving-autoresearch-dark-factory-harness) - Blog: adds research context, research memory, and research strategy layers around the autoresearch loop to prevent random-walk behavior and help agents learn from experiment trajectories after 20+ iterations.
 - [Two-phase Autoresearch Chain](https://www.reddit.com/r/NavigatingComplexity/comments/1t6zv0t/twophase_autoresearch_chain/) - Reddit: describes a structured two-phase approach to autoresearch with explicit planning and execution phases for more principled experiment design.
 - [My first post scored 1. Karpathy's autoresearch idea helped me repost](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch to optimize an HN post itself, treating upvote ratio as the metric and iterating on content through a keep/discard loop.
-- [PostHog on autoresearch finding a 3-year-old bug in their ClickHouse query engine](https://posthog.com/blog/autoresearch-query-bug) - Blog: describes using pi-autoresearch with lane-structured hypothesis exploration at a team offsite, finding a timestamp-wrapping bug that had hidden for 3 years by cutting ClickHouse granule scans by 62%.
-
 ### Scientific / research augmentation
 
 - [Karpathy's autoresearch could make scientists of us all](https://podscan.fm/podcasts/azeem-azhars-exponential-view/episodes/karpathys-autoresearch-could-make-scientists-of-us-all) - Podcast: Azeem Azhar explores applying Karpathy's loop architecture to refine worldviews, test arguments, and solve business problems beyond ML, arguing the pattern makes autonomous scientific experimentation cheap and accessible.
@@ -181,3 +179,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 - [AutoResearch 2026 @ NeurIPS workshop](https://autoresearch2026.github.io/) - Workshop: organizes a NeurIPS 2026 workshop on end-to-end autonomous scientific research with AI and Robot Scientists, featuring a dual-track call for papers including AI-authored research and an AI peer-review pilot, signaling the field reaching critical mass.
 - [Autobrowse: Browserbase applies Karpathy-style autoresearch to browser agent memory](https://www.browserbase.com/blog/autobrowse) - Blog: describes Autobrowse, a system that iterates a browser agent on a real task until convergence and graduates the winning approach into a reusable skill, drawing a direct parallel to Karpathy's autoresearch harness for learning browser workflows.
 - [meller on using autoresearch to optimize their own HN Show post](https://news.ycombinator.com/item?id=48046969) - Hacker News: reports using Karpathy's autoresearch idea to iterate on and optimize an HN Show post, treating upvote ratio as the metric and keeping only content changes that improved engagement.
+
+### Software / code workflows (continued)
+
+- [Perplexity on using autoresearch for continual SDK improvement](https://research.perplexity.ai/articles/rethinking-search-as-code-generation) - Blog: describes running an autoresearch loop for weeks to continuously propose and validate Perplexity's Search as Code SDK improvements against latency, codegen quality, and task-performance metrics.
