@@ -44,8 +44,8 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 123 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 135 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 124 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 134 entries
 
 ### Open categories still being seeded
 
@@ -407,6 +407,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Andrej Karpathy's Autoresearch as a Universal Skill](https://github.com/balukosuri/Andrej-Karpathy-s-Autoresearch-As-a-Universal-Skill) - Claude Code and Cursor skill: adapts Karpathy's autoresearch into a universal prompt optimization loop that scans codebases, defines eval criteria, and keeps only higher-scoring prompt mutations.
 - [Autoresearch Claude Code Plugin](https://github.com/pjhoberman/autoresearch) - Claude Code plugin: generalizes Karpathy's autoresearch beyond ML training with a discover skill that finds optimization candidates and an autoresearch skill that runs autonomous keep/discard loops against measurable metrics.
 - [easy-autoresearch](https://github.com/dschaub95/easy-autoresearch) - Autoresearch infra: scaffolds an autonomous repository-optimization loop for Codex with SQLite state, agent phases, and a live observability dashboard.
+- [AutoExp](https://github.com/wizwand/autoexp) - Experiment scaffolding tool: turns any AI/ML training project into a Karpathy-style autoresearch workflow with a one-line setup that auto-infers training commands and evaluation metrics, then runs keep/discard experiments.
 
 ### Related Practices / Discussions
 
@@ -545,7 +546,6 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [I had Codex iterate on its own AGENTS.md 8 times and measured each against real PRs](https://www.stet.sh/blog/how-i-used-codex-to-improve-its-own-agents-md) - Blog: uses Codex's /goal autoresearch loop to iterate AGENTS.md through 8 candidates on a 5-task training slice, then validates on a 10-task holdout that reveals the best candidate still regressed on boundary judgment.
 - [Tobi Lütke on /autoresearch making Liquid 53% faster](https://x.com/tobi/status/2032212531846971413) - X: reports running `/autoresearch` on the Shopify Liquid template engine codebase and achieving 53% faster combined parse+render time through autonomous keep/discard iterations.
 - [Autoresearch for Refactoring Code](https://taoofmac.com/space/notes/2026/03/29/1300) - Blog: describes applying the autoresearch keep/discard pattern to refactoring tasks, treating code quality metrics as the evaluation signal and iterating on one file at a time.
-- [AutoExp: one-liner autoresearch for any training code](https://github.com/wizwand/autoexp) - GitHub: provides a CLI that wraps any training script into a Karpathy-style autoresearch loop with automatic baseline capture, experiment logging, and keep/discard decisions.
 - [Autoresearch for Integer Factorization](https://github.com/iliazintchenko/agent-factoring) - GitHub: extends the autoresearch pattern to integer factorization by treating an agent as an adversarial proposer that explores search-space modifications and keeps only those that break existing factoring barriers.
 - [Autonomous RL Fine-Tuning on Ephemeral GPUs via Autoresearch](https://templarresearch.substack.com/p/autonomous-rl-fine-tuning-on-ephemeral) - Blog: extends Karpathy's autoresearch to RL fine-tuning on ephemeral GPU instances, adding checkpoint-aware experiment queuing and cost-budget gates to the keep/discard loop.
 - [NM Framework: 3000 agents running autoresearch experiments](https://nervousmachine.substack.com/p/3000-agents-are-running-experiments) - Blog: describes operating a swarm of 3,000 AI agents organized in a factory pattern with specialized researcher, reviewer, and memory roles, each running modification→verification loops in parallel.
