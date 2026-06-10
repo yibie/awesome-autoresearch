@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 60 entries
+- [Scientific Research](categories/scientific-research.md) — 62 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 22 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -44,8 +44,8 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 124 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 134 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 125 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 135 entries
 
 ### Open categories still being seeded
 
@@ -135,6 +135,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [chess-autoresearcher](https://github.com/rzhang2004/chess-autoresearcher) - Game AI research: runs an autoresearch loop over Sunfish chess engine hyperparameters via 50-game head-to-head matches with a 55% win-rate keep threshold, finding defaults are already near-optimal through 46 controlled experiments.
 - [ram_poc](https://github.com/yashraj59/ram_poc) - Biological research: applies Karpathy-style autoresearch to the Arc Institute Virtual Cell Challenge for perturbation prediction using a dual-pathway adaptive memory architecture with autonomous Debate Council mode and a 200-experiment stop cap.
 - [repurpose-agent](https://github.com/RitataLU/repurpose-agent) - Drug repurposing research: applies a Karpathy-style autoresearch loop to rank 169 GWAS-orphan genes by drug repurposing potential, iterating on Spearman-rank correlation scores across 10 scoring experiments with keep/discard decisions.
+- [diffusers-pipeline-autoresearch](https://github.com/deep-diver/diffusers-pipeline-autoresearch) - Image generation research: applies Karpathy-style autoresearch to Diffusers FLUX.2 pipeline configs on JarvisLabs GPUs, running 10 rounds of candidate sweeps and keeping only prompts, aspect ratios, and semantic anchors that improve a unified visual-judge score for a multi-floor architectural cutaway target.
+- [AutoScientists](https://github.com/totaland/autoscientists) - Multi-agent scientific experimentation: deploys a decentralized team of AI agents that self-organize around hypotheses, critique proposals, and share successes across long-running autoresearch-style loops, achieving +8.33% on BioML-Bench and 1.9× faster nanoGPT convergence over single-agent baselines.
 
 ### Software / Systems Optimization
 
@@ -408,6 +410,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autoresearch Claude Code Plugin](https://github.com/pjhoberman/autoresearch) - Claude Code plugin: generalizes Karpathy's autoresearch beyond ML training with a discover skill that finds optimization candidates and an autoresearch skill that runs autonomous keep/discard loops against measurable metrics.
 - [easy-autoresearch](https://github.com/dschaub95/easy-autoresearch) - Autoresearch infra: scaffolds an autonomous repository-optimization loop for Codex with SQLite state, agent phases, and a live observability dashboard.
 - [AutoExp](https://github.com/wizwand/autoexp) - Experiment scaffolding tool: turns any AI/ML training project into a Karpathy-style autoresearch workflow with a one-line setup that auto-infers training commands and evaluation metrics, then runs keep/discard experiments.
+- [autoresearch-evo-db](https://github.com/hgarud/autoresearch) - Evolutionary database fork: integrates MAP-Elites into karpathy/autoresearch by replacing simple TSV logging with a multi-island evolutionary database that returns exploit/explore/random strategy hints to guide the search across diverse solution populations.
 
 ### Related Practices / Discussions
 
@@ -575,6 +578,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 ### Software / code workflows (continued)
 
 - [Perplexity on using autoresearch for continual SDK improvement](https://research.perplexity.ai/articles/rethinking-search-as-code-generation) - Blog: describes running an autoresearch loop for weeks to continuously propose and validate Perplexity's Search as Code SDK improvements against latency, codegen quality, and task-performance metrics.
+- [Deli AutoResearch V2: Three Papers, 941 Citations](https://victorchen96.github.io/blog_auto_research_v2.html) - Blog: describes an LLM-agent-assisted pipeline that produced three comprehensive survey papers (Auto-Research Agents, Continual Learning, Long-Horizon Decision-Making) through autonomous literature search, peer-review simulation, and iterative writing across 49+ skill invocations, with 141 new references added in the V5 refresh.
 
 ## Submission format
 

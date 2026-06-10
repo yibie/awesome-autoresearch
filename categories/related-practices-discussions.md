@@ -182,3 +182,4 @@ This page is for **discussion evidence**, not for generic AI commentary.
 ### Software / code workflows (continued)
 
 - [Perplexity on using autoresearch for continual SDK improvement](https://research.perplexity.ai/articles/rethinking-search-as-code-generation) - Blog: describes running an autoresearch loop for weeks to continuously propose and validate Perplexity's Search as Code SDK improvements against latency, codegen quality, and task-performance metrics.
+- [Deli AutoResearch V2: Three Papers, 941 Citations](https://victorchen96.github.io/blog_auto_research_v2.html) - Blog: describes an LLM-agent-assisted pipeline that produced three comprehensive survey papers (Auto-Research Agents, Continual Learning, Long-Horizon Decision-Making) through autonomous literature search, peer-review simulation, and iterative writing across 49+ skill invocations, with 141 new references added in the V5 refresh.
