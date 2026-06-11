@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 125 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 135 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 137 entries
 
 ### Open categories still being seeded
 
@@ -578,7 +578,9 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 ### Software / code workflows (continued)
 
 - [Perplexity on using autoresearch for continual SDK improvement](https://research.perplexity.ai/articles/rethinking-search-as-code-generation) - Blog: describes running an autoresearch loop for weeks to continuously propose and validate Perplexity's Search as Code SDK improvements against latency, codegen quality, and task-performance metrics.
+- [Optimizing Smart Contracts With Autoresearch](https://www.degencode.com/p/optimizing-smart-contracts-with-autoresearch) - Blog: applies pi-autoresearch to Vyper smart contract gas optimization for Uniswap V2 arbitrage, running 18 keep/discard iterations that cut executor gas from 202,464 to 169,765 and discovered that direct pool-to-pool token transfers eliminate redundant ERC-20 calls.
 - [Deli AutoResearch V2: Three Papers, 941 Citations](https://victorchen96.github.io/blog_auto_research_v2.html) - Blog: describes an LLM-agent-assisted pipeline that produced three comprehensive survey papers (Auto-Research Agents, Continual Learning, Long-Horizon Decision-Making) through autonomous literature search, peer-review simulation, and iterative writing across 49+ skill invocations, with 141 new references added in the V5 refresh.
+- [Distributed Autoresearch via Instruction Graph](https://github.com/karpathy/autoresearch/discussions/515) - GitHub Discussion: proposes a trustless distributed autoresearch coordination protocol using signed ECC identities and a global graph database where agents post verified experiments and upvote/downvote results, directly responding to Karpathy's No Priors interview vision.
 
 ## Submission format
 
