@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 62 entries
+- [Scientific Research](categories/scientific-research.md) — 63 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 22 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 125 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 137 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 138 entries
 
 ### Open categories still being seeded
 
@@ -135,6 +135,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [chess-autoresearcher](https://github.com/rzhang2004/chess-autoresearcher) - Game AI research: runs an autoresearch loop over Sunfish chess engine hyperparameters via 50-game head-to-head matches with a 55% win-rate keep threshold, finding defaults are already near-optimal through 46 controlled experiments.
 - [ram_poc](https://github.com/yashraj59/ram_poc) - Biological research: applies Karpathy-style autoresearch to the Arc Institute Virtual Cell Challenge for perturbation prediction using a dual-pathway adaptive memory architecture with autonomous Debate Council mode and a 200-experiment stop cap.
 - [repurpose-agent](https://github.com/RitataLU/repurpose-agent) - Drug repurposing research: applies a Karpathy-style autoresearch loop to rank 169 GWAS-orphan genes by drug repurposing potential, iterating on Spearman-rank correlation scores across 10 scoring experiments with keep/discard decisions.
+- [Recursive automated AI research](https://github.com/recursive-org/first-steps-toward-automated-ai-research) - Automated ML research: builds a system that proposes, implements, validates, and composes improvements across many research threads, beating the autoresearch@home community solution on NanoChat (0.9109 vs 0.9372 val_bpb), the 2-year human-optimized NanoGPT Speedrun record (77.5s vs 79.7s), and the SOL-ExecBench kernel optimization leaderboard (0.754 vs 0.699).
 - [diffusers-pipeline-autoresearch](https://github.com/deep-diver/diffusers-pipeline-autoresearch) - Image generation research: applies Karpathy-style autoresearch to Diffusers FLUX.2 pipeline configs on JarvisLabs GPUs, running 10 rounds of candidate sweeps and keeping only prompts, aspect ratios, and semantic anchors that improve a unified visual-judge score for a multi-floor architectural cutaway target.
 - [AutoScientists](https://github.com/totaland/autoscientists) - Multi-agent scientific experimentation: deploys a decentralized team of AI agents that self-organize around hypotheses, critique proposals, and share successes across long-running autoresearch-style loops, achieving +8.33% on BioML-Bench and 1.9× faster nanoGPT convergence over single-agent baselines.
 
@@ -581,6 +582,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Optimizing Smart Contracts With Autoresearch](https://www.degencode.com/p/optimizing-smart-contracts-with-autoresearch) - Blog: applies pi-autoresearch to Vyper smart contract gas optimization for Uniswap V2 arbitrage, running 18 keep/discard iterations that cut executor gas from 202,464 to 169,765 and discovered that direct pool-to-pool token transfers eliminate redundant ERC-20 calls.
 - [Deli AutoResearch V2: Three Papers, 941 Citations](https://victorchen96.github.io/blog_auto_research_v2.html) - Blog: describes an LLM-agent-assisted pipeline that produced three comprehensive survey papers (Auto-Research Agents, Continual Learning, Long-Horizon Decision-Making) through autonomous literature search, peer-review simulation, and iterative writing across 49+ skill invocations, with 141 new references added in the V5 refresh.
 - [Distributed Autoresearch via Instruction Graph](https://github.com/karpathy/autoresearch/discussions/515) - GitHub Discussion: proposes a trustless distributed autoresearch coordination protocol using signed ECC identities and a global graph database where agents post verified experiments and upvote/downvote results, directly responding to Karpathy's No Priors interview vision.
+- [Is Anthropic's Recursive Self-Improvement just autoresearch at scale?](https://github.com/karpathy/autoresearch/discussions/603) - GitHub Discussion: community debate sparked by Anthropic's June 2026 report showing 80%+ autonomous code and 8× engineering velocity, questioning whether frontier recursive self-improvement follows the same propose→implement→validate→keep/revert pattern as Karpathy's autoresearch deployed at massive enterprise scale.
 
 ## Submission format
 
