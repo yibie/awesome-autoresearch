@@ -44,8 +44,8 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 125 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 138 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 126 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 139 entries
 
 ### Open categories still being seeded
 
@@ -411,6 +411,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autoresearch Claude Code Plugin](https://github.com/pjhoberman/autoresearch) - Claude Code plugin: generalizes Karpathy's autoresearch beyond ML training with a discover skill that finds optimization candidates and an autoresearch skill that runs autonomous keep/discard loops against measurable metrics.
 - [easy-autoresearch](https://github.com/dschaub95/easy-autoresearch) - Autoresearch infra: scaffolds an autonomous repository-optimization loop for Codex with SQLite state, agent phases, and a live observability dashboard.
 - [AutoExp](https://github.com/wizwand/autoexp) - Experiment scaffolding tool: turns any AI/ML training project into a Karpathy-style autoresearch workflow with a one-line setup that auto-infers training commands and evaluation metrics, then runs keep/discard experiments.
+- [claude-autoresearch-skill](https://github.com/AlexWortega/claude-autoresearch-skill) - Claude Code skill: wraps karpathy/autoresearch with AutoScientists-inspired generational loops where parallel agent teams propose hypotheses, a peer-critic panel prunes before GPU spend, and a shared findings board compounds discoveries across hours or days of autonomous search.
 - [autoresearch-evo-db](https://github.com/hgarud/autoresearch) - Evolutionary database fork: integrates MAP-Elites into karpathy/autoresearch by replacing simple TSV logging with a multi-island evolutionary database that returns exploit/explore/random strategy hints to guide the search across diverse solution populations.
 
 ### Related Practices / Discussions
@@ -583,6 +584,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Deli AutoResearch V2: Three Papers, 941 Citations](https://victorchen96.github.io/blog_auto_research_v2.html) - Blog: describes an LLM-agent-assisted pipeline that produced three comprehensive survey papers (Auto-Research Agents, Continual Learning, Long-Horizon Decision-Making) through autonomous literature search, peer-review simulation, and iterative writing across 49+ skill invocations, with 141 new references added in the V5 refresh.
 - [Distributed Autoresearch via Instruction Graph](https://github.com/karpathy/autoresearch/discussions/515) - GitHub Discussion: proposes a trustless distributed autoresearch coordination protocol using signed ECC identities and a global graph database where agents post verified experiments and upvote/downvote results, directly responding to Karpathy's No Priors interview vision.
 - [Is Anthropic's Recursive Self-Improvement just autoresearch at scale?](https://github.com/karpathy/autoresearch/discussions/603) - GitHub Discussion: community debate sparked by Anthropic's June 2026 report showing 80%+ autonomous code and 8× engineering velocity, questioning whether frontier recursive self-improvement follows the same propose→implement→validate→keep/revert pattern as Karpathy's autoresearch deployed at massive enterprise scale.
+- [Evo ports autoresearch onto Claude Code dynamic workflows](https://aiinsiders.net/article/evo-ports-autoresearch-onto-claude-code-dynamic-workflows) - Article: reports that the evo open-source autoresearch plugin moved its six-step orchestrator from in-context prompts into Claude Code dynamic workflow JavaScript, resolving long-horizon instruction drift by separating model judgment (which hypothesis) from code coordination (parallel fan-out, regression locking, gate execution).
 
 ## Submission format
 
