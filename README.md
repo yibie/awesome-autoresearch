@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 126 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 139 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 140 entries
 
 ### Open categories still being seeded
 
@@ -585,6 +585,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Distributed Autoresearch via Instruction Graph](https://github.com/karpathy/autoresearch/discussions/515) - GitHub Discussion: proposes a trustless distributed autoresearch coordination protocol using signed ECC identities and a global graph database where agents post verified experiments and upvote/downvote results, directly responding to Karpathy's No Priors interview vision.
 - [Is Anthropic's Recursive Self-Improvement just autoresearch at scale?](https://github.com/karpathy/autoresearch/discussions/603) - GitHub Discussion: community debate sparked by Anthropic's June 2026 report showing 80%+ autonomous code and 8× engineering velocity, questioning whether frontier recursive self-improvement follows the same propose→implement→validate→keep/revert pattern as Karpathy's autoresearch deployed at massive enterprise scale.
 - [Evo ports autoresearch onto Claude Code dynamic workflows](https://aiinsiders.net/article/evo-ports-autoresearch-onto-claude-code-dynamic-workflows) - Article: reports that the evo open-source autoresearch plugin moved its six-step orchestrator from in-context prompts into Claude Code dynamic workflow JavaScript, resolving long-horizon instruction drift by separating model judgment (which hypothesis) from code coordination (parallel fan-out, regression locking, gate execution).
+- [Extending the Autoresearch Loop to Earth System Models](https://paragiri.com/blog/2026/autoresearch-paradigm-fire/) - Blog: applies a two-layer autoresearch paradigm (LLM for form-layer mechanism search + Optuna for parameter-layer fitting) to the Ecosystem Demography fire submodel, with Shapley decomposition pruning redundant mechanisms from 8 down to 3 while still reaching rank 1 out of 24 on the ILAMB benchmark, and identifies input validation, multi-channel verification, and frame choice as the binding constraints when moving beyond ML benchmarks.
 
 ## Submission format
 
