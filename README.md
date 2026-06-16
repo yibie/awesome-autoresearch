@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 126 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 140 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 141 entries
 
 ### Open categories still being seeded
 
@@ -586,6 +586,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Is Anthropic's Recursive Self-Improvement just autoresearch at scale?](https://github.com/karpathy/autoresearch/discussions/603) - GitHub Discussion: community debate sparked by Anthropic's June 2026 report showing 80%+ autonomous code and 8× engineering velocity, questioning whether frontier recursive self-improvement follows the same propose→implement→validate→keep/revert pattern as Karpathy's autoresearch deployed at massive enterprise scale.
 - [Evo ports autoresearch onto Claude Code dynamic workflows](https://aiinsiders.net/article/evo-ports-autoresearch-onto-claude-code-dynamic-workflows) - Article: reports that the evo open-source autoresearch plugin moved its six-step orchestrator from in-context prompts into Claude Code dynamic workflow JavaScript, resolving long-horizon instruction drift by separating model judgment (which hypothesis) from code coordination (parallel fan-out, regression locking, gate execution).
 - [Extending the Autoresearch Loop to Earth System Models](https://paragiri.com/blog/2026/autoresearch-paradigm-fire/) - Blog: applies a two-layer autoresearch paradigm (LLM for form-layer mechanism search + Optuna for parameter-layer fitting) to the Ecosystem Demography fire submodel, with Shapley decomposition pruning redundant mechanisms from 8 down to 3 while still reaching rank 1 out of 24 on the ILAMB benchmark, and identifies input validation, multi-channel verification, and frame choice as the binding constraints when moving beyond ML benchmarks.
+- [Karpathy's Autoresearch for Software Engineers](https://dev.to/mohan2k3s/karpathys-autoresearch-just-went-viral-heres-how-software-engineers-can-actually-use-the-4cg5) - Blog: distills the autoresearch pattern (evaluator + implementation + direction file) into six concrete software-engineering applications (performance optimization, flaky-test hunting, refactoring, config tuning, prompt iteration, CI optimization) with specific evaluator and direction-file templates for each.
 
 ## Submission format
 
