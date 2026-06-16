@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 63 entries
+- [Scientific Research](categories/scientific-research.md) — 64 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 22 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -77,6 +77,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 
 - [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - Scientific research: turns a research idea into a paper through a fully autonomous multi-stage pipeline with self-healing experiments and pivot/refine loops.
 - [Sibyl Research System](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Scientific research: builds a fully autonomous AI scientist on Claude Code with inner research-iteration loops and outer self-evolution across projects.
+- [EurekAgent](https://github.com/THU-Team-Eureka/EurekAgent) - Scientific research: runs metric-driven autoresearch with Claude Code sessions, introducing agent environment engineering through bounded execution, isolated evaluation, Git-backed artifacts, budget controls, and human oversight, setting new SOTA on three mathematics optimization tasks at under $17 average API cost, reaching top GPUMODE kernel-engineering results, and ranking first by medal rate on an MLE-Bench subset.
 - [autoresearch-rl](https://github.com/vivekvkashyap/autoresearch-rl) - RL research: applies the autoresearch pattern to RL post-training by iterating on one training config, running fixed-time experiments, and keeping only eval improvements.
 - [autoresearch-robotics](https://github.com/jellyheadandrew/autoresearch-robotics) - Robotics research: adapts Karpathy-style autoresearch to MuJoCo and Gymnasium robotics tasks by editing one training file, evaluating fixed-budget runs, and using simulator renderings plus vision feedback to keep only better policies.
 - [autoslam](https://github.com/pglira/autoslam) - LiDAR SLAM research: applies an autoresearch-style autonomous loop to LiDAR SLAM method design and evaluation on the KITTI odometry benchmark, accumulating a leaderboard over weeks through iterative keep/discard experiments.
