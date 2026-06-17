@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 126 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 141 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 142 entries
 
 ### Open categories still being seeded
 
@@ -588,6 +588,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Evo ports autoresearch onto Claude Code dynamic workflows](https://aiinsiders.net/article/evo-ports-autoresearch-onto-claude-code-dynamic-workflows) - Article: reports that the evo open-source autoresearch plugin moved its six-step orchestrator from in-context prompts into Claude Code dynamic workflow JavaScript, resolving long-horizon instruction drift by separating model judgment (which hypothesis) from code coordination (parallel fan-out, regression locking, gate execution).
 - [Extending the Autoresearch Loop to Earth System Models](https://paragiri.com/blog/2026/autoresearch-paradigm-fire/) - Blog: applies a two-layer autoresearch paradigm (LLM for form-layer mechanism search + Optuna for parameter-layer fitting) to the Ecosystem Demography fire submodel, with Shapley decomposition pruning redundant mechanisms from 8 down to 3 while still reaching rank 1 out of 24 on the ILAMB benchmark, and identifies input validation, multi-channel verification, and frame choice as the binding constraints when moving beyond ML benchmarks.
 - [Karpathy's Autoresearch for Software Engineers](https://dev.to/mohan2k3s/karpathys-autoresearch-just-went-viral-heres-how-software-engineers-can-actually-use-the-4cg5) - Blog: distills the autoresearch pattern (evaluator + implementation + direction file) into six concrete software-engineering applications (performance optimization, flaky-test hunting, refactoring, config tuning, prompt iteration, CI optimization) with specific evaluator and direction-file templates for each.
+- [Using Agents to Run Experiments While We Sleep: AutoResearch for Cribl AI](https://cribl.io/blog/using-agents-to-run-experiments-while-we-sleep-autoresearch-for-cribl-ai/) - Blog: describes Cribl's production deployment of a Karpathy-inspired experiment loop where a research agent reviews prior results, develops a hypothesis, makes a code change, rebuilds and retrains their privacy detection model, and scores the outcome, achieving a 23% training time reduction and 60% throughput increase on cribl-privacy-1.0.
 
 ## Submission format
 
