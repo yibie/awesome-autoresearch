@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 131 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 145 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 146 entries
 
 ### Open categories still being seeded
 
@@ -599,6 +599,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Why I Stopped Running Experiments Myself — Autoresearch for TTS Inference Optimization](https://medium.com/@work.shreeyash/why-i-stopped-running-experiments-myself-and-let-an-ai-agent-optimize-my-tts-model-overnight-7d55a74ce54f) - Blog: applies Karpathy's autoresearch loop to OmniVoice diffusion TTS inference optimization, where the agent autonomously swept diffusion step counts, discovered CUDA Graph capture halved forward-pass latency (39.8ms→20.0ms), surfaced cold-start warmup penalties, and even detected and re-ran its own bad baseline measurements, delivering a 6-7× end-to-end latency reduction overnight.
 - [Deli AutoResearch SKILL open-sourced + Self-play survey](https://x.com/victor207755822/status/2067259098584985954) - X/Twitter: Deli Chen open-sources the SKILL.md protocol file behind Deli AutoResearch and publishes a 4th survey paper on Self-play, where for the first time the AutoResearch Agent autonomously planned GPU experiments and submitted real RL training runs (GRPO) on the DeepSeek 285B model with zero human intervention across the entire experiment-design→code→run→debug→conclude pipeline.
 - [autoarXiv: autoresearch for any paper](https://x.com/askalphaxiv/status/2067593673072877833) - Service: alphaXiv launches a service where changing 'arxiv' to 'autoarxiv' in any paper URL triggers an agent that resolves codebase setup issues, runs a minimal reproduction, and estimates full replication cost, turning any arXiv paper into a one-click autoresearch experiment.
+- [GLM 5.2: first open-weights model for autoresearch](https://x.com/askalphaxiv/status/2069074178829901974) - X/Twitter: alphaXiv reports that Zhipu AI's GLM 5.2 is the first open-weights model proven capable of running a full autoresearch pipeline, autonomously completing async vs colocated sync RL training on Harbor code contests across two 8×H100 nodes with SkyRL, resolving setup issues and producing throughput/reward comparisons — providing an open-source alternative at a moment when closed models are restricting research access.
 
 ## Submission format
 
