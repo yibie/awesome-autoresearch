@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 133 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 146 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 147 entries
 
 ### Open categories still being seeded
 
@@ -605,6 +605,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Deli AutoResearch SKILL open-sourced + Self-play survey](https://x.com/victor207755822/status/2067259098584985954) - X/Twitter: Deli Chen open-sources the SKILL.md protocol file behind Deli AutoResearch and publishes a 4th survey paper on Self-play, where for the first time the AutoResearch Agent autonomously planned GPU experiments and submitted real RL training runs (GRPO) on the DeepSeek 285B model with zero human intervention across the entire experiment-design→code→run→debug→conclude pipeline.
 - [autoarXiv: autoresearch for any paper](https://x.com/askalphaxiv/status/2067593673072877833) - Service: alphaXiv launches a service where changing 'arxiv' to 'autoarxiv' in any paper URL triggers an agent that resolves codebase setup issues, runs a minimal reproduction, and estimates full replication cost, turning any arXiv paper into a one-click autoresearch experiment.
 - [GLM 5.2: first open-weights model for autoresearch](https://x.com/askalphaxiv/status/2069074178829901974) - X/Twitter: alphaXiv reports that Zhipu AI's GLM 5.2 is the first open-weights model proven capable of running a full autoresearch pipeline, autonomously completing async vs colocated sync RL training on Harbor code contests across two 8×H100 nodes with SkyRL, resolving setup issues and producing throughput/reward comparisons — providing an open-source alternative at a moment when closed models are restricting research access.
+- [Introspection: Autoresearch in the Wild at AIEWF](https://www.latent.space/p/autoresearch-introspection) - Interview: Latent Space interviews Roland Gavrilescu (ex-xAI), co-founder of Introspection — a new company explicitly building infrastructure for deploying self-improving autoresearch systems — who presented three production patterns at the AI Engineer World's Fair: the loop is the product, learn before automating, and ground feedback in real signals.
 
 ## Submission format
 
