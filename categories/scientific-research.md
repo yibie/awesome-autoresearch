@@ -9,7 +9,7 @@ Use this category for examples where autoresearch is applied to scientific disco
 ```
 
 ## Entries
-
+- [SAGE](https://github.com/JieMaMagic/SAGE) - Scientific research: applies an autonomous research loop to scientific experiments by generating multiple causal explanations for failures, verifying the true root cause to modify the code or design, and keeping successful interventions to increase reliable metrics-bearing outputs.
 - [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - Scientific research: turns a research idea into a paper through a fully autonomous multi-stage pipeline with self-healing experiments and pivot/refine loops.
 - [Sibyl Research System](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Scientific research: builds a fully autonomous AI scientist on Claude Code with inner research-iteration loops and outer self-evolution across projects.
 - [EurekAgent](https://github.com/THU-Team-Eureka/EurekAgent) - Scientific research: runs metric-driven autoresearch with Claude Code sessions, introducing agent environment engineering through bounded execution, isolated evaluation, Git-backed artifacts, budget controls, and human oversight, setting new SOTA on three mathematics optimization tasks at under $17 average API cost, reaching top GPUMODE kernel-engineering results, and ranking first by medal rate on an MLE-Bench subset.
