@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 69 entries
+- [Scientific Research](categories/scientific-research.md) — 70 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -44,7 +44,7 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 133 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 134 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 147 entries
 
 ### Open categories still being seeded
@@ -75,6 +75,7 @@ Each entry lives in exactly one category. When a project could fit multiple cate
 
 Source file: [`categories/scientific-research.md`](categories/scientific-research.md)
 
+- [SAGE](https://github.com/JieMaMagic/SAGE) - Scientific research: applies an autonomous research loop to scientific experiments by generating multiple causal explanations for failures, verifying the true root cause to modify the code or design, and keeping successful interventions to increase reliable metrics-bearing outputs.
 - [AutoResearchClaw](https://github.com/aiming-lab/AutoResearchClaw) - Scientific research: turns a research idea into a paper through a fully autonomous multi-stage pipeline with self-healing experiments and pivot/refine loops.
 - [Sibyl Research System](https://github.com/Sibyl-Research-Team/AutoResearch-SibylSystem) - Scientific research: builds a fully autonomous AI scientist on Claude Code with inner research-iteration loops and outer self-evolution across projects.
 - [EurekAgent](https://github.com/THU-Team-Eureka/EurekAgent) - Scientific research: runs metric-driven autoresearch with Claude Code sessions, introducing agent environment engineering through bounded execution, isolated evaluation, Git-backed artifacts, budget controls, and human oversight, setting new SOTA on three mathematics optimization tasks at under $17 average API cost, reaching top GPUMODE kernel-engineering results, and ranking first by medal rate on an MLE-Bench subset.
@@ -421,6 +422,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [AutoExp](https://github.com/wizwand/autoexp) - Experiment scaffolding tool: turns any AI/ML training project into a Karpathy-style autoresearch workflow with a one-line setup that auto-infers training commands and evaluation metrics, then runs keep/discard experiments.
 - [autoresearch-sboss](https://github.com/Armosphera/autoresearch-sboss) - Sovereign business workflow adaptation: ports Karpathy's keep/revert loop from GPU training to sovereign business workflow optimization, running stdlib+httpx on any Mac with no torch or GPU dependencies.
 - [autoresearch-competitions](https://github.com/tangle-network/autoresearch-competitions) - Decentralized improvement market: a Tangle Blueprint that posts bounties for better agents, models, or algorithms, scored on a held-out test, creating an open market for verifiable improvement through autoresearch-style keep/discard evaluation.
+- [autoresearch-chain](https://github.com/Thrasher66099/autoresearch-chain) - Decentralized Proof-of-Useful-Work protocol: a fork-native protocol that mines validated improvements to AI training recipes, turning autoresearch experiment results into a decentralized consensus mechanism where kept improvements prove useful computation.
 - [Maka-Agent](https://github.com/Maka-Agent/maka-agent) - Agent prompt self-optimization: implements a closed-loop autoresearch system where an agent generates system prompt variants, runs them through Harbor container evals against Terminal Bench, logs results via append-only WAL, filters through an acceptance policy, and iterates on the winning prompt, with PRs #67-#70 building the full pipeline from WAL controller to benchmark-hardened verification.
 - [autoresearch-local-critic](https://github.com/pcbrom/autoresearch) - Local LLM critic generalization: extracts the karpathy/autoresearch pattern into a Python package driven by a local Ollama LLM critic (Gemma family) that emits structured JSON proposals with thought_process, hypothesis, code_pseudocode, and risk_level, decoupling the critic from the agent harness so any editable-file+metric problem can be optimized overnight without cloud API dependencies.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
