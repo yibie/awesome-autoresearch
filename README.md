@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 70 entries
+- [Scientific Research](categories/scientific-research.md) — 72 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 134 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 147 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 148 entries
 
 ### Open categories still being seeded
 
@@ -140,6 +140,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [ENPIRE: Agentic Robot Policy Self-Improvement](https://research.nvidia.com/labs/gear/enpire/) - Robotics research: deploys a multi-agent physical autoresearch harness (NVIDIA GEAR/CMU/UC Berkeley) where Codex, Claude Code, and Kimi Code agents autonomously propose robot policy improvements, test them on real hardware with auto-reset and auto-verification, and keep only changes that raise success rate, reaching 99% on dexterous tasks (GPU insertion, zip-tie cutting, pin insertion) while scaling to 8-robot fleets with explicit mean-robot-utilization and mean-token-utilization metrics.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
+- [autodidact-autoresearch](https://github.com/itsflownium/autodidact-autoresearch) - Small-model autonomous research: extends Karpathy-style autoresearch to a 1M-parameter transformer with PatchRCT (randomized controlled trials on patched model changes) and Bayesian downstream-reward estimation, exploring whether structured experimental design improves sample efficiency at tiny model scales.
+- [mist-autoresearch](https://github.com/mist-medical/mist-autoresearch) - Medical imaging research: applies autoresearch to 3D medical image segmentation with MIST, iterating on model configurations against segmentation metrics in a domain where ground-truth annotations are expensive.
 - [Arbor](https://github.com/RUC-NLPIR/Arbor) - Generalist autonomous research: an autonomous research agent (RUC-NLPIR, arXiv:2606.11926) that proposes hypotheses, edits code, runs real experiments, and keeps only improvements that survive held-out evaluation, growing a persistent hypothesis tree across branches — beats Claude Code and Codex by 2.5× on the same compute budget across BrowseComp, Terminal-Bench 2.0, and Math-Reasoning, with 86.36% Any-Medal on MLE-Bench Lite.
 - [FAROS](https://github.com/OpenNSWM-Lab/FAROS) - AutoResearch operating system: a blueprint-driven AutoResearch runtime (1,566 ⭐) that orchestrates AI research workflows from idea generation and experiments to paper writing and peer review, designed as an extensible foundation for the LLM research domain with a 1.1.0-rc1 release.
 - [Recursive automated AI research](https://github.com/recursive-org/first-steps-toward-automated-ai-research) - Automated ML research: builds a system that proposes, implements, validates, and composes improvements across many research threads, beating the autoresearch@home community solution on NanoChat (0.9109 vs 0.9372 val_bpb), the 2-year human-optimized NanoGPT Speedrun record (77.5s vs 79.7s), and the SOL-ExecBench kernel optimization leaderboard (0.754 vs 0.699).
@@ -610,6 +612,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [autoarXiv: autoresearch for any paper](https://x.com/askalphaxiv/status/2067593673072877833) - Service: alphaXiv launches a service where changing 'arxiv' to 'autoarxiv' in any paper URL triggers an agent that resolves codebase setup issues, runs a minimal reproduction, and estimates full replication cost, turning any arXiv paper into a one-click autoresearch experiment.
 - [GLM 5.2: first open-weights model for autoresearch](https://x.com/askalphaxiv/status/2069074178829901974) - X/Twitter: alphaXiv reports that Zhipu AI's GLM 5.2 is the first open-weights model proven capable of running a full autoresearch pipeline, autonomously completing async vs colocated sync RL training on Harbor code contests across two 8×H100 nodes with SkyRL, resolving setup issues and producing throughput/reward comparisons — providing an open-source alternative at a moment when closed models are restricting research access.
 - [Introspection: Autoresearch in the Wild at AIEWF](https://www.latent.space/p/autoresearch-introspection) - Interview: Latent Space interviews Roland Gavrilescu (ex-xAI), co-founder of Introspection — a new company explicitly building infrastructure for deploying self-improving autoresearch systems — who presented three production patterns at the AI Engineer World's Fair: the loop is the product, learn before automating, and ground feedback in real signals.
+- [Guide to Loop Engineering](https://www.marktechpost.com/2026/07/12/guide-to-loop-engineering/) - Article: MarkTechPost synthesizes the emerging discipline of loop engineering — how to design multi-level optimization loops (autoresearch + Bilevel Autoresearch) that turn AI agents into autonomous ML research systems, covering evaluator design, reward hacking prevention, and the shift from inner training loops to outer meta-optimization.
 
 ## Submission format
 
