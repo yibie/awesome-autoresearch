@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 72 entries
+- [Scientific Research](categories/scientific-research.md) — 73 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
