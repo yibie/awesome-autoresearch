@@ -115,6 +115,7 @@ This page is for **discussion evidence**, not for generic AI commentary.
 - [David Gasquez on using the autoresearch idea in ML competitions](https://x.com/davidgasquez/status/2030946939836022886) - X: says the benchmark-driven autoresearch pattern worked in a couple of ML competition settings and generalizes to scored tasks like retrieval, AUC, and performance tuning.
 - [Dylan Huang on a 108-experiment autoresearch run for golf forecasting](https://x.com/dphuang2/status/2043899379040563378) - X: reports letting Claude Code run 108 no-human-loop experiments on Tinker to build a golf forecasting system, cutting held-out tournament log-loss from 2.81 to 0.54 while reverting 52% of trials.
 - [Applying Karpathy's autoresearch to a 33M-token public transit dataset](https://www.reddit.com/r/LocalLLM/comments/1t04t00/applying_karpathys_autoresearch_to_a_33mtoken/) - Reddit: reports a 14% improvement on a 33-million-token public transit dataset using Karpathy-style autoresearch with replication notes.
+- [The AutoResearch Moment: From Experimenter to Research Director](https://www.preprints.org/manuscript/202603.1329) - Paper: position paper arguing autoresearch shifts the human role from experimenter to research director, relocating accountability upward to claim governance — an objective sheet, program boundaries, discovery trace, verification ledger, and provenance bundle define what can count as a scientific claim from an autoresearch run.
 
 ### Infra / benchmarking ideas
 
