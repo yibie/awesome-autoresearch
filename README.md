@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 136 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 149 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 151 entries
 
 ### Open categories still being seeded
 
@@ -617,6 +617,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Introspection: Autoresearch in the Wild at AIEWF](https://www.latent.space/p/autoresearch-introspection) - Interview: Latent Space interviews Roland Gavrilescu (ex-xAI), co-founder of Introspection — a new company explicitly building infrastructure for deploying self-improving autoresearch systems — who presented three production patterns at the AI Engineer World's Fair: the loop is the product, learn before automating, and ground feedback in real signals.
 - [Guide to Loop Engineering](https://www.marktechpost.com/2026/07/12/guide-to-loop-engineering/) - Article: MarkTechPost synthesizes the emerging discipline of loop engineering — how to design multi-level optimization loops (autoresearch + Bilevel Autoresearch) that turn AI agents into autonomous ML research systems, covering evaluator design, reward hacking prevention, and the shift from inner training loops to outer meta-optimization.
 - [GPT 5.6 for autoresearch](https://x.com/askalphaxiv/status/2076737987833095473) - X/Twitter: alphaXiv tests GPT-5.6 on an interpretability paper reproduction and reports it stayed more focused on critical experiments with fewer clarification questions than GPT-5.5 or Fable 5, independently resolving ambiguities instead of pushing them back — suggesting frontier models are crossing a threshold where they can run autoresearch with less handholding.
+- [NVIDIA NeMo RL Autoresearch with Agent Skills](https://blogs.nvidia.com/blog/nemotron-rl-autoresearch-agent-skills/) - Tutorial: NVIDIA Nemotron Labs publishes an official guide on running RL autoresearch with NeMo RL, NeMo Gym, and reusable agent skills, demonstrating a Qwen3-VL-2B vision model improving from 25% to 96.9% accuracy on a counting task while the agent autonomously proposed the next experiment.
+- [Weco AI AIDE²: First Evidence of Recursive Self-Improvement](https://www.weco.ai/blog/first-evidence-of-recursive-self-improvement) - Blog: Weco AI reports the first experimental evidence of an AI agent recursively self-improving — where an outer optimization loop (autoresearch) improves the inner agent's ability to run the loop itself, closing a meta-learning circle that has been theorized since the original autoresearch release.
 
 ## Submission format
 
