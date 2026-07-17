@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 74 entries
+- [Scientific Research](categories/scientific-research.md) — 75 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -137,6 +137,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [chess-autoresearcher](https://github.com/rzhang2004/chess-autoresearcher) - Game AI research: runs an autoresearch loop over Sunfish chess engine hyperparameters via 50-game head-to-head matches with a 55% win-rate keep threshold, finding defaults are already near-optimal through 46 controlled experiments.
 - [ram_poc](https://github.com/yashraj59/ram_poc) - Biological research: applies Karpathy-style autoresearch to the Arc Institute Virtual Cell Challenge for perturbation prediction using a dual-pathway adaptive memory architecture with autonomous Debate Council mode and a 200-experiment stop cap.
 - [repurpose-agent](https://github.com/RitataLU/repurpose-agent) - Drug repurposing research: applies a Karpathy-style autoresearch loop to rank 169 GWAS-orphan genes by drug repurposing potential, iterating on Spearman-rank correlation scores across 10 scoring experiments with keep/discard decisions.
+- [GigaWorld-Policy-0.5](https://arxiv.org/abs/2607.13960) - Robotics WAM research: the GigaAI team uses an agent-based AutoResearch pipeline to systematically search training configurations for their action-centered World Action Model, achieving 85ms inference on an RTX 4090 while reducing manual hyperparameter intervention through autonomous configuration discovery.
 - [ENPIRE: Agentic Robot Policy Self-Improvement](https://research.nvidia.com/labs/gear/enpire/) - Robotics research: deploys a multi-agent physical autoresearch harness (NVIDIA GEAR/CMU/UC Berkeley) where Codex, Claude Code, and Kimi Code agents autonomously propose robot policy improvements, test them on real hardware with auto-reset and auto-verification, and keep only changes that raise success rate, reaching 99% on dexterous tasks (GPU insertion, zip-tie cutting, pin insertion) while scaling to 8-robot fleets with explicit mean-robot-utilization and mean-token-utilization metrics.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
