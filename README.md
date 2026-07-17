@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 73 entries
+- [Scientific Research](categories/scientific-research.md) — 74 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -148,6 +148,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [diffusers-pipeline-autoresearch](https://github.com/deep-diver/diffusers-pipeline-autoresearch) - Image generation research: applies Karpathy-style autoresearch to Diffusers FLUX.2 pipeline configs on JarvisLabs GPUs, running 10 rounds of candidate sweeps and keeping only prompts, aspect ratios, and semantic anchors that improve a unified visual-judge score for a multi-floor architectural cutaway target.
 - [AutoScientists](https://github.com/totaland/autoscientists) - Multi-agent scientific experimentation: deploys a decentralized team of AI agents that self-organize around hypotheses, critique proposals, and share successes across long-running autoresearch-style loops, achieving +8.33% on BioML-Bench and 1.9× faster nanoGPT convergence over single-agent baselines.
 - [Writing-Driven Autoresearch](https://github.com/happyhappy-jun/writing-driven-autoresearch) - Scientific research: maintains a submittable paper from the first minute and runs a modify → measure → verify → revise loop in which every experiment must back a specific claim in the draft, rewriting or deleting claims the measurements falsify.
+- [qwen3-vl-autoresearch](https://github.com/mikhutchinson/qwen3-vl-autoresearch) - Vision-language research: applies leakage-controlled Qwen3-VL LoRA autoresearch on Apple Silicon, with an honest inconclusive confirmation study that explicitly reports when the loop found no reliable improvement despite rigorous experimental design.
 
 ### Software / Systems Optimization
 
