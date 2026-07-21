@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 75 entries
+- [Scientific Research](categories/scientific-research.md) — 76 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 24 entries
 - [Finance / Trading](categories/finance-trading.md) — 32 entries
@@ -44,7 +44,7 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 136 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 137 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 152 entries
 
 ### Open categories still being seeded
@@ -149,6 +149,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [diffusers-pipeline-autoresearch](https://github.com/deep-diver/diffusers-pipeline-autoresearch) - Image generation research: applies Karpathy-style autoresearch to Diffusers FLUX.2 pipeline configs on JarvisLabs GPUs, running 10 rounds of candidate sweeps and keeping only prompts, aspect ratios, and semantic anchors that improve a unified visual-judge score for a multi-floor architectural cutaway target.
 - [AutoScientists](https://github.com/totaland/autoscientists) - Multi-agent scientific experimentation: deploys a decentralized team of AI agents that self-organize around hypotheses, critique proposals, and share successes across long-running autoresearch-style loops, achieving +8.33% on BioML-Bench and 1.9× faster nanoGPT convergence over single-agent baselines.
 - [Writing-Driven Autoresearch](https://github.com/happyhappy-jun/writing-driven-autoresearch) - Scientific research: maintains a submittable paper from the first minute and runs a modify → measure → verify → revise loop in which every experiment must back a specific claim in the draft, rewriting or deleting claims the measurements falsify.
+- [low-light-geolocalization-autoresearch](https://github.com/akaalias/low-light-geolocalization-autoresearch) - UAV vision research: applies a Claude-driven autoresearch loop to train per-area scene-coordinate models for low-light visual geolocalization, targeting sub-$5 ESP32-P4 hardware deployment.
 - [qwen3-vl-autoresearch](https://github.com/mikhutchinson/qwen3-vl-autoresearch) - Vision-language research: applies leakage-controlled Qwen3-VL LoRA autoresearch on Apple Silicon, with an honest inconclusive confirmation study that explicitly reports when the loop found no reliable improvement despite rigorous experimental design.
 
 ### Software / Systems Optimization
@@ -432,6 +433,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-local-critic](https://github.com/pcbrom/autoresearch) - Local LLM critic generalization: extracts the karpathy/autoresearch pattern into a Python package driven by a local Ollama LLM critic (Gemma family) that emits structured JSON proposals with thought_process, hypothesis, code_pseudocode, and risk_level, decoupling the critic from the agent harness so any editable-file+metric problem can be optimized overnight without cloud API dependencies.
 - [memory-augmented-autoresearch](https://github.com/arinmanav/memory-augmented-autoresearch) - LLM Wiki memory integration: augments Karpathy's autoresearch loop with persistent memory via his LLM Wiki pattern, where results.tsv becomes the wiki's raw source and is queried before each experiment so the agent remembers past attempts across sessions.
 - [autofrontier](https://github.com/mxmsbt/autofrontier) - Crown-gated recursive autoresearch: an agent hunts optimization angles overnight and codes them itself, but only gains that win on a private holdout take the throne — the same gated loop then recurses on the model, the search strategy, and the tool itself.
+- [canopy](https://github.com/jjackson/canopy) - Self-improving MCP orchestration: composes tools across projects with autoresearch-driven self-evolution, learning from usage patterns to auto-optimize tool composition and orchestration strategies.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
 - [Kyoko](https://github.com/kayba-ai/kyoko) - Agent improvement infrastructure: a local control loop for autoresearch-style agent self-improvement that captures traces, groups recurring failures into evidence-backed issues, lets Claude Code draft fixes, and applies changes only through a gate after checks and evals pass, achieving +23.7% on internal benchmarks and +111.8% pass^3 on tau2-airline.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
