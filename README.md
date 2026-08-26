@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 84 entries
+- [Scientific Research](categories/scientific-research.md) — 87 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 25 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
@@ -142,6 +142,9 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Can AI agents conduct open-ended AI research?](https://arxiv.org/abs/2607.27191) - Research evaluation: provides early evidence from two case studies on whether AI agents can conduct open-ended research beyond fixed-benchmark optimization, examining the gap between metric-driven hill-climbing and genuine scientific discovery.
 - [Recovering Wasted Compute in Autoresearch Agents](https://github.com/tingtang2/autoresearch-compute-recovery) - Autoresearch efficiency: COLM 2026 paper proposing methods to recover compute wasted during failed or discarded autoresearch experiments, turning previously lost GPU-hours into reusable training progress.
 - [autoresearch-percentile-optimization](https://github.com/akhan-ericsson/autoresearch-percentile-optimization) - Corporate research: Ericsson publishes code reproducing an autoresearch percentile-optimization paper, applying the keep/discard loop to optimize a percentile-based objective rather than a single scalar metric.
+- [AutoResearch: Insight In, Hallucination Out](https://arxiv.org/html/2608.17906) - Autoresearch reliability: a paper characterizing the hallucination failure mode where autonomous research agents generate plausible-looking but unsupported insights, distinguishing real experimental gains from confabulated findings.
+- [Personalized Auto-Research: Towards a True AI Co-Scientist](https://arxiv.org/html/2608.14881) - Autoresearch personalization: proposes a personalized auto-research framework that adapts the research loop to an individual researcher's goals, domain, and preferences, moving toward a genuine AI co-scientist.
+- [Scaling Automatic Research Agents via World Models](https://arxiv.org/html/2608.12564) - Autoresearch scaling: explores using world models to scale automatic research agents, compressing environment dynamics so agents can plan and evaluate experiments more efficiently across larger search spaces.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
 - [autodidact-autoresearch](https://github.com/itsflownium/autodidact-autoresearch) - Small-model autonomous research: extends Karpathy-style autoresearch to a 1M-parameter transformer with PatchRCT (randomized controlled trials on patched model changes) and Bayesian downstream-reward estimation, exploring whether structured experimental design improves sample efficiency at tiny model scales.
