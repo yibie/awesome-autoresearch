@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 87 entries
+- [Scientific Research](categories/scientific-research.md) — 88 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 25 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
@@ -44,7 +44,7 @@ We do **not** include:
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 152 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 153 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 164 entries
 
 ### Open categories still being seeded
@@ -145,6 +145,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AutoResearch: Insight In, Hallucination Out](https://arxiv.org/html/2608.17906) - Autoresearch reliability: a paper characterizing the hallucination failure mode where autonomous research agents generate plausible-looking but unsupported insights, distinguishing real experimental gains from confabulated findings.
 - [Personalized Auto-Research: Towards a True AI Co-Scientist](https://arxiv.org/html/2608.14881) - Autoresearch personalization: proposes a personalized auto-research framework that adapts the research loop to an individual researcher's goals, domain, and preferences, moving toward a genuine AI co-scientist.
 - [Scaling Automatic Research Agents via World Models](https://arxiv.org/html/2608.12564) - Autoresearch scaling: explores using world models to scale automatic research agents, compressing environment dynamics so agents can plan and evaluate experiments more efficiently across larger search spaces.
+- [autoresearch-for-you](https://github.com/JeffersonLab/autoresearch-for-you) - Physics lab example: Jefferson Lab (a US Department of Energy nuclear physics lab) publishes an autoresearch example users can run on their own machines for JLab tasks, signaling adoption inside national-laboratory research workflows.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
 - [autodidact-autoresearch](https://github.com/itsflownium/autodidact-autoresearch) - Small-model autonomous research: extends Karpathy-style autoresearch to a 1M-parameter transformer with PatchRCT (randomized controlled trials on patched model changes) and Bayesian downstream-reward estimation, exploring whether structured experimental design improves sample efficiency at tiny model scales.
@@ -463,6 +464,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [standups-with-autoresearch](https://github.com/RohanAwhad/standups-with-autoresearch) - Human-as-PI interaction: defines communication patterns for a human to act as principal investigator over an autoresearch agent, structuring standup-style check-ins and research direction steering without breaking the autonomous loop.
 - [Scholar All-In-One](https://github.com/ZimoLiao/scholaraio) - Research infrastructure for AI agents: a 559-star all-in-one research infrastructure that equips AI agents with literature retrieval, paper understanding, and citation mapping as reusable services for autoresearch workflows.
 - [fast-kernel](https://github.com/kadirnar/fast-kernel) - Inference kernel autoresearch: an agent harness for Claude Code that finds a model's slow parts and runs an endless keep/revert kernel-optimization loop across Triton, TileLang, CuTe DSL, CUDA C++, and CUDA graphs, with every experiment benchmarked on a live compute graph.
+- [godmode](https://github.com/arbazkhan971/godmode) - Multi-agent coding agent: a 25-star autonomous coding agent with 126 skills and 7 subagents that runs iterative optimization with automatic rollback, failure memory, and parallel execution across Claude Code, Cursor, Codex, Gemini CLI, and OpenCode.
 - [dotclaude/autoresearch](https://github.com/FradSer/dotclaude/tree/main/autoresearch) - Claude Code plugin: a domain-agnostic autoresearch loop that uses Claude Code's Stop-hook to run sequential hill-climbing in an isolated git worktree, escalates to a parallel tournament (GAN engine: candidates→judge→synthesize→re-score) when plateaus are detected, and infers artifact/evaluator/bounds from a plain-language goal — the agent never makes real commits until the human confirms.
 - [Kyoko](https://github.com/kayba-ai/kyoko) - Agent improvement infrastructure: a local control loop for autoresearch-style agent self-improvement that captures traces, groups recurring failures into evidence-backed issues, lets Claude Code draft fixes, and applies changes only through a gate after checks and evals pass, achieving +23.7% on internal benchmarks and +111.8% pass^3 on tau2-airline.
 - [autoresearch-colab-tpu](https://github.com/dimitreOliveira/autoresearch) - Colab TPU port: extends karpathy/autoresearch to Google Colab with Gemini-powered notebook orchestration, PyTorch XLA TPU support, and a pure JAX/Flax reimplementation using jax.lax.scan for micro-batch gradient accumulation and dynamic TPU topology detection, enabling autonomous research on free cloud TPUs.
