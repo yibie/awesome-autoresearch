@@ -36,8 +36,8 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 88 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 52 entries
+- [Scientific Research](categories/scientific-research.md) — 89 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 53 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 25 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 153 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 164 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 165 entries
 
 ### Open categories still being seeded
 
@@ -146,6 +146,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Personalized Auto-Research: Towards a True AI Co-Scientist](https://arxiv.org/html/2608.14881) - Autoresearch personalization: proposes a personalized auto-research framework that adapts the research loop to an individual researcher's goals, domain, and preferences, moving toward a genuine AI co-scientist.
 - [Scaling Automatic Research Agents via World Models](https://arxiv.org/html/2608.12564) - Autoresearch scaling: explores using world models to scale automatic research agents, compressing environment dynamics so agents can plan and evaluate experiments more efficiently across larger search spaces.
 - [autoresearch-for-you](https://github.com/JeffersonLab/autoresearch-for-you) - Physics lab example: Jefferson Lab (a US Department of Energy nuclear physics lab) publishes an autoresearch example users can run on their own machines for JLab tasks, signaling adoption inside national-laboratory research workflows.
+- [cua-driver-fps-bench](https://github.com/r33drichards/cua-driver-fps-bench) - Embodied-agent research: pairs pi-cua computer-use agents with pi-autoresearch to hill-climb a first-person movement benchmark on a CUA Fleet sandbox, editing cua-driver and keeping only changes that improve the movement score.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
 - [autodidact-autoresearch](https://github.com/itsflownium/autodidact-autoresearch) - Small-model autonomous research: extends Karpathy-style autoresearch to a 1M-parameter transformer with PatchRCT (randomized controlled trials on patched model changes) and Bayesian downstream-reward estimation, exploring whether structured experimental design improves sample efficiency at tiny model scales.
@@ -220,6 +221,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [msmarco-bm25-autoresearch](https://github.com/vespaai-playground/msmarco-bm25-autoresearch) - Search ranking optimization: reproduces MSMARCO BM25 rank-feature optimization on Vespa with three approaches including an autonomous LLM loop using paired-rotation validation across 10 train splits.
 - [tsfm-autoresearch](https://github.com/zd87pl/tsfm-autoresearch) - Resource forecasting: validates per-request autoresearch over frozen TimesFM for multi-tenant resource forecasting, staying within a 200ms inference latency budget across 10 completed milestones.
 - [How autoresearch found a 3-year-old bug in ClickHouse](https://posthog.com/blog/autoresearch-query-bug) - Database query optimization: used pi-autoresearch with lane-structured hypothesis exploration at a team offsite to discover a timestamp-wrapping bug that had hidden for 3 years, cutting ClickHouse granule scans by 62%.
+- [design-gan](https://github.com/jessholbrook/design-gan) - Website design optimization: runs an autoresearch loop that evolves single-page website designs, where a generator produces sites from a brief, Playwright replays frozen behavioral task suites as the primary score, and a critic reports SUS while axe-core accessibility and runtime correctness act as hard promotion guardrails.
 
 ### Evaluation / Red Teaming
 
@@ -667,6 +669,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Study contradicts autonomous-research optimism](https://the-decoder.com/study-contradicts-anthropic-and-openai-claims-that-autonomous-ai-research-is-within-reach/) - News: a study pushes back on Anthropic and OpenAI claims that autonomous AI research is imminent, providing a counterweight to the optimism by measuring where agents still fall short on open-ended discovery.
 - [An Attempt To Understand Automated AI Research](https://www.primeintellect.ai/blog/comparing-frontier-models-nanogpt-speedrun) - Blog: Prime Intellect compares frontier models on the nanoGPT speedrun benchmark, attempting to characterize how different LLMs perform as autoresearch agents on a standardized optimization task.
 - [Eigen and Lighter Launch Autoresearch Challenge](https://cryptopanic.com/news/33168053/Eigen-and-Lighter-Launch-Autoresearch-Challenge-to-Speed-up-Exchange) - News: Eigen and Lighter launch a competitive autoresearch challenge to speed up crypto exchange performance, marking the pattern's adoption as a competitive benchmarking format in DeFi.
+- [LocalPilot: local paper reading in autoresearch](https://github.com/karpathy/autoresearch/discussions/455) - GitHub Discussion: proposes adding local paper reading to the autoresearch loop, letting the agent consult locally-indexed papers instead of relying solely on model priors when choosing experiment directions.
 
 ## Submission format
 
