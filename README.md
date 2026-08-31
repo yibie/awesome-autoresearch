@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 89 entries
+- [Scientific Research](categories/scientific-research.md) — 90 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 53 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 25 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 153 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 165 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 166 entries
 
 ### Open categories still being seeded
 
@@ -142,6 +142,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Can AI agents conduct open-ended AI research?](https://arxiv.org/abs/2607.27191) - Research evaluation: provides early evidence from two case studies on whether AI agents can conduct open-ended research beyond fixed-benchmark optimization, examining the gap between metric-driven hill-climbing and genuine scientific discovery.
 - [Recovering Wasted Compute in Autoresearch Agents](https://github.com/tingtang2/autoresearch-compute-recovery) - Autoresearch efficiency: COLM 2026 paper proposing methods to recover compute wasted during failed or discarded autoresearch experiments, turning previously lost GPU-hours into reusable training progress.
 - [autoresearch-percentile-optimization](https://github.com/akhan-ericsson/autoresearch-percentile-optimization) - Corporate research: Ericsson publishes code reproducing an autoresearch percentile-optimization paper, applying the keep/discard loop to optimize a percentile-based objective rather than a single scalar metric.
+- [Salesforce AutoResearch](https://sfr-autoresearch.github.io/) - Corporate research: Salesforce AI Research publishes AutoResearch, an autonomous performance-research agent applied to hnswlib, pandas, and SFR-RL, with a project site covering its first three artifacts and author links to the lab's researchers.
 - [AutoResearch: Insight In, Hallucination Out](https://arxiv.org/html/2608.17906) - Autoresearch reliability: a paper characterizing the hallucination failure mode where autonomous research agents generate plausible-looking but unsupported insights, distinguishing real experimental gains from confabulated findings.
 - [Personalized Auto-Research: Towards a True AI Co-Scientist](https://arxiv.org/html/2608.14881) - Autoresearch personalization: proposes a personalized auto-research framework that adapts the research loop to an individual researcher's goals, domain, and preferences, moving toward a genuine AI co-scientist.
 - [Scaling Automatic Research Agents via World Models](https://arxiv.org/html/2608.12564) - Autoresearch scaling: explores using world models to scale automatic research agents, compressing environment dynamics so agents can plan and evaluate experiments more efficiently across larger search spaces.
@@ -670,6 +671,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [An Attempt To Understand Automated AI Research](https://www.primeintellect.ai/blog/comparing-frontier-models-nanogpt-speedrun) - Blog: Prime Intellect compares frontier models on the nanoGPT speedrun benchmark, attempting to characterize how different LLMs perform as autoresearch agents on a standardized optimization task.
 - [Eigen and Lighter Launch Autoresearch Challenge](https://cryptopanic.com/news/33168053/Eigen-and-Lighter-Launch-Autoresearch-Challenge-to-Speed-up-Exchange) - News: Eigen and Lighter launch a competitive autoresearch challenge to speed up crypto exchange performance, marking the pattern's adoption as a competitive benchmarking format in DeFi.
 - [LocalPilot: local paper reading in autoresearch](https://github.com/karpathy/autoresearch/discussions/455) - GitHub Discussion: proposes adding local paper reading to the autoresearch loop, letting the agent consult locally-indexed papers instead of relying solely on model priors when choosing experiment directions.
+- [AutoResearch Brings Evidence to Autonomous AI Research](https://cctest.ai/en/articles/autoresearch-moving-ai-research-from-automation-to-evidence) - Article: describes a two-stage autoresearch loop (idea generation with cross-model review + idea execution with independent evidence-based review before accepting conclusions), reporting an AutoResearch-generated idea that raised RSICD mean Recall from 32.84 to 34.69.
 
 ## Submission format
 
