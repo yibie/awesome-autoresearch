@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 153 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 166 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 168 entries
 
 ### Open categories still being seeded
 
@@ -672,6 +672,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Eigen and Lighter Launch Autoresearch Challenge](https://cryptopanic.com/news/33168053/Eigen-and-Lighter-Launch-Autoresearch-Challenge-to-Speed-up-Exchange) - News: Eigen and Lighter launch a competitive autoresearch challenge to speed up crypto exchange performance, marking the pattern's adoption as a competitive benchmarking format in DeFi.
 - [LocalPilot: local paper reading in autoresearch](https://github.com/karpathy/autoresearch/discussions/455) - GitHub Discussion: proposes adding local paper reading to the autoresearch loop, letting the agent consult locally-indexed papers instead of relying solely on model priors when choosing experiment directions.
 - [AutoResearch Brings Evidence to Autonomous AI Research](https://cctest.ai/en/articles/autoresearch-moving-ai-research-from-automation-to-evidence) - Article: describes a two-stage autoresearch loop (idea generation with cross-model review + idea execution with independent evidence-based review before accepting conclusions), reporting an AutoResearch-generated idea that raised RSICD mean Recall from 32.84 to 34.69.
+- [Autoresearch and the experimental society](https://www.exponentialview.co/p/autoresearch-and-the-experimental-society) - Blog: Azeem Azhar's Exponential View frames autoresearch as a societal-scale experiment infrastructure, exploring how keep/discard loops applied beyond ML reshape institutions, policy, and organizational decision-making.
+- [Autoresearch for Data](https://undercodenews.com/autoresearch-for-data-how-ai-agents-are-beginning-to-rewrite-the-way-we-build-training-datasets-video/) - Article: reports how AI agents with autoresearch loops are rewriting training-dataset construction, iterating on data curation, filtering, and augmentation strategies against downstream model quality.
 
 ## Submission format
 
