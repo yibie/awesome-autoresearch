@@ -36,7 +36,7 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 90 entries
+- [Scientific Research](categories/scientific-research.md) — 91 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 53 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 25 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
@@ -148,6 +148,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Scaling Automatic Research Agents via World Models](https://arxiv.org/html/2608.12564) - Autoresearch scaling: explores using world models to scale automatic research agents, compressing environment dynamics so agents can plan and evaluate experiments more efficiently across larger search spaces.
 - [autoresearch-for-you](https://github.com/JeffersonLab/autoresearch-for-you) - Physics lab example: Jefferson Lab (a US Department of Energy nuclear physics lab) publishes an autoresearch example users can run on their own machines for JLab tasks, signaling adoption inside national-laboratory research workflows.
 - [cua-driver-fps-bench](https://github.com/r33drichards/cua-driver-fps-bench) - Embodied-agent research: pairs pi-cua computer-use agents with pi-autoresearch to hill-climb a first-person movement benchmark on a CUA Fleet sandbox, editing cua-driver and keeping only changes that improve the movement score.
+- [sarla-autoresearch](https://github.com/sudshu/sarla-autoresearch) - Earth system science: applies an autonomous research loop to SARLA, a GPU fast-path posterior sampler for the CARDAMOM/DALEC terrestrial ecosystem models, with live progress pages, per-iteration logs, and a multi-site OSSE validation protocol.
 - [Agentic AutoResearch for Space Autonomy](https://arxiv.org/abs/2606.20394) - Aerospace control research: applies an auditable LLM-driven autoresearch agent to spacecraft guidance, navigation, and control problems, iterating on control policies against simulation-based evaluation and keeping only improvements that pass auditability gates.
 - [autoresearch-lgb](https://github.com/sorzz444/autoresearch-lgb) - Anti-fraud research: applies Karpathy-style autoresearch to LightGBM feature engineering for a BCA Bank Indonesia anti-fraud victim model, using OpenClaw with an OpenProse loop file and a chmod-444-locked prepare.py that enforces IV→Correlation→Top69 PreScreen→Optuna→OOF as an immutable pipeline so the agent can only edit the FEATURES list and engineer_features() in train.py.
 - [autodidact-autoresearch](https://github.com/itsflownium/autodidact-autoresearch) - Small-model autonomous research: extends Karpathy-style autoresearch to a 1M-parameter transformer with PatchRCT (randomized controlled trials on patched model changes) and Bayesian downstream-reward estimation, exploring whether structured experimental design improves sample efficiency at tiny model scales.
