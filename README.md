@@ -37,7 +37,7 @@ We do **not** include:
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 91 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 53 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 54 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 25 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -224,6 +224,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [tsfm-autoresearch](https://github.com/zd87pl/tsfm-autoresearch) - Resource forecasting: validates per-request autoresearch over frozen TimesFM for multi-tenant resource forecasting, staying within a 200ms inference latency budget across 10 completed milestones.
 - [How autoresearch found a 3-year-old bug in ClickHouse](https://posthog.com/blog/autoresearch-query-bug) - Database query optimization: used pi-autoresearch with lane-structured hypothesis exploration at a team offsite to discover a timestamp-wrapping bug that had hidden for 3 years, cutting ClickHouse granule scans by 62%.
 - [design-gan](https://github.com/jessholbrook/design-gan) - Website design optimization: runs an autoresearch loop that evolves single-page website designs, where a generator produces sites from a brief, Playwright replays frozen behavioral task suites as the primary score, and a critic reports SUS while axe-core accessibility and runtime correctness act as hard promotion guardrails.
+- [glm-5.3-flash-exl3-4x-dgx-spark](https://github.com/punkjazz-labs/glm-5.3-flash-exl3-4x-dgx-spark) - LLM serving recipe: documents a measured production recipe for GLM-5.3-Flash EXL3 across four NVIDIA DGX Sparks with vLLM TP4, tuned via autoresearch with a watchdog, benchmarks, and every receipt published.
 
 ### Evaluation / Red Teaming
 
