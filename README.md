@@ -36,9 +36,9 @@ We do **not** include:
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 92 entries
+- [Scientific Research](categories/scientific-research.md) — 93 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 54 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 25 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 26 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
@@ -143,6 +143,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Recovering Wasted Compute in Autoresearch Agents](https://github.com/tingtang2/autoresearch-compute-recovery) - Autoresearch efficiency: COLM 2026 paper proposing methods to recover compute wasted during failed or discarded autoresearch experiments, turning previously lost GPU-hours into reusable training progress.
 - [autoresearch-percentile-optimization](https://github.com/akhan-ericsson/autoresearch-percentile-optimization) - Corporate research: Ericsson publishes code reproducing an autoresearch percentile-optimization paper, applying the keep/discard loop to optimize a percentile-based objective rather than a single scalar metric.
 - [Salesforce AutoResearch](https://sfr-autoresearch.github.io/) - Corporate research: Salesforce AI Research publishes AutoResearch, an autonomous performance-research agent applied to hnswlib, pandas, and SFR-RL, with a project site covering its first three artifacts and author links to the lab's researchers.
+- [AutoResearch Training Forge](https://github.com/zhaoyiran924/trainforge) - Corporate research website: Salesforce AI Research's Yiran Zhao publishes the Training Forge site, a companion research website to the AutoResearch project documenting the lab's autonomous training-research workflows.
 - [AutoResearch: Insight In, Hallucination Out](https://arxiv.org/html/2608.17906) - Autoresearch reliability: a paper characterizing the hallucination failure mode where autonomous research agents generate plausible-looking but unsupported insights, distinguishing real experimental gains from confabulated findings.
 - [Personalized Auto-Research: Towards a True AI Co-Scientist](https://arxiv.org/html/2608.14881) - Autoresearch personalization: proposes a personalized auto-research framework that adapts the research loop to an individual researcher's goals, domain, and preferences, moving toward a genuine AI co-scientist.
 - [Scaling Automatic Research Agents via World Models](https://arxiv.org/html/2608.12564) - Autoresearch scaling: explores using world models to scale automatic research agents, compressing environment dynamics so agents can plan and evaluate experiments more efficiently across larger search spaces.
@@ -256,6 +257,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [Autoresearch Novelty Bench](https://github.com/evo-hq/autoresearch-novelty-bench) - Novelty benchmark: evaluates autonomous research agents on whether their proposed hypotheses are novel, anticipate future breakthroughs, or merely rediscover known techniques, built on Prime Intellect's speedrunning archive.
 - [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) - Scientific research evaluation: benchmarks 40 real-science tasks across 10 disciplines, scoring AI agents on whether they can re-discover or surpass published research findings through autonomous pipelines.
 - [How Do Agents Fail on AutoResearch](https://arxiv.org/html/2608.14905) - Autoresearch evaluation: an end-to-end diagnostic evaluation across 100 real-world frontier research tasks that systematically characterizes where and how agents fail, providing a failure taxonomy beyond aggregate success metrics.
+- [AREX: Recursively Self-Improving Agent for Deep Research](https://www.alphaxiv.org/abs/2607.21461) - Deep research: proposes a recursively self-improving agent for deep research, where the agent's own research trajectories feed back into improving its search and synthesis strategies across iterations.
 
 ### Finance / Trading
 
