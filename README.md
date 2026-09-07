@@ -37,7 +37,7 @@ We do **not** include:
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 93 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 54 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 55 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 26 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -227,6 +227,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [How autoresearch found a 3-year-old bug in ClickHouse](https://posthog.com/blog/autoresearch-query-bug) - Database query optimization: used pi-autoresearch with lane-structured hypothesis exploration at a team offsite to discover a timestamp-wrapping bug that had hidden for 3 years, cutting ClickHouse granule scans by 62%.
 - [design-gan](https://github.com/jessholbrook/design-gan) - Website design optimization: runs an autoresearch loop that evolves single-page website designs, where a generator produces sites from a brief, Playwright replays frozen behavioral task suites as the primary score, and a critic reports SUS while axe-core accessibility and runtime correctness act as hard promotion guardrails.
 - [glm-5.3-flash-exl3-4x-dgx-spark](https://github.com/punkjazz-labs/glm-5.3-flash-exl3-4x-dgx-spark) - LLM serving recipe: documents a measured production recipe for GLM-5.3-Flash EXL3 across four NVIDIA DGX Sparks with vLLM TP4, tuned via autoresearch with a watchdog, benchmarks, and every receipt published.
+- [leanSPHINCS](https://github.com/nconsigny/leansphincs) - Post-quantum cryptography: drafts the rules for an autoresearch competition optimizing SPHINCS-style hash-based signatures for Ethereum accounts, applying keep/discard loops to formally verified crypto implementations.
 
 ### Evaluation / Red Teaming
 
