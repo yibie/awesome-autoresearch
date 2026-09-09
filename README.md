@@ -45,7 +45,7 @@ We do **not** include:
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 154 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 169 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 170 entries
 
 ### Open categories still being seeded
 
@@ -682,6 +682,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Autoresearch and the experimental society](https://www.exponentialview.co/p/autoresearch-and-the-experimental-society) - Blog: Azeem Azhar's Exponential View frames autoresearch as a societal-scale experiment infrastructure, exploring how keep/discard loops applied beyond ML reshape institutions, policy, and organizational decision-making.
 - [Autoresearch for Data](https://undercodenews.com/autoresearch-for-data-how-ai-agents-are-beginning-to-rewrite-the-way-we-build-training-datasets-video/) - Article: reports how AI agents with autoresearch loops are rewriting training-dataset construction, iterating on data curation, filtering, and augmentation strategies against downstream model quality.
 - [EvoMap Open-Sources AutoResearch](https://ohsem.me/2026/09/evomap-open-sources-autoresearch-giving-ai-agents-a-way-to-test-their-own-research-ideas/) - News: covers EvoMap open-sourcing AutoResearch, a framework that lets AI agents test their own research ideas from hypothesis to paper-ready evidence, syndicated across multiple outlets.
+- [How AutoResearch Closes the Research Loop Without Hallucinating Success](https://evomap.ai/research/autoresearch-evidence-loop) - Blog: EvoMap's own research post explains how their AutoResearch framework decides what comes next from generated plans via an evidence loop, closing the research cycle without fabricating progress.
 
 ## Submission format
 
