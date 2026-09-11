@@ -38,7 +38,7 @@ We do **not** include:
 
 - [Scientific Research](categories/scientific-research.md) — 93 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 55 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 26 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 34 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 2 entries
@@ -259,6 +259,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [ResearchClawBench](https://github.com/InternScience/ResearchClawBench) - Scientific research evaluation: benchmarks 40 real-science tasks across 10 disciplines, scoring AI agents on whether they can re-discover or surpass published research findings through autonomous pipelines.
 - [How Do Agents Fail on AutoResearch](https://arxiv.org/html/2608.14905) - Autoresearch evaluation: an end-to-end diagnostic evaluation across 100 real-world frontier research tasks that systematically characterizes where and how agents fail, providing a failure taxonomy beyond aggregate success metrics.
 - [AREX: Recursively Self-Improving Agent for Deep Research](https://www.alphaxiv.org/abs/2607.21461) - Deep research: proposes a recursively self-improving agent for deep research, where the agent's own research trajectories feed back into improving its search and synthesis strategies across iterations.
+- [AutoResearchExam](https://github.com/bespokelabsai/AutoResearchExam) - Autoresearch evaluation: Bespoke Labs (the Terminus team) publishes an exam-style benchmark for autoresearch agents, testing whether autonomous research systems can complete structured research tasks end to end.
 
 ### Finance / Trading
 
