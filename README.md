@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 167 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 168 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 4 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 177 entries
@@ -553,6 +553,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [GPT from Scratch course](https://github.com/tal-giladi/gpt-from-scratch-course) - Learning material: twenty graded, CPU-only exercises that work through a real GPT pretraining stack by reading karpathy/autoresearch line by line.
 - [DSH Autoresearch](https://github.com/aa2246740/dsh-autoresearch) - DeepSeek Harness plugin: a durable experiment loop whose create, run and monitor steps surface in the official Web GUI.
 - [Agent-Loop-Skills](https://github.com/gaasher/Agent-Loop-Skills) - Portable skills: drop-in agentic loops for autoresearch, red-teaming, code/SQL/prompt optimisation and scientific writing, each gated on verification, native on Claude Code and portable to Codex and Cursor.
+- [Hyperspace AGI](https://github.com/hyperspaceai/agi) - Distributed experiments: a peer-to-peer network where autonomous agents run Karpathy-style autoresearch across five domains at once, reporting 660 agents and 27,247 experiments with each domain's best result synced through a CRDT leaderboard.
 
 ### Content Research
 
