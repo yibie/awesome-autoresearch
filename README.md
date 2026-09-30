@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 111 entries
+- [Scientific Research](categories/scientific-research.md) — 112 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 64 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 37 entries
@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 168 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 4 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 177 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 178 entries
 
 ### Open categories still being seeded
 
@@ -214,6 +214,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [boldt-posttrain-autoresearch](https://github.com/mayflower/boldt-posttrain-autoresearch) - German-language post-training: runs an AutoResearch loop over a German 1B instruction model - branch, train a specialist, merge, evaluate, promote - with 56 test files behind it.
 - [ScienceBuddy](https://github.com/Gen-Verse/ScienceBuddy) - Interactive science: a recursive-in-recursive self-improvement framework for scientific agent harnesses, where candidates are proposed from each interaction and only the harness that wins on a held-out validation set is inherited by the next cycle.
 - [AutoData: Agentic Search for Pre-training Data Selection](https://arxiv.org/abs/2609.19754) - Data selection: moves the search loop off model code and onto pre-training data, where the agent searches over executable data-curation artifacts instead of training scripts.
+- [FOREST](https://github.com/mikamikasuki/FOREST) - Research agent: holds a research question as an editable graph of ideas, hypotheses and experiments, converts them into plans carrying baselines, controls and explicit conditions for success or failure, and revises the path as evidence arrives.
 
 ### Software / Systems Optimization
 
@@ -779,6 +780,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Autoresearch for Robotics Hardware](https://www.reddit.com/r/robotics/comments/1vi3ju0/autoresearch_for_robotics_hardware/) - Reddit r/robotics (298 upvotes, 34 comments): transfers the loop from software to physical hardware, where a discarded experiment costs parts and lead time instead of a rerun.
 - [SIQ-1 Qwen3.6 for autoresearch and autonomous agency](https://www.reddit.com/r/LocalLLaMA/comments/1u88ywc/siq1_qwen36_for_autoresearch_and_autonomous_agency/) - Reddit r/LocalLLaMA (57 upvotes, 29 comments): an open model positioned specifically as the driver for the loop rather than as a general chat model.
 - [Realtime 100M particle nbody simulation on a laptop](https://www.reddit.com/r/universe/comments/1wphukg/realtime_100m_particle_nbody_simulation_on_a/) - Reddit r/universe (7 upvotes): reports a gravity-only 100M-particle simulation rendering a density map at about 32fps, built with the loop, with the code still unreleased.
+- [AutoBenchmark](https://facebookresearch.github.io/RAM/blogs/autobench) - Blog + thread (Meta): turns the loop on benchmark creation itself and reports that benchmarks built without a human are close to saturated, while fine-grained feedback during the proposal stage is what lifts them.
 
 ## Submission format
 
