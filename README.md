@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 112 entries
+- [Scientific Research](categories/scientific-research.md) — 113 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 64 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
 - [Finance / Trading](categories/finance-trading.md) — 37 entries
@@ -71,7 +71,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 168 entries
 - [Content Research](categories/content-research.md) — 1 entry
-- [Marketing & GTM](categories/marketing-gtm.md) — 4 entries
+- [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 178 entries
 
 ### Open categories still being seeded
@@ -215,6 +215,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [ScienceBuddy](https://github.com/Gen-Verse/ScienceBuddy) - Interactive science: a recursive-in-recursive self-improvement framework for scientific agent harnesses, where candidates are proposed from each interaction and only the harness that wins on a held-out validation set is inherited by the next cycle.
 - [AutoData: Agentic Search for Pre-training Data Selection](https://arxiv.org/abs/2609.19754) - Data selection: moves the search loop off model code and onto pre-training data, where the agent searches over executable data-curation artifacts instead of training scripts.
 - [FOREST](https://github.com/mikamikasuki/FOREST) - Research agent: holds a research question as an editable graph of ideas, hypotheses and experiments, converts them into plans carrying baselines, controls and explicit conditions for success or failure, and revises the path as evidence arrives.
+- [OpenFARS](https://github.com/open-fars/openfars) - Research pipeline: routes each stage to a different model and runs an experiment-and-evaluation loop that turns verified evidence into figures, a paper and release material, asking a human only for high-value decisions.
 
 ### Software / Systems Optimization
 
@@ -570,6 +571,7 @@ Source file: [`categories/marketing-gtm.md`](categories/marketing-gtm.md)
 - [gtm-autoresearch](https://github.com/Dignitycatshark668/gtm-autoresearch) - SaaS go-to-market: optimizes GTM scoring models with Karpathy-style autoresearch loops, testing each change against a retention signal instead of hand-tuning it.
 - [GTM Command Center](https://github.com/Organized-AI/gtm-command-center) - Go-to-market operations: pairs an impact map and a 3D container graph with an autoresearch loop that keeps improving the model behind them.
 - [gtm-autoresearch](https://github.com/Organized-AI/gtm-autoresearch) - Go-to-market containers: a Karpathy-style loop that mutates GTM container configuration, scores the result structurally, and keeps only the variants that improve it.
+- [swarma](https://github.com/glitch-rabin/swarma) - Growth experiments: agent teams run a GROWS cycle of hypothesis, experiment, signal, verdict and playbook, where a separate model scores each output and a result is kept above +20% against baseline and discarded below -20%.
 
 ### Related Practices / Discussions
 
