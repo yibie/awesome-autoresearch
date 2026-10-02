@@ -62,9 +62,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 113 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 64 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 27 entries
-- [Finance / Trading](categories/finance-trading.md) — 37 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 65 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 28 entries
+- [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
@@ -285,6 +285,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Autoresearch, Claude and Constrained Optimization](https://www.elliotcsmith.com/autoresearch-claude-and-constrained-optimization/) - Constrained optimisation: runs the loop where the metric is not free to move, so an accepted change has to satisfy a constraint as well as improve the objective (HN 33 points).
 - [factory](https://github.com/watt-mind/factory) - Self-building software: a runtime for improvement loops where the tracker is the control plane, git is the truth, and CI is the promotion gate.
 - [Auto-optimizing Jev: half the errors, 1/7 the cost](https://kiln.tech/blog/auto_optimizing_jev_with_autoresearch) - Harness optimisation: points the loop at a Chinese polyphonic-character-to-pinyin task where the model is fixed and only the code deciding what it sees may change, ending at half the errors for a seventh of the cost.
+- [bashgym-autoresearch](https://github.com/GhostPeony/bashgym-autoresearch) - Model improvement: evaluates the starting model on a sealed suite, proposes one controlled change to data, training or reward per experiment, and keeps it only when the improvement is statistically real.
 
 ### Evaluation / Red Teaming
 
@@ -317,6 +318,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [How Do Agents Fail on AutoResearch](https://arxiv.org/html/2608.14905) - Autoresearch evaluation: an end-to-end diagnostic evaluation across 100 real-world frontier research tasks that systematically characterizes where and how agents fail, providing a failure taxonomy beyond aggregate success metrics.
 - [AREX: Recursively Self-Improving Agent for Deep Research](https://www.alphaxiv.org/abs/2607.21461) - Deep research: proposes a recursively self-improving agent for deep research, where the agent's own research trajectories feed back into improving its search and synthesis strategies across iterations.
 - [AutoResearchExam](https://github.com/bespokelabsai/AutoResearchExam) - Autoresearch evaluation: Bespoke Labs (the Terminus team) publishes an exam-style benchmark for autoresearch agents, testing whether autonomous research systems can complete structured research tasks end to end.
+- [PEAR](https://arxiv.org/abs/2609.35031) - Industrial search: ByteDance argues the keep-if-better rule mistakes transient gains for persistent ones under non-stationary traffic, and replaces it with hypothesis-guided research states plus a four-level verifier ladder — offline replay, shadow traffic, rapid online, decision-grade online — behind one confidence gate.
 
 ### Finance / Trading
 
@@ -359,6 +361,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [trading-autoresearch](https://github.com/ilasek/trading-autoresearch) - Investment strategy research: runs hypothesize → write a candidate strategy → backtest under a fixed protocol → keep-or-discard → journal the learning continuously and unattended, while never executing trades.
 - [football-prediction-autoresearch](https://github.com/kaspersgit/football-prediction-autoresearch) - Value betting: trains walk-forward models across eleven European leagues, compares their probabilities against B365 market odds, and ships explicit research configurations for comparing experiments.
 - [jq-playwright-auto-research](https://github.com/yyh-boop/jq-playwright-auto-research) - Quant research: drives the JoinQuant platform through Playwright so the autoresearch loop can iterate on Chinese equity strategies.
+- [Initial MAX Autoresearch](https://github.com/bear0103papa/Equityautoresearch) - Equity research: takes its structure from Karpathy's overnight researcher and points the edit-run-measure-keep loop at investment research instead of training code.
 
 ### Personal Knowledge / Humanities
 
