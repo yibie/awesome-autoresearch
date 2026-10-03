@@ -61,9 +61,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 113 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 65 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 28 entries
+- [Scientific Research](categories/scientific-research.md) — 114 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 66 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 29 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -216,6 +216,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AutoData: Agentic Search for Pre-training Data Selection](https://arxiv.org/abs/2609.19754) - Data selection: moves the search loop off model code and onto pre-training data, where the agent searches over executable data-curation artifacts instead of training scripts.
 - [FOREST](https://github.com/mikamikasuki/FOREST) - Research agent: holds a research question as an editable graph of ideas, hypotheses and experiments, converts them into plans carrying baselines, controls and explicit conditions for success or failure, and revises the path as evidence arrives.
 - [OpenFARS](https://github.com/open-fars/openfars) - Research pipeline: routes each stage to a different model and runs an experiment-and-evaluation loop that turns verified evidence into figures, a paper and release material, asking a human only for high-value decisions.
+- [eqdisc](https://github.com/danieldeh/autoresearch-pde) - Governing equations: turns data into ODE and PDE candidates and ranks the next experiment by where plausible models disagree most relative to noise, reporting a verdict, the equation, its confidence and the next steps.
 
 ### Software / Systems Optimization
 
@@ -286,6 +287,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [factory](https://github.com/watt-mind/factory) - Self-building software: a runtime for improvement loops where the tracker is the control plane, git is the truth, and CI is the promotion gate.
 - [Auto-optimizing Jev: half the errors, 1/7 the cost](https://kiln.tech/blog/auto_optimizing_jev_with_autoresearch) - Harness optimisation: points the loop at a Chinese polyphonic-character-to-pinyin task where the model is fixed and only the code deciding what it sees may change, ending at half the errors for a seventh of the cost.
 - [bashgym-autoresearch](https://github.com/GhostPeony/bashgym-autoresearch) - Model improvement: evaluates the starting model on a sealed suite, proposes one controlled change to data, training or reward per experiment, and keeps it only when the improvement is statistically real.
+- [Autoresearch Compressor Experiment](https://github.com/x51xxx/autoresearch-compressor-experiment) - Compression: a pure-Rust LZ77 compressor evolved over about 200 autonomous experiments from ratio 0.754 to 0.2000, beating gzip-9 by 34% and both xz and brotli-11 by roughly 7%, under rules that bar compression crates and benchmark tricks.
 
 ### Evaluation / Red Teaming
 
@@ -319,6 +321,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [AREX: Recursively Self-Improving Agent for Deep Research](https://www.alphaxiv.org/abs/2607.21461) - Deep research: proposes a recursively self-improving agent for deep research, where the agent's own research trajectories feed back into improving its search and synthesis strategies across iterations.
 - [AutoResearchExam](https://github.com/bespokelabsai/AutoResearchExam) - Autoresearch evaluation: Bespoke Labs (the Terminus team) publishes an exam-style benchmark for autoresearch agents, testing whether autonomous research systems can complete structured research tasks end to end.
 - [PEAR](https://arxiv.org/abs/2609.35031) - Industrial search: ByteDance argues the keep-if-better rule mistakes transient gains for persistent ones under non-stationary traffic, and replaces it with hypothesis-guided research states plus a four-level verifier ladder — offline replay, shadow traffic, rapid online, decision-grade online — behind one confidence gate.
+- [OpenRSI-Index](https://github.com/OpenRSI-Foundation/OpenRSI-Index) - Recursive self-improvement: an open benchmark and index for RSI, where each proposed task has to survive a proposal agent and a published rubric before it counts.
 
 ### Finance / Trading
 
