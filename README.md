@@ -62,7 +62,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 114 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 67 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 68 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 29 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -289,6 +289,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [bashgym-autoresearch](https://github.com/GhostPeony/bashgym-autoresearch) - Model improvement: evaluates the starting model on a sealed suite, proposes one controlled change to data, training or reward per experiment, and keeps it only when the improvement is statistically real.
 - [Autoresearch Compressor Experiment](https://github.com/x51xxx/autoresearch-compressor-experiment) - Compression: a pure-Rust LZ77 compressor evolved over about 200 autonomous experiments from ratio 0.754 to 0.2000, beating gzip-9 by 34% and both xz and brotli-11 by roughly 7%, under rules that bar compression crates and benchmark tricks.
 - [Picasso](https://github.com/viperrcrypto/picasso) - Design tooling: a Claude Code design skill whose `/autorefine` command runs a binary evaluation loop over six criteria, mutating one thing at a time until the work passes at 95%.
+- [8gent Code](https://github.com/8gi-foundation/8gent-code) - Self-improving agent: its autoresearch loop runs locally, mutates the system prompt and promotes what works, with an arena of graded rounds and a self-modify skill built on variation, selection and inheritance.
 
 ### Evaluation / Red Teaming
 
