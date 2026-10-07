@@ -62,7 +62,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 114 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 68 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 69 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 29 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 168 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 178 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 179 entries
 
 ### Open categories still being seeded
 
@@ -290,6 +290,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Autoresearch Compressor Experiment](https://github.com/x51xxx/autoresearch-compressor-experiment) - Compression: a pure-Rust LZ77 compressor evolved over about 200 autonomous experiments from ratio 0.754 to 0.2000, beating gzip-9 by 34% and both xz and brotli-11 by roughly 7%, under rules that bar compression crates and benchmark tricks.
 - [Picasso](https://github.com/viperrcrypto/picasso) - Design tooling: a Claude Code design skill whose `/autorefine` command runs a binary evaluation loop over six criteria, mutating one thing at a time until the work passes at 95%.
 - [8gent Code](https://github.com/8gi-foundation/8gent-code) - Self-improving agent: its autoresearch loop runs locally, mutates the system prompt and promotes what works, with an arena of graded rounds and a self-modify skill built on variation, selection and inheritance.
+- [ts-agents](https://github.com/fnauman/ts-agents) - Time-series tooling: a CLI whose autoresearch module runs experiments in pluggable sandboxes through an executor, registry and runner, with that module covered by its own CLI tests.
 
 ### Evaluation / Red Teaming
 
@@ -791,6 +792,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [SIQ-1 Qwen3.6 for autoresearch and autonomous agency](https://www.reddit.com/r/LocalLLaMA/comments/1u88ywc/siq1_qwen36_for_autoresearch_and_autonomous_agency/) - Reddit r/LocalLLaMA (57 upvotes, 29 comments): an open model positioned specifically as the driver for the loop rather than as a general chat model.
 - [Realtime 100M particle nbody simulation on a laptop](https://www.reddit.com/r/universe/comments/1wphukg/realtime_100m_particle_nbody_simulation_on_a/) - Reddit r/universe (7 upvotes): reports a gravity-only 100M-particle simulation rendering a density map at about 32fps, built with the loop, with the code still unreleased.
 - [AutoBenchmark](https://facebookresearch.github.io/RAM/blogs/autobench) - Blog + thread (Meta): turns the loop on benchmark creation itself and reports that benchmarks built without a human are close to saturated, while fine-grained feedback during the proposal stage is what lifts them.
+- [How much of AutoResearch is research, and how much is search?](https://www.reddit.com/r/MachineLearning/comments/1wzxqze/how_much_of_autoresearch_is_research_and_how_much/) - Reddit (r/MachineLearning): argues that once humans choose the problem, define the objective and build the evaluator, the loop is only searching a space shaped for it, and that score improvement is not the same as asking whether a result generalises or whether the formulation itself should change.
 
 ## Submission format
 
