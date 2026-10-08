@@ -62,7 +62,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 114 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 69 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 70 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 29 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -291,6 +291,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Picasso](https://github.com/viperrcrypto/picasso) - Design tooling: a Claude Code design skill whose `/autorefine` command runs a binary evaluation loop over six criteria, mutating one thing at a time until the work passes at 95%.
 - [8gent Code](https://github.com/8gi-foundation/8gent-code) - Self-improving agent: its autoresearch loop runs locally, mutates the system prompt and promotes what works, with an arena of graded rounds and a self-modify skill built on variation, selection and inheritance.
 - [ts-agents](https://github.com/fnauman/ts-agents) - Time-series tooling: a CLI whose autoresearch module runs experiments in pluggable sandboxes through an executor, registry and runner, with that module covered by its own CLI tests.
+- [Kernaut](https://github.com/richardcsuwandi/kernaut) - Model discovery: treats kernel design as open-ended program synthesis, keeps strong kernels with distinct behaviours in a quality-diversity archive, and uses meta-evaluators to test whether the discoveries generalise.
 
 ### Evaluation / Red Teaming
 
