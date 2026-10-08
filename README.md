@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Scientific Research](categories/scientific-research.md) — 114 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 70 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 29 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 30 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -326,6 +326,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [AutoResearchExam](https://github.com/bespokelabsai/AutoResearchExam) - Autoresearch evaluation: Bespoke Labs (the Terminus team) publishes an exam-style benchmark for autoresearch agents, testing whether autonomous research systems can complete structured research tasks end to end.
 - [PEAR](https://arxiv.org/abs/2609.35031) - Industrial search: ByteDance argues the keep-if-better rule mistakes transient gains for persistent ones under non-stationary traffic, and replaces it with hypothesis-guided research states plus a four-level verifier ladder — offline replay, shadow traffic, rapid online, decision-grade online — behind one confidence gate.
 - [OpenRSI-Index](https://github.com/OpenRSI-Foundation/OpenRSI-Index) - Recursive self-improvement: an open benchmark and index for RSI, where each proposed task has to survive a proposal agent and a published rubric before it counts.
+- [Adversarial Autoresearch](https://github.com/Ulto85/glee) - Competition agents: a self-critiquing loop for a games benchmark that peaked at top five of roughly 200 agents and freezes the winning agent while it is near its daily peak.
 
 ### Finance / Trading
 
