@@ -69,10 +69,10 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 169 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 170 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 180 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 181 entries
 
 ### Open categories still being seeded
 
@@ -569,6 +569,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Agent-Loop-Skills](https://github.com/gaasher/Agent-Loop-Skills) - Portable skills: drop-in agentic loops for autoresearch, red-teaming, code/SQL/prompt optimisation and scientific writing, each gated on verification, native on Claude Code and portable to Codex and Cursor.
 - [Hyperspace AGI](https://github.com/hyperspaceai/agi) - Distributed experiments: a peer-to-peer network where autonomous agents run Karpathy-style autoresearch across five domains at once, reporting 660 agents and 27,247 experiments with each domain's best result synced through a CRDT leaderboard.
 - [recursive-improve](https://github.com/kayba-ai/recursive-improve) - Agent improvement: captures every LLM call, has a coding agent mine the traces for recurring failure patterns, then benchmarks proposed fixes and keeps only the ones that measurably help.
+- [neo-autoresearch-tools](https://github.com/Neotheonevd/neo-autoresearch-tools) - Research operations: a toolkit that wraps a planning-and-review agent with an optional code-optimisation backend and keeps version freezes, run handoffs, evaluation records, model-call accounting and failure stops.
 
 ### Content Research
 
@@ -798,6 +799,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [AutoBenchmark](https://facebookresearch.github.io/RAM/blogs/autobench) - Blog + thread (Meta): turns the loop on benchmark creation itself and reports that benchmarks built without a human are close to saturated, while fine-grained feedback during the proposal stage is what lifts them.
 - [How much of AutoResearch is research, and how much is search?](https://www.reddit.com/r/MachineLearning/comments/1wzxqze/how_much_of_autoresearch_is_research_and_how_much/) - Reddit (r/MachineLearning): argues that once humans choose the problem, define the objective and build the evaluator, the loop is only searching a space shaped for it, and that score improvement is not the same as asking whether a result generalises or whether the formulation itself should change.
 - [6 OSS repos turning Karpathy's autoresearch into self-improving agents](https://www.reddit.com/r/WebAfterAI/comments/1x1pgyo/6_oss_repos_turning_karpathys_autoresearch_into/) - Roundup: tracks the loop spreading from ML training into coding agents, prompts, skills and agent harnesses, and frames it best when it says the thing being improved stops being the app and becomes the harness itself.
+- [Loop Engineering: Optimizing Code Generation and Verification](https://bradleygibbs.dev/posts/loop-optimization/) - Essay: puts numbers on the loop's economics, with 958% more weekly lines changed while writing and testing code accounts for only 25-35% of the work, and argues that whatever can be checked deterministically should run before a human ever sees a candidate.
 
 ## Submission format
 
