@@ -62,8 +62,8 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 114 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 74 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 30 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 32 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 170 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 181 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 183 entries
 
 ### Open categories still being seeded
 
@@ -296,6 +296,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [inference-judge](https://github.com/wanderingspirit03/inference-judge) - Inference speed: runs the loop against a benchmark whose judge the agent cannot edit, so a faster number has to come from the model rather than from the measurement.
 - [Binohash Autoresearch Challenge](https://github.com/teddyjfpender/binohash-autoresearch-challenge) - Bitcoin Script: gives every architecture its own slot on the board and a trusted evaluator that counts each submission into a public ledger, so a new design is not scored against an already-tuned incumbent.
 - [Evolution Elite Table](https://github.com/Endogen/evolution-elite-table) - Training programs: searches training code with an elite archive and multi-parent remixing under a fixed evaluation budget, and reports 52 automated tests passing on Python 3.11 and 3.12.
+- [vllm-autotune](https://github.com/SummerTea/vllm-autotune) - Serving tuning: an external coding agent tunes vLLM serving parameters on a real GPU box from a goal and a budget, and the whole repository is read-only to the agent except one `config.yaml`, so every experiment stays auditable.
 
 ### Evaluation / Red Teaming
 
@@ -331,6 +332,8 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [PEAR](https://arxiv.org/abs/2609.35031) - Industrial search: ByteDance argues the keep-if-better rule mistakes transient gains for persistent ones under non-stationary traffic, and replaces it with hypothesis-guided research states plus a four-level verifier ladder — offline replay, shadow traffic, rapid online, decision-grade online — behind one confidence gate.
 - [OpenRSI-Index](https://github.com/OpenRSI-Foundation/OpenRSI-Index) - Recursive self-improvement: an open benchmark and index for RSI, where each proposed task has to survive a proposal agent and a published rubric before it counts.
 - [Adversarial Autoresearch](https://github.com/Ulto85/glee) - Competition agents: a self-critiquing loop for a games benchmark that peaked at top five of roughly 200 agents and freezes the winning agent while it is near its daily peak.
+- [Autoresearch on a budget](https://github.com/vpatil131/autoresearch-budget) - Study harness: measures how a small coding actor uses bounded advice from a frontier advisor, running SWE-rebench through Harbor with offline verification in CI.
+- [Learner Agent Benchmark](https://github.com/Veezus23/learner-autoresearch) - Behavioural benchmark: tests whether a learner agent behaves consistently with a specified profile rather than simply maximising correctness.
 
 ### Finance / Trading
 
@@ -803,6 +806,8 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [How much of AutoResearch is research, and how much is search?](https://www.reddit.com/r/MachineLearning/comments/1wzxqze/how_much_of_autoresearch_is_research_and_how_much/) - Reddit (r/MachineLearning): argues that once humans choose the problem, define the objective and build the evaluator, the loop is only searching a space shaped for it, and that score improvement is not the same as asking whether a result generalises or whether the formulation itself should change.
 - [6 OSS repos turning Karpathy's autoresearch into self-improving agents](https://www.reddit.com/r/WebAfterAI/comments/1x1pgyo/6_oss_repos_turning_karpathys_autoresearch_into/) - Roundup: tracks the loop spreading from ML training into coding agents, prompts, skills and agent harnesses, and frames it best when it says the thing being improved stops being the app and becomes the harness itself.
 - [Loop Engineering: Optimizing Code Generation and Verification](https://bradleygibbs.dev/posts/loop-optimization/) - Essay: puts numbers on the loop's economics, with 958% more weekly lines changed while writing and testing code accounts for only 25-35% of the work, and argues that whatever can be checked deterministically should run before a human ever sees a candidate.
+- [Multi-agent harnesses need separate message channels](https://harshalgajjar.com/blog/multi-agent-harnesses-need-separate-message-channels) - Practice write-up: argues a single chat box breaks down once several agents plan, execute and review together, and that upstream, downstream, sideways, peer and alert traffic each need their own channel.
+- [Context management without compaction](https://www.reddit.com/r/LLMDevs/comments/1x3oleh/) - Field report: replaces compaction with a checkpoint, clear and resume loop run across four long-lived agent seats, on the argument that summarising context loses exactly what the loop needs.
 
 ## Submission format
 
