@@ -63,16 +63,16 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Scientific Research](categories/scientific-research.md) — 114 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 32 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 33 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 170 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 171 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 183 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
 
 ### Open categories still being seeded
 
@@ -334,6 +334,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [Adversarial Autoresearch](https://github.com/Ulto85/glee) - Competition agents: a self-critiquing loop for a games benchmark that peaked at top five of roughly 200 agents and freezes the winning agent while it is near its daily peak.
 - [Autoresearch on a budget](https://github.com/vpatil131/autoresearch-budget) - Study harness: measures how a small coding actor uses bounded advice from a frontier advisor, running SWE-rebench through Harbor with offline verification in CI.
 - [Learner Agent Benchmark](https://github.com/Veezus23/learner-autoresearch) - Behavioural benchmark: tests whether a learner agent behaves consistently with a specified profile rather than simply maximising correctness.
+- [Evo2 trains an agent to rewrite its own harness](https://runtimewire.com/article/google-deepmind-evo2-agent-harness-co-evolution) - Harness co-evolution: a DeepMind paper that treats harness edits and their evaluation traces as training data, so the policy proposing changes and the workflow it maintains improve together.
 
 ### Finance / Trading
 
@@ -576,6 +577,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Hyperspace AGI](https://github.com/hyperspaceai/agi) - Distributed experiments: a peer-to-peer network where autonomous agents run Karpathy-style autoresearch across five domains at once, reporting 660 agents and 27,247 experiments with each domain's best result synced through a CRDT leaderboard.
 - [recursive-improve](https://github.com/kayba-ai/recursive-improve) - Agent improvement: captures every LLM call, has a coding agent mine the traces for recurring failure patterns, then benchmarks proposed fixes and keeps only the ones that measurably help.
 - [neo-autoresearch-tools](https://github.com/Neotheonevd/neo-autoresearch-tools) - Research operations: a toolkit that wraps a planning-and-review agent with an optional code-optimisation backend and keeps version freezes, run handoffs, evaluation records, model-call accounting and failure stops.
+- [Fork-and-Flush](https://github.com/hetankevin/fork-and-flush) - Idea basins: ships a paper's fix as a Claude Code and Codex skill that forks several agents from one workspace with fresh chat contexts, evaluates them, and continues the best branch under a fixed budget, because independent runs of the same agent plateau at substantially different scores.
 
 ### Content Research
 
@@ -808,6 +810,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Loop Engineering: Optimizing Code Generation and Verification](https://bradleygibbs.dev/posts/loop-optimization/) - Essay: puts numbers on the loop's economics, with 958% more weekly lines changed while writing and testing code accounts for only 25-35% of the work, and argues that whatever can be checked deterministically should run before a human ever sees a candidate.
 - [Multi-agent harnesses need separate message channels](https://harshalgajjar.com/blog/multi-agent-harnesses-need-separate-message-channels) - Practice write-up: argues a single chat box breaks down once several agents plan, execute and review together, and that upstream, downstream, sideways, peer and alert traffic each need their own channel.
 - [Context management without compaction](https://www.reddit.com/r/LLMDevs/comments/1x3oleh/) - Field report: replaces compaction with a checkpoint, clear and resume loop run across four long-lived agent seats, on the argument that summarising context loses exactly what the loop needs.
+- [Anti-Autoresearch](https://github.com/SofiaOwens81/Anti-Autoresearch) - Reviewer-side tooling that flags unreliable autoresearch papers at review time, counted once here because five identically described copies appeared across five accounts on the same day - the bulk pattern this list warns about, attached to a tool about not taking things at face value.
 
 ## Submission format
 
