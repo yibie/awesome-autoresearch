@@ -83,6 +83,19 @@ Preferred evidence channels:
 - Hacker News
 - independent blogs / write-ups
 
+**Follow roundups and lists, not only keywords.** A keyword search can only return things
+named after the keyword. The catalogue already holds `autoharness` (309★) and
+`recursive-improve` (290★), and it got the second one from a Reddit roundup titled "6 OSS
+repos turning Karpathy's Autoresearch into self-improving agents" — two rounds of
+`gh search repos "autoresearch"` had never surfaced it, because its name does not contain
+the word. The same applies to the sibling lists: a broad `gh search repos "mario kart
+wii"` found a 664★ project that `"mario kart wii recomp"` could not.
+
+So when a roundup, a listicle, a newsletter or a round-up thread appears, mine its names
+and check each one against the catalogue. Treat it as a source of candidates, not just as
+a discussion entry — and conversely, when every name in it is already listed, that is
+itself worth recording as a signal.
+
 ### 2. Keep X queries simple
 
 Prefer medium-complexity searches such as:
