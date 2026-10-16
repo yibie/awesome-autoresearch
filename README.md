@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 114 entries
+- [Scientific Research](categories/scientific-research.md) — 115 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 33 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 171 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 172 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
@@ -217,6 +217,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [FOREST](https://github.com/mikamikasuki/FOREST) - Research agent: holds a research question as an editable graph of ideas, hypotheses and experiments, converts them into plans carrying baselines, controls and explicit conditions for success or failure, and revises the path as evidence arrives.
 - [OpenFARS](https://github.com/open-fars/openfars) - Research pipeline: routes each stage to a different model and runs an experiment-and-evaluation loop that turns verified evidence into figures, a paper and release material, asking a human only for high-value decisions.
 - [eqdisc](https://github.com/danieldeh/autoresearch-pde) - Governing equations: turns data into ODE and PDE candidates and ranks the next experiment by where plausible models disagree most relative to noise, reporting a verdict, the equation, its confidence and the next steps.
+- [AutoResearch (mobashirsifat123)](https://github.com/mobashirsifat123/autoresearch) - Research cycle: five skills chaining review, novelty, experiment and manuscript, where the review step searches Semantic Scholar, OpenAlex, Crossref, arXiv and OpenReview, keeps only verbatim-checkable evidence, and puts counter-evidence next to the question it proposes.
 
 ### Software / Systems Optimization
 
@@ -578,6 +579,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [recursive-improve](https://github.com/kayba-ai/recursive-improve) - Agent improvement: captures every LLM call, has a coding agent mine the traces for recurring failure patterns, then benchmarks proposed fixes and keeps only the ones that measurably help.
 - [neo-autoresearch-tools](https://github.com/Neotheonevd/neo-autoresearch-tools) - Research operations: a toolkit that wraps a planning-and-review agent with an optional code-optimisation backend and keeps version freezes, run handoffs, evaluation records, model-call accounting and failure stops.
 - [Fork-and-Flush](https://github.com/hetankevin/fork-and-flush) - Idea basins: ships a paper's fix as a Claude Code and Codex skill that forks several agents from one workspace with fresh chat contexts, evaluates them, and continues the best branch under a fixed budget, because independent runs of the same agent plateau at substantially different scores.
+- [claude-autoresearch (victor-falcon)](https://github.com/victor-falcon/claude-autoresearch) - Pi port: brings pi-autoresearch's loop to Claude Code as a plugin whose `init_experiment` refuses to start without a name, metric, unit and direction, and which asks you to begin from a clean working tree; the fourth port of that original after OpenClaw and OpenCode.
 
 ### Content Research
 
