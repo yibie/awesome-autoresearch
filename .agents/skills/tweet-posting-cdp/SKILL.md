@@ -84,6 +84,47 @@ The live instance on this Mac is usually `/tmp/chrome-pub-profile` on **9333** (
 
 Chrome v152: `/json/version` **does** work and returns `webSocketDebuggerUrl`; use it instead of constructing the URL from the file.
 
+### When CDP is not available at all: use `ego-browser`
+
+Two failure modes have been hit on this Mac, and both are environmental rather than content problems:
+
+- **Chrome is running without a debugging port.** `ensure-chrome.sh` launches it for the **OpenCLI extension**, so the process line has `--no-first-run` and no `--remote-debugging-port`. Port `9222` is listening but answers `HTTP 404` to `/json/version` — it is the extension's socket, not DevTools. Starting a second instance with `--user-data-dir=/tmp/chrome-pub-profile --remote-debugging-port=9333` restores CDP without touching the user's own window.
+- **The dedicated profile is logged out.** CDP then works but lands on `x.com/i/jf/onboarding/web?redirect_after_login=%2Fhome&mode=login`, which the script reports as `composer 未就绪`.
+
+When either happens, **`ego-browser` is a working substitute** because it drives the user's own logged-in session. Do not guess at it: this sequence is verified end to end.
+
+```bash
+ego-browser nodejs <<'EOF'
+const fs = await import("node:fs/promises");
+const text = (await fs.readFile("/tmp/post.txt", "utf8")).replace(/\n+$/, "");
+const task = await taskSpace("post the sweep tweet");
+const page = task.page("p1");
+try { await page.goto("https://x.com/compose/post", { waitUntil: "commit" }); } catch (e) {}
+await page.waitForTimeout(6000);
+const box = "[data-testid='tweetTextarea_0']";
+await page.waitForSelector(box, { state: "visible", timeout: 20000 });
+await page.click(box, { label: "focus composer" });
+await page.keyboard.insertText(text);          // preserves newlines, unlike type()
+await page.waitForTimeout(2500);
+const len = await page.evaluate((sel) => (document.querySelector(sel)?.innerText || "").length, box);
+console.log("composer:", len, "expected:", text.length, len === text.length ? "OK" : "MISMATCH");
+if (len === text.length) {
+  await page.click("loc=role:button[name='发帖']", { label: "click Post" });
+  await page.waitForTimeout(6000);
+  console.log((await page.snapshot()).split("\n").filter((l) => /已发送/.test(l)).join("\n"));
+}
+console.log("SPACE_ID=" + task.spaceId);
+EOF
+```
+
+Notes that matter:
+
+- **Print `SPACE_ID` last.** The task space persists across invocations but Node variables do not, and `tail`-slicing output loses anything printed earlier.
+- **Spaces expire.** `task space not found` means create a new one; it is not a reason to keep retrying the id.
+- **`page.keyboard.insertText()` gets the whole text in without an Enter-per-line dance**, and the length check is the equivalent of the CDP readback. On a Chinese-locale UI the Post button is `发帖`; the success toast is `你的帖子已发送`.
+- A first `goto` to `/compose/post` may throw a navigation-timeout while the page is already committed, or the page may show "Something went wrong … privacy related extensions". Clicking the offered `Try again` recovers it; that is not a login problem.
+- **One publication per list per round still holds.** A failed CDP attempt published nothing, so a later `ego-browser` attempt is that list's single post, not a second one. Verify with `twitter user-posts yibie -n 4` afterwards, as always.
+
 ## How it works
 
 1. Probe for the browser WebSocket URL (see above).
