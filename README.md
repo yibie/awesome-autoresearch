@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Scientific Research](categories/scientific-research.md) — 115 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 33 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 34 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -336,6 +336,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [Autoresearch on a budget](https://github.com/vpatil131/autoresearch-budget) - Study harness: measures how a small coding actor uses bounded advice from a frontier advisor, running SWE-rebench through Harbor with offline verification in CI.
 - [Learner Agent Benchmark](https://github.com/Veezus23/learner-autoresearch) - Behavioural benchmark: tests whether a learner agent behaves consistently with a specified profile rather than simply maximising correctness.
 - [Evo2 trains an agent to rewrite its own harness](https://runtimewire.com/article/google-deepmind-evo2-agent-harness-co-evolution) - Harness co-evolution: a DeepMind paper that treats harness edits and their evaluation traces as training data, so the policy proposing changes and the workflow it maintains improve together.
+- [autoresearch-harness](https://github.com/ruhzi/autoresearch-harness) - Controlled comparison: two coding-agent harnesses — stock pi, and the same pi plus one extension that makes the researcher read the whole setup before it implements anything — given the same brief and a four-dollar budget, with the four agents they built kept alongside.
 
 ### Finance / Trading
 
