@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 115 entries
+- [Scientific Research](categories/scientific-research.md) — 116 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 34 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
@@ -218,6 +218,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [OpenFARS](https://github.com/open-fars/openfars) - Research pipeline: routes each stage to a different model and runs an experiment-and-evaluation loop that turns verified evidence into figures, a paper and release material, asking a human only for high-value decisions.
 - [eqdisc](https://github.com/danieldeh/autoresearch-pde) - Governing equations: turns data into ODE and PDE candidates and ranks the next experiment by where plausible models disagree most relative to noise, reporting a verdict, the equation, its confidence and the next steps.
 - [AutoResearch (mobashirsifat123)](https://github.com/mobashirsifat123/autoresearch) - Research cycle: five skills chaining review, novelty, experiment and manuscript, where the review step searches Semantic Scholar, OpenAlex, Crossref, arXiv and OpenReview, keeps only verbatim-checkable evidence, and puts counter-evidence next to the question it proposes.
+- [autoresearchrl](https://github.com/ruhzi/autoresearchrl) - Training data: mines controlled numeric comparisons out of arXiv tables into samples that give the introduction and method with every result removed and ask for each metric's value after a technique is applied, keeping the number as the target and never handing the model a verdict about whether it helped.
 
 ### Software / Systems Optimization
 
