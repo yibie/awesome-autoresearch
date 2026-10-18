@@ -28,6 +28,13 @@ Read these files before making changes:
 Update category files first, then refresh `README.md` from the current category files.
 If available, use `scripts/build-readme.py` instead of hand-editing the aggregate.
 
+
+> **2026-10-18 起：本列表的 sweep 不再自己发帖。** 三个列表的更新每天合成**一条**合并帖，
+> 由独立的 `curation-digest-post` 任务发出。所以每轮结束时把结果追加到
+> `~/.agent-reach/state/curation-digest.md` 的 `## <本仓库名>` 段（总数 + 每条新增一句话 +
+> 一两条最值得说的未采纳原因）；**无新增就什么都不写**。格式与示例见
+> /skill:tweet-posting-cdp 的「跨列表合并帖」一节。
+
 ## Hard inclusion rules
 
 Only include items that satisfy at least one of these:

@@ -201,3 +201,51 @@ Insert line-by-line in ~24-char chunks with ~130 ms between chunks. Earlier note
 - OpenCLI's browser bridge (`opencli twitter post`) — breaks with `attach failed: Cannot access a chrome-extension:// URL of different extension` when the extension ID drifts.
 - `execCommand('insertText')` for the composer body — React never registers it, Post stays disabled.
 - `ensure-chrome.sh` / `post-tweet.sh` — opencli-era helpers, superseded.
+
+## 跨列表合并帖（2026-10-18 起的默认做法）
+
+三个列表的 sweep 是**三个独立的定时任务**，如果各自发帖，同一天会出现三条内容高度重叠的帖子。所以分工如下：
+
+**三个 sweep 任务不发帖。** 每轮结束时，把本轮结果**追加**到共享摘要文件：
+
+```bash
+cat >> ~/.agent-reach/state/curation-digest.md <<'EOF'
+## awesome-jev
+总数: 634（本轮 +2）
+- 条目名（分类）: 一句话说清是什么 + 为什么值得加
+- ...
+未采纳: 一两条最值得说的 + 原因
+EOF
+```
+
+规则：
+
+- **只有真的有新增时才写这一段。** 无新增就什么都不写 —— 这样「无新增不发帖」这条约定自然成立。
+- 纯维护（去重、升格、修脚本、修标签）**不算新增**，但如果是**升格**，写成「升格: 条目名 …」一行，值得出现在合并帖里。
+- 每条新增**一句话**，含「是什么 + 为什么值得加」，和单列表帖子的写法一致。
+- 不要写仓库 URL 和总数以外的元信息，摘要文件会被原样读去做帖子。
+
+**`curation-digest-post` 任务**（独立定时，晚于三个 sweep）负责：读摘要 → 若空则不发帖 → 若非空则合成**一条**中文帖 → 发一次（`ego-browser` 路径见上）→ 清空摘要。
+
+合并帖格式：
+
+```
+📋 三个列表的每日更新
+
+▍awesome-rea（29 → 31）
+1. 条目名（分类）：一句是什么 + 一句为什么值得加。
+2. …
+
+▍awesome-jev（634 → 636）
+1. …
+
+▍awesome-autoresearch（634 → 635）
+1. …
+
+📂 github.com/yibie/awesome-rea · github.com/yibie/awesome-jev · github.com/yibie/awesome-autoresearch
+📊 29 / 636 / 635
+```
+
+只列**有新增的列表**，没新增的整段省略。末尾固定三行：三个仓库 URL、三个总数。
+
+**一次调用。** 仍然只发一次，禁止换措辞重发；发完清空摘要文件，避免同一批内容第二天再发一遍。
