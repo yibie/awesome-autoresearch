@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 116 entries
+- [Scientific Research](categories/scientific-research.md) — 118 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 34 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
@@ -219,6 +219,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [eqdisc](https://github.com/danieldeh/autoresearch-pde) - Governing equations: turns data into ODE and PDE candidates and ranks the next experiment by where plausible models disagree most relative to noise, reporting a verdict, the equation, its confidence and the next steps.
 - [AutoResearch (mobashirsifat123)](https://github.com/mobashirsifat123/autoresearch) - Research cycle: five skills chaining review, novelty, experiment and manuscript, where the review step searches Semantic Scholar, OpenAlex, Crossref, arXiv and OpenReview, keeps only verbatim-checkable evidence, and puts counter-evidence next to the question it proposes.
 - [autoresearchrl](https://github.com/ruhzi/autoresearchrl) - Training data: mines controlled numeric comparisons out of arXiv tables into samples that give the introduction and method with every result removed and ask for each metric's value after a technique is applied, keeping the number as the target and never handing the model a verdict about whether it helped.
+- [AutoResearchLab](https://github.com/TaewiKim/autoresearchlab) - Problem selection: starts from a map of the field instead of a handed-down topic, has a scout attack each candidate's novelty by hunting the paper that already did it, and treats a cycle as finished only when independent reviewer agents drawn from the field's own subfields sign off.
+- [Turmite](https://github.com/timClicks/turmite-autoresearch) - Empirical study: asks why many chaotic Langton's-ant rules grow in width roughly as t^(1/3), in a repository AI agents wrote most of and whose `AGENTS.md` carries the reproducibility rules an agent must follow before it may claim anything.
 
 ### Software / Systems Optimization
 
