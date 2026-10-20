@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 118 entries
+- [Scientific Research](categories/scientific-research.md) — 120 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 34 entries
 - [Finance / Trading](categories/finance-trading.md) — 38 entries
@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 172 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 173 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
@@ -221,6 +221,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [autoresearchrl](https://github.com/ruhzi/autoresearchrl) - Training data: mines controlled numeric comparisons out of arXiv tables into samples that give the introduction and method with every result removed and ask for each metric's value after a technique is applied, keeping the number as the target and never handing the model a verdict about whether it helped.
 - [AutoResearchLab](https://github.com/TaewiKim/autoresearchlab) - Problem selection: starts from a map of the field instead of a handed-down topic, has a scout attack each candidate's novelty by hunting the paper that already did it, and treats a cycle as finished only when independent reviewer agents drawn from the field's own subfields sign off.
 - [Turmite](https://github.com/timClicks/turmite-autoresearch) - Empirical study: asks why many chaotic Langton's-ant rules grow in width roughly as t^(1/3), in a repository AI agents wrote most of and whose `AGENTS.md` carries the reproducibility rules an agent must follow before it may claim anything.
+- [neurocalib-bench](https://github.com/Nigmat-future/neurocalib-bench) - Cross-day decoding: a reproducible benchmark of intracortical velocity decoding under fixed calibration budgets that freezes the protocol and configuration before touching the held-out test days, and keeps the runs where nothing improved and where transfer was negative.
+- [holdout reproduction packet](https://github.com/DiamondJM/hodgeHoldout) - Reproduction: a packet answering a comment on hodge.computer/sextics' holdout data, pinning the polynomial, the variable order, python-flint 0.9.0, msolve 0.6.5 and Singular 4.3.2 so the exact rational results can be re-derived, with Claude Code assistance stated up front.
 
 ### Software / Systems Optimization
 
@@ -584,6 +586,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [neo-autoresearch-tools](https://github.com/Neotheonevd/neo-autoresearch-tools) - Research operations: a toolkit that wraps a planning-and-review agent with an optional code-optimisation backend and keeps version freezes, run handoffs, evaluation records, model-call accounting and failure stops.
 - [Fork-and-Flush](https://github.com/hetankevin/fork-and-flush) - Idea basins: ships a paper's fix as a Claude Code and Codex skill that forks several agents from one workspace with fresh chat contexts, evaluates them, and continues the best branch under a fixed budget, because independent runs of the same agent plateau at substantially different scores.
 - [claude-autoresearch (victor-falcon)](https://github.com/victor-falcon/claude-autoresearch) - Pi port: brings pi-autoresearch's loop to Claude Code as a plugin whose `init_experiment` refuses to start without a name, metric, unit and direction, and which asks you to begin from a clean working tree; the fourth port of that original after OpenClaw and OpenCode.
+- [Autoresearch (Vivekf)](https://github.com/Vivekf/autoresearch) - Minimal loop: an agent is given a number to improve plus two tools, a Python session and a scorer, over a dataset whose held-out answers it cannot see - in a loop the README says is about twenty lines because everything interesting happens inside it.
 
 ### Content Research
 
