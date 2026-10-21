@@ -64,7 +64,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Scientific Research](categories/scientific-research.md) — 120 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 34 entries
-- [Finance / Trading](categories/finance-trading.md) — 38 entries
+- [Finance / Trading](categories/finance-trading.md) — 39 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
@@ -385,6 +385,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [football-prediction-autoresearch](https://github.com/kaspersgit/football-prediction-autoresearch) - Value betting: trains walk-forward models across eleven European leagues, compares their probabilities against B365 market odds, and ships explicit research configurations for comparing experiments.
 - [jq-playwright-auto-research](https://github.com/yyh-boop/jq-playwright-auto-research) - Quant research: drives the JoinQuant platform through Playwright so the autoresearch loop can iterate on Chinese equity strategies.
 - [Initial MAX Autoresearch](https://github.com/bear0103papa/Equityautoresearch) - Equity research: takes its structure from Karpathy's overnight researcher and points the edit-run-measure-keep loop at investment research instead of training code.
+- [Paperhands](https://github.com/bboxy450/paperhands) - Trading research: an agent-first Rust binary that mines observations, tests mechanisms and keeps what each experiment teaches, built around the warning that many policy names can describe one economic outcome and that the distinction has to stay visible.
 
 ### Personal Knowledge / Humanities
 
