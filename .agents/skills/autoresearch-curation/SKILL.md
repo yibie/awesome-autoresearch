@@ -296,3 +296,38 @@ This skill should be used for prompts like:
 - "定期维护这个仓库"
 
 Keep a PR reply short: the rule in one line, what happens next in one line, then stop. No restating the contributor's work, no explaining the queue's arithmetic, no advice they did not ask for.
+
+## 两个已固化的操作规则（2026-10-21）
+
+### 1. 农场黑名单：同描述 ≥3 次即整类不收
+
+同一段描述在 7 天内出现 ≥3 次（账号名多为 `FirstnameLastname+数字`）→ 判定为农场，**整类不收**，并记进下表；后续轮次**不再逐个核实**，只在摘要里写一句「农场又出现 N 个」。
+
+| 描述开头 | 首见 | 规模 | 处理 |
+|---|---|---|---|
+| `Don't trust an autoresearch paper at face value`（Anti-Autoresearch） | 2026-10-14 | 24+ | 只收 1 条（已收），其余不收 |
+| `Unofficial skill that teaches coding agents to build with TypeSafe Jev`（building-with-typesafe-jev） | 2026-10-10 | 24+ | 原项目 `aaddrick/building-with-typesafe-jev` 已收，克隆一律不收 |
+
+判断口径：**「同描述」比「同账号」可靠** —— 农场会换账号，但不换文案。
+
+### 2. 数条目只读 README 自己的计数行
+
+三个生成器的输出格式不同，而且有两个**成功时不打印**：
+
+| 仓库 | 读法 |
+|---|---|
+| awesome-rea | 生成器会打印 `README.md written: N entries across M categories` |
+| awesome-jev / awesome-autoresearch | 生成器**静默** → 读 README 的 `## Current coverage` 段里的 `— N entries` |
+
+**不要用统一正则**（已因此出错三次：`/tmp` 缓存被清、rea 的表格格式、jev 静默）。
+
+### 3. 「AI 提及数」的正则陷阱
+
+`\bAI\b` **会匹配 `aim`**（`A` 前是边界、`I` 后接 `m` 也是边界）。统计 AI 参与时用：
+
+```bash
+grep -icE '\b(ai|llm|agent|claude|gpt|copilot)\b' README.md | ...
+grep -oicE '\bai\b' README.md   # 还要人工看一眼是否全来自 aim/aisle 之类
+```
+
+判断「AI 是否参与」不能只靠计数，**要看命中行的上下文** —— 一次把 `aim` 当 AI、一次把「in-game AI opponents」当 AI 参与，都是这条规则要防的。
