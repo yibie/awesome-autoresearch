@@ -61,9 +61,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 120 entries
+- [Scientific Research](categories/scientific-research.md) — 121 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 34 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 36 entries
 - [Finance / Trading](categories/finance-trading.md) — 39 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -223,6 +223,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Turmite](https://github.com/timClicks/turmite-autoresearch) - Empirical study: asks why many chaotic Langton's-ant rules grow in width roughly as t^(1/3), in a repository AI agents wrote most of and whose `AGENTS.md` carries the reproducibility rules an agent must follow before it may claim anything.
 - [neurocalib-bench](https://github.com/Nigmat-future/neurocalib-bench) - Cross-day decoding: a reproducible benchmark of intracortical velocity decoding under fixed calibration budgets that freezes the protocol and configuration before touching the held-out test days, and keeps the runs where nothing improved and where transfer was negative.
 - [holdout reproduction packet](https://github.com/DiamondJM/hodgeHoldout) - Reproduction: a packet answering a comment on hodge.computer/sextics' holdout data, pinning the polynomial, the variable order, python-flint 0.9.0, msolve 0.6.5 and Singular 4.3.2 so the exact rational results can be re-derived, with Claude Code assistance stated up front.
+- [Local Autoresearch](https://github.com/conglu1997/local-autoresearch) - Local runs: points Recursive's local Flint model at open problems on a laptop, keeping the experiments themselves - circle packing among them - alongside the results, so progress is inspectable rather than announced.
 
 ### Software / Systems Optimization
 
@@ -342,6 +343,8 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [Learner Agent Benchmark](https://github.com/Veezus23/learner-autoresearch) - Behavioural benchmark: tests whether a learner agent behaves consistently with a specified profile rather than simply maximising correctness.
 - [Evo2 trains an agent to rewrite its own harness](https://runtimewire.com/article/google-deepmind-evo2-agent-harness-co-evolution) - Harness co-evolution: a DeepMind paper that treats harness edits and their evaluation traces as training data, so the policy proposing changes and the workflow it maintains improve together.
 - [autoresearch-harness](https://github.com/ruhzi/autoresearch-harness) - Controlled comparison: two coding-agent harnesses — stock pi, and the same pi plus one extension that makes the researcher read the whole setup before it implements anything — given the same brief and a four-dollar budget, with the four agents they built kept alongside.
+- [ratchet-guard](https://github.com/datamathcode/ratchet-guard) - Metric guard: argues the greedy keep-if-better ratchet optimises whatever number it is handed and cannot notice when that number stops meaning the goal, and replaces it with a metric-aware check.
+- [lethe](https://github.com/tatra-labs/lethe) - Deliberate forgetting: agent teams whose memory is periodically wiped, shipped with tests and an arXiv paper, to test whether remembering less produces better work.
 
 ### Finance / Trading
 
