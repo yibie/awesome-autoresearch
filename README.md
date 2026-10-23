@@ -62,8 +62,8 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 121 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 75 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 36 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 77 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 37 entries
 - [Finance / Trading](categories/finance-trading.md) — 39 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -304,6 +304,8 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Binohash Autoresearch Challenge](https://github.com/teddyjfpender/binohash-autoresearch-challenge) - Bitcoin Script: gives every architecture its own slot on the board and a trusted evaluator that counts each submission into a public ledger, so a new design is not scored against an already-tuned incumbent.
 - [Evolution Elite Table](https://github.com/Endogen/evolution-elite-table) - Training programs: searches training code with an elite archive and multi-parent remixing under a fixed evaluation budget, and reports 52 automated tests passing on Python 3.11 and 3.12.
 - [vllm-autotune](https://github.com/SummerTea/vllm-autotune) - Serving tuning: an external coding agent tunes vLLM serving parameters on a real GPU box from a goal and a budget, and the whole repository is read-only to the agent except one `config.yaml`, so every experiment stays auditable.
+- [Jetfyre](https://github.com/minthantkyaw28/jetfyre) - Maintenance scheduling: an agent edits one model file to decide when to pull a jet engine on NASA's C-MAPSS data, with a live dashboard showing per-engine remaining life beside the loop's own state.
+- [Headroom](https://github.com/xiaodouzi666/headroom) - GPU memory: an agent diagnoses PyTorch memory evidence, proposes patches and verifies each candidate on real hardware, with `PROGRESS.md` holding the acceptance evidence and no repair success claimed yet.
 
 ### Evaluation / Red Teaming
 
@@ -345,6 +347,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [autoresearch-harness](https://github.com/ruhzi/autoresearch-harness) - Controlled comparison: two coding-agent harnesses — stock pi, and the same pi plus one extension that makes the researcher read the whole setup before it implements anything — given the same brief and a four-dollar budget, with the four agents they built kept alongside.
 - [ratchet-guard](https://github.com/datamathcode/ratchet-guard) - Metric guard: argues the greedy keep-if-better ratchet optimises whatever number it is handed and cannot notice when that number stops meaning the goal, and replaces it with a metric-aware check.
 - [lethe](https://github.com/tatra-labs/lethe) - Deliberate forgetting: agent teams whose memory is periodically wiped, shipped with tests and an arXiv paper, to test whether remembering less produces better work.
+- [hippocampus-autoresearch](https://github.com/rgbussell/hippocampus-autoresearch) - Rediscovery test: asks whether a coding agent can rediscover nnU-Net from a plain 3-D U-Net, with one editable file, a fixed five-minute training budget, a frozen ruler on a frozen split, a keep rule that must beat the measured noise floor, a random-edit climber as control, and a 39-case hold-out scored at the end.
 
 ### Finance / Trading
 
