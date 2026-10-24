@@ -352,3 +352,16 @@ gh api "repos/OWNER/REPO/git/trees/HEAD?recursive=1" \
 ```
 
 返回 `0` 才算干净。**新增条目一律跑这一条**；命中的再逐条人看，不要自动判死（有些项目确实提交测试用的小二进制）。
+
+### 解冲突必须按行，不能整份文件取 theirs
+
+2026-10-23 在 awesome-rea 上犯过一次：合并一个只加了一条条目的 PR 时，冲突发生在分类文件上，我用了 `git checkout --theirs <分类文件>` —— 整份文件被换成 PR 分支的旧版本，**PR 分支创建之后新增的条目被静默删掉一条**（Precursor），而条目总数只从 38 变 38，看数字发现不了。
+
+**正确做法**：
+
+1. 分类文件冲突 → **保留 ours**，再把 PR 新增的那一行**按行追加**（先 grep 是否已存在，避免重复）；
+2. README.md 冲突 → 一律**重新生成**（`python3 scripts/build-readme.py`），不要手解；
+3. 合并后**逐条核对**：`git diff HEAD~1 -- categories/ | grep '^-'` —— 任何消失的条目行都必须解释或恢复；
+4. **条目数只增不减**是最快的自检：若 `N` 没变而合并的是一次新增，就是丢东西了。
+
+awesome-jev 有 `scripts/maintainer/merge-prs.sh` 按行解冲突（`resolve_round` + `added_line_for`）；awesome-rea 与 awesome-autoresearch **没有**这个脚本，所以这两个仓库手工合并时更要照上面四条做。
