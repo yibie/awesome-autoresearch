@@ -61,15 +61,15 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 121 entries
+- [Scientific Research](categories/scientific-research.md) — 122 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 77 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 37 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 38 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 173 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 174 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
@@ -224,6 +224,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [neurocalib-bench](https://github.com/Nigmat-future/neurocalib-bench) - Cross-day decoding: a reproducible benchmark of intracortical velocity decoding under fixed calibration budgets that freezes the protocol and configuration before touching the held-out test days, and keeps the runs where nothing improved and where transfer was negative.
 - [holdout reproduction packet](https://github.com/DiamondJM/hodgeHoldout) - Reproduction: a packet answering a comment on hodge.computer/sextics' holdout data, pinning the polynomial, the variable order, python-flint 0.9.0, msolve 0.6.5 and Singular 4.3.2 so the exact rational results can be re-derived, with Claude Code assistance stated up front.
 - [Local Autoresearch](https://github.com/conglu1997/local-autoresearch) - Local runs: points Recursive's local Flint model at open problems on a laptop, keeping the experiments themselves - circle packing among them - alongside the results, so progress is inspectable rather than announced.
+- [Fluidic diode discovery](https://github.com/PredictiveScienceLab/fluidic-diode-autoresearch) - Mechanical engineering: two 100+ iteration campaigns on a single L4 GPU search for a passive fluidic diode through an 8,000-step lattice Boltzmann solver, and the repository's first take is named for what went wrong - unsteady vortex reward hacking.
 
 ### Software / Systems Optimization
 
@@ -348,6 +349,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [ratchet-guard](https://github.com/datamathcode/ratchet-guard) - Metric guard: argues the greedy keep-if-better ratchet optimises whatever number it is handed and cannot notice when that number stops meaning the goal, and replaces it with a metric-aware check.
 - [lethe](https://github.com/tatra-labs/lethe) - Deliberate forgetting: agent teams whose memory is periodically wiped, shipped with tests and an arXiv paper, to test whether remembering less produces better work.
 - [hippocampus-autoresearch](https://github.com/rgbussell/hippocampus-autoresearch) - Rediscovery test: asks whether a coding agent can rediscover nnU-Net from a plain 3-D U-Net, with one editable file, a fixed five-minute training budget, a frozen ruler on a frozen split, a keep rule that must beat the measured noise floor, a random-edit climber as control, and a 39-case hold-out scored at the end.
+- [LazyDecider](https://github.com/rahuls321/autoresearch-finetune-lab) - Overnight fine-tuning: a local Gemma 4 E4B proposes hyperparameter configs for a small decision model, a deterministic ASHA rule kills losing runs mid-flight, the winner is retrained once and scored on a sealed test set, and a second run on a bigger model confirms the recipe.
 
 ### Finance / Trading
 
@@ -595,6 +597,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Fork-and-Flush](https://github.com/hetankevin/fork-and-flush) - Idea basins: ships a paper's fix as a Claude Code and Codex skill that forks several agents from one workspace with fresh chat contexts, evaluates them, and continues the best branch under a fixed budget, because independent runs of the same agent plateau at substantially different scores.
 - [claude-autoresearch (victor-falcon)](https://github.com/victor-falcon/claude-autoresearch) - Pi port: brings pi-autoresearch's loop to Claude Code as a plugin whose `init_experiment` refuses to start without a name, metric, unit and direction, and which asks you to begin from a clean working tree; the fourth port of that original after OpenClaw and OpenCode.
 - [Autoresearch (Vivekf)](https://github.com/Vivekf/autoresearch) - Minimal loop: an agent is given a number to improve plus two tools, a Python session and a scorer, over a dataset whose held-out answers it cannot see - in a loop the README says is about twenty lines because everything interesting happens inside it.
+- [autoresearch-scaffold](https://github.com/asvskartheek/autoresearch-scaffold) - Research infrastructure: a protocol, a ledger, a gate ladder and a live dashboard, standard library only and one CLI, so an agent or a team of subagents can hill-climb against eval sets with every step visible.
 
 ### Content Research
 
