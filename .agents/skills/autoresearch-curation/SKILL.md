@@ -331,3 +331,24 @@ grep -oicE '\bai\b' README.md   # 还要人工看一眼是否全来自 aim/aisle
 ```
 
 判断「AI 是否参与」不能只靠计数，**要看命中行的上下文** —— 一次把 `aim` 当 AI、一次把「in-game AI opponents」当 AI 参与，都是这条规则要防的。
+
+### 供应链检查（2026-10-23 加，来自 issue #14）
+
+条目指向的仓库，若**源码树里直接提交了可执行文件或压缩包**（`.zip .exe .msi .dll .bat .ps1 .scr`），尤其是这几条同时成立时，极可能是**诱饵仓库**（把恶意二进制塞进同名 fork 或仿冒项目）：
+
+- 项目本身是 Python / JS / Go 之类**不需要二进制**的；
+- README 让读者「Run anyway」跳过 SmartScreen 之类的警告；
+- 下载链接指向 `raw.githubusercontent.com` 而不是 GitHub Releases；
+- 仓库创建时间**晚于**同名项目；
+- README 的安装步骤与项目描述对不上（例如一个打分引擎要求你装 Windows 应用）。
+
+**处置**：不收录该仓库，去找原始项目替换，并在 issue/PR 里说明核实过什么。
+
+核查成本很低：
+
+```bash
+gh api "repos/OWNER/REPO/git/trees/HEAD?recursive=1" \
+  --jq '[.tree[] | select(.type=="blob") | select(.path|test("\\.(zip|exe|msi|dll|bat|ps1|scr)$";"i"))] | length'
+```
+
+返回 `0` 才算干净。**新增条目一律跑这一条**；命中的再逐条人看，不要自动判死（有些项目确实提交测试用的小二进制）。
