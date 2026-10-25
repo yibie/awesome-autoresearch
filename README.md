@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 122 entries
+- [Scientific Research](categories/scientific-research.md) — 123 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 77 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 38 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 174 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 175 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
@@ -225,6 +225,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [holdout reproduction packet](https://github.com/DiamondJM/hodgeHoldout) - Reproduction: a packet answering a comment on hodge.computer/sextics' holdout data, pinning the polynomial, the variable order, python-flint 0.9.0, msolve 0.6.5 and Singular 4.3.2 so the exact rational results can be re-derived, with Claude Code assistance stated up front.
 - [Local Autoresearch](https://github.com/conglu1997/local-autoresearch) - Local runs: points Recursive's local Flint model at open problems on a laptop, keeping the experiments themselves - circle packing among them - alongside the results, so progress is inspectable rather than announced.
 - [Fluidic diode discovery](https://github.com/PredictiveScienceLab/fluidic-diode-autoresearch) - Mechanical engineering: two 100+ iteration campaigns on a single L4 GPU search for a passive fluidic diode through an 8,000-step lattice Boltzmann solver, and the repository's first take is named for what went wrong - unsteady vortex reward hacking.
+- [Boat design run](https://github.com/joemalle/20261024-boat-autoresearch-out01-mm) - Physical design: an agent-authored runabout based on the Riva Aquarama, with an acceptance list a boat can actually fail - fuel weight accounted for, two adults up front and two behind, and hydrostatic analysis showing it floats level at rest and stays stable as weight shifts - none of its eleven boxes checked yet.
 
 ### Software / Systems Optimization
 
@@ -598,6 +599,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [claude-autoresearch (victor-falcon)](https://github.com/victor-falcon/claude-autoresearch) - Pi port: brings pi-autoresearch's loop to Claude Code as a plugin whose `init_experiment` refuses to start without a name, metric, unit and direction, and which asks you to begin from a clean working tree; the fourth port of that original after OpenClaw and OpenCode.
 - [Autoresearch (Vivekf)](https://github.com/Vivekf/autoresearch) - Minimal loop: an agent is given a number to improve plus two tools, a Python session and a scorer, over a dataset whose held-out answers it cannot see - in a loop the README says is about twenty lines because everything interesting happens inside it.
 - [autoresearch-scaffold](https://github.com/asvskartheek/autoresearch-scaffold) - Research infrastructure: a protocol, a ledger, a gate ladder and a live dashboard, standard library only and one CLI, so an agent or a team of subagents can hill-climb against eval sets with every step visible.
+- [darwin-skill](https://github.com/diuleilaomu225/darwin-skill) - Skill evolution: evaluates a skill's structure and its measured effect, keeps only changes that improve both, and stops hard when the gain falls below a threshold rather than letting noise pass for progress.
 
 ### Content Research
 
