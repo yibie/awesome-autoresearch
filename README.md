@@ -63,13 +63,13 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Scientific Research](categories/scientific-research.md) — 123 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 77 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 40 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 41 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 175 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 177 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
@@ -353,6 +353,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [LazyDecider](https://github.com/rahuls321/autoresearch-finetune-lab) - Overnight fine-tuning: a local Gemma 4 E4B proposes hyperparameter configs for a small decision model, a deterministic ASHA rule kills losing runs mid-flight, the winner is retrained once and scored on a sealed test set, and a second run on a bigger model confirms the recipe.
 - [autoresearch-env](https://github.com/PranavBykampadi/autoresearch-env) - RL environment: the agent gets a GPU, a corpus, a baseline byte-level model and a fixed budget, decides what to try, and cannot touch the evaluator - which is reinstalled read-only before every run, and halves the reward if the final report claims a number the verified runs do not support.
 - [crypto-autoresearch](https://github.com/Tdeniz1/crypto-autoresearch) - Leakage defence: a ratchet harness for crypto strategies that treats leakage as the main adversary, with physical holdout isolation, a time-blind proposer, causal-statistics guards, t+1-open execution, three canaries on every winner and deflated-Sharpe accounting for the number of trials.
+- [find alpha. make no mistakes.](https://github.com/marketneutral/find_alpha_make_no_mistakes) - Guest lecture for MIT 18.642: asks whether an AI agent can do quantitative research without fooling itself, and answers with a small language for quant alphas, a coding agent that proposes and keeps or discards, and the loop rebuilt for finance and run once on data it never saw.
 
 ### Finance / Trading
 
@@ -602,6 +603,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autoresearch (Vivekf)](https://github.com/Vivekf/autoresearch) - Minimal loop: an agent is given a number to improve plus two tools, a Python session and a scorer, over a dataset whose held-out answers it cannot see - in a loop the README says is about twenty lines because everything interesting happens inside it.
 - [autoresearch-scaffold](https://github.com/asvskartheek/autoresearch-scaffold) - Research infrastructure: a protocol, a ledger, a gate ladder and a live dashboard, standard library only and one CLI, so an agent or a team of subagents can hill-climb against eval sets with every step visible.
 - [darwin-skill](https://github.com/diuleilaomu225/darwin-skill) - Skill evolution: evaluates a skill's structure and its measured effect, keeps only changes that improve both, and stops hard when the gain falls below a threshold rather than letting noise pass for progress.
+- [autoresearch (Yuyz0112)](https://github.com/Yuyz0112/autoresearch) - Framework: runs rounds where the project supplies what to change and how to score, keeps a change only when it beats the best kept score under the same scoring version, and fails the round when the agent steps outside its bounds.
+- [Autoresearch Self Loop](https://github.com/zom-2018/bb-plugin-autoresearch-self-loop) - BB plugin: a close port of pi-autoresearch 1.9.0 that runs the benchmark and the checks itself, enforces the keep rules, and appends every run to a session log so a loop survives restarts and context resets.
 
 ### Content Research
 
