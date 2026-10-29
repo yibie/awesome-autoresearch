@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 178 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 179 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
@@ -606,6 +606,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch (Yuyz0112)](https://github.com/Yuyz0112/autoresearch) - Framework: runs rounds where the project supplies what to change and how to score, keeps a change only when it beats the best kept score under the same scoring version, and fails the round when the agent steps outside its bounds.
 - [Autoresearch Self Loop](https://github.com/zom-2018/bb-plugin-autoresearch-self-loop) - BB plugin: a close port of pi-autoresearch 1.9.0 that runs the benchmark and the checks itself, enforces the keep rules, and appends every run to a session log so a loop survives restarts and context resets.
 - [autoresearch-mcp](https://github.com/gaztrabisme/autoresearch-mcp) - MCP server: an experiment loop over any measurable target that keeps one current best and a queue, exposes seven tools plus foreground CLI commands, runs guarded subagent proposals inside a macOS sandbox, and finishes with an experiment report.
+- [Kaggle AutoResearch Orchestrator](https://github.com/Aamodx6/kaggle-autoresearch-orchestrator) - Orchestrator: a production-shaped runner that discovers the Kaggle competitions you have entered, classifies their kinds, keeps a SQLite registry of competitions, submissions, notebooks, experiments and budgets, and tracks the best leaderboard score for each.
 
 ### Content Research
 
