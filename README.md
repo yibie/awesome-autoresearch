@@ -399,7 +399,7 @@ Source file: [`categories/finance-trading.md`](categories/finance-trading.md)
 - [jq-playwright-auto-research](https://github.com/yyh-boop/jq-playwright-auto-research) - Quant research: drives the JoinQuant platform through Playwright so the autoresearch loop can iterate on Chinese equity strategies.
 - [Initial MAX Autoresearch](https://github.com/bear0103papa/Equityautoresearch) - Equity research: takes its structure from Karpathy's overnight researcher and points the edit-run-measure-keep loop at investment research instead of training code.
 - [Paperhands](https://github.com/bboxy450/paperhands) - Trading research: an agent-first Rust binary that mines observations, tests mechanisms and keeps what each experiment teaches, built around the warning that many policy names can describe one economic outcome and that the distinction has to stay visible.
-- [AgonAlpha](https://github.com/AutoResearch-Factory/AgonAlpha) - Quant alpha research: runs an MCTS-scheduled loop where a proposer writes and evaluates alpha expressions and a fresh-context reviewer reruns the evidence and can veto each candidate, with 17 of 60 WorldQuant BRAIN submissions graded SPECTACULAR.
+- [AgonAlpha](https://github.com/AutoResearch-Factory/AgonAlpha) - Quant alpha research: runs an MCTS-scheduled loop where a proposer writes and evaluates alpha expressions and a fresh-context reviewer reruns the evidence and can veto each candidate, with 17 of 60 WorldQuant BRAIN submissions graded SPECTACULAR; the same organisation runs the same shape in two other domains - Agon for scientific loops with a scientist/coder/auditor split, and AutoSR for symbolic regression - each keeping the separate auditor that makes the keep-or-discard call.
 
 ### Personal Knowledge / Humanities
 
