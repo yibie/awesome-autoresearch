@@ -365,3 +365,15 @@ gh api "repos/OWNER/REPO/git/trees/HEAD?recursive=1" \
 4. **条目数只增不减**是最快的自检：若 `N` 没变而合并的是一次新增，就是丢东西了。
 
 awesome-jev 有 `scripts/maintainer/merge-prs.sh` 按行解冲突（`resolve_round` + `added_line_for`）；awesome-rea 与 awesome-autoresearch **没有**这个脚本，所以这两个仓库手工合并时更要照上面四条做。
+
+### 同源项目只交代一次（2026-10-30）
+
+同一组织或同一作者的一组项目，若共用同一骨架，**只在最早进目录的那条里交代家族**，其余条目保持单项目视角。
+
+**理由**：三条都写「与 X、Y 同源」等于同一句话出现三次，读者还得自己拼；写一次在最早那条，等于在人物第一次出场时介绍关系。
+
+**实例**：`AgonAlpha`（量化 alpha）、`Agon`（科学循环）、`AutoSR`（符号回归）都来自 AutoResearch-Factory，共用「proposer 写候选 → 独立 auditor 打分 → 留还是弃」的骨架。家族关系写在 `AgonAlpha` 那条里，另两条不重复。
+
+**判断「共用骨架」时别只看调度器**：这三者里两个用 MCTS、一个用 modify→verify 循环；真正共同的是那个**独立审查者**。条目里要写的是后者，因为那才是这家组织认定的核心。
+
+**例外**：若后来那两条之一**升级为不同骨架**（不再是同一套），就把家族从句子里拆掉，各自独立描述。
