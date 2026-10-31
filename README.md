@@ -61,15 +61,15 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 124 entries
+- [Scientific Research](categories/scientific-research.md) — 125 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 77 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 41 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 42 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 179 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 180 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
@@ -227,6 +227,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Fluidic diode discovery](https://github.com/PredictiveScienceLab/fluidic-diode-autoresearch) - Mechanical engineering: two 100+ iteration campaigns on a single L4 GPU search for a passive fluidic diode through an 8,000-step lattice Boltzmann solver, and the repository's first take is named for what went wrong - unsteady vortex reward hacking.
 - [Boat design run](https://github.com/joemalle/20261024-boat-autoresearch-out01-mm) - Physical design: an agent-authored runabout based on the Riva Aquarama, with an acceptance list a boat can actually fail - fuel weight accounted for, two adults up front and two behind, and hydrostatic analysis showing it floats level at rest and stays stable as weight shifts - none of its eleven boxes checked yet.
 - [AutoSR](https://github.com/AutoResearch-Factory/AutoSR) - Symbolic regression: runs an MCTS loop over research states, where a proposer writes a candidate equation and an independent reviewer scores it before the search keeps or drops that branch, and it recovers the exact laws for three cp3-bench problems that 12 published SR systems did not solve.
+- [AWS sample: AI Researcher](https://github.com/aws-samples/sample-aws-autoresearch) - Autonomous researcher: runs hypothesize, experiment, learn, repeat on AWS thousands of times, keeps a compounding LLM wiki as its memory, powers GPU workers on and off itself, and hands back the full reasoning trail beside the answer.
 
 ### Software / Systems Optimization
 
@@ -355,6 +356,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [autoresearch-env](https://github.com/PranavBykampadi/autoresearch-env) - RL environment: the agent gets a GPU, a corpus, a baseline byte-level model and a fixed budget, decides what to try, and cannot touch the evaluator - which is reinstalled read-only before every run, and halves the reward if the final report claims a number the verified runs do not support.
 - [crypto-autoresearch](https://github.com/Tdeniz1/crypto-autoresearch) - Leakage defence: a ratchet harness for crypto strategies that treats leakage as the main adversary, with physical holdout isolation, a time-blind proposer, causal-statistics guards, t+1-open execution, three canaries on every winner and deflated-Sharpe accounting for the number of trials.
 - [find alpha. make no mistakes.](https://github.com/marketneutral/find_alpha_make_no_mistakes) - Guest lecture for MIT 18.642: asks whether an AI agent can do quantitative research without fooling itself, and answers with a small language for quant alphas, a coding agent that proposes and keeps or discards, and the loop rebuilt for finance and run once on data it never saw.
+- [RATCHET](https://github.com/StarNyte/ratchet) - Swarm harness: names the two walls a single agent hits - it runs out of quota and it checks its own work - then fans tasks across agents and accounts, cross-checks claims with a different model family, and optimises measurable targets with an evolutionary loop.
 
 ### Finance / Trading
 
@@ -608,6 +610,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autoresearch Self Loop](https://github.com/zom-2018/bb-plugin-autoresearch-self-loop) - BB plugin: a close port of pi-autoresearch 1.9.0 that runs the benchmark and the checks itself, enforces the keep rules, and appends every run to a session log so a loop survives restarts and context resets.
 - [autoresearch-mcp](https://github.com/gaztrabisme/autoresearch-mcp) - MCP server: an experiment loop over any measurable target that keeps one current best and a queue, exposes seven tools plus foreground CLI commands, runs guarded subagent proposals inside a macOS sandbox, and finishes with an experiment report.
 - [Kaggle AutoResearch Orchestrator](https://github.com/Aamodx6/kaggle-autoresearch-orchestrator) - Orchestrator: a production-shaped runner that discovers the Kaggle competitions you have entered, classifies their kinds, keeps a SQLite registry of competitions, submissions, notebooks, experiments and budgets, and tracks the best leaderboard score for each.
+- [Autoresearch Swarm](https://github.com/vincentkoc/autoresearch-swarm) - Local-first engine: structured agent control, isolated experiments, registered compute workers and explicit scientific promotion, with a licence note stating that the platform is original and no upstream source is bundled.
 
 ### Content Research
 
