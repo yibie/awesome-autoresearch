@@ -62,7 +62,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 125 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 77 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 79 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 42 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -310,6 +310,8 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [vllm-autotune](https://github.com/SummerTea/vllm-autotune) - Serving tuning: an external coding agent tunes vLLM serving parameters on a real GPU box from a goal and a budget, and the whole repository is read-only to the agent except one `config.yaml`, so every experiment stays auditable.
 - [Jetfyre](https://github.com/minthantkyaw28/jetfyre) - Maintenance scheduling: an agent edits one model file to decide when to pull a jet engine on NASA's C-MAPSS data, with a live dashboard showing per-engine remaining life beside the loop's own state.
 - [Headroom](https://github.com/xiaodouzi666/headroom) - GPU memory: an agent diagnoses PyTorch memory evidence, proposes patches and verifies each candidate on real hardware, with `PROGRESS.md` holding the acceptance evidence and no repair success claimed yet.
+- [autoresearch-4090](https://github.com/adrianpuiu/autoresearch-4090) - Measured configuration: the same architecture, the same code and the same five-minute budget as upstream, where the entire gain comes from knowing where the optimum lives, reported as a baseline-versus-tuned table with steps, tokens, throughput and VRAM.
+- [autoresearch-wow](https://github.com/sudoesnt/autoresearch-wow) - WoW theorycrafting: an agent edits talents and the SimulationCraft rotation, sims it, keeps what improved and logs everything, so a night's work is read back from results.tsv in the morning - pre-alpha, shadow priest first, no recommendations claimed.
 
 ### Evaluation / Red Teaming
 
