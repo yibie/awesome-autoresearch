@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 125 entries
+- [Scientific Research](categories/scientific-research.md) — 126 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 79 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 42 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
@@ -227,6 +227,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Fluidic diode discovery](https://github.com/PredictiveScienceLab/fluidic-diode-autoresearch) - Mechanical engineering: two 100+ iteration campaigns on a single L4 GPU search for a passive fluidic diode through an 8,000-step lattice Boltzmann solver, and the repository's first take is named for what went wrong - unsteady vortex reward hacking.
 - [Boat design run](https://github.com/joemalle/20261024-boat-autoresearch-out01-mm) - Physical design: an agent-authored runabout based on the Riva Aquarama, with an acceptance list a boat can actually fail - fuel weight accounted for, two adults up front and two behind, and hydrostatic analysis showing it floats level at rest and stays stable as weight shifts - none of its eleven boxes checked yet.
 - [AutoSR](https://github.com/AutoResearch-Factory/AutoSR) - Symbolic regression: runs an MCTS loop over research states, where a proposer writes a candidate equation and an independent reviewer scores it before the search keeps or drops that branch, and it recovers the exact laws for three cp3-bench problems that 12 published SR systems did not solve.
+- [AutoNumerics](https://github.com/Daviddjddu/Autonumerics) - Scientific computing: runs a Formulator→Planner→Coder/Critic loop that designs classical PDE solvers from a natural-language brief, measures residual error, keeps only verified solvers, and sets the lowest CodePDE error on all five tasks.
 - [AWS sample: AI Researcher](https://github.com/aws-samples/sample-aws-autoresearch) - Autonomous researcher: runs hypothesize, experiment, learn, repeat on AWS thousands of times, keeps a compounding LLM wiki as its memory, powers GPU workers on and off itself, and hands back the full reasoning trail beside the answer.
 
 ### Software / Systems Optimization
