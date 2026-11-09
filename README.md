@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Scientific Research](categories/scientific-research.md) — 126 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 79 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 42 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 43 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -360,6 +360,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [crypto-autoresearch](https://github.com/Tdeniz1/crypto-autoresearch) - Leakage defence: a ratchet harness for crypto strategies that treats leakage as the main adversary, with physical holdout isolation, a time-blind proposer, causal-statistics guards, t+1-open execution, three canaries on every winner and deflated-Sharpe accounting for the number of trials.
 - [find alpha. make no mistakes.](https://github.com/marketneutral/find_alpha_make_no_mistakes) - Guest lecture for MIT 18.642: asks whether an AI agent can do quantitative research without fooling itself, and answers with a small language for quant alphas, a coding agent that proposes and keeps or discards, and the loop rebuilt for finance and run once on data it never saw.
 - [RATCHET](https://github.com/StarAtNyte/ratchet) - Swarm harness: names the two walls a single agent hits - it runs out of quota and it checks its own work - then fans tasks across agents and accounts, cross-checks claims with a different model family, and optimises measurable targets with an evolutionary loop.
+- [adversarial-engineering-qa](https://github.com/baimocn/adversarial-engineering-qa) - Task-package QA: turns "have a model read the code and find problems" into a pipeline of mechanical scripted checks, sharded hot-spot reads, an independent red team and one machine-checkable report - grown from thirty rounds of review, each version after a failure, including the checker that mistook a historical hash in the revision log for the current claim.
 
 ### Finance / Trading
 
