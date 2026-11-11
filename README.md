@@ -69,10 +69,10 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 180 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 181 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 184 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 185 entries
 
 ### Open categories still being seeded
 
@@ -616,6 +616,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [autoresearch-mcp](https://github.com/gaztrabisme/autoresearch-mcp) - MCP server: an experiment loop over any measurable target that keeps one current best and a queue, exposes seven tools plus foreground CLI commands, runs guarded subagent proposals inside a macOS sandbox, and finishes with an experiment report.
 - [Kaggle AutoResearch Orchestrator](https://github.com/Aamodx6/kaggle-autoresearch-orchestrator) - Orchestrator: a production-shaped runner that discovers the Kaggle competitions you have entered, classifies their kinds, keeps a SQLite registry of competitions, submissions, notebooks, experiments and budgets, and tracks the best leaderboard score for each.
 - [Autoresearch Swarm](https://github.com/vincentkoc/autoresearch-swarm) - Local-first engine: structured agent control, isolated experiments, registered compute workers and explicit scientific promotion, with a licence note stating that the platform is original and no upstream source is bundled.
+- [SuperARIS](https://github.com/wanshuiyin/SuperARIS) - Agent team: a pipx-installable research orchestrator built around the ARIS Auto Research In Sleep project, splitting work across several agent CLIs and shipping a twenty-one second demo of an entire run.
 
 ### Content Research
 
@@ -849,6 +850,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Multi-agent harnesses need separate message channels](https://harshalgajjar.com/blog/multi-agent-harnesses-need-separate-message-channels) - Practice write-up: argues a single chat box breaks down once several agents plan, execute and review together, and that upstream, downstream, sideways, peer and alert traffic each need their own channel.
 - [Context management without compaction](https://www.reddit.com/r/LLMDevs/comments/1x3oleh/) - Field report: replaces compaction with a checkpoint, clear and resume loop run across four long-lived agent seats, on the argument that summarising context loses exactly what the loop needs.
 - [Anti-Autoresearch](https://github.com/SofiaOwens81/Anti-Autoresearch) - Reviewer-side tooling that flags unreliable autoresearch papers at review time, counted once here because five identically described copies appeared across five accounts on the same day - the bulk pattern this list warns about, attached to a tool about not taking things at face value.
+- [Agents Collab](https://github.com/jaredchu/agents-collab) - Collaboration skill: configures models to collaborate and review independently, and publishes the lab notebook of how the skill came about alongside it, described as an experimental pre-release from a Codex-led pilot with no versioned release.
 
 ## Submission format
 
