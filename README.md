@@ -62,7 +62,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 126 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 79 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 80 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 44 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -313,6 +313,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Headroom](https://github.com/xiaodouzi666/headroom) - GPU memory: an agent diagnoses PyTorch memory evidence, proposes patches and verifies each candidate on real hardware, with `PROGRESS.md` holding the acceptance evidence and no repair success claimed yet.
 - [autoresearch-4090](https://github.com/adrianpuiu/autoresearch-4090) - Measured configuration: the same architecture, the same code and the same five-minute budget as upstream, where the entire gain comes from knowing where the optimum lives, reported as a baseline-versus-tuned table with steps, tokens, throughput and VRAM.
 - [autoresearch-wow](https://github.com/sudoesnt/autoresearch-wow) - WoW theorycrafting: an agent edits talents and the SimulationCraft rotation, sims it, keeps what improved and logs everything, so a night's work is read back from results.tsv in the morning - pre-alpha, shadow priest first, no recommendations claimed.
+- [La boucle case study](https://github.com/anthohunt/la-boucle-cas-jeu-de-plis) - Worked case: five days of an agent editing how a Skull King-style trick-taking bot is trained against a meter that never moved, with the session journal, an isolation test that put a plain rule bot level with the champion's network, and a winning weight setting that vanished on re-measurement all committed to the repo.
 
 ### Evaluation / Red Teaming
 
