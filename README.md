@@ -62,14 +62,14 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 126 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 81 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 45 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 82 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 46 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 182 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 183 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 185 entries
@@ -315,6 +315,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [autoresearch-wow](https://github.com/sudoesnt/autoresearch-wow) - WoW theorycrafting: an agent edits talents and the SimulationCraft rotation, sims it, keeps what improved and logs everything, so a night's work is read back from results.tsv in the morning - pre-alpha, shadow priest first, no recommendations claimed.
 - [La boucle case study](https://github.com/anthohunt/la-boucle-cas-jeu-de-plis) - Worked case: five days of an agent editing how a Skull King-style trick-taking bot is trained against a meter that never moved, with the session journal, an isolation test that put a plain rule bot level with the champion's network, and a winning weight setting that vanished on re-measurement all committed to the repo.
 - [nettoyage-serveur](https://github.com/anthohunt/nettoyage-serveur) - Server cleanup: one script holds every delete and works through inventory, safeguards and verified archiving first, while a second script only drafts the plan and is incapable of removing anything.
+- [Harness Tuner](https://github.com/Kiln-AI/harness-tuner) - Harness tuning: rewrites the tools, prompts, skills, model settings and retrieval around a production agent rather than just the prompt, and reports 2.5x fewer failures, 6x cheaper and 2x lower latency after tuning, measured on held-out data.
 
 ### Evaluation / Red Teaming
 
@@ -365,6 +366,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [adversarial-engineering-qa](https://github.com/baimocn/adversarial-engineering-qa) - Task-package QA: turns "have a model read the code and find problems" into a pipeline of mechanical scripted checks, sharded hot-spot reads, an independent red team and one machine-checkable report - grown from thirty rounds of review, each version after a failure, including the checker that mistook a historical hash in the revision log for the current claim.
 - [AutoResearch kernel](https://github.com/ExtremelyDarkSun/autoresearch) - Research kernel: separates the transactional machinery any research project needs from agent-competition configuration, keeps a 109-item acceptance table and sixteen assurance items, and grades its own verification into three tiers - not verified in real deployment, partially verified on synthetic cases, and needing a human to judge whether the conclusion holds.
 - [La boucle engine](https://github.com/anthohunt/la-boucle-engine) - Sealed exam: an agent edits a harness and is scored on a training set where its mistakes stay visible, while a held-out exam it never sees decides whether the improvement is real.
+- [Packing Arena](https://github.com/vanovri/packing-arena) - Tournament: three independent Codex agents solve bin packing against a deterministic judge and an exact oracle, and a verify script rechecks all 648 saved packings, 174 optimum comparisons and the source hashes against a sealed dataset.
 
 ### Finance / Trading
 
@@ -621,6 +623,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Autoresearch Swarm](https://github.com/vincentkoc/autoresearch-swarm) - Local-first engine: structured agent control, isolated experiments, registered compute workers and explicit scientific promotion, with a licence note stating that the platform is original and no upstream source is bundled.
 - [SuperARIS](https://github.com/wanshuiyin/SuperARIS) - Agent team: a pipx-installable research orchestrator built around the ARIS Auto Research In Sleep project, splitting work across several agent CLIs and shipping a twenty-one second demo of an entire run.
 - [mission-loop](https://github.com/anthohunt/mission-loop) - Goal-driven loop: a foreman picks the next unfinished task, fresh workers each do one bounded pass and leave proofs, and an adversarial judge started by the loop rather than by the worker re-checks them before a mission can close.
+- [ember-rsi](https://github.com/evolving-foundry/ember-rsi) - RSI framework: one declarative recipe connects an optimization target to its evaluator so candidates are generated, measured and iterated in a single run, with named built-in strategies for harness work instead of one fixed loop.
 
 ### Content Research
 
