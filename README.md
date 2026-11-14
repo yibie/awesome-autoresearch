@@ -61,9 +61,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 126 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 82 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 46 entries
+- [Scientific Research](categories/scientific-research.md) — 127 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 83 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 47 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -229,6 +229,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AutoSR](https://github.com/AutoResearch-Factory/AutoSR) - Symbolic regression: runs an MCTS loop over research states, where a proposer writes a candidate equation and an independent reviewer scores it before the search keeps or drops that branch, and it recovers the exact laws for three cp3-bench problems that 12 published SR systems did not solve.
 - [AutoNumerics](https://github.com/Daviddjddu/Autonumerics) - Scientific computing: runs a Formulator→Planner→Coder/Critic loop that designs classical PDE solvers from a natural-language brief, measures residual error, keeps only verified solvers, and sets the lowest CodePDE error on all five tasks.
 - [AWS sample: AI Researcher](https://github.com/aws-samples/sample-aws-autoresearch) - Autonomous researcher: runs hypothesize, experiment, learn, repeat on AWS thousands of times, keeps a compounding LLM wiki as its memory, powers GPU workers on and off itself, and hands back the full reasoning trail beside the answer.
+- [Auditable Scientist](https://github.com/RadiantAILabs/auditable-scientist) - Rebuild: reproduces Sakana's Agentic Scientist as a graph where every model call runs as its own session, so a finished paper can be traced back through the calls that produced it.
 
 ### Software / Systems Optimization
 
@@ -316,6 +317,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [La boucle case study](https://github.com/anthohunt/la-boucle-cas-jeu-de-plis) - Worked case: five days of an agent editing how a Skull King-style trick-taking bot is trained against a meter that never moved, with the session journal, an isolation test that put a plain rule bot level with the champion's network, and a winning weight setting that vanished on re-measurement all committed to the repo.
 - [nettoyage-serveur](https://github.com/anthohunt/nettoyage-serveur) - Server cleanup: one script holds every delete and works through inventory, safeguards and verified archiving first, while a second script only drafts the plan and is incapable of removing anything.
 - [Harness Tuner](https://github.com/Kiln-AI/harness-tuner) - Harness tuning: rewrites the tools, prompts, skills, model settings and retrieval around a production agent rather than just the prompt, and reports 2.5x fewer failures, 6x cheaper and 2x lower latency after tuning, measured on held-out data.
+- [ResearchBoost-Agent](https://github.com/DAGroup-PKU/ResearchBoost-Agent) - Training speedups: an agent that makes AI training code faster and keeps only the speedups a frozen judge verifies, so the measurement is fixed before any editing starts.
 
 ### Evaluation / Red Teaming
 
@@ -367,6 +369,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [AutoResearch kernel](https://github.com/ExtremelyDarkSun/autoresearch) - Research kernel: separates the transactional machinery any research project needs from agent-competition configuration, keeps a 109-item acceptance table and sixteen assurance items, and grades its own verification into three tiers - not verified in real deployment, partially verified on synthetic cases, and needing a human to judge whether the conclusion holds.
 - [La boucle engine](https://github.com/anthohunt/la-boucle-engine) - Sealed exam: an agent edits a harness and is scored on a training set where its mistakes stay visible, while a held-out exam it never sees decides whether the improvement is real.
 - [Packing Arena](https://github.com/vanovri/packing-arena) - Tournament: three independent Codex agents solve bin packing against a deterministic judge and an exact oracle, and a verify script rechecks all 648 saved packings, 174 optimum comparisons and the source hashes against a sealed dataset.
+- [RIDAR](https://github.com/THU-KEG/RIDAR) - Research integrity: a taxonomy of fourteen violation types across four stages of the research lifecycle, with detection and runtime intervention, built on the argument that some agent behaviour invalidates the work before any result gets checked.
 
 ### Finance / Trading
 
