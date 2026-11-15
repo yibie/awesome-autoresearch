@@ -61,9 +61,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 127 entries
+- [Scientific Research](categories/scientific-research.md) — 128 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 83 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 47 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 49 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -230,6 +230,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AutoNumerics](https://github.com/Daviddjddu/Autonumerics) - Scientific computing: runs a Formulator→Planner→Coder/Critic loop that designs classical PDE solvers from a natural-language brief, measures residual error, keeps only verified solvers, and sets the lowest CodePDE error on all five tasks.
 - [AWS sample: AI Researcher](https://github.com/aws-samples/sample-aws-autoresearch) - Autonomous researcher: runs hypothesize, experiment, learn, repeat on AWS thousands of times, keeps a compounding LLM wiki as its memory, powers GPU workers on and off itself, and hands back the full reasoning trail beside the answer.
 - [Auditable Scientist](https://github.com/RadiantAILabs/auditable-scientist) - Rebuild: reproduces Sakana's Agentic Scientist as a graph where every model call runs as its own session, so a finished paper can be traced back through the calls that produced it.
+- [AI Researcher](https://github.com/aws-samples/sample-aws-autoresearch) - AWS sample: runs hypothesize, experiment, learn, repeat in a tight loop on Bedrock, keeps a compounding wiki as its memory, powers a GPU worker on and off per experiment, and streams the reasoning trail to a web app.
 
 ### Software / Systems Optimization
 
@@ -370,6 +371,8 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [La boucle engine](https://github.com/anthohunt/la-boucle-engine) - Sealed exam: an agent edits a harness and is scored on a training set where its mistakes stay visible, while a held-out exam it never sees decides whether the improvement is real.
 - [Packing Arena](https://github.com/vanovri/packing-arena) - Tournament: three independent Codex agents solve bin packing against a deterministic judge and an exact oracle, and a verify script rechecks all 648 saved packings, 174 optimum comparisons and the source hashes against a sealed dataset.
 - [RIDAR](https://github.com/THU-KEG/RIDAR) - Research integrity: a taxonomy of fourteen violation types across four stages of the research lifecycle, with detection and runtime intervention, built on the argument that some agent behaviour invalidates the work before any result gets checked.
+- [Noisy Experiment Benchmark](https://github.com/joe-singh/NoisyExperimentAutonomousBenchmark) - Benchmark: agents search a SQUID bias landscape reconstructed from real measurements, where the scored surface is fixed but observations carry synthetic noise, persistent offsets, disturbed periods, bursts and quality-control rejection.
+- [AutoRSE](https://github.com/Ray-Tiann/AutoRSE) - Benchmark platform: six recommendation baselines, a twelve-hour research loop per run, and hosted scoring, with the agent allowed to see public validation only and its final predictions evaluated after upload.
 
 ### Finance / Trading
 
