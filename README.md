@@ -61,9 +61,9 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 128 entries
+- [Scientific Research](categories/scientific-research.md) — 129 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 83 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 49 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 50 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -231,6 +231,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AWS sample: AI Researcher](https://github.com/aws-samples/sample-aws-autoresearch) - Autonomous researcher: runs hypothesize, experiment, learn, repeat on AWS thousands of times, keeps a compounding LLM wiki as its memory, powers GPU workers on and off itself, and hands back the full reasoning trail beside the answer.
 - [Auditable Scientist](https://github.com/RadiantAILabs/auditable-scientist) - Rebuild: reproduces Sakana's Agentic Scientist as a graph where every model call runs as its own session, so a finished paper can be traced back through the calls that produced it.
 - [AI Researcher](https://github.com/aws-samples/sample-aws-autoresearch) - AWS sample: runs hypothesize, experiment, learn, repeat in a tight loop on Bedrock, keeps a compounding wiki as its memory, powers a GPU worker on and off per experiment, and streams the reasoning trail to a web app.
+- [PaperTeam](https://github.com/JiahongXu88/PaperTeam) - Writing workbench: searches real literature, grounds each claim in verified evidence, revises a manuscript comment by comment without breaking facts or citations, and says plainly when a decision belongs to the author.
 
 ### Software / Systems Optimization
 
@@ -373,6 +374,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [RIDAR](https://github.com/THU-KEG/RIDAR) - Research integrity: a taxonomy of fourteen violation types across four stages of the research lifecycle, with detection and runtime intervention, built on the argument that some agent behaviour invalidates the work before any result gets checked.
 - [Noisy Experiment Benchmark](https://github.com/joe-singh/NoisyExperimentAutonomousBenchmark) - Benchmark: agents search a SQUID bias landscape reconstructed from real measurements, where the scored surface is fixed but observations carry synthetic noise, persistent offsets, disturbed periods, bursts and quality-control rejection.
 - [AutoRSE](https://github.com/Ray-Tiann/AutoRSE) - Benchmark platform: six recommendation baselines, a twelve-hour research loop per run, and hosted scoring, with the agent allowed to see public validation only and its final predictions evaluated after upload.
+- [bioai](https://github.com/nivedhsrinivasan2009-cmd/Bioinformatics-AI) - Reproducibility: given a published paper it locates the public raw data, rebuilds the analysis with deterministic tools, validates the outputs and compares them against the published findings to produce a traceable verdict on whether the result reproduces.
 
 ### Finance / Trading
 
