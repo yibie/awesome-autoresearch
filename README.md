@@ -61,8 +61,8 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 129 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 83 entries
+- [Scientific Research](categories/scientific-research.md) — 131 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 84 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 50 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
@@ -232,6 +232,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Auditable Scientist](https://github.com/RadiantAILabs/auditable-scientist) - Rebuild: reproduces Sakana's Agentic Scientist as a graph where every model call runs as its own session, so a finished paper can be traced back through the calls that produced it.
 - [AI Researcher](https://github.com/aws-samples/sample-aws-autoresearch) - AWS sample: runs hypothesize, experiment, learn, repeat in a tight loop on Bedrock, keeps a compounding wiki as its memory, powers a GPU worker on and off per experiment, and streams the reasoning trail to a web app.
 - [PaperTeam](https://github.com/JiahongXu88/PaperTeam) - Writing workbench: searches real literature, grounds each claim in verified evidence, revises a manuscript comment by comment without breaking facts or citations, and says plainly when a decision belongs to the author.
+- [trackinizer](https://github.com/rekursiv-ai/trackinizer) - Epistemics: a database of efforts, beliefs and findings for both agents and people, organised as a graph where a belief can be inspected next to the artefacts and open issues that support it.
+- [weight-space programming](https://github.com/csinva/weight-space-programming-autoresearch) - Paper repository: an agent builds an interpretable model by writing its weights rather than training them, with the prompts and the full logs of every run published alongside the paper.
 
 ### Software / Systems Optimization
 
@@ -320,6 +322,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [nettoyage-serveur](https://github.com/anthohunt/nettoyage-serveur) - Server cleanup: one script holds every delete and works through inventory, safeguards and verified archiving first, while a second script only drafts the plan and is incapable of removing anything.
 - [Harness Tuner](https://github.com/Kiln-AI/harness-tuner) - Harness tuning: rewrites the tools, prompts, skills, model settings and retrieval around a production agent rather than just the prompt, and reports 2.5x fewer failures, 6x cheaper and 2x lower latency after tuning, measured on held-out data.
 - [ResearchBoost-Agent](https://github.com/DAGroup-PKU/ResearchBoost-Agent) - Training speedups: an agent that makes AI training code faster and keeps only the speedups a frozen judge verifies, so the measurement is fixed before any editing starts.
+- [Atrex Kernel Agent](https://github.com/alibaba/atrex-kernel-agent) - GPU kernels: coding agents propose candidates while a supervisor verifies correctness and performance before any improvement is promoted, with agents, workspaces and evaluation all replaceable through a plugin layer.
 
 ### Evaluation / Red Teaming
 
