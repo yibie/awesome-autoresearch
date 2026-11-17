@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Scientific Research](categories/scientific-research.md) — 131 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 84 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 50 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 51 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -378,6 +378,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [Noisy Experiment Benchmark](https://github.com/joe-singh/NoisyExperimentAutonomousBenchmark) - Benchmark: agents search a SQUID bias landscape reconstructed from real measurements, where the scored surface is fixed but observations carry synthetic noise, persistent offsets, disturbed periods, bursts and quality-control rejection.
 - [AutoRSE](https://github.com/Ray-Tiann/AutoRSE) - Benchmark platform: six recommendation baselines, a twelve-hour research loop per run, and hosted scoring, with the agent allowed to see public validation only and its final predictions evaluated after upload.
 - [bioai](https://github.com/nivedhsrinivasan2009-cmd/Bioinformatics-AI) - Reproducibility: given a published paper it locates the public raw data, rebuilds the analysis with deterministic tools, validates the outputs and compares them against the published findings to produce a traceable verdict on whether the result reproduces.
+- [HSR Nous](https://github.com/pzc2004/HSR_Nous) - Game analysis: turns a turn-based combat game into a reproducible decision problem judged by the author's own battle simulator, so a build recommendation can be re-run rather than argued about, with the non-official status stated up front.
 
 ### Finance / Trading
 
