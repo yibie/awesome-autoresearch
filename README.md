@@ -61,15 +61,15 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 131 entries
+- [Scientific Research](categories/scientific-research.md) — 132 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 84 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 51 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 52 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 183 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 184 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 185 entries
@@ -234,6 +234,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [PaperTeam](https://github.com/JiahongXu88/PaperTeam) - Writing workbench: searches real literature, grounds each claim in verified evidence, revises a manuscript comment by comment without breaking facts or citations, and says plainly when a decision belongs to the author.
 - [trackinizer](https://github.com/rekursiv-ai/trackinizer) - Epistemics: a database of efforts, beliefs and findings for both agents and people, organised as a graph where a belief can be inspected next to the artefacts and open issues that support it.
 - [weight-space programming](https://github.com/csinva/weight-space-programming-autoresearch) - Paper repository: an agent builds an interpretable model by writing its weights rather than training them, with the prompts and the full logs of every run published alongside the paper.
+- [Kapso](https://github.com/Leeroo-AI/kapso) - Experiment engine: a plugin whose skills set up a run, state an objective, author a harness and then review it, shipped as something you install rather than a service you call.
 
 ### Software / Systems Optimization
 
@@ -379,6 +380,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [AutoRSE](https://github.com/Ray-Tiann/AutoRSE) - Benchmark platform: six recommendation baselines, a twelve-hour research loop per run, and hosted scoring, with the agent allowed to see public validation only and its final predictions evaluated after upload.
 - [bioai](https://github.com/nivedhsrinivasan2009-cmd/Bioinformatics-AI) - Reproducibility: given a published paper it locates the public raw data, rebuilds the analysis with deterministic tools, validates the outputs and compares them against the published findings to produce a traceable verdict on whether the result reproduces.
 - [HSR Nous](https://github.com/pzc2004/HSR_Nous) - Game analysis: turns a turn-based combat game into a reproducible decision problem judged by the author's own battle simulator, so a build recommendation can be re-run rather than argued about, with the non-official status stated up front.
+- [SAGE](https://github.com/dp-web4/SAGE) - Governance: a local research environment where persistent agents hold identity, memory and trust, documented with what is measured, what is implemented but thinly exercised, and a dated public status page.
 
 ### Finance / Trading
 
@@ -636,6 +638,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [SuperARIS](https://github.com/wanshuiyin/SuperARIS) - Agent team: a pipx-installable research orchestrator built around the ARIS Auto Research In Sleep project, splitting work across several agent CLIs and shipping a twenty-one second demo of an entire run.
 - [mission-loop](https://github.com/anthohunt/mission-loop) - Goal-driven loop: a foreman picks the next unfinished task, fresh workers each do one bounded pass and leave proofs, and an adversarial judge started by the loop rather than by the worker re-checks them before a mission can close.
 - [ember-rsi](https://github.com/evolving-foundry/ember-rsi) - RSI framework: one declarative recipe connects an optimization target to its evaluator so candidates are generated, measured and iterated in a single run, with named built-in strategies for harness work instead of one fixed loop.
+- [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - Workflow: a research methodology rather than a platform, installed as skills in Claude Code or Codex so the workflow travels with the person - and the SuperARIS entry in this list is built on top of it.
 
 ### Content Research
 
