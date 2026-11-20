@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 134 entries
+- [Scientific Research](categories/scientific-research.md) — 137 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 84 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 52 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 185 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 186 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 185 entries
@@ -237,6 +237,9 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [Kapso](https://github.com/Leeroo-AI/kapso) - Experiment engine: a plugin whose skills set up a run, state an objective, author a harness and then review it, shipped as something you install rather than a service you call.
 - [AI-Scientist-v3](https://github.com/SakanaAI/AI-Scientist-v3) - Agentic scientist: turns a task description into experiments, ablations and a paper by orchestrating coding agents - the original that the Auditable Scientist entry in this list was rebuilt from.
 - [EvoScientist](https://github.com/EvoScientist/EvoScientist) - Self-evolving scientists: agents that explore and generate their own insights, framed as human-on-the-loop rather than in-the-loop, so the researcher sets the direction and the agents run the work.
+- [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) - Original: the first of the three Sakana releases listed here, running a research cycle from an idea through experiments to a paper, and the base both later versions and the rebuild in this list descend from.
+- [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Successor: workshop-level automated discovery from the same group, sitting between the original and the agentic v3 in both date and approach.
+- [AutoScientists](https://github.com/mims-harvard/AutoScientists) - Decentralized team: Claude Code subagents that run long computational experiments together, with results reported on a 24-task biomedical benchmark rather than on a demo.
 
 ### Software / Systems Optimization
 
@@ -642,6 +645,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [ember-rsi](https://github.com/evolving-foundry/ember-rsi) - RSI framework: one declarative recipe connects an optimization target to its evaluator so candidates are generated, measured and iterated in a single run, with named built-in strategies for harness work instead of one fixed loop.
 - [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - Workflow: a research methodology rather than a platform, installed as skills in Claude Code or Codex so the workflow travels with the person - and the SuperARIS entry in this list is built on top of it.
 - [ToolUniverse](https://github.com/mims-harvard/ToolUniverse) - Tool library: a large MCP server of scientific tools from Harvard's MIMS group, set up by pointing an agent at a setup page instead of reading install documentation yourself.
+- [ResearchForge](https://github.com/forger-labs-hq/researchforge) - Autoresearch harness: freezes a baseline for a repository or a live Kaggle competition, runs each AI-proposed change in an isolated git worktree through screening and a full benchmark, reruns finalists before calling a win, and keeps rejected ideas with their reason.
 
 ### Content Research
 
