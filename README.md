@@ -61,15 +61,15 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 137 entries
+- [Scientific Research](categories/scientific-research.md) — 138 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 84 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 52 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 53 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 186 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 188 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 185 entries
@@ -240,6 +240,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AI-Scientist](https://github.com/SakanaAI/AI-Scientist) - Original: the first of the three Sakana releases listed here, running a research cycle from an idea through experiments to a paper, and the base both later versions and the rebuild in this list descend from.
 - [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Successor: workshop-level automated discovery from the same group, sitting between the original and the agentic v3 in both date and approach.
 - [AutoScientists](https://github.com/mims-harvard/AutoScientists) - Decentralized team: Claude Code subagents that run long computational experiments together, with results reported on a 24-task biomedical benchmark rather than on a demo.
+- [SciΠvot](https://github.com/AutoResearch-Factory/SciPIvot) - Research evaluation: asks a model to choose between an LLM agent's original research plan and a senior researcher's correction, using 248 cases from 26 agent-run projects in six fields; four of five frontier models score below chance, and the best reaches 63.5% against 73.4% for fresh researchers.
 
 ### Software / Systems Optimization
 
@@ -386,6 +387,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [bioai](https://github.com/nivedhsrinivasan2009-cmd/Bioinformatics-AI) - Reproducibility: given a published paper it locates the public raw data, rebuilds the analysis with deterministic tools, validates the outputs and compares them against the published findings to produce a traceable verdict on whether the result reproduces.
 - [HSR Nous](https://github.com/pzc2004/HSR_Nous) - Game analysis: turns a turn-based combat game into a reproducible decision problem judged by the author's own battle simulator, so a build recommendation can be re-run rather than argued about, with the non-official status stated up front.
 - [SAGE](https://github.com/dp-web4/SAGE) - Governance: a local research environment where persistent agents hold identity, memory and trust, documented with what is measured, what is implemented but thinly exercised, and a dated public status page.
+- [Seahaven](https://github.com/Kiln-AI/Seahaven) - Synthetic worlds: a framework for building controlled environments for agent evals and reinforcement learning, so a run can be repeated against a world rather than against a prompt.
 
 ### Finance / Trading
 
@@ -646,6 +648,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [ARIS](https://github.com/wanshuiyin/Auto-claude-code-research-in-sleep) - Workflow: a research methodology rather than a platform, installed as skills in Claude Code or Codex so the workflow travels with the person - and the SuperARIS entry in this list is built on top of it.
 - [ToolUniverse](https://github.com/mims-harvard/ToolUniverse) - Tool library: a large MCP server of scientific tools from Harvard's MIMS group, set up by pointing an agent at a setup page instead of reading install documentation yourself.
 - [ResearchForge](https://github.com/forger-labs-hq/researchforge) - Autoresearch harness: freezes a baseline for a repository or a live Kaggle competition, runs each AI-proposed change in an isolated git worktree through screening and a full benchmark, reruns finalists before calling a win, and keeps rejected ideas with their reason.
+- [EvoSkills](https://github.com/EvoScientist/EvoSkills) - Skills: the official skill repository for EvoScientist, where each skill extends that research system rather than sitting beside it.
+- [Kilntainers](https://github.com/Kiln-AI/Kilntainers) - Sandbox: an MCP server that hands an agent a throwaway Linux machine, so experiments run somewhere disposable instead of on the host.
 
 ### Content Research
 
