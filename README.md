@@ -69,7 +69,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 188 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 190 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 185 entries
@@ -650,6 +650,8 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [ResearchForge](https://github.com/forger-labs-hq/researchforge) - Autoresearch harness: freezes a baseline for a repository or a live Kaggle competition, runs each AI-proposed change in an isolated git worktree through screening and a full benchmark, reruns finalists before calling a win, and keeps rejected ideas with their reason.
 - [EvoSkills](https://github.com/EvoScientist/EvoSkills) - Skills: the official skill repository for EvoScientist, where each skill extends that research system rather than sitting beside it.
 - [Kilntainers](https://github.com/Kiln-AI/Kilntainers) - Sandbox: an MCP server that hands an agent a throwaway Linux machine, so experiments run somewhere disposable instead of on the host.
+- [Reef](https://github.com/Human-Agent-Society/reef) - Infrastructure: an open-source layer for continually self-improving agents, aimed at the part that has to persist between runs rather than at the loop itself.
+- [Raven](https://github.com/EverMind-AI/Raven) - Harness of harnesses: a persistent self-evolving multi-agent system with a paper behind it (arXiv 2609.33439), built for runs that keep going rather than sessions that end.
 
 ### Content Research
 
