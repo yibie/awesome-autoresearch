@@ -62,8 +62,8 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 ## Current coverage
 
 - [Scientific Research](categories/scientific-research.md) — 138 entries
-- [Software / Systems Optimization](categories/software-systems-optimization.md) — 84 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 53 entries
+- [Software / Systems Optimization](categories/software-systems-optimization.md) — 85 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 54 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 190 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 185 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 186 entries
 
 ### Open categories still being seeded
 
@@ -330,6 +330,7 @@ Source file: [`categories/software-systems-optimization.md`](categories/software
 - [Harness Tuner](https://github.com/Kiln-AI/harness-tuner) - Harness tuning: rewrites the tools, prompts, skills, model settings and retrieval around a production agent rather than just the prompt, and reports 2.5x fewer failures, 6x cheaper and 2x lower latency after tuning, measured on held-out data.
 - [ResearchBoost-Agent](https://github.com/DAGroup-PKU/ResearchBoost-Agent) - Training speedups: an agent that makes AI training code faster and keeps only the speedups a frozen judge verifies, so the measurement is fixed before any editing starts.
 - [Atrex Kernel Agent](https://github.com/alibaba/atrex-kernel-agent) - GPU kernels: coding agents propose candidates while a supervisor verifies correctness and performance before any improvement is promoted, with agents, workspaces and evaluation all replaceable through a plugin layer.
+- [Hermes Agent Self-Evolution](https://github.com/NousResearch/hermes-agent-self-evolution) - Prompt evolution: DSPy and GEPA mutate the agent's text, evaluate the results and select the survivors, entirely through API calls with no GPU training anywhere in the loop.
 
 ### Evaluation / Red Teaming
 
@@ -388,6 +389,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [HSR Nous](https://github.com/pzc2004/HSR_Nous) - Game analysis: turns a turn-based combat game into a reproducible decision problem judged by the author's own battle simulator, so a build recommendation can be re-run rather than argued about, with the non-official status stated up front.
 - [SAGE](https://github.com/dp-web4/SAGE) - Governance: a local research environment where persistent agents hold identity, memory and trust, documented with what is measured, what is implemented but thinly exercised, and a dated public status page.
 - [Seahaven](https://github.com/Kiln-AI/Seahaven) - Synthetic worlds: a framework for building controlled environments for agent evals and reinforcement learning, so a run can be repeated against a world rather than against a prompt.
+- [SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) - Skill evaluation: runs quality checks, then compares task results with and without a skill so its actual effect is measured rather than assumed, with a CI template to catch problems before merge.
 
 ### Finance / Trading
 
@@ -886,6 +888,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Context management without compaction](https://www.reddit.com/r/LLMDevs/comments/1x3oleh/) - Field report: replaces compaction with a checkpoint, clear and resume loop run across four long-lived agent seats, on the argument that summarising context loses exactly what the loop needs.
 - [Anti-Autoresearch](https://github.com/SofiaOwens81/Anti-Autoresearch) - Reviewer-side tooling that flags unreliable autoresearch papers at review time, counted once here because five identically described copies appeared across five accounts on the same day - the bulk pattern this list warns about, attached to a tool about not taking things at face value.
 - [Agents Collab](https://github.com/jaredchu/agents-collab) - Collaboration skill: configures models to collaborate and review independently, and publishes the lab notebook of how the skill came about alongside it, described as an experimental pre-release from a Codex-led pilot with no versioned release.
+- [Ratel](https://github.com/ratel-ai/ratel) - Self-improvement layer: shows what an agent gets wrong and what to change about it, running on your own infrastructure rather than as a hosted service.
 
 ## Submission format
 
