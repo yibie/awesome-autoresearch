@@ -63,7 +63,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 - [Scientific Research](categories/scientific-research.md) — 138 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 85 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 54 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 55 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
@@ -390,6 +390,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [SAGE](https://github.com/dp-web4/SAGE) - Governance: a local research environment where persistent agents hold identity, memory and trust, documented with what is measured, what is implemented but thinly exercised, and a dated public status page.
 - [Seahaven](https://github.com/Kiln-AI/Seahaven) - Synthetic worlds: a framework for building controlled environments for agent evals and reinforcement learning, so a run can be repeated against a world rather than against a prompt.
 - [SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) - Skill evaluation: runs quality checks, then compares task results with and without a skill so its actual effect is measured rather than assumed, with a CI template to catch problems before merge.
+- [UAEF](https://github.com/awslabs/uaef) - Evaluation framework: framework-agnostic agent quality measurement that plugs into LangGraph, LangChain, Bedrock, Langfuse, Strands, AgentCore or a custom platform - from AWS, and pointedly not restricted to AWS.
 
 ### Finance / Trading
 
