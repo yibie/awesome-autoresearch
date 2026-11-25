@@ -200,3 +200,4 @@ Use this category for ecosystem entries that are directly about autoresearch inf
 - [Kilntainers](https://github.com/Kiln-AI/Kilntainers) - Sandbox: an MCP server that hands an agent a throwaway Linux machine, so experiments run somewhere disposable instead of on the host.
 - [Reef](https://github.com/Human-Agent-Society/reef) - Infrastructure: an open-source layer for continually self-improving agents, aimed at the part that has to persist between runs rather than at the loop itself.
 - [Raven](https://github.com/EverMind-AI/Raven) - Harness of harnesses: a persistent self-evolving multi-agent system with a paper behind it (arXiv 2609.33439), built for runs that keep going rather than sessions that end.
+- [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills) - Skills: a 2,780-file library that turns a general agent into a scientific one, renamed from a single-agent title to work across several.

@@ -61,15 +61,15 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 138 entries
+- [Scientific Research](categories/scientific-research.md) — 139 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 85 entries
-- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 55 entries
+- [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 56 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
 - [Personal Knowledge / Humanities](categories/personal-knowledge-humanities.md) — 2 entries
 - [Knowledge Base / RAG Preparation](categories/knowledge-base-rag-preparation.md) — 3 entries
 - [Market Research](categories/market-research.md) — 0 entries
 - [Workflow Automation](categories/workflow-automation.md) — 4 entries
-- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 190 entries
+- [Infra / Skills / Forks](categories/infra-skills-forks.md) — 191 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
 - [Related Practices / Discussions](categories/related-practices-discussions.md) — 186 entries
@@ -241,6 +241,7 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AI-Scientist-v2](https://github.com/SakanaAI/AI-Scientist-v2) - Successor: workshop-level automated discovery from the same group, sitting between the original and the agentic v3 in both date and approach.
 - [AutoScientists](https://github.com/mims-harvard/AutoScientists) - Decentralized team: Claude Code subagents that run long computational experiments together, with results reported on a 24-task biomedical benchmark rather than on a demo.
 - [SciΠvot](https://github.com/AutoResearch-Factory/SciPIvot) - Research evaluation: asks a model to choose between an LLM agent's original research plan and a senior researcher's correction, using 248 cases from 26 agent-run projects in six fields; four of five frontier models score below chance, and the best reaches 63.5% against 73.4% for fresh researchers.
+- [AI Research Skills](https://github.com/Orchestra-Research/AI-Research-SKILLs) - Skills library: written for AI research specifically rather than research in general, which makes it the most literal entry in this category - tooling for the field that builds the tooling.
 
 ### Software / Systems Optimization
 
@@ -391,6 +392,7 @@ Source file: [`categories/evaluation-red-teaming.md`](categories/evaluation-red-
 - [Seahaven](https://github.com/Kiln-AI/Seahaven) - Synthetic worlds: a framework for building controlled environments for agent evals and reinforcement learning, so a run can be repeated against a world rather than against a prompt.
 - [SkillEvaluator](https://github.com/NVIDIA/SkillEvaluator) - Skill evaluation: runs quality checks, then compares task results with and without a skill so its actual effect is measured rather than assumed, with a CI template to catch problems before merge.
 - [UAEF](https://github.com/awslabs/uaef) - Evaluation framework: framework-agnostic agent quality measurement that plugs into LangGraph, LangChain, Bedrock, Langfuse, Strands, AgentCore or a custom platform - from AWS, and pointedly not restricted to AWS.
+- [Formal Verification RSI](https://github.com/sahibzada-allahyar/Formal-Verification-RSI) - Safety: pairs Lean verification with recursive self-improvement, on the argument that an improvement loop which can cheat by reward hacking has not been verified at all.
 
 ### Finance / Trading
 
@@ -655,6 +657,7 @@ Source file: [`categories/infra-skills-forks.md`](categories/infra-skills-forks.
 - [Kilntainers](https://github.com/Kiln-AI/Kilntainers) - Sandbox: an MCP server that hands an agent a throwaway Linux machine, so experiments run somewhere disposable instead of on the host.
 - [Reef](https://github.com/Human-Agent-Society/reef) - Infrastructure: an open-source layer for continually self-improving agents, aimed at the part that has to persist between runs rather than at the loop itself.
 - [Raven](https://github.com/EverMind-AI/Raven) - Harness of harnesses: a persistent self-evolving multi-agent system with a paper behind it (arXiv 2609.33439), built for runs that keep going rather than sessions that end.
+- [Scientific Agent Skills](https://github.com/K-Dense-AI/scientific-agent-skills) - Skills: a 2,780-file library that turns a general agent into a scientific one, renamed from a single-agent title to work across several.
 
 ### Content Research
 
