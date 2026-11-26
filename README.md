@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 139 entries
+- [Scientific Research](categories/scientific-research.md) — 142 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 85 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 56 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
@@ -242,6 +242,9 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [AutoScientists](https://github.com/mims-harvard/AutoScientists) - Decentralized team: Claude Code subagents that run long computational experiments together, with results reported on a 24-task biomedical benchmark rather than on a demo.
 - [SciΠvot](https://github.com/AutoResearch-Factory/SciPIvot) - Research evaluation: asks a model to choose between an LLM agent's original research plan and a senior researcher's correction, using 248 cases from 26 agent-run projects in six fields; four of five frontier models score below chance, and the best reaches 63.5% against 73.4% for fresh researchers.
 - [AI Research Skills](https://github.com/Orchestra-Research/AI-Research-SKILLs) - Skills library: written for AI research specifically rather than research in general, which makes it the most literal entry in this category - tooling for the field that builds the tooling.
+- [OpenScience](https://github.com/synthetic-sciences/openscience) - Workbench: give it a goal and it reads the literature, writes and runs the code, runs the experiments and writes up what came back, across 6,163 files of tooling.
+- [AutoResearch](https://github.com/EvoMap/AutoResearch) - Agents from idea to paper: its own subtitle is "insight in, hallucination out", which is the claim every project in this category makes and few put in the tagline.
+- [LabClaw](https://github.com/wu-yc/LabClaw) - Operating layer: dry-lab reasoning and protocol composition for the Stanford-Princeton AI co-scientist work, built to close the loop with wet-lab automation rather than stop at a report.
 
 ### Software / Systems Optimization
 
