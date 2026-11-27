@@ -61,7 +61,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 
 ## Current coverage
 
-- [Scientific Research](categories/scientific-research.md) — 142 entries
+- [Scientific Research](categories/scientific-research.md) — 144 entries
 - [Software / Systems Optimization](categories/software-systems-optimization.md) — 85 entries
 - [Evaluation / Red Teaming](categories/evaluation-red-teaming.md) — 56 entries
 - [Finance / Trading](categories/finance-trading.md) — 40 entries
@@ -245,6 +245,8 @@ Source file: [`categories/scientific-research.md`](categories/scientific-researc
 - [OpenScience](https://github.com/synthetic-sciences/openscience) - Workbench: give it a goal and it reads the literature, writes and runs the code, runs the experiments and writes up what came back, across 6,163 files of tooling.
 - [AutoResearch](https://github.com/EvoMap/AutoResearch) - Agents from idea to paper: its own subtitle is "insight in, hallucination out", which is the claim every project in this category makes and few put in the tagline.
 - [LabClaw](https://github.com/wu-yc/LabClaw) - Operating layer: dry-lab reasoning and protocol composition for the Stanford-Princeton AI co-scientist work, built to close the loop with wet-lab automation rather than stop at a report.
+- [K-Dense BYOK](https://github.com/K-Dense-AI/k-dense-byok) - Desktop app: a research assistant that runs on your own machine against the accounts and API keys you supply, the opposite arrangement from the hosted co-scientists elsewhere in this list.
+- [SwarmRSI](https://github.com/EvoScientist/SwarmRSI) - Swarm research: agents propose hypotheses, run real experiments and write every outcome including failures into a shared graph later agents inherit - and the results table keeps the row where it loses, a 45.5 gold-medal rate against a 77.3 baseline.
 
 ### Software / Systems Optimization
 
