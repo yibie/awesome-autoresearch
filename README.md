@@ -72,7 +72,7 @@ Found something wrong? Open an issue or a pull request — **removal is as valid
 - [Infra / Skills / Forks](categories/infra-skills-forks.md) — 191 entries
 - [Content Research](categories/content-research.md) — 1 entry
 - [Marketing & GTM](categories/marketing-gtm.md) — 5 entries
-- [Related Practices / Discussions](categories/related-practices-discussions.md) — 186 entries
+- [Related Practices / Discussions](categories/related-practices-discussions.md) — 187 entries
 
 ### Open categories still being seeded
 
@@ -898,6 +898,7 @@ Source file: [`categories/related-practices-discussions.md`](categories/related-
 - [Anti-Autoresearch](https://github.com/SofiaOwens81/Anti-Autoresearch) - Reviewer-side tooling that flags unreliable autoresearch papers at review time, counted once here because five identically described copies appeared across five accounts on the same day - the bulk pattern this list warns about, attached to a tool about not taking things at face value.
 - [Agents Collab](https://github.com/jaredchu/agents-collab) - Collaboration skill: configures models to collaborate and review independently, and publishes the lab notebook of how the skill came about alongside it, described as an experimental pre-release from a Codex-led pilot with no versioned release.
 - [Ratel](https://github.com/ratel-ai/ratel) - Self-improvement layer: shows what an agent gets wrong and what to change about it, running on your own infrastructure rather than as a hosted service.
+- [Awesome Agent Evolution](https://github.com/EvoMap/awesome-agent-evolution) - Directory: self-evolution, memory systems and autonomous self-improvement organised behind a taxonomy, which is the part most lists of this kind skip.
 
 ## Submission format
 
